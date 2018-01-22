@@ -5,8 +5,8 @@ In this wiki, you will find different helpful tips and links to resources that w
 ---
 Chatbot - Running your own web server and creating a simple chat-bot.
 
-1. Learn basic [unix commands]()
-1. Connect to your [Interaction Engine(IxE) / Raspberry Pi]()
+1. Learn basic [unix commands](https://github.com/nikmart/interaction-engine/wiki/Unix-introduction-review)
+1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine)
 1. Run the [ChatBot Example]()
 1. Understand\Extend the [code]()
 
