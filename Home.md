@@ -7,9 +7,7 @@ Chatbot - Running your own web server and creating a simple chat-bot.
 
 1. Learn basic [unix commands](https://github.com/nikmart/interaction-engine/wiki/Unix-introduction-review)
 1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine)
-1. Run the [ChatBot Example](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/ChatBot)
-1. Understand\Extend the [code]()
-
+1. Run the [ChatBot Example](https://github.com/FAR-Lab/simple-ChatBot/wiki/Running-ChatBot)
 
 ---
 Web Camera - Streaming video over the internet.
