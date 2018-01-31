@@ -1,7 +1,7 @@
 # LabSession #1 - overview:
 1. Familiarize yourself with the [UNIX Commands](https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html). This [UNIX cheatsheet](https://ubuntudanmark.dk/filer/fwunixref.pdf) might also help.
 1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](#connect-to-your-interaction-engine)
-1. Run the [ChatBot Example](#Set-up-and-run-the-ChatBot-Example)
+1. Run the [ChatBot Example](#set-up-and-run-the-chatBot-example)
 
 
 ## Connect to your Interaction Engine
@@ -70,7 +70,7 @@ pi@ixe05 ~ $
 ```
 
 
-## Set-up and run the ChatBot Example(#Set-up-and-run-the-ChatBot-Example)
+## Set-up and run the ChatBot Example
 This is a copy of the [original wiki](https://github.com/FAR-Lab/simple-ChatBot/wiki/Running-ChatBot)
 Welcome to the simple-ChatBot wiki!
 ### Installation
