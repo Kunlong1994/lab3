@@ -3,11 +3,8 @@
 In this wiki, you will find different helpful tips and links to resources that will help you to complete the assignments.
 
 ---
-Chatbot - Running your own web server and creating a simple chat-bot.
+Lab-session#1 Chatbot - Running your own web server and creating a simple chat-bot [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-Session%231).
 
-1. Learn basic [unix commands](https://github.com/nikmart/interaction-engine/wiki/Unix-introduction-review)
-1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine)
-1. Run the [ChatBot Example](https://github.com/FAR-Lab/simple-ChatBot/wiki/Running-ChatBot)
 
 ---
 Web Camera - Streaming video over the internet.
