@@ -9,9 +9,71 @@
 ## Connect to your Interaction Engine(#Connect-to-your-Interaction-Engine)
 
 This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine)
+With the [IxE started up](Start-your-IxE) and [connected to the Workshop WiFi](Getting-an-IxE-based-Pi-on-Workshop-Wi-Fi) (alternately: here's how you [get the IxE on your own Wifi] (Getting-an-IxE-based-Pi-on-your-Wi-Fi)), we will ssh into the system so that we can control the computer via [your local terminal](Terminal).
 
-### Set-up and run the ChatBot Example(#Set-up-and-run-the-ChatBot-Example)
-This is a copy of the original file from[](https://github.com/FAR-Lab/simple-ChatBot/wiki/Running-ChatBot)
+### 1. Verify IxE is online
+TL,DR
+1. `ping` + `ixe[00].local` (change the last digits, and remove the brackets to match yours)
+2. Is it running? If yes, cool. `control + C` and move on to step 2.
+
+LONGER VERSION
+
+First, `ping` the system to make sure it is online. (If not, [troubleshoot](Getting-an-IxE-based-Pi-on-your-Wi-Fi#troubleshooting) to get it online). Remember your IxE will be named something like `ixe##` where the number corresponds to the number on the SD card (ex: ixe01, ixe04, ixe11). You can use `control + C` to exit the ping (this looks like `^C` in the terminal).
+
+```shell
+nik@DN51sk9s:~$ ping ixe05.local
+PING ixe05.local (192.168.2.2): 56 data bytes
+64 bytes from 192.168.2.2: icmp_seq=0 ttl=64 time=0.467 ms
+64 bytes from 192.168.2.2: icmp_seq=1 ttl=64 time=0.471 ms
+64 bytes from 192.168.2.2: icmp_seq=2 ttl=64 time=0.550 ms
+64 bytes from 192.168.2.2: icmp_seq=3 ttl=64 time=0.670 ms
+64 bytes from 192.168.2.2: icmp_seq=4 ttl=64 time=0.720 ms
+^C
+--- ixe05.local ping statistics ---
+5 packets transmitted, 5 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.467/0.576/0.720/0.103 ms
+```
+
+### 2.  SSH into the IxE.
+Log in to your Pi using the command `ssh pi@ixe[00].local` with the password: `raspberry`
+
+When you first log in it will ask you if you want to continue connecting. Say `yes`
+
+```shell
+ssh pi@ixe00.local
+The authenticity of host 'ixe00.local (fe80::1216:6c33:ec58:34a5%en0)' can't be established.
+ECDSA key fingerprint is SHA256:Y9S4oMH2H70fz3K/L42Kw39k+zkpyfr0DmGdzBx7SKk.
+Are you sure you want to continue connecting (yes/no)? yes
+```
+After you say yes, type the password `raspberry` and hit Enter. You should see this:
+
+```shell
+i@ixe00.local's password:
+Linux ixe00 4.9.59-v7+ #1047 SMP Sun Oct 29 12:19:23 GMT 2017 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Jan 17 10:42:03 2018
+
+SSH is enabled and the default password for the 'pi' user has not been changed.
+This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+
+pi@ixe00:~ $ 
+```
+
+Once you are signed in, your terminal will now be the terminal for the IxE. You can tell this by looking at the user and hostname at the beginning of each line, which should now look like:
+
+```shell
+pi@ixe05 ~ $
+```
+
+
+## Set-up and run the ChatBot Example(#Set-up-and-run-the-ChatBot-Example)
+This is a copy of the [original wiki](https://github.com/FAR-Lab/simple-ChatBot/wiki/Running-ChatBot)
 Welcome to the simple-ChatBot wiki!
 ### Installation
 Clone(download) the repository from GitHub to the IxE. 
