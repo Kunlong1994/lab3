@@ -1,6 +1,4 @@
-# LabSession #1
-
-## Task overview:
+# LabSession #1 - overview:
 1. Familiarize yourself with the [UNIX Commands](https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html). This [UNIX cheatsheet](https://ubuntudanmark.dk/filer/fwunixref.pdf) might also help.
 1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](#Connect-to-your-Interaction-Engine)
 1. Run the [ChatBot Example](#Set-up-and-run-the-ChatBot-Example)
