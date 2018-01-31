@@ -1,10 +1,10 @@
 # LabSession #1 - overview:
 1. Familiarize yourself with the [UNIX Commands](https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html). This [UNIX cheatsheet](https://ubuntudanmark.dk/filer/fwunixref.pdf) might also help.
-1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](#Connect-to-your-Interaction-Engine)
+1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](#connect-to-your-interaction-ingine)
 1. Run the [ChatBot Example](#Set-up-and-run-the-ChatBot-Example)
 
 
-## Connect to your Interaction Engine(#Connect-to-your-Interaction-Engine)
+## Connect to your Interaction Engine
 
 This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine)
 With the [IxE started up](Start-your-IxE) and [connected to the Workshop WiFi](Getting-an-IxE-based-Pi-on-Workshop-Wi-Fi) (alternately: here's how you [get the IxE on your own Wifi] (Getting-an-IxE-based-Pi-on-your-Wi-Fi)), we will ssh into the system so that we can control the computer via [your local terminal](Terminal).
