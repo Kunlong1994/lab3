@@ -70,6 +70,9 @@ pi@ixe05 ~ $
 ```
 
 
+
+
+
 ## Setup and run the ChatBot Example
 This is a copy of the [original wiki](https://github.com/FAR-Lab/simple-ChatBot/wiki/Running-ChatBot)
 Welcome to the simple-ChatBot wiki!
@@ -81,7 +84,7 @@ Clone(download) the repository from GitHub to the IxE.
 git clone https://github.com/FAR-Lab/simple-ChatBot simple-ChatBot
 ```
 1. Change directory into the downloaded folder with ```cd simple-ChatBot```
-1. Let npm install the required node packages with ```npm install```
+1. Let ```npm``` install the required node packages with ```npm install```
 At this point, you will have downloaded the main program and all required packages to run it. 
 
 ### Start-Up
