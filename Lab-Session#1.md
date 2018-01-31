@@ -7,7 +7,7 @@
 ## Connect to your Interaction Engine
 
 This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine)
-With the [IxE started up](Start-your-IxE) and [connected to the Workshop WiFi](Getting-an-IxE-based-Pi-on-Workshop-Wi-Fi) (alternately: here's how you [get the IxE on your own Wifi] (Getting-an-IxE-based-Pi-on-your-Wi-Fi)), we will ssh into the system so that we can control the computer via [your local terminal](Terminal).
+In this tutorial we will ssh into the system so that we can control the computer via Terminal or Putty on Windows.
 
 ### 1. Verify IxE is online
 TL,DR
