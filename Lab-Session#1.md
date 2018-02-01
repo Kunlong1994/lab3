@@ -8,8 +8,10 @@
 
 ## Connect to class WiFi
 For this first assignment to work, please conect your laptop to our class WiFi.
-_if_you are sitting in the __front__ halfe of the class => connect to the DeviceFarm-5G
-_if you are sitting in the __back__ half of the class => connect to DeviceFarm-5G-2
+__if__ you are sitting in the __front__ halfe of the class => connect to the DeviceFarm-5G
+
+__if__ you are sitting in the __back__ half of the class => connect to DeviceFarm-5G-2
+
 We will share the password for these networks in class.
 
 
