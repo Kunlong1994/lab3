@@ -18,9 +18,26 @@ We will share the password for these networks in class.
 
 
 ## Connect to your Interaction Engine
+---
+Replace **[00]** with your interaction engine number on your SD card.
+For SSH use:
+```
+ssh pi@ct-devicefarm-1257.tech.cornell.edu -p 122[00]  
+```
+
+Connect to the Website
+```
+ct-devicefarm-1257.tech.cornell.edu:180[00]
+```
+
+Instructions to get the pi running on your local network are coming soon.
+
+--- 
+
+
 
 This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine).
-In this tutorial we will ssh into the system so that we can control the computer via Terminal or PuTTy on Windows.
+In this tutorial, we will ssh into the system so that we can control the computer via Terminal or PuTTy on Windows.
 
 ### 1. Verify IxE is online
 TL,DR
