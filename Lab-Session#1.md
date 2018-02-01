@@ -1,4 +1,5 @@
 # LabSession #1 - overview:
+1. Create a [GitHub account](https://github.com) or use the [Cornell GitHub](https://github.coecis.cornell.edu/) with your NetID unless you already have an ccount you want to use for this class.
 1. Familiarize yourself with the [UNIX Commands](https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html). This [UNIX cheatsheet](https://ubuntudanmark.dk/filer/fwunixref.pdf) might also help.
 1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](#connect-to-your-interaction-engine)
 1. Run the [ChatBot Example](#setup-and-run-the-chatbot-example)
