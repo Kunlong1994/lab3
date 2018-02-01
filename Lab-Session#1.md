@@ -133,7 +133,6 @@ Index.html is written in html, but with javascript embedded. The index.js code a
 #### Annotated code tours
 
 * [chatServer.js](chatServer.js,-annotated)
-* [index.html](index.html,-annotated)
 * [index.js](index.js,-annotated)
 
 ## Make the ChatBot your own
