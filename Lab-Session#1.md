@@ -121,17 +121,20 @@ chatServer.js  license.txt  node_modules  package.json  package-lock.json  publi
 If files are missing or you are not in the correct folder change to the correct folder location and try to re-run the instructions from the tutorial.  
 Second, make sure that you are connected to the same network as the interaction engine. This type of server is typically only routed/addressable locally i.e. when you are on the same network.
 
-### Understanding the code
+## Understanding the code
 
-What does the server do?
+### chatServer.js (The RPi code)
+The chatServer.js code is written in javascript. It is run on the IxE using [node.js](https://en.wikipedia.org/wiki/Node.js). This code handles the different client interactions and manages the network connections. 
 
-What does the client do?
 
-How do they communicate?
+### index.html and index.js (The browser code)
+Index.html is written in html, but with javascript embedded. The index.js code acts as a library for the functions called in index.html, and is written in javascript. These files are served from the IxE when node.js is running chatServer.js. Both index.html and index.js run on the web browser.
 
-Where does the chatbot actually live?
+#### Annotated code tours
 
-How can we change the chatbot?
+* [chatServer.js](chatServer.js,-annotated)
+* [index.html](index.html,-annotated)
+* [index.js](index.js,-annotated)
 
 ## Make the ChatBot your own
 
