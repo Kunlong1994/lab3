@@ -2,6 +2,8 @@
 1. Familiarize yourself with the [UNIX Commands](https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html). This [UNIX cheatsheet](https://ubuntudanmark.dk/filer/fwunixref.pdf) might also help.
 1. Connect to your [Interaction Engine(IxE) / Raspberry Pi](#connect-to-your-interaction-engine)
 1. Run the [ChatBot Example](#setup-and-run-the-chatbot-example)
+1. Modify the ChatBot to make it your own. 
+1. Record someone else trying out your ChatBot.
 
 
 ## Connect to your Interaction Engine
@@ -111,7 +113,6 @@ Second, make sure that you are connected to the same network as the interaction 
 
 ### Understanding the code
 
-
 What does the server do?
 
 What does the client do?
@@ -122,7 +123,7 @@ Where does the chatbot actually live?
 
 How can we change the chatbot?
 
+## Make the ChatBot your own
 
-
-
+Now, please modify the chatServer.js file to make your own chatbot. It might, for example, act like [WoeBot](https://woebot.io) and find out what is bringing a person down. Or! Maybe it helps people fall asleep like [Insomnobot] (http://insomnobot3000.com). You have a finite amount of time, so narrow the purpose of the chatbot so that does not have to have Turing-complete conversational ability.
 
