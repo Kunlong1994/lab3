@@ -7,7 +7,7 @@
 
 
 ## Connect to class WiFi
-For this first assignment to work, please conect your laptop to our class WiFi.
+For this first assignment to work, please connect your laptop to our class WiFi.
 
 __if__ you are sitting in the __front__ half of the class => connect to DeviceFarm-5G
 
