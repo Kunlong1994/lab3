@@ -1,0 +1,1 @@
+# Annotated javascript code that communicates with the ChatBot server from the client side
