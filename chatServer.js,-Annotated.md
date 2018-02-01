@@ -12,17 +12,18 @@ Note:
 * the attachment of the WebSocket library(```socket.io```), which connects this server to our client,
 
 
-// use express to create the simple webapp
+```javascript
 app.use(express.static('public')); // find pages in public directory
 
 // start the server and say what port it is on
 http.listen(serverPort, function() {
   console.log('listening on *:%s', serverPort);
 });
-//----------------------------------------------------------------------------//
+```
+**_Starting the ChatBot Server_**
+Starting the webserver telling it to server files found in folder ```'public'```
 
-
-//---------------------- WEBSOCKET COMMUNICATION -----------------------------//
+```javascript
 // this is the websocket event handler and say if someone connects
 // as long as someone is connected, listen for messages
 io.on('connect', function(socket) {
@@ -42,7 +43,12 @@ io.on('connect', function(socket) {
     console.log('user disconnected');
   });
 });
-//--------------------------CHAT BOT FUNCTION-------------------------------//
+```
+**_Client connection._** 
+This specifies what to do with connections and messages from clients (e.g. you on the web browser!). This section initializes the ChatBot, waits for the load message from the [client](index.js,-annotated) and handles the incomming and outgoing traffic.
+
+
+```javascript
 function bot(data,socket,questionNum) {
   var input = data; // This is generally really terrible from a security point of view ToDo avoid code injection
   var answer;
@@ -103,7 +109,16 @@ function bot(data,socket,questionNum) {
   setTimeout(timedQuestion, waitTime,socket,question);
   return (questionNum+1);
 }
+```
+**_ChatBot 'decision tree'_**
+These are the answers and questions the chat bot will say. The long if and else statement can be easily modified to change the responses.
+**Note:**
+* ```questionNum``` keeps track of where we are in the conversation tree. 
+* ```waitTime``` Sets how long in milliseconds the ```answer``` is shown befor the server sends a next question. 
+* ```answer``` The 'answer' type message does not enable the input field.
+* ```question``` poses a question to the user and enables the input field.
 
+```javascript
 function timedQuestion(socket,question) {
   if(question!=''){
   socket.emit('question',question);
@@ -111,7 +126,8 @@ function timedQuestion(socket,question) {
   else{
     //console.log('No Question send!');
   }
-
 }
-//----------------------------------------------------------------------------//
+```
+**_waiting function_**
+Once the time, as set in ```waitTime```, has run out the question is send to the client if the question is not empty.
 
