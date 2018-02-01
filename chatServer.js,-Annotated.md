@@ -7,9 +7,9 @@ var serverPort = 8000;
 ```
 **_Variable declaration._** 
 Note:
-* the invocation of 'express', which is a server application, 
-* the attachment of the http library, which make it a webserver, 
-* the attachment of the WebSocket library(```socket.io```), which connects this server to our client,
+* the invocation of 'express', which is a server application 
+* the attachment of the http library, which makes it a webserver 
+* the attachment of the WebSocket library(```socket.io```), which acts as a real-time communication link between the server and client
 
 
 ```javascript
