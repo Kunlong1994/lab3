@@ -18,8 +18,8 @@ We will share the password for these networks in class.
 
 ## Connect to your Interaction Engine
 
-This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine)
-In this tutorial we will ssh into the system so that we can control the computer via Terminal or Putty on Windows.
+This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine).
+In this tutorial we will ssh into the system so that we can control the computer via Terminal or PuTTy on Windows.
 
 ### 1. Verify IxE is online
 TL,DR
