@@ -1,1 +1,0 @@
-# Annotated versions index.html and index.js
