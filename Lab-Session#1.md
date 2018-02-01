@@ -126,3 +126,7 @@ How can we change the chatbot?
 ## Make the ChatBot your own
 
 Now, please modify the chatServer.js file to make your own chatbot. It might, for example, act like [WoeBot](https://woebot.io) and find out what is bringing a person down. Or! Maybe it helps people fall asleep like [Insomnobot](http://insomnobot3000.com). You have a finite amount of time, so narrow the purpose of the chatbot so that does not have to have [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) conversational ability.
+
+## Record someone trying out your ChatBot
+
+Using a phone or other video device, record someone trying out your ChatBot. (This does not need to be an advertisement for your ChatBot; it is okay if the person is confused or asks questions or doesn't like it. We like the drama.) Post the video to your assignment on Slack!
