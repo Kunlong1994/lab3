@@ -37,7 +37,7 @@ io.on('connect', function(socket) {
 });
   socket.on('message', (data)=>{ // If we get a new message from the client we process it;
         console.log(data);
-        questionNum= bot(data,socket,questionNum);	// run the bot function with the new message
+        questionNum= bot(data,socket,questionNum); // run the bot function with the new message
       });
   socket.on('disconnect', function() { // This function  gets called when the browser window gets closed
     console.log('user disconnected');
@@ -45,7 +45,7 @@ io.on('connect', function(socket) {
 });
 ```
 **_Client connection._** 
-This specifies what to do with connections and messages from clients (e.g. you on the web browser!). This section initializes the ChatBot, waits for the load message from the [client](index.js,-annotated) and handles the incomming and outgoing traffic.
+This specifies what to do with connections and messages from clients (e.g. you on the web browser!). This section initializes the ChatBot, waits for the load message from the [client](index.js,-annotated) and handles the incoming and outgoing traffic.
 
 
 ```javascript
@@ -55,27 +55,27 @@ function bot(data,socket,questionNum) {
   var question;
   var waitTime;
 
-/// These are the main statments that make up the conversation.
+/// These are the main statements that make up the conversation.
   if (questionNum == 0) {
   answer= 'Hello ' + input + ' :-)';// output response
   waitTime =2000;
-  question = 'How old are you?';			    	// load next question
+  question = 'How old are you?';			    
   }
   else if (questionNum == 1) {
   answer= 'Really ' + input + ' Years old? So that means you where born in: ' + (2018-parseInt(input));// output response
   waitTime =2000;
-  question = 'Where do you live?';			    	// load next question
+  question = 'Where do you live?';	
   }
   else if (questionNum == 2) {
   answer= ' Cool! I have never been to ' + input+'.';
   waitTime =2000;
-  question = 'Whats your favorite Color?';			    	// load next question
+  question = 'Whats your favorite Color?';
   }
   else if (questionNum == 3) {
   answer= 'Ok, ' + input+' it is.';
   socket.emit('changeBG',input.toLowerCase());
   waitTime = 2000;
-  question = 'Can you still read the font?';			    	// load next question
+  question = 'Can you still read the font?';
   }
   else if (questionNum == 4) {
     if(input.toLowerCase()==='yes'|| input===1){
@@ -84,11 +84,11 @@ function bot(data,socket,questionNum) {
       question = 'Whats your favorite place?';
     }
     else if(input.toLowerCase()==='no'|| input===0){
-        socket.emit('changeFont','white'); /// we really should look up the inverse of what we said befor.
+        socket.emit('changeFont','white'); // We really should look up the inverse of what we said before.
         answer='How about now?'
         question='';
         waitTime =0;
-        questionNum--; // Here we go back in the question number this can end up in a loop
+        questionNum--; // Here we go back in the question number this can end up in a loop!
     }else{
       answer=' I did not understand you. Can you please answer with simply with yes or no.'
       question='';
@@ -104,17 +104,17 @@ function bot(data,socket,questionNum) {
   }
 
 
-/// We take the changed data and distribute it across the required objects.
+/// We take the changed data and distribute it to the required objects.
   socket.emit('answer',answer);
   setTimeout(timedQuestion, waitTime,socket,question);
   return (questionNum+1);
 }
 ```
 **_ChatBot 'decision tree'_**
-These are the answers and questions the chat bot will say. The long if and else statement can be easily modified to change the responses.
+These are the answers and questions the chatbot will say. The long if and else statement can be easily modified to change the responses.
 **Note:**
 * ```questionNum``` keeps track of where we are in the conversation tree. 
-* ```waitTime``` Sets how long in milliseconds the ```answer``` is shown befor the server sends a next question. 
+* ```waitTime``` Sets how long in milliseconds the ```answer``` is shown before the server sends the next question. 
 * ```answer``` The 'answer' type message does not enable the input field.
 * ```question``` poses a question to the user and enables the input field.
 
