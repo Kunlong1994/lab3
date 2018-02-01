@@ -1,5 +1,5 @@
 
-#Connect IxE to your computer via the computer Ethernet port
+## Connect IxE to your computer via the computer Ethernet port
 
 (based off of instructions from [Nikmart's IxE Git](https://github.com/nikmart/interaction-engine/wiki/Connect-IxE-to-your-computer-via-Ethernet-port))
 
@@ -17,7 +17,7 @@ Instructions for PC
 
 [someone with a pc, please update this...]
 
-#Connect IxE to your computer via a separate WiFI card
+## Connect IxE to your computer via a separate WiFI card
 
 You can share a WiFi connection to the wider internet from your laptop if you can bring up a separate Wifi interface on your computer (for example by using a USB Wifi adapter).
 Instructions for Mac
