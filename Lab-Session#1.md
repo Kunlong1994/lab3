@@ -125,5 +125,4 @@ How can we change the chatbot?
 
 ## Make the ChatBot your own
 
-Now, please modify the chatServer.js file to make your own chatbot. It might, for example, act like [WoeBot](https://woebot.io) and find out what is bringing a person down. Or! Maybe it helps people fall asleep like [Insomnobot] (http://insomnobot3000.com). You have a finite amount of time, so narrow the purpose of the chatbot so that does not have to have Turing-complete conversational ability.
-
+Now, please modify the chatServer.js file to make your own chatbot. It might, for example, act like [WoeBot](https://woebot.io) and find out what is bringing a person down. Or! Maybe it helps people fall asleep like [Insomnobot](http://insomnobot3000.com). You have a finite amount of time, so narrow the purpose of the chatbot so that does not have to have [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) conversational ability.
