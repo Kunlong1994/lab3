@@ -5,7 +5,10 @@ var questionRecieved=false;
 var output = document.getElementById('output');	
 output.innerHTML = "<h1 id=response </h1>";
 ```
-*variable declaration* of variables and objects that need to be addressed frqeuntly or that need to be kept track of over time like, e.g. if a question was recieved and the socket connection to the server.
+**_variable declaration_**  of the objects that need to be addressed frqeuntly or that need to be kept track of during one session.
+1. with ```socket =io();``` we create a socket client that will connect back to the node.js server running the ChatServer.js
+1. ```questionRecieved``` keeps track weather or not we have recieved a question or not, to avoid sending empty or unwanted messages
+1. The ```output``` object is the respons field from the ChatBot that needs to be freqeuntly changed. 
 
 ```javascript
 function sendMessage() {
