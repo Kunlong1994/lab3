@@ -118,7 +118,8 @@ If that is not the case, verify that you are in the right folder and have done a
 pi@ixe[00]:~/test/simple-ChatBot $ ls
 chatServer.js  license.txt  node_modules  package.json  package-lock.json  public  README.txt
 ```
-If files are missing or you are not in the correct folder change to the correct folder location and try to re-run the instructions from the tutorial.  
+If files are missing or you are not in the correct folder change to the correct folder location and try to re-run the instructions from the tutorial.
+  
 Second, make sure that you are connected to the same network as the interaction engine. This type of server is typically only routed/addressable locally i.e. when you are on the same network.
 
 ## Understanding the code
@@ -128,7 +129,7 @@ The chatServer.js code is written in javascript. It is run on the IxE using [nod
 
 
 ### index.html and index.js (The browser code)
-Index.html is written in html, but with javascript embedded. The index.js code acts as a library for the functions called in index.html, and is written in javascript. These files are served from the IxE when node.js is running chatServer.js. Both index.html and index.js run on the web browser.
+Index.html is written in html, but with javascript embedded. The index.js code acts as a library for the functions called in `index.html`, and is written in javascript. These files are served from the IxE when node.js is running `chatServer.js`. Both index.html and `index.js` run on the web browser.
 
 #### Annotated code tours
 
@@ -137,7 +138,7 @@ Index.html is written in html, but with javascript embedded. The index.js code a
 
 ## Make the ChatBot your own
 
-Now, please modify the chatServer.js file to make your own chatbot. It might, for example, act like [WoeBot](https://woebot.io) and find out what is bringing a person down. Or! Maybe it helps people fall asleep like [Insomnobot](http://insomnobot3000.com). You have a finite amount of time, so narrow the purpose of the chatbot so that does not have to have [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) conversational ability.
+Now, please modify the `chatServer.js` file to make your own chatbot. It might, for example, act like [WoeBot](https://woebot.io) and find out what is bringing a person down. Or! Maybe it helps people fall asleep like [Insomnobot](http://insomnobot3000.com). You have a finite amount of time, so narrow the purpose of the chatbot so that it does not have to have [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) conversational ability.
 
 ## Record someone trying out your ChatBot
 
