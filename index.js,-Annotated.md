@@ -1,4 +1,4 @@
-```
+```javascript
 // WebSocket connection setup
 var socket = io();
 var questionRecieved=false;
