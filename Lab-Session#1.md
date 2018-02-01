@@ -113,7 +113,7 @@ pi@ixe[00]:~/simple-ChatBot $node chatServer.js
 listening on *:8001
 a new user connected
 ```
-If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to very fy that is by typing ```pwd``` to see if you really are working in the correct directory. The answer that pops-up should be something like ```/home/pi/simple-ChatBot```.  Very fy that you have all files in the folder with ```ls ```. The item list should be 
+If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` to see if you really are working in the correct directory. The answer that pops-up should be something like ```/home/pi/simple-ChatBot```. Verify that you have all files in the folder with ```ls ```. The item list should be 
 ```shell 
 pi@ixe[00]:~/test/simple-ChatBot $ ls
 chatServer.js  license.txt  node_modules  package.json  package-lock.json  public  README.txt
