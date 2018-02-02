@@ -197,4 +197,5 @@ Using a phone or other video device, record someone trying out your ChatBot. (Th
 
 ## Submitting the Code
 Please submit your code by submitting a link to your forked GitHub project on your personal homework slack channel.
+
 Instructions on how to forkthen clone a project **OR** rebase a cloned project can be found [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project).
