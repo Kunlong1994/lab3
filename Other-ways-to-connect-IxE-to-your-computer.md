@@ -20,6 +20,7 @@ Instructions for PC
 ## Connect IxE to your computer via a separate WiFI card
 
 You can share a WiFi connection to the wider internet from your laptop if you can bring up a separate Wifi interface on your computer (for example by using a USB Wifi adapter).
+
 Instructions for Mac
 
 1. Bring up the new WiFi interface. This will likely involve installing the drivers for the device, registering the new interface (for example, by using http://mycomputers.cit.cornell.edu at Cornell), and getting it online.
