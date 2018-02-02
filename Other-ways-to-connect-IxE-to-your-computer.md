@@ -67,7 +67,7 @@ When the Pi boots up, it will copy the `wpa_supplicant.conf` file into the WiFi 
 ## Connecting to The HOUSE Wifi
 
 1. Register the MAC address of your Raspberry Pi on The House network at https://myelauwit.com/ using Add a Device.
-1. Edit the /etc/wpa_supplicant/wpa_supplicant.conf file as explained in the section above
+1. Edit the `/etc/wpa_supplicant/wpa_supplicant.conf` file as explained in the section above
 
 ```shell
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -84,7 +84,7 @@ network={
 }
 ```
 3. Try logging into your device using ssh from a terminal.
-4. If you need to see what device your IxE is on, use iwconfig:
+4. If you need to see what device your IxE is on, use `iwconfig`:
 ```shell
 pi@ixe42:~ $ iwconfig wlan0
 wlan0     IEEE 802.11  ESSID:"The House"  
