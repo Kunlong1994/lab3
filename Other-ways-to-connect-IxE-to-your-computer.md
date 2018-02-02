@@ -83,5 +83,16 @@ network={
     key_mgmt=NONE
 }
 ```
-3. Try logging into your device using ssh from a terminal!
-
+3. Try logging into your device using ssh from a terminal.
+4. If you need to see what device your IxE is on, use iwconfig:
+```shell
+pi@ixe42:~ $ iwconfig wlan0
+wlan0     IEEE 802.11  ESSID:"The House"  
+          Mode:Managed  Frequency:2.462 GHz  Access Point: 24:79:2A:21:58:C8   
+          Bit Rate=72.2 Mb/s   Tx-Power=31 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality=67/70  Signal level=-43 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+```
