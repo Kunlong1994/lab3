@@ -187,6 +187,8 @@ To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you 
 
 *Pro-tip:* In `nano` if you just hit `^X` without saving, it should ask you if you want to `Save modified buffer?  (Answering "No" will DISCARD changes.)`. You can then type `y` `Y` or `Yes` then hit `Enter` and it will save and exit.
 
+`nano` is a general purpose text editor, so you can use it for any type of text file like the `.js`, `.html`, and `.css` files in this project.
+
 ## Record someone trying out your ChatBot
 
 Using a phone or other video device, record someone trying out your ChatBot. (This does not need to be an advertisement for your ChatBot; it is okay if the person is confused or asks questions or doesn't like it. We like the drama.) Post the video to your assignment on Slack!
