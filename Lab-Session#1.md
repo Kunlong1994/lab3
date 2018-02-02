@@ -147,7 +147,7 @@ The chatServer.js code is written in javascript. It is run on the IxE using [nod
 
 
 ### index.html and index.js (The browser code)
-Index.html is written in html, but with javascript embedded. The index.js code acts as a library for the functions called in `index.html`, and is written in javascript. These files are served from the IxE when node.js is running `chatServer.js`. Both index.html and `index.js` run on the web browser.
+Index.html is written in HTML, but with javascript embedded. The index.js code acts as a library for the functions called in `index.html`, and is written in javascript. These files are served from the IxE when node.js is running `chatServer.js`. Both index.html and `index.js` run on the web browser.
 
 #### Annotated code tours
 
@@ -157,6 +157,35 @@ Index.html is written in html, but with javascript embedded. The index.js code a
 ## Make the ChatBot your own
 
 Now, please modify the `chatServer.js` file to make your own chatbot. It might, for example, act like [WoeBot](https://woebot.io) and find out what is bringing a person down. Or! Maybe it helps people fall asleep like [Insomnobot](http://insomnobot3000.com). You have a finite amount of time, so narrow the purpose of the chatbot so that it does not have to have [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) conversational ability.
+
+### Editing the Code ###
+To change how your chatbot behaves, you will need to edit the code. To edit the code files, you can use `nano` a command line text editor.
+
+To edit your `chatServer.js` code, make sure you are in the `simple-Chatbot/` directory and then open the code file using the command:
+
+```shell
+nano chatServer.js
+``
+
+The files should then open up on your screen. You can move around the file using your arrow keys. Note: `nano` is a very simple editor. There is no mouse-click support. You will need to move around the file using just up, down, left, and right.
+
+Let's edit the name of your chatbot first.
+
+Move to the line of code that says:
+
+```shell
+socket.emit('answer',"Hey, Hello I am \"___*-\" a simple chat bot example."); //We start with the introduction;
+```
+
+Then move your cursor to the `\"___*-\"`, delete it using backspace, and type in the name you would like to call your chatbot.
+
+Once you change the name, you will want to save your file then exit.
+
+Notice on the bottom of the terminal window that there is some text showing things like `^G Get Help` and `^O Write Out`. These are the commands that you can use in `nano`. The `^` character stands for `Ctrl`. So to `Write Out` (which means to save the file), you would type `Ctrl` and `O`. When you click this, you will see that a bar comes up and says `File Name to Write: chatServer.js`. This is the file name you are saving to. In this case, we want the same name, so we can just hit the `Enter` key. You will then see a message on the bottom that tells you how many lines were written, something like `[ Wrote 116 lines ]`.
+
+To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you to the terminal console. You should then be able to re-run your chatbot using `node chatServer.js` and you should see that your chatbot now has the name you gave it.
+
+*Pro-tip:* In `nano` if you just hit `^X` without saving, it should ask you if you want to `Save modified buffer?  (Answering "No" will DISCARD changes.)`. You can then type `y` `Y` or `Yes` then hit `Enter` and it will save and exit.
 
 ## Record someone trying out your ChatBot
 
