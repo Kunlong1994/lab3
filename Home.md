@@ -7,7 +7,7 @@ In this wiki, you will find different helpful tips and links to resources that w
 
 
 ---
-[Lab #2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%232) Web Camera - Snapping faraway photos.
+[Lab #2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%232) Distant Pictures - Snapping faraway photos using the Pi, Arduino & web camera.
 
 
 
