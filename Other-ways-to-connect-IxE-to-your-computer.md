@@ -44,6 +44,7 @@ network={
     key_mgmt=WPA-PSK
 }
 
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 network={
     ssid="YOUR WIFI NAME HERE"
     psk="YOUR WIFI PASSWORD HERE"
