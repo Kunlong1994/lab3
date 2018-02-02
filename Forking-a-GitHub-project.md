@@ -38,3 +38,4 @@ git add .
 git commit -m "Some short comment about what was changed."
 git push
 ```
+For more information also have a look at the [GitCheatSheet](https://education.github.com/git-cheat-sheet-education.pdf).
