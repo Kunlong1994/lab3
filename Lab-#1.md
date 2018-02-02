@@ -5,8 +5,7 @@
 1. Run the [ChatBot Example](#setup-and-run-the-chatbot-example)
 1. Modify the ChatBot to make it your own. 
 1. Record someone else trying out your ChatBot.
-1. [David G. will clarify how to submit your version of your chatbot code]
-
+1. [Submitting the forked GitHub link](#submitting-the-code)
 
 ## Connect to class WiFi
 For this first assignment to work, please connect your laptop to our class WiFi.
@@ -17,9 +16,11 @@ __if__ you are sitting in the __back__ half of the class => connect to DeviceFar
 
 We will share the password for these networks in class.
 
-
-## Connect to your Interaction Engine
 ---
+## Instruction on how to connect to your home WiFi or computer can be found [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Other-ways-to-connect-IxE-to-your-computer).
+---
+## Connect to your Interaction Engine
+
 Replace **[00]** with your interaction engine number on your SD card.
 For SSH use:
 ```
@@ -34,8 +35,6 @@ ct-devicefarm-1257.tech.cornell.edu:280[00]
 Instructions to get the pi running on your local network are here, please try them out and help us debug them: https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Other-ways-to-connect-IxE-to-your-computer.
 
 --- 
-
-
 
 This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine).
 In this tutorial, we will ssh into the system so that we can control the computer via Terminal or PuTTy on Windows.
@@ -110,9 +109,11 @@ Welcome to the simple-ChatBot wiki!
 ### Installation
 Clone(download) the repository from GitHub to the IxE. 
 1. Go to the home folder with ```cd ~```
+1. Frok the github project you are trying to download, by clicking the fork button on the top right side.
+1. Copy the link to your forked version of the project.(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). 
 1. Clone the git repository with
 ```
-git clone https://github.com/FAR-Lab/simple-ChatBot simple-ChatBot
+git clone https://github.com/**_YOURUSERNAME_**/simple-ChatBot simple-ChatBot
 ```
 1. Change directory into the downloaded folder with ```cd simple-ChatBot```
 1. Let ```npm``` install the required node packages with ```npm install```
@@ -193,3 +194,7 @@ To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you 
 ## Record someone trying out your ChatBot
 
 Using a phone or other video device, record someone trying out your ChatBot. (This does not need to be an advertisement for your ChatBot; it is okay if the person is confused or asks questions or doesn't like it. We like the drama.) Post the video to your assignment on Slack!
+
+## Submitting the Code
+Please submit your code by submitting a link to your forked GitHub project on your personal homework slack channel.
+Instructions on how to forkthen clone a project **OR** rebase a cloned project can be found [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project).
