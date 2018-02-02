@@ -165,7 +165,7 @@ To edit your `chatServer.js` code, make sure you are in the `simple-Chatbot/` di
 
 ```shell
 nano chatServer.js
-``
+```
 
 The files should then open up on your screen. You can move around the file using your arrow keys. Note: `nano` is a very simple editor. There is no mouse-click support. You will need to move around the file using just up, down, left, and right.
 
