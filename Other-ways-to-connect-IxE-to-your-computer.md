@@ -34,7 +34,9 @@ Instructions for Mac
 
 Based on instructions found here: [https://howchoo.com/g/ndy1zte2yjn/how-to-set-up-wifi-on-your-raspberry-pi-without-ethernet](https://howchoo.com/g/ndy1zte2yjn/how-to-set-up-wifi-on-your-raspberry-pi-without-ethernet)
 
-If you have a WiFi router at home that you control, you can connect to it by setting the wifi configuration of your Pi. To do this, you will need to create a file called `wpa_supplicant.conf` with the following text in it:
+If you have a WiFi router at home that you control, you can connect to it by setting the wifi configuration of your Pi. To do this:
+
+1. Use a text editor on your computer to create a file called `wpa_supplicant.conf` with the following text in it:
 
 ```shell
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -51,20 +53,14 @@ network={
     key_mgmt=WPA-PSK
 }
 ```
-
-You can create this file with a text editor on your laptop.
-
-Once you have saved the file, make sure your IxE is shut down.
-
-Take out the SD card and plug it into your laptop so you can see the files.
-
+2. Plug the SD card with the IxE image on it into your computer.
 You should see a disk drive called `boot` mount to your computer.
 
-Open `boot` and copy the `wpa_supplicant.conf` file into the directory.
+3. Open `boot` and copy the `wpa_supplicant.conf` file into the directory.
 
-Safely eject the SD card from your computer.
+4. Safely eject the SD card from your computer.
 
-Plug the SD card back into your IxE, then turn it back on by plugging in the USB power.
+5. Plug the SD card back into your IxE, then plug it into USB power.
 
 When the Pi boots up, it will copy the `wpa_supplicant.conf` file into the WiFi settings directory in `\etc\wpa_wupplicant\`. This will update your WiFi setting and should get the Pi on your home wifi.
 
