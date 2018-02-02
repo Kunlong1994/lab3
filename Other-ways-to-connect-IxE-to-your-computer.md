@@ -87,6 +87,5 @@ network={
     key_mgmt=NONE
 }
 ```
-
-1. Try logging into your device using ssh from a terminal!
+3. Try logging into your device using ssh from a terminal!
 
