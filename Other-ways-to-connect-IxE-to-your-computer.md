@@ -53,15 +53,23 @@ network={
 
 You can create this file with a text editor on your laptop.
 
-Once you have saved the file, make sure your IxE is shutdown.
+Once you have saved the file, make sure your IxE is shut down.
 
 Take out the SD card and plug it into your laptop so you can see the files.
 
 You should see a disk drive called `boot` mount to your computer.
 
-Open `boot`
+Open `boot` and copy the `wpa_supplicant.conf` file into the directory.
+
+Safely eject the SD card from your computer.
+
+Plug the SD card back into your IxE, then turn it back on by plugging in the USB power.
+
+When the Pi boots up, it will copy the `wpa_supplicant.conf` file into the WiFi settings directory in `\etc\wpa_wupplicant\`. This will update your WiFi setting and should get the Pi on your home wifi.
 
 ## Connecting to The HOUSE Wifi
+
+Follow the directions above, and pur the following in `wpa_supplicant.conf`:
 
 ```shell
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
