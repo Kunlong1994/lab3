@@ -22,6 +22,8 @@ We will share the password for these networks in class.
 ## Connect to your Interaction Engine
 
 Replace **[00]** with your interaction engine number on your SD card.
+
+### If your laptop is on eduroam or RedRover and your IxE is on DeviceFarm
 For SSH use:
 ```
 ssh pi@ct-devicefarm-1257.tech.cornell.edu -p 122[00]  
@@ -30,6 +32,18 @@ ssh pi@ct-devicefarm-1257.tech.cornell.edu -p 122[00]
 Connect to the Website
 ```
 ct-devicefarm-1257.tech.cornell.edu:280[00]
+```
+
+### If your laptop is on DeviceFarm, The House, or your own WiFi network:
+
+For SSH use:
+```
+ssh pi@ixe[00].local  
+```
+
+Connect to the Website
+```
+ixe[00].local:8000
 ```
 
 Instructions to get the pi running on your local network are here, please try them out and help us debug them: https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Other-ways-to-connect-IxE-to-your-computer.
