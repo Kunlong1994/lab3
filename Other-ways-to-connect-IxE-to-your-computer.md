@@ -85,7 +85,8 @@ network={
 }
 ```
 3. Try logging into your device using ssh from a terminal.
-4. If you need to see what device your IxE is on, use `iwconfig`:
+4. If you need to see what device your IxE is on, use `iwconfig` or find it in this list [here](https://interactivedevice18.slack.com/files/U90LA9TLH/F92HXB020/ixe_ip_mac_hostname.xlsx):
+
 ```shell
 pi@ixe42:~ $ iwconfig wlan0
 wlan0     IEEE 802.11  ESSID:"The House"  
