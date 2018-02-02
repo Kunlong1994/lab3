@@ -29,3 +29,51 @@ Instructions for Mac
 1. Power up your IxE. It should come up on your local network, and you should be able to access it via ssh like you would on the class network.
 
 [someone with a pc, please update this...]
+
+## Connect your IxE to your own WiFi
+
+Based on instructions found here: [https://howchoo.com/g/ndy1zte2yjn/how-to-set-up-wifi-on-your-raspberry-pi-without-ethernet](https://howchoo.com/g/ndy1zte2yjn/how-to-set-up-wifi-on-your-raspberry-pi-without-ethernet)
+
+If you have a WiFi router at home that you control, you can connect to it by setting the wifi configuration of your Pi. To do this, you will need to create a file called `wpa_supplicant.conf` with the following text in it:
+
+```shell
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="DeviceFarm"
+    psk="device@theFarm"
+    key_mgmt=WPA-PSK
+}
+
+network={
+    ssid="YOUR WIFI NAME HERE"
+    psk="YOUR WIFI PASSWORD HERE"
+    key_mgmt=WPA-PSK
+}
+```
+
+You can create this file with a text editor on your laptop.
+
+Once you have saved the file, make sure your IxE is shutdown.
+
+Take out the SD card and plug it into your laptop so you can see the files.
+
+You should see a disk drive called `boot` mount to your computer.
+
+Open `boot`
+
+## Connecting to The HOUSE Wifi
+
+```shell
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="DeviceFarm"
+    psk="device@theFarm"
+    key_mgmt=WPA-PSK
+}
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="The House"
+    key_mgmt=NONE
+}
+```
