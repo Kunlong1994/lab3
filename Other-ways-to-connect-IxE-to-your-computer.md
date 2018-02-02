@@ -70,7 +70,8 @@ When the Pi boots up, it will copy the `wpa_supplicant.conf` file into the WiFi 
 
 ## Connecting to The HOUSE Wifi
 
-Follow the directions above, and pur the following in `wpa_supplicant.conf`:
+1. Register the MAC address of your Raspberry Pi on The House network at https://myelauwit.com/ using Add a Device.
+1. Edit the /etc/wpa_supplicant/wpa_supplicant.conf file as explained in the section above
 
 ```shell
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -86,3 +87,6 @@ network={
     key_mgmt=NONE
 }
 ```
+
+1. Try logging into your device using ssh from a terminal!
+
