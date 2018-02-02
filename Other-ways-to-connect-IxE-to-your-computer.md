@@ -3,7 +3,7 @@
 
 (based off of instructions from [Nikmart's IxE Git](https://github.com/nikmart/interaction-engine/wiki/Connect-IxE-to-your-computer-via-Ethernet-port))
 
-Instructions for Mac
+#Instructions for Mac
 
 1. Plug an ethernet cable from your Mac to the Raspberry Pi (note you may need to use a Thunderbolt to Ethernet or USB to Ethernet adapter if your Mac does not have a built in Ethernet port).
 
@@ -13,7 +13,7 @@ Instructions for Mac
 
 If the ping work, you can ssh in just like normal.
 
-Instructions for PC
+#Instructions for PC
 
 [someone with a pc, please update this...]
 
@@ -21,7 +21,7 @@ Instructions for PC
 
 You can share a WiFi connection to the wider internet from your laptop if you can bring up a separate Wifi interface on your computer (for example by using a USB Wifi adapter).
 
-Instructions for Mac
+#Instructions for Mac
 
 1. Bring up the new WiFi interface. This will likely involve installing the drivers for the device, registering the new interface (for example, by using http://mycomputers.cit.cornell.edu at Cornell), and getting it online.
 
