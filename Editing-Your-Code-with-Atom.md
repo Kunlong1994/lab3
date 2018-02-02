@@ -17,7 +17,7 @@ The first time you setup a remote editing session, you will need to specify your
 1. The hostname or IP address of the server: `ixe[00]`
 1. The Port should be: `22`
 1. use the normal username(i.e. `pi` ) and password(i.e. `raspberry`) for authentication.
-1. `Check` use sftp (ssh) connection
+1. Check the box next to `Use sftp (ssh) connection.`
 1. Change the initial home Directory to: `/home/pi`
 
 Save this information. You will then go back to the main editor window. From here, you can get access to the files on your pi by showing the server connection file menu.
