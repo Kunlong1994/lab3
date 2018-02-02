@@ -120,7 +120,7 @@ At this point, you will have downloaded the main program and all required packag
 ### Start-Up
 Now we need to start the server and connect to it with a browser.
 We start the server by typing ```node chatServer.js```
-In a browser go to ```ixe[00].local:8001``` (replace the [00] with the number associated with that interaction engine).
+In a browser go to ```ixe[00].local:8000``` (replace the [00] with the number associated with that interaction engine).
 Once loaded, you should see a text field and the first greeting from the ChatBot.
 
 #### Debugging
@@ -128,7 +128,7 @@ If the previous steps did not work there are a few things you can easily check/d
 First, verify that the server is running. The command line window from your ixe[00] should say
 ```shell 
 pi@ixe[00]:~/simple-ChatBot $node chatServer.js 
-listening on *:8001
+listening on *:8000
 a new user connected
 ```
 If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` to see if you really are working in the correct directory. The answer that pops-up should be something like ```/home/pi/simple-ChatBot```. Verify that you have all files in the folder with ```ls ```. The item list should be 
