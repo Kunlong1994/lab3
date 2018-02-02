@@ -5,6 +5,7 @@
 1. Run the [ChatBot Example](#setup-and-run-the-chatbot-example)
 1. Modify the ChatBot to make it your own. 
 1. Record someone else trying out your ChatBot.
+1. [David G. will clarify how to submit your version of your chatbot code]
 
 
 ## Connect to class WiFi
