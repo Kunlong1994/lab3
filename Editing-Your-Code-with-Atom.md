@@ -1,6 +1,6 @@
 If you prefer modern text editors, you can use the [Atom Editor](https://atom.io) to edit the code on your Raspberry Pi. Atom is a powerful text editor with all kinds of great features built in. Additionally, you can extend Atom's capabilities by installing "packages," or small pieces of software that enable new features.
 
-To edit the code on your Raspberry Pi from your laptop you will need to install Atom on your laptop. Get wahter version is right for your Operating System (Mac, Windows, Linux).
+To edit the code on your Raspberry Pi from your laptop you will need to install Atom on your laptop. Get the version that is right for your Operating System (Mac, Windows, Linux).
 
 We will then install a package called `ftp-remote-edit`. To install this, go to `Preferences`. The in the left pane, click `Install`.
 
