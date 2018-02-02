@@ -12,17 +12,13 @@ Give your session a password (this can be anything, I will do `raspberry`), then
 
 The first time you setup a remote editing session, you will need to specify your server. If you can see your Raspberry Pi on the local network and `ping` it using something like `ping ixe00.local` (remember `00` is your numbers as written on the SD Card) then you can use the foll0woing settings:
 
-The name of the server: `ixe[00]` (where 00 are your numbers)
-
-The hostname of IP address of the server: `ixe[00]`
-
-Port: `22`
-
-Username for authentication: `pi`
-
-`Check` use sftp (ssh) connection
-
-Initial Directory: `\home\pi`
+1. Click on ```new``` to enter a new server
+1. The name of the server should be : `ixe[00]` (where 00 are your numbers)
+1. The hostname or IP address of the server: `ixe[00]`
+1. The Port should be: `22`
+1. use the normal username(i.e. `pi` ) and password(i.e. `raspberry`) for authentication.
+1. `Check` use sftp (ssh) connection
+1. Change the initial home Directory to: `/home/pi`
 
 Save this information. You will then go back to the main editor window. From here, you can get access to the files on your pi by showing the server connection file menu.
 
