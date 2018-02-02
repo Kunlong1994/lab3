@@ -7,7 +7,7 @@ In this wiki, you will find different helpful tips and links to resources that w
 
 
 ---
-[Lab-Session#2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-Session%232)Web Camera - Snapping faraway photos.
+[Lab-Session#2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-Session%232) Web Camera - Snapping faraway photos.
 
 
 
