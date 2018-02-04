@@ -63,7 +63,7 @@ You should see a disk drive called `boot` mount to your computer.
 
 5. Plug the SD card back into your IxE, then plug it into USB power.
 
-When the Pi boots up, it will copy the `wpa_supplicant.conf` file into the WiFi settings directory in `\etc\wpa_wupplicant\`. This will update your WiFi setting and should get the Pi on your home wifi.
+When the Pi boots up, it will copy the `wpa_supplicant.conf` file into the WiFi settings directory in `/etc/wpa_wupplicant/`. This will update your WiFi setting and should get the Pi on your home wifi.
 
 ## Connecting to The HOUSE Wifi
 
