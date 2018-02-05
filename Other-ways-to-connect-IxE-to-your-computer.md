@@ -5,11 +5,11 @@
 
 ### Instructions for Mac
 
-1. Plug an ethernet cable from your Mac to the Raspberry Pi (note you may need to use a Thunderbolt to Ethernet or USB to Ethernet adapter if your Mac does not have a built in Ethernet port).
+1. Plug an ethernet cable from your Mac to the Raspberry Pi (note you may need to use a Thunderbolt to Ethernet or USB to Ethernet adapter if your Mac does not have a built-in Ethernet port).
 
 2. Check that the IxE are getting a self assigned IP in System Preferences -> Network. It should have an orange color.
 
-3. To get Internet on you Pi, use Internet Sharing and share your Wifi with your Ethernet. (Note: This will ont work on 802.11X like eduroam. If you are trying to do this on campus, connect to Cornell Visitor and then share your wifi)
+3. To get Internet on your Pi, use Internet Sharing and share your Wifi with your Ethernet. (Note: This will ont work on 802.11X like eduroam. If you are trying to do this on campus, connect to Cornell Visitor and then share your wifi)
 
 3. Try pinging your IxE with the .local extension: ping ixe05.local
 
