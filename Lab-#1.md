@@ -118,7 +118,6 @@ pi@ixe05 ~ $
 
 
 ## Setup and run the ChatBot Example
-This is a copy of the [original wiki](https://github.com/FAR-Lab/simple-ChatBot/wiki/Running-ChatBot).
 Welcome to the simple-ChatBot wiki!
 ### Installation
 Clone(download) the repository from GitHub to the IxE. 
