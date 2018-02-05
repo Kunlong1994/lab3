@@ -53,6 +53,9 @@ Instructions to get the pi running on your local network are here, please try th
 This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine).
 In this tutorial, we will ssh into the system so that we can control the computer via Terminal or PuTTy on Windows.
 
+**_In this example we often use `ixe[00].local`. This ONLY works if you are connected locally. if you are connected remotely or through the device arm WiFi, please replace the addresses with the ones explained in [If your laptop is on eduroam or RedRover and your IxE is on DeviceFarm](if-your-laptop-is-on-eduroam-or-redrover-and-your-are-is-on-devicefarm)._**
+
+
 ### 1. Verify IxE is online
 TL,DR
 1. `ping` + `ixe[00].local` (change the last digits, and remove the brackets to match yours)
