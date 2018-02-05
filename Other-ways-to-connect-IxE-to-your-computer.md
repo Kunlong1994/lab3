@@ -9,6 +9,8 @@
 
 2. Check that the IxE are getting a self assigned IP in System Preferences -> Network. It should have an orange color.
 
+3. To get Internet on you Pi, use Internet Sharing and share your Wifi with your Ethernet. (Note: This will ont work on 802.11X like eduroam. If you are trying to do this on campus, connect to Cornell Visitor and then share your wifi)
+
 3. Try pinging your IxE with the .local extension: ping ixe05.local
 
 If the ping work, you can ssh in just like normal.
