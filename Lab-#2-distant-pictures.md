@@ -3,11 +3,11 @@ In this Lab, we will explore the interaction engine and the use of a webcam.
 1. [Fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project. 
 1. Install the basic components for the ode server with 'npm install'
 1. Make the [basic button circuit](basic-button-circuit) on your breadboard.
-1. Connect the Arduino with a usb cable.
-1. Upload Arduino code to your Arduino
-1. plugin the camera
+1. Connect the Arduino with a usb cable and [find its port](check-port-of-arduino-board).
+1. [Compile](compile-arduino-code) and [upload](upload-arduino-code) the Arduino code.
+1. Plugin the webcam
 1. start the server with `node server.js /dev/ttyUSB0`
-1. change the server code that it makes a picture when the button is pressed on the Arduino instead of the website 
+1. [Change the behavior](change-the-interaction) of the interaction. 
 
 ## Basic Button Circuit
 
@@ -32,7 +32,7 @@ ArduinoCode.ino  build-uno  makefile
 Befor we can build and upload the Arduino code we need to find the connection port of the arduino. Plugin the Arudino in over USB with the supplied short USB cable. 
 
 
-### Check port of Arduino board.
+### Check port of Arduino board
 To see what port the Arduino is on we can us `ls /dev/tty*` (`*` is a wildcard, giving us al listings with anything after the `*`). In this case, the Arduino Uno we use is usually at `/dev/ttyUSB*` where `*` will be a number and most of the time is 0.
 
 ```shell
@@ -58,7 +58,7 @@ include ../Arduino.mk
 
 Here we can see that board type is `uno` and the port is set correctly to `/dev/ttyUSB0`. We are now ready to compile an upload our code.
 
-### 5. Compile Arduino Code
+### Compile Arduino Code
 To compile code, use the command `make`.
 
 ```shell 
@@ -103,7 +103,7 @@ mkdir -p build-uno
 
 This compiles the code and will give errors if there are some. This is actualy all the same output you would get if you used your Arduino IDE in verbose mode and looked at all the output in the bottom window.
 
-### 6. Flash the Arduino hardware with the compiled Arduino Blink sketch
+### Upload Arduino Code
 Now, lets upload the code using `make upload`.
 
 ```shell
@@ -187,3 +187,5 @@ ledON
 ^C
 pi@ixe05 ~/helloYou $
 ```
+## Change the Interaction
+For this weeks lab we want to you to change extend the functionality of this basic setup. As a start we want you to change its behavior so that it takes a picture when ever someone presses on the physical button and not from the website. 
