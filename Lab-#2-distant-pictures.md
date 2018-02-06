@@ -40,10 +40,12 @@ pi@ixe05 ~/sketchbook/blink $ ls /dev/ttyUSB*
 /dev/ttyUSB0
 ```
 
-This tells us that we have a port at `/dev/ttyUSB0`, which is our Arduino. We will need to remember this later.
+This tells us that we have a port at `/dev/ttyUSB0`, which is our Arduino. This might differ for your Arduino if other serial devices or pluged in.
 
-### 4.  Check makefile.
-For now, lets just check our `makefile` to make sure to settings are correct.
+
+To build and upload this program this port needs to be filled into the makefile.
+
+Just call 'cat makefile' to see if the 'ARDUINO_PORT' is set correctly.
 
 ```shell
 pi@ixe05 ~/sketchbook/blink $ cat makefile
@@ -59,8 +61,8 @@ Here we can see that board type is `uno` and the port is set correctly to `/dev/
 ### 5. Compile Arduino Code
 To compile code, use the command `make`.
 
-```shell
-pi@ixe05 ~/sketchbook/blink $ make
+```shell 
+pi@ixe05 ~/distant-pictures/ArduinoCode $ make
 -------------------------
 Arduino.mk Configuration:
 - [AUTODETECTED]       CURRENT_OS = LINUX 
@@ -105,7 +107,7 @@ This compiles the code and will give errors if there are some. This is actualy a
 Now, lets upload the code using `make upload`.
 
 ```shell
-pi@ixe05 ~/sketchbook/blink $ make upload
+pi@ixe05 ~/distant-pictures/ArduinoCode $ make upload
 -------------------------
 Arduino.mk Configuration:
 - [AUTODETECTED]       CURRENT_OS = LINUX 
@@ -141,100 +143,17 @@ Arduino.mk Configuration:
 -------------------------
 mkdir -p build-uno
 make reset
-make[1]: Entering directory '/home/pi/sketchbook/blink'
+make[1]: Entering directory '/home/pi/distant-pictures/ArduinoCode'
 /usr/bin/ard-reset-arduino  /dev/ttyUSB0
-make[1]: Leaving directory '/home/pi/sketchbook/blink'
+make[1]: Leaving directory '/home/pi/distant-pictures/ArduinoCode'
 make do_upload
-make[1]: Entering directory '/home/pi/sketchbook/blink'
+make[1]: Entering directory '/home/pi/distant-pictures/ArduinoCode'
 /usr/share/arduino/hardware/tools/avr/../avrdude -q -V -p atmega328p -C /usr/share/arduino/hardware/tools/avr/../avrdude.conf -D -c arduino -b 115200 -P /dev/ttyUSB0 \
-		-U flash:w:build-uno/blink.hex:i
+		-U flash:w:build-uno/ArduinoCode.hex:i
 
 avrdude: AVR device initialized and ready to accept instructions
 avrdude: Device signature = 0x1e950f (probably m328p)
-avrdude: reading input file "build-uno/blink.hex"
-avrdude: writing flash (914 bytes):
-avrdude: 914 bytes of flash written
-
-avrdude: safemode: Fuses OK (E:00, H:00, L:00)
-
-avrdude done.  Thank you.
-
-make[1]: Leaving directory '/home/pi/sketchbook/blink'
-```
-
-If everything works, you should see the above output and your Arduino to should flash while programming and then start to blink the LED once per second.
-
-### 7. Flash the Arduino hardware with the compiled Arduino helloYou sketch
-Now that we know the Arduino is working and we can upload code (which also means our USB communication is working!) lets upload the `helloYou` sketch.
-
-```shell
-pi@ixe05 ~/sketchbook/blink $ cd ..
-pi@ixe05 ~/sketchbook $ cd helloYouSketch/
-pi@ixe05 ~/sketchbook/helloYouSketch $ ls
-build-micro  helloYouSketch.ino  makefile
-pi@ixe05 ~/sketchbook/helloYouSketch $ make upload
--------------------------
-Arduino.mk Configuration:
-- [AUTODETECTED]       CURRENT_OS = LINUX 
-- [USER]               ARDUINO_DIR = /usr/share/arduino 
-- [COMPUTED]           ARDMK_DIR = /usr/share/arduino (relative to Common.mk)
-- [AUTODETECTED]       ARDUINO_VERSION = 105 
-- [DEFAULT]            ARCHITECTURE =  
-- [DEFAULT]            ARDMK_VENDOR = arduino 
-- [AUTODETECTED]       ARDUINO_PREFERENCES_PATH = /home/pi/.arduino/preferences.txt 
-- [DEFAULT]            ARDUINO_SKETCHBOOK = /home/pi/sketchbook 
-- [BUNDLED]            AVR_TOOLS_DIR = /usr/share/arduino/hardware/tools/avr (in Arduino distribution)
-- [COMPUTED]           ARDUINO_LIB_PATH = /usr/share/arduino/libraries (from ARDUINO_DIR)
-- [COMPUTED]           ARDUINO_VAR_PATH = /usr/share/arduino/hardware/arduino//variants (from ARDUINO_DIR)
-- [COMPUTED]           BOARDS_TXT = /usr/share/arduino/hardware/arduino//boards.txt (from ARDUINO_DIR)
-- [DEFAULT]            USER_LIB_PATH = /home/pi/sketchbook/libraries (in user sketchbook)
-- [DEFAULT]            PRE_BUILD_HOOK = pre-build-hook.sh 
-- [USER]               BOARD_TAG = uno 
-- [COMPUTED]           CORE = arduino (from build.core)
-- [COMPUTED]           VARIANT = standard (from build.variant)
-- [COMPUTED]           OBJDIR = build-uno (from BOARD_TAG)
-- [COMPUTED]           ARDUINO_CORE_PATH = /usr/share/arduino/hardware/arduino//cores/arduino (from ARDUINO_DIR, BOARD_TAG and boards.txt)
-- [DETECTED]           MONITOR_BAUDRATE = 9600  (in sketch)
-- [DEFAULT]            OPTIMIZATION_LEVEL = s 
-- [DEFAULT]            MCU_FLAG_NAME = mmcu 
-- [DEFAULT]            CFLAGS_STD = -std=gnu11 -flto -fno-fat-lto-objects 
-- [DEFAULT]            CXXFLAGS_STD = -std=gnu++11 -fno-threadsafe-statics -flto 
-- [COMPUTED]           DEVICE_PATH = /dev/ttyUSB0 (from MONITOR_PORT)
-- [DEFAULT]            FORCE_MONITOR_PORT =  
-- [AUTODETECTED]       Size utility: AVR-aware for enhanced output
-- [COMPUTED]           BOOTLOADER_PARENT = /usr/share/arduino/hardware/arduino//bootloaders (from ARDUINO_DIR)
-- [COMPUTED]           ARDMK_VERSION = 1.5 
-- [COMPUTED]           CC_VERSION = 4.9.2 (avr-gcc)
--------------------------
-mkdir -p build-uno
-/usr/share/arduino/hardware/tools/avr/bin/avr-g++ -x c++ -include Arduino.h -MMD -c -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=105  -D__PROG_TYPES_COMPAT__ -I/usr/share/arduino/hardware/arduino//cores/arduino -I/usr/share/arduino/hardware/arduino//variants/standard    -Wall -ffunction-sections -fdata-sections -Os -fpermissive -fno-exceptions -std=gnu++11 -fno-threadsafe-statics -flto helloYouSketch.ino -o build-uno/helloYouSketch.ino.o
-/usr/share/arduino/hardware/tools/avr/bin/avr-gcc -mmcu=atmega328p -Wl,--gc-sections -Os -flto -fuse-linker-plugin -o build-uno/helloYouSketch.elf build-uno/helloYouSketch.ino.o build-uno/libcore.a   -lc -lm 
-/usr/share/arduino/hardware/tools/avr/bin/avr-objcopy -O ihex -R .eeprom build-uno/helloYouSketch.elf build-uno/helloYouSketch.hex
-
-/usr/share/arduino/hardware/tools/avr/bin/avr-size --mcu=atmega328p -C --format=avr build-uno/helloYouSketch.elf
-AVR Memory Usage
-----------------
-Device: atmega328p
-
-Program:    2108 bytes (6.4% Full)
-(.text + .data + .bootloader)
-
-Data:        210 bytes (10.3% Full)
-(.data + .bss + .noinit)
-
-
-make reset
-make[1]: Entering directory '/home/pi/sketchbook/helloYouSketch'
-/usr/bin/ard-reset-arduino  /dev/ttyUSB0
-make[1]: Leaving directory '/home/pi/sketchbook/helloYouSketch'
-make do_upload
-make[1]: Entering directory '/home/pi/sketchbook/helloYouSketch'
-/usr/share/arduino/hardware/tools/avr/../avrdude -q -V -p atmega328p -C /usr/share/arduino/hardware/tools/avr/../avrdude.conf -D -c arduino -b 115200 -P /dev/ttyUSB0 \
-		-U flash:w:build-uno/helloYouSketch.hex:i
-
-avrdude: AVR device initialized and ready to accept instructions
-avrdude: Device signature = 0x1e950f (probably m328p)
-avrdude: reading input file "build-uno/helloYouSketch.hex"
+avrdude: reading input file "build-uno/ArduinoCode.hex"
 avrdude: writing flash (2108 bytes):
 avrdude: 2108 bytes of flash written
 
@@ -242,10 +161,10 @@ avrdude: safemode: Fuses OK (E:00, H:00, L:00)
 
 avrdude done.  Thank you.
 
-make[1]: Leaving directory '/home/pi/sketchbook/helloYouSketch'
+make[1]: Leaving directory '/home/pi/distant-pictures/ArduinoCode'
 ```
 
-Now that the Arduino code is uploaded, you should see your LED is off (because it isn't running the Blink sketch anymore). Now, let's connect it to the webserver and our webpage.
+If everything works, you should see the above output and your Arduino to should flash while programming. Now, let's connect it to the webserver and our webpage.
 
 ## Running the webserver with node.js
 For this project we are using node.js to create a webserver. Node.js is basically how you run javascript on the server, or server-side javascript. There is a wide community building lot of great open source add on for node.js that make it really easy to do lots of interactive things. For now we will run the webserver and see how our projects work.
