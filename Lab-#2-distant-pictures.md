@@ -26,7 +26,7 @@ In the `distant-pictures` directory there is a `ArduinoCode` directory that is w
 
 ```shell
 pi@ixe05 ~ $ cd ~/distant-pictures/ArduinoCode
-pi@ixe05 ~/sketchbook $ ls
+pi@ixe05 ~/distant-pictures/ArduinoCode $ ls
 ArduinoCode.ino  build-uno  makefile
 ```
 Befor we can build and upload the Arduino code we need to find the connection port of the arduino. Plugin the Arudino in over USB with the supplied short USB cable. 
@@ -167,61 +167,17 @@ make[1]: Leaving directory '/home/pi/distant-pictures/ArduinoCode'
 If everything works, you should see the above output and your Arduino to should flash while programming. Now, let's connect it to the webserver and our webpage.
 
 ## Running the webserver with node.js
-For this project we are using node.js to create a webserver. Node.js is basically how you run javascript on the server, or server-side javascript. There is a wide community building lot of great open source add on for node.js that make it really easy to do lots of interactive things. For now we will run the webserver and see how our projects work.
-
-First we will navigate to the `helloYou` directory that hosts our project.
-
-```shell
-pi@ixe05 ~/sketchbook/helloYouSketch $ cd
-pi@ixe05 ~ $ cd helloYou/
-pi@ixe05 ~/helloYou $ ls
-helloYouSketch.ino  package.json  public  README.md  server.js
-pi@ixe05 ~/helloYou $
-```
-
-Then we will run the webserver using to command `node server.js /dev/ttyUSB0`.
+First navigate out of the 'ArduinoCode' directory with 'cd ..'.
+Then run the code similar to last weeks assignment. Howver, we also need to pass reference to the Arduino port to the server.  The command should look something like `node server.js /dev/ttyUSB0`.
 
 ```shell
-pi@ixe05 ~/helloYou $ node server.js /dev/ttyUSB0
+pi@ixe05 ~/distant-pictures $ node server.js /dev/ttyUSB0
 listening on *:8000
 ```
 
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Now, you can go to you web browser and type your '[hostname]:8000' in the address bar.
-
-For me, the address is "ixe05.local:8000"
-
-Now you should see a webpage that looks like this and changes from black to white when you press the button connected through the Arduino. You should also be able to click the LED on and off buttons on the webpage to turn the LED on and off!
-
-At this point, you have hardware controlling the webpage, and the webpage controlling hardware!
-
-[[images/helloYouScreens.gif]]
-
-You should also be able to see the messages in the terminal, like this:
-
-```shell
-pi@ixe05:~/helloYou $ node server.js /dev/ttyUSB0
-listening on *:8000
-a user connected
-a user connected
-data: light
-data: dark
-data: light
-data: dark
-data: light
-data: dark
-data: light
-data: dark
-data: light
-data: dark
-ledOFF
-ledON
-ledOFF
-ledON
-ledOFF
-ledON
-```
+Just like in the [previous assignment](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%231#connect-to-your-interaction-engine) you can now go to the browser to controll the arduino and webcam. 
 
 To shut down the server, type `control + C` in the terminal.
 
