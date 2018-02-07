@@ -24,7 +24,7 @@ With the circuit built, we will need to program the Arduino. You can do this wit
 
 For now, we will just upload prebuilt code.
 
-In the `distant-pictures` directory there is a `ArduinoCode` directory that is where the Arduino examples for this assignment are. Let's change directories and list the contents.
+The Arduino code for this assignment is in the `distant-pictures/ArduinoCode` directory. Let's change directories and list the contents.
 
 ```shell
 pi@ixe05 ~ $ cd ~/distant-pictures/ArduinoCode
