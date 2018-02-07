@@ -41,10 +41,10 @@ pi@ixe05 ~/distant-pictures/ArduinoCode $ ls /dev/ttyUSB*
 /dev/ttyUSB0
 ```
 
-This tells us that we have a port at `/dev/ttyUSB0`, which is our Arduino. This might differ for your Arduino if other serial devices or pluged in.
+This tells us that we have a port at `/dev/ttyUSB0`, which is our Arduino. This might differ for your Arduino if other serial devices are plugged in.
 
 
-To build and upload this program this port needs to be filled into the makefile.
+To build and upload this program this port needs to be added into the makefile.
 
 Just call 'cat makefile' to see if the 'ARDUINO_PORT' is set correctly.
 
@@ -57,7 +57,7 @@ ARDUINO_DIR = /usr/share/arduino
 include ../Arduino.mk
 ```
 
-Here we can see that board type is `uno` and the port is set correctly to `/dev/ttyUSB0`. We are now ready to compile an upload our code.
+Here we can see that board type is `uno` and the port is set correctly to `/dev/ttyUSB0`. We are now ready to compile and upload our code.
 
 ### Compile Arduino Code
 To compile code, use the command `make`.
@@ -165,11 +165,11 @@ avrdude done.  Thank you.
 make[1]: Leaving directory '/home/pi/distant-pictures/ArduinoCode'
 ```
 
-If everything works, you should see the above output and your Arduino to should flash while programming. Now, let's connect it to the webserver and our webpage.
+If everything works, you should see the above output and your Arduino to should flash while programming. Now, let's connect it to the web server and our webpage.
 
 ## Running the webserver with node.js
 First navigate out of the 'ArduinoCode' directory with 'cd ..'.
-Then run the code similar to last weeks assignment. Howver, we also need to pass reference to the Arduino port to the server.  The command should look something like `node server.js /dev/ttyUSB0`.
+Then run the code similar to last weeks assignment. However, we also need to pass reference to the Arduino port to the server.  The command should look something like `node server.js /dev/ttyUSB0`.
 
 ```shell
 pi@ixe05 ~/distant-pictures $ node server.js /dev/ttyUSB0
@@ -178,7 +178,7 @@ listening on *:8000
 
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Just like in the [previous assignment](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%231#connect-to-your-interaction-engine) you can now go to the browser to controll the arduino and webcam. 
+Just like in the [previous assignment](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%231#connect-to-your-interaction-engine) you can now go to the browser to control the Arduino and webcam. 
 
 To shut down the server, type `control + C` in the terminal.
 
@@ -189,4 +189,4 @@ ledON
 pi@ixe05 ~/helloYou $
 ```
 ## Change the Interaction
-For this weeks lab we want to you to change extend the functionality of this basic setup. As a start we want you to change its behavior so that it takes a picture when ever someone presses on the physical button and not from the website. 
+For this lab we want to you to extend the functionality of this basic setup. As a start, we want you to change its behavior so that it takes a picture whenever someone presses the physical button.
