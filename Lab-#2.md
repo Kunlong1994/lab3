@@ -31,8 +31,7 @@ pi@ixe05 ~ $ cd ~/distant-pictures/ArduinoCode
 pi@ixe05 ~/distant-pictures/ArduinoCode $ ls
 ArduinoCode.ino  build-uno  makefile
 ```
-Befor we can build and upload the Arduino code we need to find the connection port of the arduino. Plugin the Arudino in over USB with the supplied short USB cable. 
-
+Before we can build and upload the Arduino code we need to find the connection port of the Arduino. Plug in the Arduino over USB.
 
 ### Check port of Arduino board
 To see what port the Arduino is on we can us `ls /dev/tty*` (`*` is a wildcard, giving us al listings with anything after the `*`). In this case, the Arduino Uno we use is usually at `/dev/ttyUSB*` where `*` will be a number and most of the time is 0.
