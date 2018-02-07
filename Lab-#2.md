@@ -45,12 +45,14 @@ We have demonstrated this example in class. We will have a button connected to a
 On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to `pin 2` of the Arduino. (The LED is built in on the board and connected to `pin 13`.)
 David, can we add a photo of the board here, too?
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width="400px">
+
 * Flash the pre-compiled `HelloYou.ino` code onto the Arduino. 
 ```
 pi@ixeXX:~ $ cd ~/sketchbook/helloYouSketch/
 pi@ixeXX:~/sketchbook/helloYouSketch $ make upload
 ```
 Now that the Arduino code is uploaded, you should see your LED is off (because it isn't running the Blink sketch anymore).
+
 * Run the HelloYou webserver.
 ```
 pi@ixeXX ~/sketchbook/helloYouSketch $ cd
