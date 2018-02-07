@@ -1,31 +1,69 @@
 In this Lab, we will use the Interaction Engine for an interactive webcam application.
 
-1. Copy over the files for the lab assignment.
-  * On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
+## Overview
+1. HelloYou test
+* Set up the Arduino button circuit and flash the firmware.
+* Run the node program.
+* Test the functionality with remote browser.
+2. Distant Pictures 
+* [Fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
+* Plug the webcam into the Pi.
+* Run the node program.
+* Test the functionality with remote browser.
+* Make your own variation on this lab assignment[Change the behavior](#change-the-interaction) of the interaction. 
 
-`pi@ixeXX:~ $ git clone https://github.com/**_YourUserName_**/distant-pictures.git`
-  * In the `distant-pictures` directory, install the basic components for the node server by executing `npm install` 
-```
-pi@ixeXX:~ $ cd distant pictures
-pi@ixeXX:~/distant-pictures $ git clone https://github.com/**_YourUserName_**/distant-pictures.git
-```
-1. Prepare the Arduino microcontroller 
+## Detailed steps
+1. HelloYou test
+* Set up the Arduino button circuit and flash the firmware.
   * On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to pin 2 of the Arduino.
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width=100)
-  * On the IxE, navigate to the [Arduino sketch files](#find-arduino-sketch-file).
-  * Connect the Arduino with a USB cable and [find its port](#check-port-of-arduino-board).
-  * [Compile](#compile-arduino-code) and [upload](#upload-arduino-code) the Arduino code.
-1. Plug in the webcam
-1. Start the server with `node server.js /dev/ttyUSB0`
-1. [Change the behavior](#change-the-interaction) of the interaction. 
-
-## Basic Button Circuit
-
 In this example, we will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
 
 For this example, we will need this circuit, with the button connected to `pin 2`. The LED is built in on the board and connected to `pin 13`.
 
 [[images/metroCircuit.png]]
+  * Flash the HelloYou.ino code onto the Arduino. 
+*** Connect the Arduino to the Pi with a USB cable. (Problems? Try [checking the port assigned to the Arduino.](#change-the-interaction))
+To see what port the Arduino is on we can us `ls /dev/tty*` (`*` is a wildcard, giving us al listings with anything after the `*`). In this case, the Arduino Uno we use is usually at `/dev/ttyUSB*` where `*` will be a number and most of the time is 0.
+
+```shell
+pi@ixe05 ~/distant-pictures/ArduinoCode $ ls /dev/ttyUSB*
+/dev/ttyUSB0
+```
+
+This tells us that we have a port at `/dev/ttyUSB0`, which is our Arduino. This might differ for your Arduino if other serial devices are plugged in.
+
+
+*** [find the Arduino port](#check-port-of-arduino-board).
+* Run the node program.
+* Test the functionality with remote browser.
+### Fork the 'distant-picture' example project
+
+  1. On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
+
+`pi@ixeXX:~ $ git clone https://github.com/**_YourUserName_**/distant-pictures.git`
+  1. In the `distant-pictures` directory, install the basic components for the node server by executing `npm install` 
+```
+pi@ixeXX:~ $ cd distant pictures
+pi@ixeXX:~/distant-pictures $ git clone https://github.com/**_YourUserName_**/distant-pictures.git
+```
+
+###  Set up the Arduino button circuit and flash the firmware.
+1. On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to pin 2 of the Arduino.
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width=100)
+In this example, we will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
+
+For this example, we will need this circuit, with the button connected to `pin 2`. The LED is built in on the board and connected to `pin 13`.
+
+[[images/metroCircuit.png]]
+
+2. On the IxE, navigate to the [Arduino sketch files](#find-arduino-sketch-file).
+3. Connect the Arduino with a USB cable and [find its port](#check-port-of-arduino-board).
+4.  [Compile](#compile-arduino-code) and [upload](#upload-arduino-code) the Arduino code.
+
+### Basic Button Circuit
+
+
 
 ### Find Arduino sketch file
 With the circuit built, we will need to program the Arduino. You can do this with your laptop and Arduino IDE if you want. But for now, we would like to show you a tool for compiling and uploading code from the command line called ArduinoMK. This is useful for doing over the air updates to your code and means you don't have to unplug or uninstall your Arduino each time you want to change the firmware. This is really nice when you have it embedded into a project.
