@@ -17,8 +17,9 @@ In this Lab, we will use the Interaction Engine for an interactive webcam applic
 * Make your own variation on this lab assignment[Change the behavior](#change-the-interaction) of the interaction. 
 
 ## Detailed steps
-0. You will need to power the Raspberry Pi with the AC adapter because you will need the USB cable from the class kit to connect the Pi to the Arduino.
+
 1. Set up Arduino connection
+* You will need to power the Raspberry Pi with the AC adapter because you will need the USB cable from the class kit to connect the Pi to the Arduino.
 * Physically connect Arduino to the Pi using the USB cable.
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/pi+arduino.JPG" width="400px">
@@ -35,13 +36,14 @@ pi@ixeXX:~/sketchbook/blink $ make upload
 *
     * The Arduino LEDs should flash rapidly while the code is being flashed onto the Arduino, and then the red onboard LED should blink on and off at a 10 Hz rate.
     * Problems? Try [checking the port assigned to the Arduino.](#check-port-of-arduino-board).
-    * Curious how things work? Try [looking at the `Blink.ino` code]
+    * Curious how things work? Try [looking at the `Blink.ino` code] <--david, need you to add
 
 1. HelloYou test
 
-We have demonstrated this example in class: We will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
+We have demonstrated this example in class. We will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
 * Set up the Arduino button circuit (We will also go deeper into the electronics in the next lab.)
 On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to `pin 2` of the Arduino. (The LED is built in on the board and connected to `pin 13`.)
+David, can we add a photo of the board here, too?
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width="400px">
 * Flash the pre-compiled `HelloYou.ino` code onto the Arduino. 
 ```
@@ -58,12 +60,13 @@ helloYouSketch.ino  package.json  public  README.md  server.js
 pi@ixeXX ~/helloYou $ node server.js /dev/ttyUSB0
 listening on *:8000
 ```
+* Test the functionality with remote browser.
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Now, you can go to you web browser and type your '[hostname]:8000' in the address bar.
+Now, you can go to you web browser and type your 'ixe[hostnumber]:8000' in the address bar.
 
-For me, the address is "ixe05.local:8000"
-* Test the functionality with remote browser.
+* *David* add debug stuff
+
 ### Fork the 'distant-picture' example project
 
   1. On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
