@@ -1,5 +1,23 @@
 # Frequently Asked Questions
 
+## How do I remotely connect and control my IxE?
+
+Using `ssh` or secure shell. See instructions for connecting below.
+
+## How do I connect to my IxE when my laptop is on the DeviceFarm network?
+
+(Note: Replace **[00]** with your interaction engine number on your SD card.)
+
+For SSH use:
+```
+ssh pi@ixe[00].local
+```
+
+Connect to the Website
+```
+ixe[00].local:8000
+```
+
 ## How do I connect to my IxE when my laptop is on `eduroam` or `RedRover` and my Pi is connected to DeviceFarm in Bloomberg or Tata?
 
 If your laptop is on `eduroam` or `RedRover` and you would like to remotely connect to your IxE using `ssh` and see a webpage served from port `8000` follow these directions.
