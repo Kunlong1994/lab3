@@ -2,12 +2,12 @@ In this Lab, we will explore the interaction engine and the use of a webcam with
 
 1. [Fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
 `git clone https://github.com/**_YourUserName_**/distant-pictures.git`
-1. Install the basic components for the ode server with 'npm install' 
+1. Install the basic components for the ode server by executing `npm install` 
 1. Make the [basic button circuit](#basic-button-circuit) on your breadboard.
-1. Connect the Arduino with a usb cable and [find its port](#check-port-of-arduino-board).
+1. Connect the Arduino with a USB cable and [find its port](#check-port-of-arduino-board).
 1. [Compile](#compile-arduino-code) and [upload](#upload-arduino-code) the Arduino code.
-1. Plugin the webcam
-1. start the server with `node server.js /dev/ttyUSB0`
+1. Plug in the webcam
+1. Start the server with `node server.js /dev/ttyUSB0`
 1. [Change the behavior](#change-the-interaction) of the interaction. 
 
 ## Basic Button Circuit
