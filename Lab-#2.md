@@ -37,7 +37,7 @@ Befor we can build and upload the Arduino code we need to find the connection po
 To see what port the Arduino is on we can us `ls /dev/tty*` (`*` is a wildcard, giving us al listings with anything after the `*`). In this case, the Arduino Uno we use is usually at `/dev/ttyUSB*` where `*` will be a number and most of the time is 0.
 
 ```shell
-pi@ixe05 ~/sketchbook/blink $ ls /dev/ttyUSB*
+pi@ixe05 ~ $ ls /dev/ttyUSB*
 /dev/ttyUSB0
 ```
 
@@ -49,7 +49,7 @@ To build and upload this program this port needs to be filled into the makefile.
 Just call 'cat makefile' to see if the 'ARDUINO_PORT' is set correctly.
 
 ```shell
-pi@ixe05 ~/sketchbook/blink $ cat makefile
+pi@ixe05 ~/distant-pictures/ArduinoCode $ cat makefile
 BOARD_TAG = uno
 ARDUINO_PORT = /dev/ttyUSB0
 ARDUINO_LIBS =
