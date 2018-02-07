@@ -4,6 +4,7 @@ In this Lab, we will explore the interaction engine and the use of a webcam with
 `git clone https://github.com/**_YourUserName_**/distant-pictures.git`
 1. Install the basic components for the ode server by executing `npm install` 
 1. Make the [basic button circuit](#basic-button-circuit) on your breadboard.
+1. Navigate to the [Arduino sketch files](#find-arduino-sketch-file).
 1. Connect the Arduino with a USB cable and [find its port](#check-port-of-arduino-board).
 1. [Compile](#compile-arduino-code) and [upload](#upload-arduino-code) the Arduino code.
 1. Plug in the webcam
@@ -37,7 +38,7 @@ Befor we can build and upload the Arduino code we need to find the connection po
 To see what port the Arduino is on we can us `ls /dev/tty*` (`*` is a wildcard, giving us al listings with anything after the `*`). In this case, the Arduino Uno we use is usually at `/dev/ttyUSB*` where `*` will be a number and most of the time is 0.
 
 ```shell
-pi@ixe05 ~ $ ls /dev/ttyUSB*
+pi@ixe05 ~/distant-pictures/ArduinoCode $ ls /dev/ttyUSB*
 /dev/ttyUSB0
 ```
 
