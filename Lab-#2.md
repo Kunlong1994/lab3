@@ -22,9 +22,9 @@ For this example, we will need this circuit, with the button connected to `pin 2
 ### Find Arduino sketch file
 With the circuit built, we will need to program the Arduino. You can do this with your laptop and Arduino IDE if you want. But for now, we would like to show you a tool for compiling and uploading code from the command line called ArduinoMK. This is useful for doing over the air updates to your code and means you don't have to unplug or uninstall your Arduino each time you want to change the firmware. This is really nice when you have it embedded into a project.
 
-For now, we will just upload prebuilt code.
+For now, we will just upload pre-written code.
 
-The Arduino code for this assignment is in the `distant-pictures/ArduinoCode` directory. Let's change directories and list the contents.
+The Arduino code for this assignment is in the `distant-pictures/ArduinoCode` directory. 
 
 ```shell
 pi@ixe05 ~ $ cd ~/distant-pictures/ArduinoCode
