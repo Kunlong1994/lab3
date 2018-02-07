@@ -1,41 +1,68 @@
 In this Lab, we will use the Interaction Engine for an interactive webcam application.
 
 ## Overview
-1. HelloYou test
-* Set up the Arduino button circuit and flash the firmware.
+1. Set up Arduino connection
+* Connect Arduino
+* Flash sample `Blink.ino` program.
+* Check that Arduino is running program.
+2. HelloYou test
+* Flash helloYou firmware to Arduino.
 * Run the node program.
-* Test the functionality with remote browser.
-2. Distant Pictures 
+* Test the functionality with a remote browser.
+3. Distant Pictures 
 * [Fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
 * Plug the webcam into the Pi.
 * Run the node program.
-* Test the functionality with remote browser.
+* Test the functionality with the remote browser.
 * Make your own variation on this lab assignment[Change the behavior](#change-the-interaction) of the interaction. 
 
 ## Detailed steps
-1. HelloYou test
-* Set up the Arduino button circuit and flash the firmware.
-  * On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to pin 2 of the Arduino.
-<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width=100)
-In this example, we will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
+0. You will need to power the Raspberry Pi with the AC adapter because you will need the USB cable from the class kit to connect the Pi to the Arduino.
+1. Set up Arduino connection
+* Physically connect Arduino to the Pi using the USB cable.
 
-For this example, we will need this circuit, with the button connected to `pin 2`. The LED is built in on the board and connected to `pin 13`.
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/pi+arduino.JPG" width="400px">
 
-[[images/metroCircuit.png]]
-  * Flash the HelloYou.ino code onto the Arduino. 
-*** Connect the Arduino to the Pi with a USB cable. (Problems? Try [checking the port assigned to the Arduino.](#change-the-interaction))
-To see what port the Arduino is on we can us `ls /dev/tty*` (`*` is a wildcard, giving us al listings with anything after the `*`). In this case, the Arduino Uno we use is usually at `/dev/ttyUSB*` where `*` will be a number and most of the time is 0.
-
-```shell
-pi@ixe05 ~/distant-pictures/ArduinoCode $ ls /dev/ttyUSB*
-/dev/ttyUSB0
+* Flash the sample `Blink.ino` program to make sure the connection to the Arduino is sound. _(We will go into more detail on how to program the Arduino, compile code, etc. in the next lab.)_
+    *Login into your Raspberry Pi.
+    * In the `~/sketchbook/blink` directory, type `make upload` to flash the pre-compiled `Blink.ino` code to the Arduino
 ```
+pi@ixeXX:~ $ cd sketchbook/blink
+pi@ixeXX:~/sketchbook/blink $ ls
+blink.ino  build-uno  makefile
+pi@ixeXX:~/sketchbook/blink $ make upload
+```
+*
+    * The Arduino LEDs should flash rapidly while the code is being flashed onto the Arduino, and then the red onboard LED should blink on and off at a 10 Hz rate.
+    * Problems? Try [checking the port assigned to the Arduino.](#check-port-of-arduino-board).
+    * Curious how things work? Try [looking at the `Blink.ino` code]
 
-This tells us that we have a port at `/dev/ttyUSB0`, which is our Arduino. This might differ for your Arduino if other serial devices are plugged in.
+1. HelloYou test
 
+We have demonstrated this example in class: We will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
+* Set up the Arduino button circuit (We will also go deeper into the electronics in the next lab.)
+On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to `pin 2` of the Arduino. (The LED is built in on the board and connected to `pin 13`.)
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width="400px">
+* Flash the pre-compiled `HelloYou.ino` code onto the Arduino. 
+```
+pi@ixeXX:~ $ cd ~/sketchbook/helloYouSketch/
+pi@ixeXX:~/sketchbook/helloYouSketch $ make upload
+```
+Now that the Arduino code is uploaded, you should see your LED is off (because it isn't running the Blink sketch anymore).
+* Run the HelloYou webserver.
+```
+pi@ixeXX ~/sketchbook/helloYouSketch $ cd
+pi@ixeXX ~ $ cd helloYou/
+pi@ixeXX ~/helloYou $ ls
+helloYouSketch.ino  package.json  public  README.md  server.js
+pi@ixeXX ~/helloYou $ node server.js /dev/ttyUSB0
+listening on *:8000
+```
+If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-*** [find the Arduino port](#check-port-of-arduino-board).
-* Run the node program.
+Now, you can go to you web browser and type your '[hostname]:8000' in the address bar.
+
+For me, the address is "ixe05.local:8000"
 * Test the functionality with remote browser.
 ### Fork the 'distant-picture' example project
 
