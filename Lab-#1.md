@@ -23,15 +23,26 @@ We will share the password for these networks in class.
 
 Replace **[00]** with your interaction engine number on your SD card.
 
-### If your laptop is on eduroam or RedRover and your IxE is on DeviceFarm
+### If your laptop is on eduroam or RedRover and your IxE is on DeviceFarm in **BLOOMBERG**
 For SSH use:
 ```
-ssh pi@ct-devicefarm-1257.tech.cornell.edu -p 122[00]  
+ssh pi@interactive-device-design-2.tech.cornell.edu -p 122[00]  
 ```
 
 Connect to the Website
 ```
-ct-devicefarm-1257.tech.cornell.edu:280[00]
+interactive-device-design-2.tech.cornell.edu:280[00]
+```
+
+### If your laptop is on eduroam or RedRover and your IxE is on DeviceFarm in **TATA**
+For SSH use:
+```
+ssh pi@interactive-device-design-1.tech.cornell.edu -p 122[00]  
+```
+
+Connect to the Website
+```
+interactive-device-design-1.tech.cornell.edu:280[00]
 ```
 
 ### If your laptop is on DeviceFarm, The House, or your own WiFi network:
