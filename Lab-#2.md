@@ -67,9 +67,9 @@ listening on *:8000
 
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Now, you can go to your web browser and type your 'http://ixe[hostnumber]:8000' in the address bar.
+Now, you can go to your web browser and type your `http://ixe[hostnumber]:8000` in the address bar.
 
-* Look at the 'server.js', 'public/client.js' and 'public/index.html'code to understand what parts of the code do various things. 
+* Look at the `server.js`, `public/client.js` and `public/index.html` code to understand what parts of the code do various things. 
 
 ### 3. Distant Pictures
 
@@ -116,7 +116,7 @@ Now, extend the functionality of this basic setup.
 
 * Peephole
 
-Now, edit the 'pictureServer.js' code for a Peephole device. When a person presses the doorbell (here, the button on your Arduino), the application should snap a photo of the person in front of the doorbell, and post it to a remote webpage. 
+Now, edit the `pictureServer.js` code for a Peephole device. When a person presses the doorbell (here, the button on your Arduino), the application should snap a photo of the person in front of the doorbell, and post it to a remote webpage. 
 
 Please submit the code for the Peephole as part of your turn-in.
 
