@@ -129,17 +129,20 @@ As in the previous lab, modify the template for the lab to make it your own. You
 
 Find, install, and try out a node-based library and try to incorporate into your lab. 
 
-If you are stuck, some ideas:
-    -> On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
-
-    -> Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
-
 Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities. A good source for possible library ideas is your assignment #2.
 
 Here is an example of how to try this. Following the directions on the `https://www.npmjs.com/package/nyan-cat` package, for example:
 ```
 pi@ixeXX:~/test $ sudo npm install -g nyancat
 ```
+
+If you are stuck, some ideas:
+
+    -> On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
+
+    -> Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
+
+
 ### 5. Submit the lab
 
 1. Upload a video of your version of the camera lab to your personal Slack channel and cross post to #lab2. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra
