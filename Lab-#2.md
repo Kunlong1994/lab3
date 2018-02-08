@@ -18,7 +18,7 @@ In this Lab, we will use the Interaction Engine for an interactive webcam applic
 
 ## Detailed steps
 
-1. Set up Arduino connection
+### 1. Set up Arduino connection
 * You will need to power the Raspberry Pi with the AC adapter because you will need the USB cable from the class kit to connect the Pi to the Arduino.
 * Physically connect Arduino to the Pi using the USB cable.
 
@@ -37,7 +37,7 @@ pi@ixeXX:~/sketchbook/blink $ make upload
   * Problems? Try [checking the port assigned to the Arduino.](#check-port-of-arduino-board).
   * Curious how things work? Try [looking at the `Blink.ino` code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Blink.ino,--Annotated)
 
-2. HelloYou test
+### 2. HelloYou test
 
 We have demonstrated this example in class. We will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
 * Set up the Arduino button circuit (We will also go deeper into the electronics in the next lab.)
@@ -70,7 +70,7 @@ Now, you can go to your web browser and type your 'http://ixe[hostnumber]:8000' 
 
 * Look at the 'server.js', 'public/client.js' and 'public/index.html'code to understand what parts of the code do various things. 
 
-3. Distant Pictures
+### 3. Distant Pictures
 
 The Distant Pictures lab is based on HelloYou, but has a web camera added. We make use of the 'node-webcam' from [[where?]] to add the camera functionality.
 
@@ -109,7 +109,7 @@ pi@ixeXX ~/distant-pictures $
 
 Compare `helloYou/server.js` and `distant-pictures/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)
 
-4.  Change the Interaction
+### 4.  Change the Interaction
 Now, extend the functionality of this basic setup. 
 
 * Peephole
@@ -131,7 +131,7 @@ Here is an example of how to try this https://www.npmjs.com/package/cv opencv li
 
 
 
-5. Submit the lab
+### 5. Submit the lab
 
 
 1. Upload a video of your adjustments to your personal Slack channel. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra
