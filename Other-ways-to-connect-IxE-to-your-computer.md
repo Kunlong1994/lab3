@@ -238,3 +238,17 @@ Save and exit `nano` (`Ctrl+X`, `yes`)
 8. Reboot your Pi using `sudo reboot`. If everything is configured correctly, you should get an email with your IP within a minute or two.
 
 ### Connecting to your Pi using the IP it has with your laptop on `RedRover` or `eduroam`
+1. Once you receive the email from you Pi, copy the IP address.
+
+2. Make sure your laptop is connected to `RedRover` or `eduroam` (`Cornell Visitor` will not work)
+
+#### On Mac/Linux
+Open your Terminal (on Mac/Linux) or PuTTY (on Windows) and ssh using the IP address from the email
+
+```shell
+ssh pi@xx.xx.xx.xx
+```
+
+#### On Windows
+Use the IP from the email as as the location instead of `ixe[00]`. Make sure the `Port` is set to `22`
+
