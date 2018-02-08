@@ -204,8 +204,21 @@ This line tells your Pi to run `python /home/pi/startup_mailer.py` when your mac
 
 Save and exit `nano` (using `Ctrl+X`, `yes`)
 
+7. Edit your `wpa_supplicant.conf` WiFi settings
 
+```shell
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
 
+Add the following lines to the file
+
+```text
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="RedRover"
+    key_mgmt=NONE
+}
+```
 
 
 ### Connecting to your Pi using the IP it has with your laptop on `RedRover` or `eduroam`
