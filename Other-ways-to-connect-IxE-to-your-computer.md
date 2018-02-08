@@ -235,6 +235,19 @@ network={
 }
 ```
 
+You can also comment out `DeviceFarm` settings so that you only connect to `RedRover`. Put `#` before all the lines for the `DeviceFarm` config settings.
+
+```text
+#ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+#network={
+#    ssid="DeviceFarm"
+#    psk="device@theFarm"
+#    key_mgmt=WPA-PSK
+#}
+```
+
+(If something goes wrong, you can always reset your WiFi settings using the `wpa_supplicant.conf.bak` file in the `boot` directory.)
+
 Save and exit `nano` (`Ctrl+X`, `yes`)
 
 8. Reboot your Pi using `sudo reboot`. If everything is configured correctly, you should get an email with your IP within a minute or two.
