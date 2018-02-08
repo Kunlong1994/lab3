@@ -7,6 +7,23 @@ Follow the instructions on [https://www.pyimagesearch.com/2017/10/09/optimizing-
 We are installing OpenCV 3.4 which was the newest version at the time this article was created. So, use this line:
 
 ```shell
-wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.4.0.zip
+$ cd ~
+$ wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.4.0.zip
+$ unzip opencv.zip
+$ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.4.0.zip
+$ unzip opencv_contrib.zip
 ```
 
+```shell
+cd ~/opencv-3.4.0/
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+  -D CMAKE_INSTALL_PREFIX=/usr/local \
+  -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib-3.4.0/modules \
+  -D ENABLE_NEON=ON \
+  -D ENABLE_VFPV3=ON \
+  -D BUILD_TESTS=OFF \
+  -D INSTALL_PYTHON_EXAMPLES=OFF \
+  -D BUILD_EXAMPLES=OFF ..
+```
