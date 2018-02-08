@@ -131,5 +131,7 @@ Here is an example of how to try this https://www.npmjs.com/package/cv opencv li
 
 
 
-5. Submit the lab (David, explain how to submit their code or answers.)
-
+5. Submit the lab
+1. Upload a video of your adjustments to your personal Slack channel. **Make sure you've included the TA's: David Goedicke and Andrea Cuadra
+1. Include a link to your forked code
+1. Include brief description of what you did and why
