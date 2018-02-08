@@ -110,15 +110,15 @@ pi@ixeXX ~/distant-pictures $
 
 Compare `helloYou/server.js` and `distant-pictures/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)
 
-### 4.  Make it your own
-
-Now, extend the functionality of this basic setup. 
-
 * Peephole
 
 Now, edit the `pictureServer.js` code for a Peephole device. When a person presses the doorbell (here, the button on your Arduino), the application should snap a photo of the person in front of the doorbell, and post it to a remote webpage. 
 
 Please submit the code for the Peephole as part of your turn-in.
+
+### 4.  Make it your own
+
+Now, extend the functionality of this basic setup. 
 
 * Your own distributed camera app
 
