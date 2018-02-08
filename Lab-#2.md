@@ -120,11 +120,13 @@ Now, edit the 'pictureServer.js' code for a Peephole device. When a person press
 
 Please submit the code for the Peephole as part of your turn-in.
 
-* Modify the image
+* Your own distributed camera app
 
-On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
+Try something new!
 
-* Try a new library
+If you are stuck: On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
+
+* Try a new node library/package
 
 Find, install, and try out a node-based library. 
 
@@ -137,6 +139,7 @@ pi@ixeXX:~/test $ sudo npm install -g nyancat
 ### 5. Submit the lab
 
 
-1. Upload a video of your version of the lab to your personal Slack channel. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra
-1. Include a link to your forked code
+1. Upload a video of your version of the camera lab to your personal Slack channel and cross post to #lab2. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra
+1. Include a link to your forked code for the camera lab
 1. Include brief description of what you did and why
+1. Also post a summary of your npm experiment and post to #lab2test
