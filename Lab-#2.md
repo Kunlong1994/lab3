@@ -122,13 +122,17 @@ Please submit the code for the Peephole as part of your turn-in.
 
 * Your own distributed camera app
 
-Try something new!
+As in the previous lab, modify the template for the lab to make it your own. You can do this just through text, better html and reframing the point of view, or you can incorporate technical improvements from the next part of the assignment...
 
-If you are stuck: On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
 
 * Try a new node library/package
 
-Find, install, and try out a node-based library. 
+Find, install, and try out a node-based library and try to incorporate into your lab. 
+
+If you are stuck, some ideas:
+    * On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
+
+    * Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
 
 Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities. A good source for possible library ideas is your assignment #2.
 
@@ -138,8 +142,7 @@ pi@ixeXX:~/test $ sudo npm install -g nyancat
 ```
 ### 5. Submit the lab
 
-
 1. Upload a video of your version of the camera lab to your personal Slack channel and cross post to #lab2. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra
 1. Include a link to your forked code for the camera lab
 1. Include brief description of what you did and why
-1. Also post a summary of your npm experiment and post to #lab2test
+1. Also, if it was separate from your lab project, post a summary of your npm experiment and post to #lab2
