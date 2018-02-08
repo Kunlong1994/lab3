@@ -109,7 +109,7 @@ pi@ixeXX ~/distant-pictures $
 
 Compare `helloYou/server.js` and `distant-pictures/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)
 
-### 4.  Change the Interaction
+### 4.  Change the interaction
 Now, extend the functionality of this basic setup. 
 
 * Peephole
