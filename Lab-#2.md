@@ -35,7 +35,7 @@ blink.ino  build-uno  makefile
 pi@ixeXX:~/sketchbook/blink $ make upload
 ```
  The Arduino LEDs should flash rapidly while the code is being flashed onto the Arduino, and then the red onboard LED should blink on and off at a 10 Hz rate.
-  * Problems? Try [checking the port assigned to the Arduino.](#check-port-of-arduino-board).
+  * Problems? Try [checking the port assigned to the Arduino.](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Check-port-of-Arduino-board).
   * Curious how things work? Try [looking at the `Blink.ino` code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Blink.ino,--Annotated)
 
 ### 2. HelloYou test
