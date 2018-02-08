@@ -120,7 +120,7 @@ nano startup_mailer.py
 
 2. Copy and paste this python code into the editor
 
-```pyhton
+```python
 import subprocess
 import smtplib
 import socket
@@ -153,10 +153,59 @@ smtpserver.sendmail(gmail_user, [to], msg.as_string())
 smtpserver.quit()
 ```
 
-1. Look for the line `to = 'YOUREMAIL@DOMAIN.com'` and replace the email address with your email. Any email like your GMail or Cornell Email should work fine.
+3. Look for the line `to = 'YOUREMAIL@DOMAIN.com'` and replace the email address with your email. Any email like your GMail or Cornell Email should work fine.
+
+4. Test the python code by running `python /home/pi/startup_mailer.py`. You should get an email with your IP address in about a minute.
+
+5. Save the file and exit `nano` (using Ctrl+X, then choosing `yes`, then saving to `startup_mailer.py'
+
+6. Tell your Pi to run the `startup_mailer.py` code when your pi reboots using `cron` (a [cool Unix tool](https://en.wikipedia.org/wiki/Cron) that allows you to automate things on your machine)
+
+```shell
+crontab -e
+``` 
+
+If `cron` asks you to choose an editor, we recommend choosing option `2 - nano`
+
+Once you are in `nano` you will edit the `crontab` file which lets you schedule when to run certain things
+
+```
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+```
+
+Add the following line to the bottom of the file (make sure there is no `#` symbol as this makes the line a comment)
+
+```
+@reboot sleep 30 && python /home/pi/startup_mailer.py
+```
+
+This line tells your Pi to run `python /home/pi/startup_mailer.py` when your machine reboots. The `sleep 30` is there to give your Pi 30 seconds to wake up and load all the system resources before it emails you your IP (we have found that not having the sleep delay means the script does not send an email, probably because the Pi doesn't have an IP).
+
+Save and exit `nano` (using `Ctrl+X`, `yes`)
 
 
- 
+
+
 
 ### Connecting to your Pi using the IP it has with your laptop on `RedRover` or `eduroam`
-
