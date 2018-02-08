@@ -125,8 +125,8 @@ Please submit the code for the Peephole as part of your turn-in.
 On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
 
 * Try a new library
-Find, install, and try out a node-based library. 
 
+Find, install, and try out a node-based library. 
 
 Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities. A good source for possible library ideas is your assignment #2.
 
@@ -137,6 +137,6 @@ pi@ixeXX:~/test $ sudo npm install -g nyancat
 ### 5. Submit the lab
 
 
-1. Upload a video of your adjustments to your personal Slack channel. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra
+1. Upload a video of your version of the lab to your personal Slack channel. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra
 1. Include a link to your forked code
 1. Include brief description of what you did and why
