@@ -130,9 +130,9 @@ As in the previous lab, modify the template for the lab to make it your own. You
 Find, install, and try out a node-based library and try to incorporate into your lab. 
 
 If you are stuck, some ideas:
-    * On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
+    -> On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
 
-    * Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
+    -> Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
 
 Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities. A good source for possible library ideas is your assignment #2.
 
