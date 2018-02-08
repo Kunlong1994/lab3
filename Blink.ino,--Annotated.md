@@ -7,19 +7,6 @@ We can look at the file by using the `cat` command like this:
 
 ```shell
 pi@ixe77:~/sketchbook/blink $ cat blink.ino 
-// Blink sketch
-int led = 13;
-
-void setup(void) {
-  pinMode(led, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(led, LOW);
-  delay(100);
-  digitalWrite(led, HIGH);
-  delay(100);
-}
 ```
 
 First, the main global variables are being defined. These variables that need to be kept track of over the runtime of the program. In this example, it is the pin on which the led is connected. 
