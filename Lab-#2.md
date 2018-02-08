@@ -2,7 +2,7 @@ In this Lab, we will use the Interaction Engine for an interactive webcam applic
 
 ## Overview
 1. Set up Arduino connection
-* Connect Arduino
+* Connect Arduino.
 * Flash sample `Blink.ino` program.
 * Check that Arduino is running program.
 2. HelloYou test
