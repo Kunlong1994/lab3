@@ -27,3 +27,13 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
   -D INSTALL_PYTHON_EXAMPLES=OFF \
   -D BUILD_EXAMPLES=OFF ..
 ```
+
+Increase the swap size to make installing easier. We will change this only for completing the install of openCV and then change it back
+
+```shell
+sudo nano /etc/dphys-swapfile
+```
+
+Change `CONF_SWAPSIZE=100` to `CONF_SWAPSIZE=1024`
+
+Then
