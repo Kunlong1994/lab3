@@ -171,6 +171,8 @@ To: YOUREMAIL@DOMAIN.com
 
 ixe[00] ip is xxx.xxx.xxx.xxx <-- this will be your ixe number and the IP it has currently
 ```
+
+**NOTE: A RedRover IP will be on 10.xxx.xxx.xxx. If you get something like 192.xxx.xxx.xxx then you are probably connected to `DeviceFarm`**
  
 6. Tell your Pi to run the `startup_mailer.py` code when your pi reboots using `cron` (a [cool Unix tool](https://en.wikipedia.org/wiki/Cron) that allows you to automate things on your machine)
 
@@ -240,6 +242,8 @@ Save and exit `nano` (`Ctrl+X`, `yes`)
 ### Connecting to your Pi using the IP it has with your laptop on `RedRover` or `eduroam`
 1. Once you receive the email from you Pi, copy the IP address.
 
+**NOTE: A RedRover IP will be on 10.xxx.xxx.xxx. If you get something like 192.xxx.xxx.xxx then you are probably connected to `DeviceFarm`**
+
 2. Make sure your laptop is connected to `RedRover` or `eduroam` (`Cornell Visitor` will not work)
 
 #### On Mac/Linux
@@ -251,4 +255,3 @@ ssh pi@xx.xx.xx.xx
 
 #### On Windows
 Use the IP from the email as as the location instead of `ixe[00]`. Make sure the `Port` is set to `22`
-
