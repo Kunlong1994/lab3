@@ -73,7 +73,7 @@ Now, you can go to your web browser and type your `http://ixe[hostnumber]:8000` 
 
 ### 3. Distant Pictures
 
-The Distant Pictures lab is based on HelloYou, but has a web camera added. We make use of the 'node-webcam' from [[where?]] to add the camera functionality.
+The Distant Pictures lab is based on HelloYou, but has a web camera added. We make use of the 'node-webcam' from [[https://www.npmjs.com/package/node-webcam]] to add the camera functionality.
 
 * Fork the 'distant-picture' example project
 On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
