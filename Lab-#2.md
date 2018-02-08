@@ -128,7 +128,7 @@ On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webc
 Find, install, and try out a node-based library. 
 
 
-Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities.
+Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities. A good source for possible library ideas is your assignment #2.
 
 Here is an example of how to try this. Following the directions on the `https://www.npmjs.com/package/nyan-cat` package, for example:
 ```
