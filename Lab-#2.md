@@ -124,7 +124,6 @@ Please submit the code for the Peephole as part of your turn-in.
 
 As in the previous lab, modify the template for the lab to make it your own. You can do this just through text, better html and reframing the point of view, or you can incorporate technical improvements from the next part of the assignment...
 
-
 * Try a new node library/package
 
 Find, install, and try out a node-based library and try to incorporate into your lab. 
@@ -136,11 +135,11 @@ Here is an example of how to try this. Following the directions on the `https://
 pi@ixeXX:~/test $ sudo npm install -g nyancat
 ```
 
-If you are stuck, some ideas:
+Some ideas, in case you are stuck:
 
-    -> On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
+On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
 
-    -> Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
+Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
 
 
 ### 5. Submit the lab
