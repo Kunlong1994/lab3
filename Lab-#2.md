@@ -132,4 +132,3 @@ Here is an example of how to try this https://www.npmjs.com/package/cv opencv li
 
 5. Submit the lab [David, explain how to submit their code or answers.]
 
-As a start, we want you to change its behavior so that it takes a picture whenever someone presses the physical button.
