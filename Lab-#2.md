@@ -54,21 +54,25 @@ Now that the Arduino code is uploaded, you should see your LED is off (because i
 
 * Run the HelloYou webserver.
 ```
-pi@ixeXX ~/sketchbook/helloYouSketch $ cd
-pi@ixeXX ~ $ cd helloYou/
-pi@ixeXX ~/helloYou $ ls
+pi@ixeXX:~/sketchbook/helloYouSketch $ cd
+pi@ixeXX:~ $ cd helloYou/
+pi@ixeXX:~/helloYou $ ls
 helloYouSketch.ino  package.json  public  README.md  server.js
-pi@ixeXX ~/helloYou $ node server.js /dev/ttyUSB0
+pi@ixeXX:~/helloYou $ node server.js /dev/ttyUSB0
 listening on *:8000
 ```
 * Test the functionality with remote browser.
+
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Now, you can go to you web browser and type your 'ixe[hostnumber]:8000' in the address bar.
+Now, you can go to your web browser and type your 'http://ixe[hostnumber]:8000' in the address bar.
 
-* *David* add debug stuff
+* Look at the 'server.js', 'public/client.js' and 'public/index.html'code to understand what parts of the code do various things. 
 
 3. Distant Pictures
+
+The Distant Pictures lab is based on HelloYou, but has a web camera added. We make use of the 'node-webcam' from [[where?]] to add the camera functionality.
+
 * Fork the 'distant-picture' example project
 On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
 
@@ -77,23 +81,20 @@ On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interact
 In the `distant-pictures` directory, install the basic components for the node server by executing `npm install` 
 ```
 pi@ixeXX:~ $ cd distant-pictures
-pi@ixeXX:~/distant-pictures $ git clone https://github.com/**_YourUserName_**/distant-pictures.git
+pi@ixeXX:~/distant-pictures $ npm install
+up to date in 7.778s
 ```
-* We are using the helloYou Arduino circuit and code, so no adjustment is necessary on the Arduino side.
-* Plug in the web camera
-* Check the web camera is working 
-* Running the webserver with node.js
-First navigate out of the 'ArduinoCode' directory with 'cd ..'.
-Then run the code similar to last weeks assignment. However, we also need to pass reference to the Arduino port to the server.  The command should look something like `node server.js /dev/ttyUSB0`.
-
-```shell
-pi@ixe05 ~/distant-pictures $ node server.js /dev/ttyUSB0
+* We are using the helloYou Arduino circuit and code, so no adjustment is necessary on the Arduino side. Keep it plugged into the USB port of the Pi.
+* Plug in the web camera to another USB port of the Raspberry Pi.
+* Try pictureServer with node.js
+```
+pi@ixeXX:~/distant-pictures $ node pictureServer.js /dev/ttyUSB0
 listening on *:8000
 ```
-
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Just like in the [previous assignment](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%231#connect-to-your-interaction-engine) you can now go to the browser to control the Arduino and webcam. 
+Just like in the previous, you can now go to the browser to control the Arduino and webcam. 
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/distantPicture.png" width="400px">
 
 To shut down the server, type `control + C` in the terminal.
 
@@ -101,7 +102,34 @@ To shut down the server, type `control + C` in the terminal.
 ledOFF
 ledON
 ^C
-pi@ixe05 ~/helloYou $
+pi@ixeXX ~/distant-pictures $
 ```
+* What changed
+
+Compare `helloYou/server.js` and `distant-pictures/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)
+
 4.  Change the Interaction
-For this lab we want to you to extend the functionality of this basic setup. As a start, we want you to change its behavior so that it takes a picture whenever someone presses the physical button.
+Now, extend the functionality of this basic setup. 
+
+* Peephole
+
+Now, edit the 'pictureServer.js' code for a Peephole device. When a person presses the doorbell (here, the button on your Arduino), the application should snap a photo of the person in front of the doorbell, and post it to a remote webpage. 
+
+Please submit the code for the Peephole as part of your turn-in.
+
+* Modify the image
+
+On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
+
+* Try a new library
+Find, install, and try out a node-based library. 
+
+Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities.
+
+Here is an example of how to try this https://www.npmjs.com/package/cv opencv library, for example:
+
+
+
+5. Submit the lab [David, explain how to submit their code or answers.]
+
+As a start, we want you to change its behavior so that it takes a picture whenever someone presses the physical button.
