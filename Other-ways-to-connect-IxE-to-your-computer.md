@@ -268,3 +268,7 @@ ssh pi@xx.xx.xx.xx
 
 #### On Windows
 Use the IP from the email as as the location instead of `ixe[00]`. Make sure the `Port` is set to `22`
+
+3. You can access the webpage running on port `8000` (in our examples like `helloYou`) by going to the IP address then port 8000 iun your browser window
+
+`ex: 10.148.131.xxx:8000`
