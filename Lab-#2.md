@@ -93,7 +93,7 @@ listening on *:8000
 ```
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Just like in the previous, you can now go to the browser to control the Arduino and webcam. 
+Just like in the previous section, you can now go to the browser to control the Arduino and webcam. 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/distantPicture.png" width="400px">
 
 To shut down the server, type `control + C` in the terminal.
@@ -130,5 +130,5 @@ Here is an example of how to try this https://www.npmjs.com/package/cv opencv li
 
 
 
-5. Submit the lab [David, explain how to submit their code or answers.]
+5. Submit the lab (David, explain how to submit their code or answers.)
 
