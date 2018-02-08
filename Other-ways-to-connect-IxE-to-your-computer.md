@@ -144,21 +144,34 @@ p=subprocess.Popen(arg,shell=True,stdout=subprocess.PIPE)
 data = p.communicate()
 split_data = data[0].split()
 ipaddr = split_data[split_data.index('src')+1]
-my_ip = 'ixe58 ip is %s' %  ipaddr
+my_ip = 'ixe[00] ip is %s' %  ipaddr
 msg = MIMEText(my_ip)
-msg['Subject'] = 'IP For ixe58 on %s' % today.strftime('%b %d %Y')
+msg['Subject'] = 'IP for ixe58 on %s' % today.strftime('%b %d %Y')
 msg['From'] = gmail_user
 msg['To'] = to
 smtpserver.sendmail(gmail_user, [to], msg.as_string())
 smtpserver.quit()
 ```
 
+This script is setup with our class GMail account, `interactiveDeviceDesign@gmail.com`. We recommend you use this so that you do not need to store your own GMail password in clear text.
+
 3. Look for the line `to = 'YOUREMAIL@DOMAIN.com'` and replace the email address with your email. Any email like your GMail or Cornell Email should work fine.
 
-4. Test the python code by running `python /home/pi/startup_mailer.py`. You should get an email with your IP address in about a minute.
+4. Put your ixe's number in the lines `my_ip = 'ixe[00] ip is %s' %  ipaddr` and `msg['Subject'] = 'IP For ixe58 on %s' % today.strftime('%b %d %Y')` replacing the `[00]` with your number.
 
-5. Save the file and exit `nano` (using Ctrl+X, then choosing `yes`, then saving to `startup_mailer.py'
+4. Save the file and exit `nano` (using Ctrl+X, then choosing `yes`, then saving to `startup_mailer.py'
 
+5. Test the python code by running `python /home/pi/startup_mailer.py`. You should get an email with your IP address in about a minute.
+
+The email should look like this:
+
+```text
+From: interactivedevicedesign@gmail.com
+To: YOUREMAIL@DOMAIN.com
+
+ixe[00] ip is xxx.xxx.xxx.xxx <-- this will be your ixe number and the IP it has currently
+```
+ 
 6. Tell your Pi to run the `startup_mailer.py` code when your pi reboots using `cron` (a [cool Unix tool](https://en.wikipedia.org/wiki/Cron) that allows you to automate things on your machine)
 
 ```shell
@@ -210,7 +223,7 @@ Save and exit `nano` (using `Ctrl+X`, `yes`)
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
-Add the following lines to the file
+Add the following lines to the top of the file, above the `DeviceFarm` settings if you would prefer it to use `RedRover` before using `DeviceFarm`
 
 ```text
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -220,5 +233,8 @@ network={
 }
 ```
 
+Save and exit `nano` (`Ctrl+X`, `yes`)
+
+8. Reboot your Pi using `sudo reboot`. If everything is configured correctly, you should get an email with your IP within a minute or two.
 
 ### Connecting to your Pi using the IP it has with your laptop on `RedRover` or `eduroam`
