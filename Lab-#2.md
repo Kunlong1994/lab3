@@ -1,219 +1,88 @@
 In this Lab, we will use the Interaction Engine for an interactive webcam application.
 
 ## Overview
-1. HelloYou test
-* Set up the Arduino button circuit and flash the firmware.
+1. Set up Arduino connection
+* Connect Arduino
+* Flash sample `Blink.ino` program.
+* Check that Arduino is running program.
+2. HelloYou test
+* Flash helloYou firmware to Arduino.
 * Run the node program.
-* Test the functionality with remote browser.
-2. Distant Pictures 
+* Test the functionality with a remote browser.
+3. Distant Pictures 
 * [Fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
 * Plug the webcam into the Pi.
 * Run the node program.
-* Test the functionality with remote browser.
-* Make your own variation on this lab assignment[Change the behavior](#change-the-interaction) of the interaction. 
+* Test the functionality with the remote browser.
+4. Make your own variation on this lab assignment: [Change the behavior](#change-the-interaction) of the interaction. 
 
 ## Detailed steps
-1. HelloYou test
-* Set up the Arduino button circuit and flash the firmware.
-  * On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to pin 2 of the Arduino.
-<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width=100)
-In this example, we will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
 
-For this example, we will need this circuit, with the button connected to `pin 2`. The LED is built in on the board and connected to `pin 13`.
+1. Set up Arduino connection
+* You will need to power the Raspberry Pi with the AC adapter because you will need the USB cable from the class kit to connect the Pi to the Arduino.
+* Physically connect Arduino to the Pi using the USB cable.
 
-[[images/metroCircuit.png]]
-  * Flash the HelloYou.ino code onto the Arduino. 
-*** Connect the Arduino to the Pi with a USB cable. (Problems? Try [checking the port assigned to the Arduino.](#change-the-interaction))
-To see what port the Arduino is on we can us `ls /dev/tty*` (`*` is a wildcard, giving us al listings with anything after the `*`). In this case, the Arduino Uno we use is usually at `/dev/ttyUSB*` where `*` will be a number and most of the time is 0.
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/pi+arduino.JPG" width="400px">
 
-```shell
-pi@ixe05 ~/distant-pictures/ArduinoCode $ ls /dev/ttyUSB*
-/dev/ttyUSB0
+* Flash the sample `Blink.ino` program to make sure the connection to the Arduino is sound. _(We will go into more detail on how to program the Arduino, compile code, etc. in the next lab.)_
+  * Login into your Raspberry Pi.
+  * In the `~/sketchbook/blink` directory, type `make upload` to flash the pre-compiled `Blink.ino` code to the Arduino
 ```
+pi@ixeXX:~ $ cd sketchbook/blink
+pi@ixeXX:~/sketchbook/blink $ ls
+blink.ino  build-uno  makefile
+pi@ixeXX:~/sketchbook/blink $ make upload
+```
+ The Arduino LEDs should flash rapidly while the code is being flashed onto the Arduino, and then the red onboard LED should blink on and off at a 10 Hz rate.
+  * Problems? Try [checking the port assigned to the Arduino.](#check-port-of-arduino-board).
+  * Curious how things work? Try [looking at the `Blink.ino` code] <--david, need you to add
 
-This tells us that we have a port at `/dev/ttyUSB0`, which is our Arduino. This might differ for your Arduino if other serial devices are plugged in.
+2. HelloYou test
 
+We have demonstrated this example in class. We will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
+* Set up the Arduino button circuit (We will also go deeper into the electronics in the next lab.)
+On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to `pin 2` of the Arduino. (The LED is built in on the board and connected to `pin 13`.)
+David, can we add a photo of the board here, too?
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width="400px">
 
-*** [find the Arduino port](#check-port-of-arduino-board).
-* Run the node program.
+* Flash the pre-compiled `HelloYou.ino` code onto the Arduino. 
+```
+pi@ixeXX:~ $ cd ~/sketchbook/helloYouSketch/
+pi@ixeXX:~/sketchbook/helloYouSketch $ make upload
+```
+Now that the Arduino code is uploaded, you should see your LED is off (because it isn't running the Blink sketch anymore).
+
+* Run the HelloYou webserver.
+```
+pi@ixeXX ~/sketchbook/helloYouSketch $ cd
+pi@ixeXX ~ $ cd helloYou/
+pi@ixeXX ~/helloYou $ ls
+helloYouSketch.ino  package.json  public  README.md  server.js
+pi@ixeXX ~/helloYou $ node server.js /dev/ttyUSB0
+listening on *:8000
+```
 * Test the functionality with remote browser.
-### Fork the 'distant-picture' example project
+If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-  1. On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
+Now, you can go to you web browser and type your 'ixe[hostnumber]:8000' in the address bar.
+
+* *David* add debug stuff
+
+3. Distant Pictures
+* Fork the 'distant-picture' example project
+On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
 
 `pi@ixeXX:~ $ git clone https://github.com/**_YourUserName_**/distant-pictures.git`
-  1. In the `distant-pictures` directory, install the basic components for the node server by executing `npm install` 
+
+In the `distant-pictures` directory, install the basic components for the node server by executing `npm install` 
 ```
-pi@ixeXX:~ $ cd distant pictures
+pi@ixeXX:~ $ cd distant-pictures
 pi@ixeXX:~/distant-pictures $ git clone https://github.com/**_YourUserName_**/distant-pictures.git
 ```
-
-###  Set up the Arduino button circuit and flash the firmware.
-1. On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to pin 2 of the Arduino.
-<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width=100)
-In this example, we will have a button connected to an Arduino attached to the IxE via a USB cable change the background color of our webpage. Then we can use a button on the webpage to turn an LED on the Arduino on and off.
-
-For this example, we will need this circuit, with the button connected to `pin 2`. The LED is built in on the board and connected to `pin 13`.
-
-[[images/metroCircuit.png]]
-
-2. On the IxE, navigate to the [Arduino sketch files](#find-arduino-sketch-file).
-3. Connect the Arduino with a USB cable and [find its port](#check-port-of-arduino-board).
-4.  [Compile](#compile-arduino-code) and [upload](#upload-arduino-code) the Arduino code.
-
-### Basic Button Circuit
-
-
-
-### Find Arduino sketch file
-With the circuit built, we will need to program the Arduino. You can do this with your laptop and Arduino IDE if you want. But for now, we would like to show you a tool for compiling and uploading code from the command line called ArduinoMK. This is useful for doing over the air updates to your code and means you don't have to unplug or uninstall your Arduino each time you want to change the firmware. This is really nice when you have it embedded into a project.
-
-For now, we will just upload pre-written code.
-
-The Arduino code for this assignment is in the `distant-pictures/ArduinoCode` directory. 
-
-```shell
-pi@ixe05 ~ $ cd ~/distant-pictures/ArduinoCode
-pi@ixe05 ~/distant-pictures/ArduinoCode $ ls
-ArduinoCode.ino  build-uno  makefile
-```
-Before we can build and upload the Arduino code we need to find the connection port of the Arduino. Plug in the Arduino over USB.
-
-### Check port of Arduino board
-To see what port the Arduino is on we can us `ls /dev/tty*` (`*` is a wildcard, giving us al listings with anything after the `*`). In this case, the Arduino Uno we use is usually at `/dev/ttyUSB*` where `*` will be a number and most of the time is 0.
-
-```shell
-pi@ixe05 ~/distant-pictures/ArduinoCode $ ls /dev/ttyUSB*
-/dev/ttyUSB0
-```
-
-This tells us that we have a port at `/dev/ttyUSB0`, which is our Arduino. This might differ for your Arduino if other serial devices are plugged in.
-
-
-To build and upload this program this port needs to be added into the makefile.
-
-Just call 'cat makefile' to see if the 'ARDUINO_PORT' is set correctly.
-
-```shell
-pi@ixe05 ~/distant-pictures/ArduinoCode $ cat makefile
-BOARD_TAG = uno
-ARDUINO_PORT = /dev/ttyUSB0
-ARDUINO_LIBS =
-ARDUINO_DIR = /usr/share/arduino
-include ../Arduino.mk
-```
-
-Here we can see that board type is `uno` and the port is set correctly to `/dev/ttyUSB0`. We are now ready to compile and upload our code.
-
-### Compile Arduino Code
-To compile code, use the command `make`.
-
-```shell 
-pi@ixe05 ~/distant-pictures/ArduinoCode $ make
--------------------------
-Arduino.mk Configuration:
-- [AUTODETECTED]       CURRENT_OS = LINUX 
-- [USER]               ARDUINO_DIR = /usr/share/arduino 
-- [COMPUTED]           ARDMK_DIR = /usr/share/arduino (relative to Common.mk)
-- [AUTODETECTED]       ARDUINO_VERSION = 105 
-- [DEFAULT]            ARCHITECTURE =  
-- [DEFAULT]            ARDMK_VENDOR = arduino 
-- [AUTODETECTED]       ARDUINO_PREFERENCES_PATH = /home/pi/.arduino/preferences.txt 
-- [DEFAULT]            ARDUINO_SKETCHBOOK = /home/pi/sketchbook 
-- [BUNDLED]            AVR_TOOLS_DIR = /usr/share/arduino/hardware/tools/avr (in Arduino distribution)
-- [COMPUTED]           ARDUINO_LIB_PATH = /usr/share/arduino/libraries (from ARDUINO_DIR)
-- [COMPUTED]           ARDUINO_VAR_PATH = /usr/share/arduino/hardware/arduino//variants (from ARDUINO_DIR)
-- [COMPUTED]           BOARDS_TXT = /usr/share/arduino/hardware/arduino//boards.txt (from ARDUINO_DIR)
-- [DEFAULT]            USER_LIB_PATH = /home/pi/sketchbook/libraries (in user sketchbook)
-- [DEFAULT]            PRE_BUILD_HOOK = pre-build-hook.sh 
-- [USER]               BOARD_TAG = uno 
-- [COMPUTED]           CORE = arduino (from build.core)
-- [COMPUTED]           VARIANT = standard (from build.variant)
-- [COMPUTED]           OBJDIR = build-uno (from BOARD_TAG)
-- [COMPUTED]           ARDUINO_CORE_PATH = /usr/share/arduino/hardware/arduino//cores/arduino (from ARDUINO_DIR, BOARD_TAG and boards.txt)
-- [ASSUMED]            MONITOR_BAUDRATE = 9600 
-- [DEFAULT]            OPTIMIZATION_LEVEL = s 
-- [DEFAULT]            MCU_FLAG_NAME = mmcu 
-- [DEFAULT]            CFLAGS_STD = -std=gnu11 -flto -fno-fat-lto-objects 
-- [DEFAULT]            CXXFLAGS_STD = -std=gnu++11 -fno-threadsafe-statics -flto 
-- [COMPUTED]           DEVICE_PATH = /dev/ttyUSB0 (from MONITOR_PORT)
-- [DEFAULT]            FORCE_MONITOR_PORT =  
-- [AUTODETECTED]       Size utility: AVR-aware for enhanced output
-- [COMPUTED]           BOOTLOADER_PARENT = /usr/share/arduino/hardware/arduino//bootloaders (from ARDUINO_DIR)
-- [COMPUTED]           ARDMK_VERSION = 1.5 
-- [COMPUTED]           CC_VERSION = 4.9.2 (avr-gcc)
--------------------------
-mkdir -p build-uno
-/usr/share/arduino/hardware/tools/avr/bin/avr-objcopy -j .eeprom --set-section-flags=.eeprom='alloc,load' \
-	--no-change-warnings --change-section-lma .eeprom=0 -O ihex build-uno/blink.elf build-uno/blink.eep
-```
-
-This compiles the code and will give errors if there are some. This is actualy all the same output you would get if you used your Arduino IDE in verbose mode and looked at all the output in the bottom window.
-
-### Upload Arduino Code
-Now, lets upload the code using `make upload`.
-
-```shell
-pi@ixe05 ~/distant-pictures/ArduinoCode $ make upload
--------------------------
-Arduino.mk Configuration:
-- [AUTODETECTED]       CURRENT_OS = LINUX 
-- [USER]               ARDUINO_DIR = /usr/share/arduino 
-- [COMPUTED]           ARDMK_DIR = /usr/share/arduino (relative to Common.mk)
-- [AUTODETECTED]       ARDUINO_VERSION = 105 
-- [DEFAULT]            ARCHITECTURE =  
-- [DEFAULT]            ARDMK_VENDOR = arduino 
-- [AUTODETECTED]       ARDUINO_PREFERENCES_PATH = /home/pi/.arduino/preferences.txt 
-- [DEFAULT]            ARDUINO_SKETCHBOOK = /home/pi/sketchbook 
-- [BUNDLED]            AVR_TOOLS_DIR = /usr/share/arduino/hardware/tools/avr (in Arduino distribution)
-- [COMPUTED]           ARDUINO_LIB_PATH = /usr/share/arduino/libraries (from ARDUINO_DIR)
-- [COMPUTED]           ARDUINO_VAR_PATH = /usr/share/arduino/hardware/arduino//variants (from ARDUINO_DIR)
-- [COMPUTED]           BOARDS_TXT = /usr/share/arduino/hardware/arduino//boards.txt (from ARDUINO_DIR)
-- [DEFAULT]            USER_LIB_PATH = /home/pi/sketchbook/libraries (in user sketchbook)
-- [DEFAULT]            PRE_BUILD_HOOK = pre-build-hook.sh 
-- [USER]               BOARD_TAG = uno 
-- [COMPUTED]           CORE = arduino (from build.core)
-- [COMPUTED]           VARIANT = standard (from build.variant)
-- [COMPUTED]           OBJDIR = build-uno (from BOARD_TAG)
-- [COMPUTED]           ARDUINO_CORE_PATH = /usr/share/arduino/hardware/arduino//cores/arduino (from ARDUINO_DIR, BOARD_TAG and boards.txt)
-- [ASSUMED]            MONITOR_BAUDRATE = 9600 
-- [DEFAULT]            OPTIMIZATION_LEVEL = s 
-- [DEFAULT]            MCU_FLAG_NAME = mmcu 
-- [DEFAULT]            CFLAGS_STD = -std=gnu11 -flto -fno-fat-lto-objects 
-- [DEFAULT]            CXXFLAGS_STD = -std=gnu++11 -fno-threadsafe-statics -flto 
-- [COMPUTED]           DEVICE_PATH = /dev/ttyUSB0 (from MONITOR_PORT)
-- [DEFAULT]            FORCE_MONITOR_PORT =  
-- [AUTODETECTED]       Size utility: AVR-aware for enhanced output
-- [COMPUTED]           BOOTLOADER_PARENT = /usr/share/arduino/hardware/arduino//bootloaders (from ARDUINO_DIR)
-- [COMPUTED]           ARDMK_VERSION = 1.5 
-- [COMPUTED]           CC_VERSION = 4.9.2 (avr-gcc)
--------------------------
-mkdir -p build-uno
-make reset
-make[1]: Entering directory '/home/pi/distant-pictures/ArduinoCode'
-/usr/bin/ard-reset-arduino  /dev/ttyUSB0
-make[1]: Leaving directory '/home/pi/distant-pictures/ArduinoCode'
-make do_upload
-make[1]: Entering directory '/home/pi/distant-pictures/ArduinoCode'
-/usr/share/arduino/hardware/tools/avr/../avrdude -q -V -p atmega328p -C /usr/share/arduino/hardware/tools/avr/../avrdude.conf -D -c arduino -b 115200 -P /dev/ttyUSB0 \
-		-U flash:w:build-uno/ArduinoCode.hex:i
-
-avrdude: AVR device initialized and ready to accept instructions
-avrdude: Device signature = 0x1e950f (probably m328p)
-avrdude: reading input file "build-uno/ArduinoCode.hex"
-avrdude: writing flash (2108 bytes):
-avrdude: 2108 bytes of flash written
-
-avrdude: safemode: Fuses OK (E:00, H:00, L:00)
-
-avrdude done.  Thank you.
-
-make[1]: Leaving directory '/home/pi/distant-pictures/ArduinoCode'
-```
-
-If everything works, you should see the above output and your Arduino to should flash while programming. Now, let's connect it to the web server and our webpage.
-
-## Running the webserver with node.js
+* We are using the helloYou Arduino circuit and code, so no adjustment is necessary on the Arduino side.
+* Plug in the web camera
+* Check the web camera is working 
+* Running the webserver with node.js
 First navigate out of the 'ArduinoCode' directory with 'cd ..'.
 Then run the code similar to last weeks assignment. However, we also need to pass reference to the Arduino port to the server.  The command should look something like `node server.js /dev/ttyUSB0`.
 
@@ -234,5 +103,5 @@ ledON
 ^C
 pi@ixe05 ~/helloYou $
 ```
-## Change the Interaction
+4.  Change the Interaction
 For this lab we want to you to extend the functionality of this basic setup. As a start, we want you to change its behavior so that it takes a picture whenever someone presses the physical button.
