@@ -100,3 +100,63 @@ wlan0     IEEE 802.11  ESSID:"The House"
           Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
           Tx excessive retries:0  Invalid misc:0   Missed beacon:0
 ```
+
+## Connecting to RedRover
+You can get your Pi working on Cornell's `RedRover` network by:
+
+### Registering your Pi's MAC address to your Cornel account at: [https://dnsdb.cit.cornell.edu/dnsdb-cgi/mycomputers.cgi](https://dnsdb.cit.cornell.edu/dnsdb-cgi/mycomputers.cgi)
+
+You can find your MAC address using the spreadsheet (IXE_IP_MAC_HOSTNAME) we provided on the class Slack. The MAC address is associated with you ixe hostname in the form ixe[00] where [00] are your numbers.
+
+Register your MAC address as one of your devices. We recommend you name is ixe[00] so you know which registration this is for.
+
+### Adding a python script to your machine to email the ixe's IP to you
+
+1. While you are logged into you Pi (from DeviceFarm, The House, or through ethernet), create a new file for the `python` script that will email the IP to you
+
+```shell
+nano startup_mailer.py
+```
+
+2. Copy and paste this python code into the editor
+
+```pyhton
+import subprocess
+import smtplib
+import socket
+from email.mime.text import MIMEText
+import datetime
+
+# Change to your own account information
+to = 'YOUREMAIL@DOMAIN.com'
+gmail_user = 'interactiveDeviceDesign@gmail.com'
+gmail_password = 'device@theFarm'
+smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
+smtpserver.ehlo()
+smtpserver.starttls()
+smtpserver.ehlo
+smtpserver.login(gmail_user, gmail_password)
+today = datetime.date.today()
+
+# Very Linux Specific
+arg='ip route list'
+p=subprocess.Popen(arg,shell=True,stdout=subprocess.PIPE)
+data = p.communicate()
+split_data = data[0].split()
+ipaddr = split_data[split_data.index('src')+1]
+my_ip = 'ixe58 ip is %s' %  ipaddr
+msg = MIMEText(my_ip)
+msg['Subject'] = 'IP For ixe58 on %s' % today.strftime('%b %d %Y')
+msg['From'] = gmail_user
+msg['To'] = to
+smtpserver.sendmail(gmail_user, [to], msg.as_string())
+smtpserver.quit()
+```
+
+1. Look for the line `to = 'YOUREMAIL@DOMAIN.com'` and replace the email address with your email. Any email like your GMail or Cornell Email should work fine.
+
+
+ 
+
+### Connecting to your Pi using the IP it has with your laptop on `RedRover` or `eduroam`
+
