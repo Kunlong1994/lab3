@@ -14,7 +14,8 @@ In this Lab, we will use the Interaction Engine for an interactive webcam applic
 * Plug the webcam into the Pi.
 * Run the node program.
 * Test the functionality with the remote browser.
-4. Make your own variation on this lab assignment: [Change the behavior](#change-the-interaction) of the interaction. 
+4. Make it your own
+5. Submit
 
 ## Detailed steps
 
@@ -109,7 +110,8 @@ pi@ixeXX ~/distant-pictures $
 
 Compare `helloYou/server.js` and `distant-pictures/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)
 
-### 4.  Change the interaction
+### 4.  Make it your own
+
 Now, extend the functionality of this basic setup. 
 
 * Peephole
@@ -125,12 +127,13 @@ On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webc
 * Try a new library
 Find, install, and try out a node-based library. 
 
+
 Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities.
 
-Here is an example of how to try this https://www.npmjs.com/package/cv opencv library, for example:
-
-
-
+Here is an example of how to try this. Following the directions on the `https://www.npmjs.com/package/nyan-cat` package, for example:
+```
+pi@ixeXX:~/test $ sudo npm install -g nyancat
+```
 ### 5. Submit the lab
 
 
