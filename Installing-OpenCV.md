@@ -194,3 +194,7 @@ cv.readImage("./examples/files/mona.png", function(err, im){
   });
 })
 ```
+
+Save and exit the file using `Ctrl+X, yes`
+
+
