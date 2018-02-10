@@ -33,9 +33,25 @@ First, make sure your laptop is on the same network as your IxE (for example bot
 
 3. In *Server Address* put `smb://ixe[00].local` replacing `[00]` with your IxE number.
 
-In the 
+4. Put in your username (default is `pi`) and password to your IxE in the new window and click connect.
 
-Make sure to do backup everything you want to keep! Once you start burning a new OS there is no way to get your files back.
+5. Select the `homes` volume and click Ok
+
+6. Browse your file system and copy your file using drag and drop or Cmd+C and Cmd+V paste onto your laptop.
+
+#### On PC
+
+1. Go to the Windows File Explorer
+
+2. In the navigation bar at the top, type \\ixe[00].local and hit enter/return
+
+3. Put in your username (default is `pi`) and password to your IxE in the new window and click connect.
+
+4. Browse your file system and copy your file using drag and drop or Ctrl+C and paste Ctrl+V onto your laptop.
+
+**Make sure to do backup everything you want to keep! Once you start burning a new OS there is no way to get your files back.**
+
+
 
 
 
@@ -261,5 +277,3 @@ To see the actual image, you can open the file by using the Samba file sharing f
 ```shell
 scp pi@ixe[00].local:~/node-opencv-test/out.jpg ~/Desktop
 ```
-
-
