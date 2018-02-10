@@ -43,11 +43,23 @@ First, make sure your laptop is on the same network as your IxE (for example bot
 
 1. Go to the Windows File Explorer
 
-2. In the navigation bar at the top, type \\ixe[00].local and hit enter/return
+2. In the left navigation pane, right-click *My Computer*
 
-3. Put in your username (default is `pi`) and password to your IxE in the new window and click connect.
+3. Choose *Map Network Drive*
 
-4. Browse your file system and copy your file using drag and drop or Ctrl+C and paste Ctrl+V onto your laptop.
+4. In the location put in `\\ixe[00]\homes` replacing [00] with your IxE number
+
+5. Uncheck *Reconnect at login*
+
+6. Check *Use different credentials*
+
+7. Click connect
+
+8. Put in your IxE username (default: `pi`) and password into the pop-up. You may need to click *Choose another user*
+
+9. Click connect, a new Explorer window should pop up and show your files
+
+10. Browse your file system and copy your file using drag and drop or Ctrl+C and paste Ctrl+V onto your laptop.
 
 **Make sure to do backup everything you want to keep! Once you start burning a new OS there is no way to get your files back.**
 
