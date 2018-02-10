@@ -99,16 +99,131 @@ Remove the SD card from the Raspberry Pi. Us an SD card adapter and plug it into
 Etcher will then flash the IxE disk image to your SD card. This should take about 25 minutes.
 
 ### Optional: Setup your WiFi
-If you are not on DeviceFarm and want to use your home WiFi or the House WiFi, follow the instructions here to edit the `wpa_supplicant.conf` file in the `boot` partition so that you can connect to your own Wifi.
+If you are not on DeviceFarm and want to use your home WiFi or the House WiFi, follow the instructions [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Other-ways-to-connect-IxE-to-your-computer) to edit the `wpa_supplicant.conf` file in the `boot` partition so that you can connect to your own Wifi.
 
-### Reboot and rename your IxE
+### Reboot your IxE
 
 Once the image is flashed/burned to the SD card, you can remove it from your computer and reinsert the card into your Raspberry Pi. Make sure the Raspberry Pi's power cable is unplugged.
 
 Once the card is back in the Raspberry Pi, plug in the power to turn on the Pi.
 
-Since we have reflashed the Pi, it will only have the DeviceFarm WiFi preprogrammed. Make sure that you are connected to DeviceFarm.
+Since we have reflashed the Pi, it will only have the DeviceFarm WiFi preprogrammed (unless you did the previous step and set it up for your own WiFi). Make sure that your laptop is connected to the same network as your Pi.
 
+
+### Log in and rename your IxE
+
+Since this is the base image, your Pi will be named `ixe00`. To connect, you can open a terminal and ssh
+
+```shell
+ssh pi@ixe00
+```
+
+The password is `raspberry`
+
+Once you are logged in, change the hostname to your original number (written on the SD card we gave you). To do this you will change two files, `/etc/hostname` and `etc/hosts/`
+
+1. Edit `/etc/hostname` using
+
+```shell
+sudo nano /etc/hostname
+```
+
+Change `ixe00` to `ixe[00]` where [00] is your number
+
+Save and exit using `Ctrl + X, yes`
+
+2. Edit `/etc/hosts` using
+
+```shell
+sudo nano /etc/hosts
+```
+
+Change the last line of the file from 
+
+```shell
+127.0.1.1       ixe00
+```
+
+to 
+
+```shell
+127.0.1.1       ixe[00]
+```
+
+replacing the [00] with your number.
+
+Save and exit using `Ctrl + X, yes`
+
+### Reboot your IxE
+
+For the hostname change to take effect, reboot using
+
+```shell
+sudo reboot
+```
+
+### Reconnect to your IxE
+
+With the hostname changed, you should be able to reconnect to you IxE using your original number. You can ssh using
+
+```shell
+ssh pi@ixe[00].local
+```
+
+### Put your files back on
+After you log in, you can reconnect to the Samba file share to put back all the files you copied over to your laptop. You can do this using drag and drop
+
+You can also put your Git repositories back on using
+
+```shell
+git clone https://github.com/YOUR-REPO-HERE
+```
+
+You will need to do this for every repository you would like to have back on your Pi.
+
+### Test OpenCV with NodeJS
+
+You can test that OpenCV works with NodeJS by trying the `face-detection.js` sample in the `node-opencv-test` directory.
+
+```shell
+cd node-opencv-test/
+node face-detection.js
+```
+
+If everything is working correctly, then you should see the following output:
+
+```shell
+Image saved to out.jpg!
+```
+
+You can see the file by typing `ls` and listing at the files in the directory
+
+```shell
+ls
+face-detection.js  node_modules  out.jpg  package-lock.json
+```
+
+To see the actual image, you can open the file by using the Samba file sharing feature, discussed here or you can copy it to your laptop using `scp` from another Terminal window on your laptop. The following line will copy the file from your IxE to your Desktop. Remember to change the [00] with you IxE number.
+
+```shell
+scp pi@ixe[00].local:~/node-opencv-test/out.jpg ~/Desktop
+```
+
+### Use `node-opencv` in your own projects
+
+Now that everything is working, you can start using OpenCV in your own NodeJS projects. You can install the library to a project using
+
+```shell
+npm install opencv --save
+```
+
+To use the library in your javascript code, include the `require` line at the top of your code file
+
+```js
+var cv = require('opencv');
+```
+
+Check out the [examples](https://github.com/peterbraden/node-opencv/tree/master/examples) to see how things work and to build your code off the great work of [Peter Braden](https://github.com/peterbraden/node-opencv).
 
 
 ## 2. Installing OpenCV 2.4 on your own (~ 1.5 hours)
