@@ -7,6 +7,39 @@ For class, we are providing two ways of getting OpenCV onto your IxE:
 
 ## 1. Burning a new OS with OpenCV pre-installed (~ 20 minutes)
 
+Burning a new version of the IxE version of the Raspbian OS is the fastest way to get OpenCV, but it means you will overwrite your entire SD card and start with a fresh system. It will still have all our examples built in, but none of the code you have written. Thus we will backup your code and then reinstall the OS.
+
+### Back up your code
+
+Make sure your code is backed up on Github. You can go into each project directory that you are working on and `commit` and `push` your code to Github.com. Instructions for using Git with your code can be found [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)
+
+Inside of a project directory that is git enabled, run
+
+```shell
+git commit -m "Write your commit message here"
+git push
+```
+
+### Copy any other files off your Pi to your laptop
+
+If you have other files, like images, sounds, or code that is not backed up on a Git repo, you can copy the files to your laptop. To do this, we have enabled the Samba Filesharing service on your IxE. Samba will allow you to browse the Pi's file system using your laptop native file explorer (Finder on Mac, Explorer on Windows). Here is how to connect to the Samba file share.
+
+First, make sure your laptop is on the same network as your IxE (for example both computers are on DeviceFarm or your own WiFi).
+
+#### On Mac
+1. Open Finder
+
+2. Click `Go` -> `Connect to Server` in the top toolbar
+
+3. In *Server Address* put `smb://ixe[00].local` replacing `[00]` with your IxE number.
+
+In the 
+
+Make sure to do backup everything you want to keep! Once you start burning a new OS there is no way to get your files back.
+
+
+
+
 ## 2. Installing OpenCV 2.4 on your own (~ 1.5 hours)
 
 This guide will show you how to install a version of OpenCV optimized for your Raspberry Pi onto your IxE.
