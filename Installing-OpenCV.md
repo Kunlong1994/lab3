@@ -200,9 +200,13 @@ cd node-opencv-test
 
 #### 2. Install node-opencv
 
+Run
+
 ```shell
 npm install opencv
 ```
+
+This will take about 5 minutes since it will compile a number of packages.
 
 #### 3. Run the test
 
