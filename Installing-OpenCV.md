@@ -151,11 +151,11 @@ sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 ```
 
-## Install node-opencv into a project
+### Install node-opencv into a project
 
-Now that you have OpenCV installed, let's create a new NodeJS project and install the `node-opencv` package. This will allows us to use OpenCV with NodeJS.
+Now that you have OpenCV installed, let's create a new NodeJS project and install the [node-opencv package](https://www.npmjs.com/package/opencv). This will allows us to use OpenCV with NodeJS.
 
-### Create a new project
+#### 1. Create a new project
 
 First, create a new project directory where we can test the library
 
@@ -165,8 +165,32 @@ mkdir node-opencv-test
 cd node-opencv-test
 ```
 
-### Install node-opencv
+#### 2. Install node-opencv
 
 ```shell
 npm install opencv
+```
+
+#### 3. Run the test
+
+To check and make sure everything is working, we will run the `face-detection` example.
+
+Create a new file called `face-detection.js`
+
+```shell
+nano face-detection.js
+```
+
+Then copy the following code into the editor
+
+```javascript
+cv.readImage("./examples/files/mona.png", function(err, im){
+  im.detectObject(cv.FACE_CASCADE, {}, function(err, faces){
+    for (var i=0;i<faces.length; i++){
+      var x = faces[i]
+      im.ellipse(x.x + x.width/2, x.y + x.height/2, x.width/2, x.height/2);
+    }
+    im.save('./out.jpg');
+  });
+})
 ```
