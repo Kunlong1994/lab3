@@ -155,12 +155,18 @@ sudo /etc/init.d/dphys-swapfile start
 
 Now that you have OpenCV installed, let's create a new NodeJS project and install the `node-opencv` package. This will allows us to use OpenCV with NodeJS.
 
-### 1. Create a new project
+### Create a new project
 
 First, create a new project directory where we can test the library
 
 ```shell
 cd ~
 mkdir node-opencv-test
-cd node-open-cv-test
+cd node-opencv-test
+```
+
+### Install node-opencv
+
+```shell
+npm install opencv
 ```
