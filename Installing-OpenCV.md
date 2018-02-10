@@ -125,3 +125,42 @@ make -j4
 
 Wait until the OpenCV has full compiled. It will reach 100% and then should go back to the command prompt and allow you to type commands. Do not power off your Pi while you are compiling.
 
+After OpenCV is compiled, install and configure using
+
+```shell
+sudo make install
+sudo ldconfig
+```
+
+#### 4. Decrease your swap space
+
+Now that OpenCV is installed, reduce the swap space back to the original value of 100
+
+```shell
+sudo nano /etc/dphys-swapfile
+```
+
+Change the line `CONF_SWAPSIZE=1024` to `CONF_SWAPSIZE=100`
+
+Save and exit the file using `Ctrl+X, yes`
+
+Restart the swap service 
+
+```shell
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
+```
+
+## Install node-opencv into a project
+
+Now that you have OpenCV installed, let's create a new NodeJS project and install the `node-opencv` package. This will allows us to use OpenCV with NodeJS.
+
+### 1. Create a new project
+
+First, create a new project directory where we can test the library
+
+```shell
+cd ~
+mkdir node-opencv-test
+cd node-open-cv-test
+```
