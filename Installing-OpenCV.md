@@ -289,3 +289,17 @@ To see the actual image, you can open the file by using the Samba file sharing f
 ```shell
 scp pi@ixe[00].local:~/node-opencv-test/out.jpg ~/Desktop
 ```
+
+### Use `node-opencv` in your own projects
+
+Now that everything is working, you can start using OpenCV in your own NodeJS projects. You can install the library to a project using
+
+```shell
+npm install opencv --save
+```
+
+To use the library in your javascript code, include the require line at the top of your code file
+
+```js
+var cv = require('opencv');
+```
