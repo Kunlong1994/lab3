@@ -5,7 +5,8 @@ For class, we are providing two ways of getting OpenCV onto your IxE:
 1. Burning an updated OS to your SD card
 2. Installing OpenCV on your own
 
-## 1. Burning a new OS with OpenCV pre-installed (~ 20 minutes)
+## 1. Burning a new OS with OpenCV pre-installed (~ 45 minutes)
+*This is easiest if you are connected to the DeviceFarm network.*
 
 Burning a new version of the IxE version of the Raspbian OS is the fastest way to get OpenCV, but it means you will overwrite your entire SD card and start with a fresh system. It will still have all our examples built in, but none of the code you have written. Thus we will backup your code and then reinstall the OS.
 
@@ -63,8 +64,50 @@ First, make sure your laptop is on the same network as your IxE (for example bot
 
 **Make sure to do backup everything you want to keep! Once you start burning a new OS there is no way to get your files back.**
 
+### Download our latest IxE Raspbian OS image onto your laptop
 
+You can download the latest OS here: [https://www.dropbox.com/s/kkiomf08vrd4u8p/IxE_10FEB2018.img?dl=0](https://www.dropbox.com/s/kkiomf08vrd4u8p/IxE_10FEB2018.img?dl=0)
 
+### Download and install Etcher
+
+[Etcher](https://etcher.io) is a nice GUI program that can help you burn the IxE OS image to your SD card. Download the version for your laptop OS.
+
+### Shut down your IxE
+
+While logged into your IxE using the Terminal, shut down the IxE using
+
+```shell
+sudo halt
+```
+
+After the green light stops blinking, pull out the power cable.
+
+### Take your SD card and mount on your laptop
+
+Remove the SD card from the Raspberry Pi. Us an SD card adapter and plug it into your computer. If you have an SD card slot, you can use a micro-SD to SD card adapter (available on our cart in the Maker Lab). If you do not have an SD card slot, you can use a micro-SD to USB 3 adapter (there will be a pink adapter on the cart in the Maker Lab -- please do not lose this!).
+
+### Burn the IxE disk image using Etcher
+
+1. Open Etcher
+
+2. Click *Select Image* and choose `IxE_10FEB2018.img` from the location where you download the disk image file
+
+3. The SD card should be selected automatically, but if not, click *Select Drive* and choose the SD card. It should be about 15 GB.
+
+4. Click *Flash!*
+
+Etcher will then flash the IxE disk image to your SD card. This should take about 25 minutes.
+
+### Optional: Setup your WiFi
+If you are not on DeviceFarm and want to use your home WiFi or the House WiFi, follow the instructions here to edit the `wpa_supplicant.conf` file in the `boot` partition so that you can connect to your own Wifi.
+
+### Reboot and rename your IxE
+
+Once the image is flashed/burned to the SD card, you can remove it from your computer and reinsert the card into your Raspberry Pi. Make sure the Raspberry Pi's power cable is unplugged.
+
+Once the card is back in the Raspberry Pi, plug in the power to turn on the Pi.
+
+Since we have reflashed the Pi, it will only have the DeviceFarm WiFi preprogrammed. Make sure that you are connected to DeviceFarm.
 
 
 
