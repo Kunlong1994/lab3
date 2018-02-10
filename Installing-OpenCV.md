@@ -210,7 +210,7 @@ This will take about 5 minutes since it will compile a number of packages.
 
 #### 3. Run the test
 
-To check and make sure everything is working, we will run the `face-detection` example.
+To check and make sure everything is working, we will run the `face-detection` example. This code will detect a face in an image then put a red circle around it. We will run the example with an image of the Mona Lisa included in the `examples` directory of the `opencv` package.
 
 Create a new file called `face-detection.js`
 
@@ -255,4 +255,11 @@ You can see the file by typing `ls` and listing at the files in the directory
 ls
 face-detection.js  node_modules  out.jpg  package-lock.json
 ```
+
+To see the actual image, you can open the file by using the Samba file sharing feature, discussed here or you can copy it to your laptop using `scp` from another Terminal window on your laptop. The following line will copy the file from your IxE to your Desktop. Remember to change the [00] with you IxE number.
+
+```shell
+scp pi@ixe[00].local:~/node-opencv-test/out.jpg ~/Desktop
+```
+
 
