@@ -197,4 +197,15 @@ cv.readImage("./examples/files/mona.png", function(err, im){
 
 Save and exit the file using `Ctrl+X, yes`
 
+Run the code using NodeJS
+
+```shell
+node face-detection.js
+```
+
+If everything is working correctly, then you should see the following output:
+
+```shell
+
+```
 
