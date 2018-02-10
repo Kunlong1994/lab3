@@ -221,13 +221,16 @@ nano face-detection.js
 Then copy the following code into the editor
 
 ```javascript
-cv.readImage("./examples/files/mona.png", function(err, im){
+var cv = require('opencv');
+
+cv.readImage("node_modules/opencv/examples/files/mona.png", function(err, im){
   im.detectObject(cv.FACE_CASCADE, {}, function(err, faces){
     for (var i=0;i<faces.length; i++){
       var x = faces[i]
       im.ellipse(x.x + x.width/2, x.y + x.height/2, x.width/2, x.height/2);
     }
-    im.save('./out.jpg');
+    im.save('out.jpg');
+    console.log('Image saved to out.jpg!')
   });
 })
 ```
@@ -245,4 +248,3 @@ If everything is working correctly, then you should see the following output:
 ```shell
 
 ```
-
