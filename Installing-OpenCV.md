@@ -246,5 +246,13 @@ node face-detection.js
 If everything is working correctly, then you should see the following output:
 
 ```shell
-
+Image saved to out.jpg!
 ```
+
+You can see the file by typing `ls` and listing at the files in the directory
+
+```shell
+ls
+face-detection.js  node_modules  out.jpg  package-lock.json
+```
+
