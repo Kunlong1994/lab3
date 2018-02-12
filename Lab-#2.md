@@ -144,7 +144,7 @@ Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. htt
 
 ### 5. Submit the lab
 
-1. Upload a video of your version of the camera lab to your personal Slack channel and cross post to #lab2. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra** and please shoot the video in ** Horizontal/Landsacape ** format.
+1. Upload a video of your version of the camera lab to your personal Slack channel and cross post to #lab2. **Make sure you've included the TAs: David Goedicke and Andrea Cuadra** and please shoot the video in **Horizontal/Landsacape** format.
 1. Include a link to your forked code for the camera lab
 1. Include brief description of what you did and why
 1. Also, if it was separate from your lab project, post a summary of your npm experiment and post to #lab2
