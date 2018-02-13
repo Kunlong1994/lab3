@@ -100,3 +100,175 @@ wlan0     IEEE 802.11  ESSID:"The House"
           Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
           Tx excessive retries:0  Invalid misc:0   Missed beacon:0
 ```
+
+## Connecting to RedRover
+You can get your Pi working on Cornell's `RedRover` network by:
+
+### Registering your Pi's MAC address to your Cornel account at: [https://dnsdb.cit.cornell.edu/dnsdb-cgi/mycomputers.cgi](https://dnsdb.cit.cornell.edu/dnsdb-cgi/mycomputers.cgi)
+
+You can find your MAC address using the spreadsheet (IXE_IP_MAC_HOSTNAME) we provided on the class Slack. The MAC address is associated with you ixe hostname in the form ixe[00] where [00] are your numbers.
+
+Register your MAC address as one of your devices. We recommend you name is ixe[00] so you know which registration this is for.
+
+### Adding a python script to your machine to email the ixe's IP to you
+
+1. While you are logged into you Pi (from DeviceFarm, The House, or through ethernet), create a new file for the `python` script that will email the IP to you
+
+```shell
+nano startup_mailer.py
+```
+
+2. Copy and paste this python code into the editor
+
+```python
+import subprocess
+import smtplib
+import socket
+from email.mime.text import MIMEText
+import datetime
+
+# Change to your own account information
+to = 'YOUREMAIL@DOMAIN.com'
+gmail_user = 'interactiveDeviceDesign@gmail.com'
+gmail_password = 'device@theFarm'
+smtpserver = smtplib.SMTP('smtp.gmail.com', 587)
+smtpserver.ehlo()
+smtpserver.starttls()
+smtpserver.ehlo
+smtpserver.login(gmail_user, gmail_password)
+today = datetime.date.today()
+
+# Very Linux Specific
+arg='ip route list'
+p=subprocess.Popen(arg,shell=True,stdout=subprocess.PIPE)
+data = p.communicate()
+split_data = data[0].split()
+ipaddr = split_data[split_data.index('src')+1]
+my_ip = 'ixe[00] ip is %s' %  ipaddr
+msg = MIMEText(my_ip)
+msg['Subject'] = 'IP for ixe58 on %s' % today.strftime('%b %d %Y')
+msg['From'] = gmail_user
+msg['To'] = to
+smtpserver.sendmail(gmail_user, [to], msg.as_string())
+smtpserver.quit()
+```
+
+This script is setup with our class GMail account, `interactiveDeviceDesign@gmail.com`. We recommend you use this so that you do not need to store your own GMail password in clear text.
+
+3. Look for the line `to = 'YOUREMAIL@DOMAIN.com'` and replace the email address with your email. Any email like your GMail or Cornell Email should work fine.
+
+4. Put your ixe's number in the lines `my_ip = 'ixe[00] ip is %s' %  ipaddr` and `msg['Subject'] = 'IP For ixe58 on %s' % today.strftime('%b %d %Y')` replacing the `[00]` with your number.
+
+4. Save the file and exit `nano` (using Ctrl+X, then choosing `yes`, then saving to `startup_mailer.py'
+
+5. Test the python code by running `python /home/pi/startup_mailer.py`. You should get an email with your IP address in about a minute.
+
+The email should look like this:
+
+```text
+From: interactivedevicedesign@gmail.com
+To: YOUREMAIL@DOMAIN.com
+
+ixe[00] ip is xxx.xxx.xxx.xxx <-- this will be your ixe number and the IP it has currently
+```
+
+**NOTE: A RedRover IP will be on 10.xxx.xxx.xxx. If you get something like 192.xxx.xxx.xxx then you are probably connected to `DeviceFarm`**
+ 
+6. Tell your Pi to run the `startup_mailer.py` code when your pi reboots using `cron` (a [cool Unix tool](https://en.wikipedia.org/wiki/Cron) that allows you to automate things on your machine)
+
+```shell
+crontab -e
+``` 
+
+If `cron` asks you to choose an editor, we recommend choosing option `2 - nano`
+
+Once you are in `nano` you will edit the `crontab` file which lets you schedule when to run certain things
+
+```
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+```
+
+Add the following line to the bottom of the file (make sure there is no `#` symbol as this makes the line a comment)
+
+```
+@reboot sleep 30 && python /home/pi/startup_mailer.py
+```
+
+This line tells your Pi to run `python /home/pi/startup_mailer.py` when your machine reboots. The `sleep 30` is there to give your Pi 30 seconds to wake up and load all the system resources before it emails you your IP (we have found that not having the sleep delay means the script does not send an email, probably because the Pi doesn't have an IP).
+
+Save and exit `nano` (using `Ctrl+X`, `yes`)
+
+7. Edit your `wpa_supplicant.conf` WiFi settings
+
+```shell
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+Add the following lines to the top of the file, above the `DeviceFarm` settings if you would prefer it to use `RedRover` before using `DeviceFarm`
+
+```text
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="RedRover"
+    key_mgmt=NONE
+}
+```
+
+You can also comment out `DeviceFarm` settings so that you only connect to `RedRover`. Put `#` before all the lines for the `DeviceFarm` config settings.
+
+```text
+#ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+#network={
+#    ssid="DeviceFarm"
+#    psk="device@theFarm"
+#    key_mgmt=WPA-PSK
+#}
+```
+
+(If something goes wrong, you can always reset your WiFi settings using the `wpa_supplicant.conf.bak` file in the `boot` directory.)
+
+Save and exit `nano` (`Ctrl+X`, `yes`)
+
+8. Reboot your Pi using `sudo reboot`. If everything is configured correctly, you should get an email with your IP within a minute or two.
+
+### Connecting to your Pi using the IP it has with your laptop on `RedRover` or `eduroam`
+1. Once you receive the email from you Pi, copy the IP address.
+
+**NOTE: A RedRover IP will be on 10.xxx.xxx.xxx. If you get something like 192.xxx.xxx.xxx then you are probably connected to `DeviceFarm`**
+
+2. Make sure your laptop is connected to `RedRover` or `eduroam` (`Cornell Visitor` will not work)
+
+#### On Mac/Linux
+Open your Terminal (on Mac/Linux) or PuTTY (on Windows) and ssh using the IP address from the email
+
+```shell
+ssh pi@xx.xx.xx.xx
+```
+
+#### On Windows
+Use the IP from the email as as the location instead of `ixe[00]`. Make sure the `Port` is set to `22`
+
+3. You can access the webpage running on port `8000` (in our examples like `helloYou`) by going to the IP address then port 8000 iun your browser window
+
+`ex: 10.148.131.xxx:8000`
