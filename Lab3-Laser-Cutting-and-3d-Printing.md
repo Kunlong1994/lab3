@@ -43,9 +43,9 @@ Post a link to your GitHub submission on your Slack channel, cross post to the #
 
 ---
 General resources:
-[Tinkercad webinar this Friday!](https://docs.google.com/spreadsheets/d/11nEd0ZaryBHB23yM57p-dVgZgF199Wyd0TkvRimOe1A/edit#gid=1461833821)
-[MakerLab Master document](https://docs.google.com/document/d/1ozET_Qy7wzQgwnNVcyp3mp056LdwB8jiCJiZLjYnwcU/edit)
-[MakerLab spring schedule](https://docs.google.com/document/d/15j1kPK74rHL6tj_sHqOJCFg3vdi1BD75TXnQPZ1bJaI/edit)
+* [Tinkercad webinar this Friday!](https://docs.google.com/spreadsheets/d/11nEd0ZaryBHB23yM57p-dVgZgF199Wyd0TkvRimOe1A/edit#gid=1461833821)
+* [MakerLab Master document](https://docs.google.com/document/d/1ozET_Qy7wzQgwnNVcyp3mp056LdwB8jiCJiZLjYnwcU/edit)
+* [MakerLab spring schedule](https://docs.google.com/document/d/15j1kPK74rHL6tj_sHqOJCFg3vdi1BD75TXnQPZ1bJaI/edit)
 
 ---
 Power settings for 4mm cardboard
