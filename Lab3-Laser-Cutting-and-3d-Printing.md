@@ -27,6 +27,10 @@ For this weeks lab, we want you to experiment with digital fabrication tools. Th
 9.  Follow the instructions to cut the stand.
 10.  Make sure you color code it correctly.
 
+LAB WRITEUP:
+Post your files to GitHub.
+Post a photo to Slack channel #lab3
+
 ---
 Power settings for 4mm Cardboard
 
