@@ -35,11 +35,12 @@ Cutting (Standard Black Lines):
 	Power: 65%
 	Frequency: 500Hz
 
+
 Scoring (Color code Blue Lines):
 	Speed: 65%
 	Power: 45%
 	Frequency: 500Hz
----
+
 
 
 
