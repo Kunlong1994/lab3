@@ -29,6 +29,7 @@ For this weeks lab, we want you to experiment with digital fabrication tools. Th
 
 ---
 Power settings for 4mm Cardboard
+
 Cutting (Standard Black Lines):
 	Speed: 45%
 	Power: 65%
@@ -38,6 +39,7 @@ Scoring (Color code Blue Lines):
 	Speed: 65%
 	Power: 45%
 	Frequency: 500Hz
+---
 
 
 
