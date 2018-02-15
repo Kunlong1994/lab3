@@ -9,9 +9,9 @@ For this week’s lab, we want you to experiment with digital fabrication tools.
 8. Create a MakerBot account.
 9. Start the Makerbot Print Application and log in.
 10. Load the exported `.stl` button into the printer.
-11. Connect the printer over USB.
-12. Once the Printer is connected hit print.
-13. After the printer has started the USB cable can be disconnected.
+11. Connect your laptop to the printer over USB.
+12. Once the Printer is connected hit "print".
+13. After the printer has started the USB cable can be disconnected from your laptop.
 
 ## Laser cutting
 1. Make sure you have followed the safety instructions from Niti.
