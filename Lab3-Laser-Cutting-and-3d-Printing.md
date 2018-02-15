@@ -36,7 +36,7 @@ For this week’s lab, we want you to experiment with digital fabrication tools.
     16.  Print the job.
     17.  Press go on the laser cutter.
 
-# LAB SUBMISSION:
+# LAB SUBMISSION (Due befor the lecture on Tue: 2/27/2018):
 Post your files to GitHub; make sure to include at least one photo of your final object. Consider using the light box in the MakerLab to take high-quality product pictures.
 [[images/lightBox.jpg|alt=Image of a light box used to make evenly lit pictures of products and designs.]]  
 Post a link to your GitHub submission on your Slack channel, cross post to the #lab3 channel, and tag the TAs with questions/requests for feedback.
