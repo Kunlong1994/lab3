@@ -4,7 +4,7 @@ For this weeks lab, we want you to experiment with digital fabrication tools. Th
 1. Create an [Autodesk account](https://accounts.autodesk.com/register)
 2. Login to [Tinkercad](https://www.tinkercad.com/)
 3. Follow the first tutorial to get used to the Tinkercad interface.
-4. Create a new project and make a cylinder 10mm high and 6.9mm diameter. This will be your button.
+4. Create a new project and make a cylinder 5mm high and 6.9mm diameter. This will be your button.
 5. Personalise the button top with letters or signs - if you'd like.
 6. Export the object as an `.stl` file.
 7. Download and install the [Makerbot Print](https://www.makerbot.com/print/)
