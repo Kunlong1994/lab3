@@ -1,26 +1,26 @@
 For this week’s lab, we want you to experiment with digital fabrication tools. The methods that will be used are 3D printing and laser cutting.  
 
 ## 3D printing
-3. Complete the first [Tinkercad](https://www.tinkercad.com/) tutorial. You’ll need to create an account.
-4. Create a new project (outside the tutorial file) and make a cylinder 5mm tall and 6.9mm that you’ll use as your button.
-5. Personalize the button to make it your own.
-6. Export the object as an `.stl` file.
-7. Download and install the [Makerbot Print](https://www.makerbot.com/print/)
-8. Create a MakerBot account.
-9. Start the Makerbot Print Application and log in.
-10. Load the exported `.stl` button into the printer.
-11. Connect your laptop to the printer over USB.
-12. Once the Printer is connected hit "print".
-13. After the printer has started the USB cable can be disconnected from your laptop.
+1. Complete the first [Tinkercad](https://www.tinkercad.com/) tutorial. You’ll need to create an account.
+1. Create a new project (outside the tutorial file) and make a cylinder 5mm tall and 6.9mm that you’ll use as your button.
+1. Personalize the button to make it your own.
+1. Export the object as an `.stl` file.
+1. Download and install the [Makerbot Print](https://www.makerbot.com/print/)
+1. Create a MakerBot account.
+1. Start the Makerbot Print Application and log in.
+1. Load the exported `.stl` button into the printer.
+1. Connect your laptop to the printer over USB.
+1. Once the Printer is connected hit "print".
+1. After the printer has started the USB cable can be disconnected from your laptop.
 
 ## Laser cutting
 1. Make sure you have followed the safety instructions from Niti.
-2. Download a vector editing program like [Inkscape](https://inkscape.org/en/) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) if you have access to Adobe Creative Cloud.
-3. Download the laser cut file for the [CameraButtonStand](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/master/CameraButtonStand.svg)
+2. Download a vector editing program like [Inkscape](https://inkscape.org/en/) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
+3. Download the laser cutter template file for the [CameraButtonStand](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/master/CameraButtonStand.svg)
 4. Try to understand how these cuts lead to the 3D object.
 [[images/backStand.jpg|alt=Front side view of the a small webcam stand.]]-[[images/frontStand.jpg|alt=Back side view of the a small webcam stand.]]
-5. Personalize the stand to make it your own.
-6. Save the file -> move it to a USB drive-> connected it to the laser cutting computer.
+5. Personalize the stand to make it your own by adding vectors to the template file.
+6. Save the file -> Move it to a USB drive. -> Connect the USB drive to the laser cutting computer.
 7.  Open the file in Adobe Illustrator on the lab’s computer.
 8.  Set the line-width to 0.001pt.
 9.  Follow the instructions to cut:
@@ -36,10 +36,10 @@ For this week’s lab, we want you to experiment with digital fabrication tools.
     16.  Print the job.
     17.  Press go on the laser cutter.
 
-# LAB SUBMISSION (Due befor the lecture on Tue: 2/27/2018):
-Post your files to GitHub; make sure to include at least one photo of your final object. Consider using the light box in the MakerLab to take high-quality product pictures.
+# LAB SUBMISSION (Due before the lecture on Tue: 2/27/2018):
+Post your files to GitHub. Make sure to include at least one photo of your final object. Consider using the light box in the MakerLab to take high-quality product pictures.
 [[images/lightBox.jpg|alt=Image of a light box used to make evenly lit pictures of products and designs.]]  
-Post a link to your GitHub submission on your Slack channel, cross post to the #lab3 channel, and tag the TAs with questions/requests for feedback.
+Post a link to your GitHub submission on your Slack channel with your photo, cross post to the #lab3 channel, and tag the TAs with questions/requests for feedback.
 
 ---
 General resources:
