@@ -9,6 +9,8 @@ In this wiki, you will find different helpful tips and links to resources that w
 ---
 [Lab #2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%232) Distant Pictures - Snapping faraway photos using the Pi, Arduino & web camera.
 
+---
+[Lab #3](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab3-Laser-Cutting-and-3d-Printing) Laser cutting and 3d printing.
 
 
 ---
