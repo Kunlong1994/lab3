@@ -16,7 +16,7 @@ For this week’s lab, we want you to experiment with digital fabrication tools.
 ## Laser cutting
 1. Make sure you have followed the safety instructions from Niti.
 2. Download a vector editing program like [Inkscape](https://inkscape.org/en/) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
-3. Download the laser cutter template file for the [CameraButtonStand](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/master/CameraButtonStand.svg)
+3. Download the laser cutter template file for the [CameraButtonStand](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/master/CameraButtonStand.svg).
 4. Try to understand how these cuts lead to the 3D object.
 [[images/backStand.jpg|alt=Front side view of the a small webcam stand.]]-[[images/frontStand.jpg|alt=Back side view of the a small webcam stand.]]
 5. Personalize the stand to make it your own by adding vectors to the template file.
@@ -24,17 +24,17 @@ For this week’s lab, we want you to experiment with digital fabrication tools.
 7.  Open the file in Adobe Illustrator on the lab’s computer.
 8.  Set the line-width to 0.001pt.
 9.  Follow the instructions to cut:
-    10.  Load the machine with 4 millimetre cardboard.
-    11.  Disable X/Y.
-    12.  Move the laser to its starting position(top left corner of the material.
-    12.  Focus the laser.(Don't forget to put the focus tool up again!)
-    13.  Set home(button).
-    14.  Close the lid.
-    14.  Open the printer preferences.
-    14.  Make sure you set the different power levels for the normal cut and blue scoring-cut. See for values below.
-    15.  Turn on the air assist compressor on the floor and the suction system (big blue box).
-    16.  Print the job.
-    17.  Press go on the laser cutter.
+    * Load the machine with 4 millimetre cardboard.
+    * Disable X/Y.
+    *  Move the laser to its starting position(top left corner of the material.
+    *  Focus the laser. (Don't forget to put the focus tool up again!)
+    *  Set home(button).
+    *  Close the lid.
+    *   Open the printer preferences.
+    *   Make sure you set the different power levels for the normal cut and blue scoring-cut. See for values below.
+    *   Turn on the air assist compressor on the floor and the suction system (big blue box).
+    *   Print the job.
+    *   Press 'go' on the laser cutter.
 
 # LAB SUBMISSION (Due before the lecture on Tue: 2/27/2018):
 Post your files to GitHub. Make sure to include at least one photo of your final object. Consider using the light box in the MakerLab to take high-quality product pictures.
