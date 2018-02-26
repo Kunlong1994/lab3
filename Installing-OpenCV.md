@@ -66,7 +66,7 @@ First, make sure your laptop is on the same network as your IxE (for example bot
 
 ### Download our latest IxE Raspbian OS image onto your laptop
 
-You can download the latest OS here: [https://www.dropbox.com/s/kkiomf08vrd4u8p/IxE_10FEB2018.img?dl=0](https://www.dropbox.com/s/kkiomf08vrd4u8p/IxE_10FEB2018.img?dl=0)
+You can download the latest OS here: [https://www.dropbox.com/s/pp2lpznt6kd1vl5/IxE_2018-02-22.img.zip?dl=0](https://www.dropbox.com/s/pp2lpznt6kd1vl5/IxE_2018-02-22.img.zip?dl=0)
 
 ### Download and install Etcher
 
