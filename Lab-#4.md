@@ -76,10 +76,11 @@ Let's start with the "Display" program, which just flashes "Hello World!" This s
 Solder a 16 pin breakaway header to the LCD so you can connect it to your breadboard. 
 
 **If you haven't soldered before, we're happy to show you how! PLEASE ASK.**
+![](https://cdn-shop.adafruit.com/1200x900/181-03.jpg)
 
 Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up. 
 
-[insert images]
+[David & Andrea, we have to make a schematic so they aren't super confused.]
  
 **Be very careful not to connect together Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check for a short between power and ground before you plug in power or the USB cable.
 
