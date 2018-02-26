@@ -113,7 +113,7 @@ Leave your LCD set up for Part C and D of the Lab, and leave it set up when you 
 
 First, it's important for you to understand that **_analog_** input ("analog pin 0") on your Arduino board shares pins with _**digital**_ input. Below is pinout for the Metro Mini.  The pins with name A0-A12 are analog pins. 
  
-[insert diagram]
+[insert diagram][https://www.dropbox.com/s/9njwdn46j3u2dx3/MetroMini_pinout.png?dl=0]
  
 So while a [digitalRead](http://www.arduino.cc/en/Reference/DigitalRead) or [digitalWrite](http://www.arduino.cc/en/Reference/DigitalWrite) command reads or sends only a logic-level high or low, an [analogRead](http://www.arduino.cc/en/Reference/AnalogRead) or [analogWrite](http://www.arduino.cc/en/Reference/AnalogWrite) command reads or sends a range of values.[Example: if you want to read analog pin 0—which corresponds to pin A0 on the right side of Arduino, you would call analogRead(A0)]. Note that the analogWrite function has nothing to do with analog pins; it uses the PWM pins.
  
