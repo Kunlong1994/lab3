@@ -88,7 +88,7 @@ Wire up your LCD according to the schematic below. If you didn't have our diagra
  
 **Be very careful not to connect together Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check for a short between power and ground before you plug in power or the USB cable.
 
-[insert wiring diagram: https://www.dropbox.com/s/cx86slskacsr9jf/lcd_arduino_diagram.png?dl=0]
+
  
 See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more information. See [LCD Library](http://arduino.cc/en/Reference/LiquidCrystal) for the various functions you can use.
  
@@ -97,6 +97,7 @@ The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting th
 LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel the whole screen too dark, you may try connect pin15(LED+) to +3V or +3.3V and pin16(LED-) to ground. **Don't connect pin15(LED+) to +5V as it may burn background light!**
  
 Do try to set this up before peeking at this [diagram](https://www.arduino.cc/en/uploads/Tutorial/LCD_bb.png).
+[fix that last link to link to this image after uploading the image to the wiki: https://www.dropbox.com/s/cx86slskacsr9jf/lcd_arduino_diagram.png?dl=0]
  
 Try compiling and running the code. If it doesn't work the first time, check your pinouts...
  
