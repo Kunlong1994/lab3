@@ -88,7 +88,7 @@ Wire up your LCD according to the schematic below. If you didn't have our diagra
  
 **Be very careful not to connect together Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check for a short between power and ground before you plug in power or the USB cable.
 
-[insert wiring diagram]
+[insert wiring diagram: https://www.dropbox.com/s/cx86slskacsr9jf/lcd_arduino_diagram.png?dl=0]
  
 See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more information. See [LCD Library](http://arduino.cc/en/Reference/LiquidCrystal) for the various functions you can use.
  
