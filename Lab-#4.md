@@ -52,9 +52,9 @@ The Arduino pin configured as an input has a 'high input impedance.' This means 
  
 Use the Button program ([File->Examples->Digital->Button](https://www.arduino.cc/en/Tutorial/Button)) to make your Arduino into a light switch.
 
-** a. Which lines do you need to modify to correspond with your button and LED pins? **
+**a. Which lines do you need to modify to correspond with your button and LED pins?**
 
-** b. Modify the code or the circuit so that the LED lights only while the button is depressed. Include your code in your lab write-up. **
+**b. Modify the code or the circuit so that the LED lights only while the button is depressed. Include your code in your lab write-up.**
  
 **3. Fading LEDs on and off using Arduino**
 What about those "breathing" LEDs on Macs? The fading from bright to dim and back is done using pulse-width modulation (PWM). In essence, the LED is toggled on and off very rapidly, say 1,000 times a second, faster than your eye can follow. The percentage of time the LED is on (the duty) controls the perceived brightness. To control an LED using PWM, you'll have to connect it to one of the pins that support PWM output—which are 4, 5, 6, 9, 10, 11, 12 on the Arduino.
