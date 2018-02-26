@@ -18,8 +18,11 @@ If you'd like to use your own laptop computer for programming the Metro Mini, yo
 Connect the Arduino Micro to your computer using the USB cable. The Arduino Micro board comes preloaded with a version of the Blink program on it, so its LED should start blinking as soon as the USB cable starts powering the board. This LED is hardwired to pin 13 of Arduino Micro. 
  
 The Blink program itself can be found in the Arduino IDE's example code folder under [File->Examples->Basics->Blink](https://www.arduino.cc/en/Tutorial/Blink). Check it out!
+
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+
 **b. What line(s) of code do you need to change to change the rate of blinking?**
+
 **c. What circuit element would you want to add to protect the board and LED?**
  
 To compile and upload your code, take the following steps (note that 1, 2 should only have to be done once):
@@ -48,7 +51,9 @@ Use either the same circuit you used for the previous part for the LED or the al
 The Arduino pin configured as an input has a 'high input impedance.' This means that it can sense the voltage without affecting the circuit, like a probe.
  
 Use the Button program ([File->Examples->Digital->Button](https://www.arduino.cc/en/Tutorial/Button)) to make your Arduino into a light switch.
+
 ** a. Which lines do you need to modify to correspond with your button and LED pins? **
+
 ** b. Modify the code or the circuit so that the LED lights only while the button is depressed. Include your code in your lab write-up. **
  
 **3. Fading LEDs on and off using Arduino**
@@ -91,6 +96,7 @@ Do try to set this up before peeking at this [diagram](https://www.arduino.cc/en
 Try compiling and running the code. If it doesn't work the first time, check your pinouts...
  
 **b. What was one mistake you made when wiring up the display? How did you fix it?**
+
 **c. What line of code do you need to change to make it flash your name instead of "Hello World"?**
  
 Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
