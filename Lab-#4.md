@@ -1,13 +1,13 @@
-Make a Digital Timer!
+# Make a Digital Timer!
  
-Overview
+## Overview
 For this assignment, you are going to 1) make sounds with your Arduino, 2) write to a text LCD panel, 3) explore cool inputs, and 4) make your very own timer.
  
-In The Report
+## In The Report
 Include your responses to the green questions. Include snippets of code that explain what you did, and please follow the Lab Report Guidelines. Deliverables are due next Tuesday. Post your lab reports as 'wiki' pages on your GitHub, and post the link to Slack under your own channel and #Lab4.
 
  
-Part A. Making Sounds
+### Part A. Making Sounds
 Remember that greeting card project dissection we did during the first lecture? Let's make the Arduino make some noise! We are going to start with the Tone example program:
  
 Examples->Digital->toneMelody
