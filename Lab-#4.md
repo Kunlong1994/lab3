@@ -16,6 +16,9 @@ For this lab, we'll be using the [Adafruit Metro Mini](https://www.adafruit.com/
 [David & Andrea, need you to describe how to do the command line bits clearly below]
  
 If you'd like to use your own laptop computer for programming the Metro Mini, you will need to download and install the software on your machine. 
+* [Arduino IDE](https://www.arduino.cc/en/Main/Software) 
+* [FTDI VCP drivers](http://www.ftdichip.com/Drivers/VCP.htm)
+* [SiLabs CP210x drivers](http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx)
  
 **1. Blinking LEDs with Arduino**
 
@@ -31,9 +34,8 @@ The Blink program itself can be found in the Arduino IDE's example code folder u
  
 To compile and upload your code, take the following steps (note that 1, 2 should only have to be done once):
  
-1) In the Arduino program, select the board we are using: Tools -> Board -> Arduino UNO R3
-[please double check this]
-2) You may also have to select a communications (or COM) port (Tools -> Serial Port). Ask an instructor to help you choose the right port.
+1) In the Arduino program, select the board we are using: Tools -> Board -> Arduino UNO 
+2) You may also have to select a communications (or COM) port (Tools -> Serial Port). If something like '/dev/cu.SLCA_USBtoUART' is not showing up, you've downloaded the drivers in the intro, and the code is not uploading successfully, ask an instructor for help.
 3) To compile your code, click on the "checkmark" on the upper far left of the Arduino development window.
 4) To upload compiled code to the Arduino, click on "right arrow" besides "checkmark".
 5) When the code is uploaded, the Arduino should automatically start running your new code.
