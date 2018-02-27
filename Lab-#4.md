@@ -33,8 +33,8 @@ The Blink program itself can be found in the Arduino IDE's example code folder u
  
 To compile and upload your code, take the following steps (note that 1, 2 should only have to be done once):
  
-1) In the Arduino program, select the board we are using: Tools -> Board -> Arduino UNO 
-2) You may also have to select a communications (or COM) port (Tools -> Serial Port). If something like `/dev/cu.SLCA_USBtoUART` is not showing up under ports, and you've downloaded the drivers, ask an instructor for help.
+1) In the Arduino program, select the board we are using: Tools -> Board -> Arduino/Genuino UNO 
+2) You may also have to select a communications (or COM) port (Tools -> Serial Port). The port should be something like `/dev/cu.SLCA_USBtoUART` (on MAC) `/dev/ttyUSB0` (on Linux), or `COM3` (on Windows, could be another number). If they are not showing up, make sure you've installed the [SiLabs CP210x drivers](http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx).
 3) To compile your code, click on the "checkmark" on the upper far left of the Arduino development window.
 4) To upload compiled code to the Arduino, click on "right arrow" besides "checkmark".
 5) When the code is uploaded, the Arduino should automatically start running your new code.
