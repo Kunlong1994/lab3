@@ -3,8 +3,8 @@
 ## Overview
 For this assignment, you are going to 
 A) [Revisit Blink with your Arduino,](#part-a-revisiting-blink) 
-B) [Write to a text LCD panel,](#part-b-writing-to-the-lcd) 
-C) [explore cool input components](t#part-c-advanced-inputs), and 
+B) [explore cool input components](t#part-b-advanced-inputs) 
+C) [write to a text LCD panel,](#part-c-writing-to-the-lcd), and 
 D) [make your very own timer](#part-d-timer).
  
 ## In The Report
@@ -68,49 +68,8 @@ Use the Fading program ([File->Examples->Analog->Fading](https://www.arduino.cc/
 a) Which line(s) of code do you need to modify to correspond with your LED pin?
 b) How would you change the rate of fading?
 c) (Extra) Since the human eye doesn't see increases in brightness linearly and the diode brightness is also nonlinear with voltage, how could you change the code to make the light appear to fade linearly?
- 
-## Part B. Writing to the LCD
-Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
- 
-> File->Examples->LiquidCrystal
- 
-Let's start with the "Display" program, which just flashes "Hello World!" These LCDs are a custom part, but there's a lot of information at [this](https://www.adafruit.com/product/181) page, the [pinout and dimensions](https://cdn-shop.adafruit.com/product-files/181/p181.pdf) page and the [LCD controller](https://www.adafruit.com/datasheets/HD44780.pdf) page.
- 
-**a. What voltage level do you need to power your display?**
- 
-Solder a 16 pin breakaway header to the LCD so you can connect it to your breadboard. 
 
-**If you haven't soldered before, we're happy to show you how! PLEASE ASK.**
-![](https://cdn-shop.adafruit.com/1200x900/181-03.jpg)
-
-Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up. 
-
-[David & Andrea, use the schematic I have here: https://www.dropbox.com/s/uugro7qu85nkcme/lcd_arduino_schematic.png?dl=0]
- 
-**Be very careful not to connect together Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check for a short between power and ground before you plug in power or the USB cable.
-
-
- 
-See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more information. See [LCD Library](http://arduino.cc/en/Reference/LiquidCrystal) for the various functions you can use.
- 
-The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting that if your LCD won't turn on. If it's still not working, try to disconnect your speaker from part A—and check your wiring.
- 
-LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel the whole screen too dark, you may try connect pin15(LED+) to +3V or +3.3V and pin16(LED-) to ground. **Don't connect pin15(LED+) to +5V as it may burn background light!**
- 
-Do try to set this up before peeking at this [diagram](https://www.arduino.cc/en/uploads/Tutorial/LCD_bb.png).
-[fix that last link to link to this image after uploading the image to the wiki: https://www.dropbox.com/s/cx86slskacsr9jf/lcd_arduino_diagram.png?dl=0]
- 
-Try compiling and running the code. If it doesn't work the first time, check your pinouts...
- 
-**b. What was one mistake you made when wiring up the display? How did you fix it?**
-
-**c. What line of code do you need to change to make it flash your name instead of "Hello World"?**
- 
-Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
- 
-Leave your LCD set up for Part C and D of the Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
- 
-## Part C. Advanced Inputs
+## Part B. Advanced Inputs
 
 First, it's important for you to understand that **_analog_** input ("analog pin 0") on your Arduino board shares pins with _**digital**_ input. Below is pinout for the Metro Mini.  The pins with name A0-A12 are analog pins. 
  
@@ -147,7 +106,47 @@ Now borrow a FSR from a fellow student to build two FSR circuits to enable a gam
  
 **a. What resistance values do you see from your force sensor?**
 **b. What kind of relationship does the resistance have as a function of force applied? (e.g., linear?)**
-**c. Include a copy of your FSR thumb wrestling code in your lab write-up.**
+**c. Include a copy of your FSR thumb wrestling code in your lab write-up.** 
+
+## Part C. Writing to the LCD
+Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
+ 
+> File->Examples->LiquidCrystal
+ 
+Let's start with the "Display" program, which just flashes "Hello World!" These LCDs are a custom part, but there's a lot of information at [this](https://www.adafruit.com/product/181) page, the [pinout and dimensions](https://cdn-shop.adafruit.com/product-files/181/p181.pdf) page and the [LCD controller](https://www.adafruit.com/datasheets/HD44780.pdf) page.
+ 
+**a. What voltage level do you need to power your display?**
+ 
+Solder a 16 pin breakaway header to the LCD so you can connect it to your breadboard. 
+
+**If you haven't soldered before, we're happy to show you how! PLEASE ASK.**
+![](https://cdn-shop.adafruit.com/1200x900/181-03.jpg)
+
+Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up. 
+
+[David & Andrea, use the schematic I have here: https://www.dropbox.com/s/uugro7qu85nkcme/lcd_arduino_schematic.png?dl=0]
+ 
+**Be very careful not to connect together Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check for a short between power and ground before you plug in power or the USB cable.
+ 
+See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more information. See [LCD Library](http://arduino.cc/en/Reference/LiquidCrystal) for the various functions you can use.
+
+Try compiling and running the code. If it doesn't work the first time, check your pinouts...
+ 
+The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting that if your LCD won't turn on. The contrast might be so low that you're not able to see it, so make sure you've check both extremes.
+ 
+LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel the whole screen too dark, you may try connect pin15(LED+) to +3V or +3.3V and pin16(LED-) to ground. **Don't connect pin15(LED+) to +5V as it may burn background light!**
+ 
+Do try to set this up before peeking at this [diagram](https://www.arduino.cc/en/uploads/Tutorial/LCD_bb.png).
+[fix that last link to link to this image after uploading the image to the wiki: https://www.dropbox.com/s/cx86slskacsr9jf/lcd_arduino_diagram.png?dl=0]
+  
+**b. What was one mistake you made when wiring up the display? How did you fix it?**
+
+**c. What line of code do you need to change to make it flash your name instead of "Hello World"?**
+ 
+Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
+ 
+Leave your LCD set up for Part C and D of the Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
+
 
 ## Part D. Timer
 
