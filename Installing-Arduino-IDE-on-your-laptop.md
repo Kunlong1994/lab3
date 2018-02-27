@@ -12,7 +12,7 @@ The Metro Mini uses a specific USB Serial chip (the SiLabs CP2104). You will ins
 
 Find the drivers for your laptop operating system here: [https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 
-Note for Linux Users: No drivers *should* be required for your laptop to communicate with the Metro Mini. You should be able to skip this step, but if it doesn't work, there are drivers for Linux on the SiLabs page.
+**Note for Linux Users:** No drivers *should* be required for your laptop to communicate with the Metro Mini. You should be able to skip this step, but if it doesn't work, there are drivers for Linux on the SiLabs page.
 
 ## Setup the Arduino IDE to talk to the MetroMini
 
