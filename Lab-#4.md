@@ -74,7 +74,7 @@ Let's use your LCD screen to display some interesting information! There is a go
  
 > File->Examples->LiquidCrystal
  
-Let's start with the "Display" program, which just flashes "Hello World!" This summer's LCDs are a custom part, but there's a lot of information at [this](https://www.adafruit.com/product/181) page, the [pinout and dimensions](https://cdn-shop.adafruit.com/product-files/181/p181.pdf) page and the [LCD controller](https://www.adafruit.com/datasheets/HD44780.pdf) page.
+Let's start with the "Display" program, which just flashes "Hello World!" These LCDs are a custom part, but there's a lot of information at [this](https://www.adafruit.com/product/181) page, the [pinout and dimensions](https://cdn-shop.adafruit.com/product-files/181/p181.pdf) page and the [LCD controller](https://www.adafruit.com/datasheets/HD44780.pdf) page.
  
 **a. What voltage level do you need to power your display?**
  
