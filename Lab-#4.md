@@ -2,9 +2,9 @@
  
 ## Overview
 For this assignment, you are going to 
-A) [Revisit Blink with your Arduino,](#part-a-revisiting-blink) 
-B) [explore cool input components](t#part-b-advanced-inputs) 
-C) [write to a text LCD panel,](#part-c-writing-to-the-lcd), and 
+A) [revisit Blink with your Arduino,](#part-a-revisiting-blink) 
+B) [explore cool input components,](t#part-b-advanced-inputs) 
+C) [write to a text LCD panel,](#part-c-writing-to-the-lcd) and 
 D) [make your very own timer](#part-d-timer).
  
 ## In The Report
