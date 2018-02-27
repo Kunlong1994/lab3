@@ -145,7 +145,7 @@ Do try to set this up before peeking at this [diagram](https://www.arduino.cc/en
  
 Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
  
-Leave your LCD set up for Part C and D of the Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
+Leave your LCD set up for Part D of the Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
 
 
 ## Part D. Timer
