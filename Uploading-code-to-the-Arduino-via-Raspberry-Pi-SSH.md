@@ -106,6 +106,21 @@ ARDUINO_DIR = /usr/share/arduino
 include ../Arduino.mk
 ```
 
+7. One thing that this command line version.@David explain function prorotypes and why they are important here:
+```c++
+void testdrawline(void);
+void testdrawbitmap(const uint8_t *bitmap, uint8_t w, uint8_t h) ;
+void testdrawchar(void) ;
+void testdrawcircle(void);
+void testfillrect(void);
+void testdrawtriangle(void);
+void testfilltriangle(void);
+void testdrawroundrect(void);
+void testfillroundrect(void);
+void testdrawrect(void) ;
+``` 
+
+
 
 
 
