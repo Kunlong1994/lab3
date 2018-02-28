@@ -21,9 +21,10 @@ If you'd like to use your own laptop computer for programming the Metro Mini, yo
  
 **1. Blinking LEDs with Arduino**
 
-Connect the Arduino Micro to your computer using the USB cable. The Arduino Micro board comes preloaded with a version of the Blink program on it, so its LED should start blinking as soon as the USB cable starts powering the board. This LED is hardwired to pin 13 of Arduino Micro. 
+Connect the Arduino Micro to your computer using the USB cable. The Arduino Micro board typically come preloaded with a version of the Blink program on it. This code lets its LED (connected on pin 13) blink as soon as the USB cable starts powering the board. In this classes we have have previously uploaded a different program to the Arduino. (Remember the [helloYouSketch from Lab1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%232#2-helloyou-test)). 
  
-The Blink program itself can be found in the Arduino IDE's example code folder under [File->Examples->Basics->Blink](https://www.arduino.cc/en/Tutorial/Blink). Check it out!
+
+Lets use this example code to see how we upload code to the Arduino from our computer and to revert the arduino to its original state. The Blink program itself can be found in the Arduino IDE's example code folder under [File->Examples->Basics->Blink](https://www.arduino.cc/en/Tutorial/Blink). Check it out!
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
 
