@@ -85,7 +85,7 @@ Set up the LED output and potentiometer input circuits from the following schema
 [Peek at the breadboard photos.]
 
 The potentiometer is an instance of a voltage divider circuit, which we discussed in class. As you might recall:
-[insert circuit schematic]
+[[images/potPicture.png]]
  
 > Now, try the code in File->Examples->Analog->AnalogInput. 
  
