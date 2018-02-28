@@ -140,7 +140,7 @@ The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting th
  
 LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel the whole screen too dark, you may try connect pin15(LED+) to +3V or +3.3V and pin16(LED-) to ground. **Don't connect pin15(LED+) to +5V as it may burn background light!**
  
-Do try to set this up before peeking at this [diagram](images/lcd_arduino_schematic.png).
+Do try to set this up before peeking at this [diagram](images/lcd_arduino_diagram.png).
   
 **b. What was one mistake you made when wiring up the display? How did you fix it?**
 
