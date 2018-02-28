@@ -81,8 +81,10 @@ So while a [digitalRead](http://www.arduino.cc/en/Reference/DigitalRead) or [dig
 ### 1. Potentiometer
 Set up the LED output and potentiometer input circuits from the following schematic on your breadboard. This setup is much like the LED fade, except now we're using analogRead to control the fade.
  
+[[images/LEDandPot_schem.png]]
 
-[Peek at the breadboard photos.]
+[[images/LEDandPot_bb.png]]
+[@David Replace Frtizing with picture]
 
 The potentiometer is an instance of a voltage divider circuit, which we discussed in class. As you might recall:
 
