@@ -76,7 +76,7 @@ First, it's important for you to understand that **_analog_** input ("analog pin
  
 [[images/MetroMini_pinout.png]]
  
-So while a [digitalRead](http://www.arduino.cc/en/Reference/DigitalRead) or [digitalWrite](http://www.arduino.cc/en/Reference/DigitalWrite) command reads or sends only a logic-level high or low, an [analogRead](http://www.arduino.cc/en/Reference/AnalogRead) or [analogWrite](http://www.arduino.cc/en/Reference/AnalogWrite) command reads or sends a range of values.[Example: if you want to read analog pin 0—which corresponds to pin A0 on the right side of Arduino, you would call analogRead(A0)]. Note that the analogWrite function has nothing to do with analog pins; it uses the PWM pins.
+So while a [digitalRead](http://www.arduino.cc/en/Reference/DigitalRead) or [digitalWrite](http://www.arduino.cc/en/Reference/DigitalWrite) command reads or sends only a logic-level high or low, an [analogRead](http://www.arduino.cc/en/Reference/AnalogRead) or [analogWrite](http://www.arduino.cc/en/Reference/AnalogWrite) command reads or sends a range of values.[Example: if you want to read analog pin 0—which corresponds to pin A0 on the right side of Arduino, you would call `analogRead(A0)`]. Note that the analogWrite function has nothing to do with analog pins; it uses the PWM pins.
  
 ### 1. Potentiometer
 Set up the LED output and potentiometer input circuits from the following schematic on your breadboard. This setup is much like the LED fade, except now we're using analogRead to control the fade.
@@ -128,7 +128,7 @@ Solder a 16 pin breakaway header to the LCD so you can connect it to your breadb
 
 Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up. 
 
-[David & Andrea, use the schematic I have here: https://www.dropbox.com/s/uugro7qu85nkcme/lcd_arduino_schematic.png?dl=0]
+[[images/lcd_arduino_schematic.png]]
  
 **Be very careful not to connect together Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check for a short between power and ground before you plug in power or the USB cable.
  
