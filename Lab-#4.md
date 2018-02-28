@@ -104,7 +104,7 @@ Incorporate the LCD into your fading LED/potentiometer code so that you can read
 
 The [FSR](http://en.wikipedia.org/wiki/Force-Sensing_Resistor) changes resistance—in this case, when pressure is applied to the FSR. Here's the [datasheet](http://www.sparkfun.com/datasheets/Sensors/Pressure/fsrguide.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code.
 
-[insert schematic]
+[[images/forceResistor_schem.png]]
  
 Now borrow a FSR from a fellow student to build two FSR circuits to enable a game of thumb wrestling. Use the LCD to indicate who is squeezing their FSR harder!
  
