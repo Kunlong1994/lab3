@@ -47,11 +47,14 @@ Remember that the USB connected to the Arduino supplies power.
 Check that there are no shorts between power and ground before you plug in the USB cable (and apply power).
 Unplug power before modifying circuits!
  
-**2. Toggle LEDs on and off using Arduino**
-With your LED still connected on digital pin 9, hook up a button circuit on digital pin 2, so that the pushbutton attaches from pin 2 to ground, and so that there is a 10K resistor attached between pin 2 and Vcc. (Vcc is the supply voltage. In this case, it is 5 V.).
+**2. Digitally toggle LEDs on and off using the Arduino**
+
+With your LED still connected on digital pin 9, hook up a button circuit on digital pin 2 of the Arduino. One side of the pushbutton attaches to digital pin 2 and via a 10k resister to Vcc. (Vcc is the supply voltage. In this case, it is 5V.). The otherside of the pushbutton attaches to ground directly.
  
 Use either the same circuit you used for the previous part for the LED or the alternative design below. The alternate circuit causes the "on" state of the LED to occur when Arduino pin = LOW, not HIGH, as before.
- 
+
+ [[images/LEDandButton_schem.png]]
+
 The Arduino pin configured as an input has a 'high input impedance.' This means that it can sense the voltage without affecting the circuit, like a probe.
  
 Use the Button program ([File->Examples->Digital->Button](https://www.arduino.cc/en/Tutorial/Button)) to make your Arduino into a light switch.
