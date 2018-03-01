@@ -67,9 +67,12 @@ Use the Button program ([File->Examples->Digital->Button](https://www.arduino.cc
 What about those "breathing" LEDs on Macs? The fading from bright to dim and back is done using pulse-width modulation (PWM). In essence, the LED is toggled on and off very rapidly, say 1,000 times a second, faster than your eye can follow. The percentage of time the LED is on (the duty) controls the perceived brightness. To control an LED using PWM, you'll have to connect it to one of the pins that support PWM output—which are 4, 5, 6, 9, 10, 11, 12 on the Arduino.
  
 Use the Fading program ([File->Examples->Analog->Fading](https://www.arduino.cc/en/Tutorial/Fading)) to make your LED fade in and out.
-a) Which line(s) of code do you need to modify to correspond with your LED pin?
-b) How would you change the rate of fading?
-c) (Extra) Since the human eye doesn't see increases in brightness linearly and the diode brightness is also nonlinear with voltage, how could you change the code to make the light appear to fade linearly?
+
+**a) Which line(s) of code do you need to modify to correspond with your LED pin?**
+
+**b) How would you change the rate of fading?**
+
+**c) (Extra) Since the human eye doesn't see increases in brightness linearly and the diode brightness is also nonlinear with voltage, how could you change the code to make the light appear to fade linearly?**
 
 ## Part B. Advanced Inputs
 
