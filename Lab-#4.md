@@ -3,7 +3,7 @@
 ## Overview
 For this assignment, you are going to 
 A) [revisit Blink with your Arduino,](#part-a-revisiting-blink) 
-B) [explore cool input components,](t#part-b-advanced-inputs) 
+B) [explore cool input components,](#part-b-advanced-inputs) 
 C) [write to a text LCD panel,](#part-c-writing-to-the-lcd) and 
 D) [make your very own timer](#part-d-timer).
  
@@ -12,7 +12,7 @@ Include your responses to the bold questions. Include snippets of code that expl
 
 ## Part A. Revisiting Blink
 
-For this lab, we'll be using the [Adafruit Metro Mini](https://www.adafruit.com/product/2590) development board as our hardware platform. This board is derivative of the [Arduino UNO R3](https://store.arduino.cc/usa/arduino-uno-rev3). As a platform, Arduino comprises both hardware and software. We'll be using the the [Arduino hardware](http://arduino.cc/en/Main/Hardware); for an [IDE](http://en.wikipedia.org/wiki/Integrated_development_environment), you have the option of using the [Arduino software](http://arduino.cc/en/Main/Software) on your laptop.
+For this lab, we'll be using the [Adafruit Metro Mini](https://www.adafruit.com/product/2590) development board as our hardware platform. This board is a derivative of the [Arduino UNO R3](https://store.arduino.cc/usa/arduino-uno-rev3). As a platform, Arduino comprises both hardware and software. We'll be using the [Arduino hardware](http://arduino.cc/en/Main/Hardware); for an [IDE](http://en.wikipedia.org/wiki/Integrated_development_environment), you have the option of using the [Arduino software](http://arduino.cc/en/Main/Software) on your laptop.
  
 In order to use your own laptop computer for programming the Metro Mini, you will need to download and install the software on your machine:
 * [Arduino IDE](https://www.arduino.cc/en/Main/Software) 
@@ -20,7 +20,7 @@ In order to use your own laptop computer for programming the Metro Mini, you wil
  
 **1. Blinking LEDs with Arduino**
 
-Connect the Arduino Micro to your computer using the USB cable. The Arduino Micro board typically come preloaded with a version of the Blink program on it. This code lets its LED (connected on pin 13) blink as soon as the USB cable starts powering the board. In this class we have have previously uploaded a different program to the Arduino. (Remember the [helloYouSketch from Lab1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%232#2-helloyou-test)). 
+Connect the Metro Mini to your computer using the USB cable. Arduino boards typically come preloaded with a version of the Blink program on it. This code lets its LED (connected on pin 13) blink as soon as the USB cable starts powering the board. In this class we have previously uploaded a different program to the Arduino. (Remember the [helloYouSketch from Lab1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%232#2-helloyou-test)). 
 
 To get set up, we will use the Blink example code to see how to upload code to the Arduino from our computer. The Blink program itself can be found in the Arduino IDE's example code folder under [File->Examples->Basics->Blink](https://www.arduino.cc/en/Tutorial/Blink). Check it out!
 
@@ -35,18 +35,21 @@ To compile and upload your code, take the following steps (note that 1, 2 should
 1) In the Arduino program, select the board we are using: Tools -> Board -> Arduino/Genuino UNO 
 2) You may also have to select a communications (or COM) port (Tools -> Serial Port). The port should be something like `/dev/cu.SLCA_USBtoUART` (on MAC) `/dev/ttyUSB0` (on Linux), or `COM3` (on Windows, could be another number). If they are not showing up, make sure you've installed the [SiLabs CP210x drivers](http://www.silabs.com/products/mcu/pages/usbtouartbridgevcpdrivers.aspx).
 3) To compile your code, click on the "checkmark" on the upper far left of the Arduino development window.
-4) To upload compiled code to the Arduino, click on "right arrow" besides "checkmark".
+4) To upload compiled code to the Arduino, click on "right arrow" besides the "checkmark".
 5) When the code is uploaded, the Arduino should automatically start running your new code.
  
-Now modify the circuit and program so that you can blink an external LED on pin 9. Don't forget about question (c) above! (Also, don't forget to power and ground the power and ground rails of your breadboard, respectively!)
+Now modify the circuit and program so that you can blink an external LED on pin 9. Don't forget about question (c) above! (Also, don't forget to connect power and ground the power and ground rails of your breadboard, respectively!)
  
 [[images/LED_schem.png]]
 
-Some tips and reminders:
+### Some tips and reminders:
  
 We don't have extra Arduinos, so be careful.
-Remember that the USB connected to the Arduino supplies power.
+
+Remember that the USB connection to the Arduino supplies power.
+
 Check that there are no shorts between power and ground before you plug in the USB cable (and apply power).
+
 Unplug power before modifying circuits!
  
 **2. Digitally toggle LEDs on and off using the Arduino**
@@ -135,9 +138,9 @@ See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more informa
 
 Try compiling and running the code. If it doesn't work the first time, check your pinouts...
  
-The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting that if your LCD won't turn on. The contrast might be so low that you're not able to see it, so make sure you've check both extremes.
+The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting that if your LCD won't turn on. The contrast might be so low that you're not able to see it, so make sure you've checked both extremes.
  
-LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel the whole screen too dark, you may try connect pin15(LED+) to +3V or +3.3V and pin16(LED-) to ground. **Don't connect pin15(LED+) to +5V as it may burn background light!**
+LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel the whole screen too dark, you may try to connect pin15(LED+) to +3V or +3.3V and pin16(LED-) to ground. **Don't connect pin15(LED+) to +5V as it may burn background light!**
  
 Do try to set this up before peeking at this [diagram](images/lcd_arduino_diagram.png).
   
@@ -160,9 +163,9 @@ Leave your LCD set up for Part D of the Lab, and leave it set up when you finish
 
 ## Part D. Timer
 
-Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once time is up with one of the output devices we connected during this lab or you have avalible. E.g. if you have an old speaker lying arround you can hook it up and use it to play a [beep or ring](https://www.arduino.cc/en/Tutorial/toneMelody)! (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
+Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once the time is up with one of the output devices we connected during this lab, or you have available. E.g. if you have an old speaker lying around you can hook it up and use it to play a [beep or ring](https://www.arduino.cc/en/Tutorial/toneMelody)! (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
  
-Note that for some of you, the time may seem to be decrementing by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs 99 is written to the screen, and ask an instructor
+Note that for some of you, the time may seem to be decremented by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs 99 is written to the screen, and ask an instructor
  
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
