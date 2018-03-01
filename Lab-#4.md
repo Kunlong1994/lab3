@@ -158,7 +158,7 @@ Leave your LCD set up for Part D of the Lab, and leave it set up when you finish
 
 ## Part D. Timer
 
-Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert with one of the output devices we connected during this lab once time is up. E.g. if you have an old speaker lying arround you can hook it up and use it to play a [beep or ring]() once the timer is up! (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
+Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once time is up with one of the output devices we connected during this lab or you have avalible. E.g. if you have an old speaker lying arround you can hook it up and use it to play a [beep or ring](https://www.arduino.cc/en/Tutorial/toneMelody)! (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
  
 Note that for some of you, the time may seem to be decrementing by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs 99 is written to the screen, and ask an instructor
  
