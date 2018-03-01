@@ -106,6 +106,7 @@ The [FSR](http://en.wikipedia.org/wiki/Force-Sensing_Resistor) changes resistanc
   
 **a. What resistance values do you see from your force sensor?**
 **b. What kind of relationship does the resistance have as a function of the force applied? (e.g., linear?)**
+**c. Can you change the LED fading code values so that you get the full range of output voltages from using your Flex sensor?
 
 ## Part C. Writing to the LCD
 Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
@@ -143,17 +144,25 @@ Do try to set this up before peeking at this [diagram](images/lcd_arduino_diagra
 **c. What line of code do you need to change to make it flash your name instead of "Hello World"?**
  
 Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
- 
-Leave your LCD set up for Part D of the Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
 
+Incorporate the LCD into your fading LED/potentiometer code so that you can read out the exact analog value that you are reading in on Analog Pin 0. It's your own lowly multimeter!
+
+**d. Include a copy of your Lowly Multimeter code in your lab write-up.**
+
+
+Now build a circuit with two FSR sensors (one from your self and one borrowed from a fellow student) to enable a game of thumb wrestling. Use the LCD to indicate who is squeezing their FSR harder!
+
+**e. Include a copy of your FSR thumb wrestling code in your lab write-up.**
+
+Leave your LCD set up for Part D of the Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
 
 ## Part D. Timer
 
-Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer beep, ring or sing when time is up! (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
+Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert with one of the output devices we connected during this lab once time is up. E.g. if you have an old speaker lying arround you can hook it up and use it to play a [beep or ring]() once the timer is up! (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
  
 Note that for some of you, the time may seem to be decrementing by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs 99 is written to the screen, and ask an instructor
  
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
-**b. Post a link to the class Slack.**
+**b. Post a link to the completed lab report to the class Slack.**
  
