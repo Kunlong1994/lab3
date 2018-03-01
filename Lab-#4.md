@@ -28,7 +28,7 @@ To get set up, we will use the Blink example code to see how to upload code to t
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 
-**c. What circuit element would you want to add to protect the board and LED?**
+**c. What circuit element would you want to add to protect the board and external LED?**
  
 To compile and upload your code, take the following steps (note that 1, 2 should only have to be done once):
  
