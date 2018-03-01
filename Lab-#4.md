@@ -83,7 +83,7 @@ First, it's important for you to understand that **_analog_** input ("analog pin
 So while a [digitalRead](http://www.arduino.cc/en/Reference/DigitalRead) or [digitalWrite](http://www.arduino.cc/en/Reference/DigitalWrite) command reads or sends only a logic-level high or low, an [analogRead](http://www.arduino.cc/en/Reference/AnalogRead) or [analogWrite](http://www.arduino.cc/en/Reference/AnalogWrite) command reads or sends a range of values.[Example: if you want to read analog pin 0—which corresponds to pin A0 on the right side of Arduino, you would call `analogRead(A0)`]. Note that the analogWrite function has nothing to do with analog pins; it uses the PWM pins.
  
 ### 1. Potentiometer
-Set up the LED output and potentiometer input circuits from the following schematic on your breadboard. This setup is much like the LED fade, except now we're using analogRead to control the fade.
+Set up the LED output and potentiometer input circuits from the following schematic on your breadboard. This setup is much like the LED fade, except now we're using analogRead to control the fade. have a look at [File->Examples->Analog->AnalogInput](https://www.arduino.cc/en/Tutorial/AnalogInput) for the code.
  
 [[images/LEDandPot_schem.png]]
 
@@ -94,27 +94,18 @@ The potentiometer is an instance of a voltage divider circuit, which we discusse
 
 [[images/potPicture.png]]
  
-> Now, try the code in File->Examples->Analog->AnalogInput. 
- 
 Change the code so that the LED fades and brightens with the analog value of the potentiometer, like a dimmer. (Save this code! We'll be using it again soon...)
  
-**a. Post a copy of your new code in your lab writeup.**
-
-Incorporate the LCD into your fading LED/potentiometer code so that you can read out the exact analog value that you are reading in on Analog Pin 0. It's your own lowly multimeter! Change the LED fading code values so that you get the full range of output voltages from using your Flex sensor.
-
-**b. Include a copy of your Lowly Multimeter code in your lab write-up.**
+**a. Post a copy of your new code in your lab write-up.**
  
 ### 2. Force Sensitive Sensor
 
 The [FSR](http://en.wikipedia.org/wiki/Force-Sensing_Resistor) changes resistance—in this case, when pressure is applied to the FSR. Here's the [datasheet](http://www.sparkfun.com/datasheets/Sensors/Pressure/fsrguide.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code.
 
 [[images/forceResistor_schem.png]]
- 
-Now borrow a FSR from a fellow student to build two FSR circuits to enable a game of thumb wrestling. Use the LCD to indicate who is squeezing their FSR harder!
- 
+  
 **a. What resistance values do you see from your force sensor?**
-**b. What kind of relationship does the resistance have as a function of force applied? (e.g., linear?)**
-**c. Include a copy of your FSR thumb wrestling code in your lab write-up.** 
+**b. What kind of relationship does the resistance have as a function of the force applied? (e.g., linear?)**
 
 ## Part C. Writing to the LCD
 Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
@@ -124,6 +115,7 @@ Let's use your LCD screen to display some interesting information! There is a go
 Let's start with the "Display" program, which just flashes "Hello World!" These LCDs are a custom part, but there's a lot of information at [this](https://www.adafruit.com/product/181) page, the [pinout and dimensions](https://cdn-shop.adafruit.com/product-files/181/p181.pdf) page and the [LCD controller](https://www.adafruit.com/datasheets/HD44780.pdf) page.
  
 **a. What voltage level do you need to power your display?**
+**b. What voltage level do you need to power the display backlight?**
  
 Solder a 16 pin breakaway header to the LCD so you can connect it to your breadboard. 
 
@@ -134,7 +126,7 @@ Wire up your LCD according to the schematic below. If you didn't have our diagra
 
 [[images/lcd_arduino_schematic.png]]
  
-**Be very careful not to connect together Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check for a short between power and ground before you plug in power or the USB cable.
+**Be very careful not to connect together Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check the connections for a short between power and ground before you plug in power or the USB cable.
  
 See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more information. See [LCD Library](http://arduino.cc/en/Reference/LiquidCrystal) for the various functions you can use.
 
