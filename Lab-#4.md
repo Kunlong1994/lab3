@@ -40,6 +40,8 @@ To compile and upload your code, take the following steps (note that 1, 2 should
  
 Now modify the circuit and program so that you can blink an external LED on pin 9. Don't forget about question (c) above! (Also, don't forget to power and ground the power and ground rails of your breadboard, respectively!)
  
+[[imges/LED_schem.png]]
+
 Some tips and reminders:
  
 We don't have extra Arduinos, so be careful.
