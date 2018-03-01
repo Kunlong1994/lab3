@@ -92,8 +92,7 @@ Set up the LED output and potentiometer input circuits from the following schema
  
 [[images/LEDandPot_schem.png]]
 
-[[images/LEDandPot_bb.png]]
-[@David Replace Fritzing with picture]
+[[images/PotPicture.JPG]]
 
 The potentiometer is an instance of a voltage divider circuit, which we discussed in class. As you might recall:
 
