@@ -42,7 +42,7 @@ Now modify the circuit and program so that you can blink an external LED on pin 
  
 [[images/LED_schem.png]]
 
-### Some tips and reminders:
+*Some tips and reminders:*
  
 We don't have extra Arduinos, so be careful.
 
@@ -54,9 +54,9 @@ Unplug power before modifying circuits!
  
 **2. Digitally toggle LEDs on and off using the Arduino**
 
-With your LED still connected on digital pin 9, hook up a button circuit on digital pin 2 of the Arduino. One side of the pushbutton attaches to digital pin 2 and via a 10k resister to Vcc. (Vcc is the supply voltage. In this case, it is 5V.). The otherside of the pushbutton attaches to ground directly.
+With your LED still connected on digital pin 9, hook up a button circuit on digital pin 2 of the Arduino. One side of the pushbutton attaches to digital pin 2 and via a 10k resistor to Vcc. (Vcc is the supply voltage. In this case, it is 5V.). The other side of the pushbutton attaches to ground directly.
  
-Use either the same circuit you used for the previous part for the LED or the alternative design below. The alternate circuit causes the "on" state of the LED to occur when Arduino pin = LOW, not HIGH, as before.
+Use either the same circuit you used for the previous step or use the alternative design below. The alternate circuit causes the "on" state of the LED to occur when Arduino pin = LOW, not HIGH, as before.
 
  [[images/LEDandButton_schem.png]]
 
@@ -69,7 +69,7 @@ Use the Button program ([File->Examples->Digital->Button](https://www.arduino.cc
 **b. Modify the code or the circuit so that the LED lights only while the button is depressed. Include your code in your lab write-up.**
  
 **3. Fading LEDs on and off using Arduino**
-What about those "breathing" LEDs on Macs? The fading from bright to dim and back is done using pulse-width modulation (PWM). In essence, the LED is toggled on and off very rapidly, say 1,000 times a second, faster than your eye can follow. The percentage of time the LED is on (the duty) controls the perceived brightness. To control an LED using PWM, you'll have to connect it to one of the pins that support PWM output—which are 4, 5, 6, 9, 10, 11, 12 on the Arduino.
+What about those "breathing" LEDs on (old) Macs? The fading from bright to dim and back is done using pulse-width modulation (PWM). In essence, the LED is toggled on and off very rapidly, say 1,000 times a second, faster than your eye can follow. The percentage of time the LED is on (the duty) controls the perceived brightness. To control an LED using PWM, you'll have to connect it to one of the pins that support PWM output —-- which are 4, 5, 6, 9, 10, 11, 12 on the Arduino.
  
 Use the Fading program ([File->Examples->Analog->Fading](https://www.arduino.cc/en/Tutorial/Fading)) to make your LED fade in and out.
 
@@ -81,7 +81,7 @@ Use the Fading program ([File->Examples->Analog->Fading](https://www.arduino.cc/
 
 ## Part B. Advanced Inputs
 
-First, it's important for you to understand that **_analog_** input ("analog pin 0") on your Arduino board shares pins with _**digital**_ input. Below is pinout for the Metro Mini.  The pins with name A0-A12 are analog pins. 
+First, it's important for you to understand that **_analog_** input ("analog pin 0") on your Arduino board shares pins with _**digital**_ input. Below is pinout for the Metro Mini. The pins with name A0-A12 are analog pins. 
  
 [[images/MetroMini_pinout.png]]
  
