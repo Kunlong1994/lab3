@@ -8,7 +8,7 @@ C) [write to a text LCD panel,](#part-c-writing-to-the-lcd) and
 D) [make your very own timer](#part-d-timer).
  
 ## In The Report
-Include your responses to the bold questions. Include snippets of code that explain what you did, and please follow the Lab Report Guidelines. Deliverables are due next Tuesday. Post your lab reports as 'wiki' pages on your GitHub, and post the link to Slack under your own channel and #Lab4.
+Include your responses to the bold questions. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as 'wiki' pages on your GitHub, and post a link to that wiki on Slack under your own channel and #Lab4.
 
 ## Part A. Revisiting Blink
 
