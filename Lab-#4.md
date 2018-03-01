@@ -105,7 +105,7 @@ Change the code so that the LED fades and brightens with the analog value of the
  
 ### 2. Force Sensitive Sensor
 
-The [FSR](http://en.wikipedia.org/wiki/Force-Sensing_Resistor) changes resistance — in this case when pressure is applied to the FSR. Here's the [datasheet](http://www.sparkfun.com/datasheets/Sensors/Pressure/fsrguide.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code.
+The [FSR](http://en.wikipedia.org/wiki/Force-Sensing_Resistor) changes resistance — in this case when pressure is applied to the FSR. Here's the [datasheet](http://www.sparkfun.com/datasheets/Sensors/Pressure/fsrguide.pdf). We'll use a voltage divider with a 22kOhm(originally 27kOhm but they are not avalible right now) resistor, using the analog input with the previous potentiometer code.
 
 [[images/forceResistor_schem.png]]
   
