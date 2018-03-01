@@ -11,7 +11,8 @@ In this wiki, you will find different helpful tips and links to resources that w
 
 ---
 [Lab #3](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab3-Laser-Cutting-and-3d-Printing) Laser cutting and 3d printing.
-
+---
+[Lab #4](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%234) Basic electronics with Arduino
 
 ---
 <!--1. The first assignments are all about the [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki) please follow the link to the wiki pages./-->
