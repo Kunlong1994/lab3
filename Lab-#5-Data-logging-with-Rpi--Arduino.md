@@ -32,7 +32,7 @@ Use your Lowly Multimeter program to look at the data the sensor returns. What h
  
 **a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
  
-###2. Accelerometer
+### 2. Accelerometer
  
 The accelerometer in your kit is a 3-axis, selectable range accelerometer based on the MMA7361 chip from Freescale.
  
@@ -72,10 +72,10 @@ Now, get a feel for the data the accelerometer provides. Pick up the Arduino+acc
  
 **a. Include your accelerometer read-out code in your write-up.**
  
-##Part C. Count/Time-Based Sensors
+## Part C. Count/Time-Based Sensors
 One last type of sensor!
  
-###1. Rotary Encoder
+### 1. Rotary Encoder
 
  
 We have a high-quality 24 pulse encoder with knob and nice, click-y rotation detents.
@@ -97,9 +97,9 @@ What is going on in this circuit? The Phase A and Phase B pins actually behave l
  
 Use the following rotary encoder code to see if you have hooked the encoder up correctly!
 
-##Part D. Logging values to the EEPROM and reading them back
+## Part D. Logging values to the EEPROM and reading them back
  
-###1. Design your logger
+### 1. Design your logger
 Think about something that could be logged using the sensors you've learned to use! It's okay if the application is somewhat fictional; it's just nice to have a story in mind that drives your design.
  
 Your data logger will have two main modes: one where it logs data and another where it plays the data back. Think a little about what sensors you would like to log data from and how you would like to display your data. Create a state diagram sketch that indicates how you'd like to switch between one mode and the other, and also what you'd like the program to do in each state. This can help you decide what buttons or knobs might be useful for your design.
@@ -108,7 +108,7 @@ You might make changes to your design before this lab is complete.
  
 **a. Turn in a copy of your final state diagram.**
  
-###2. Create your data logger!
+### 2. Create your data logger!
 Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time. You are welcome to play back to either the 16x2 LCD or the serial monitor. 
  
 **a. Use the lab camera or your own camera/cell phone to record and upload a short demo video of your logger in action.**
