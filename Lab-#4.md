@@ -110,8 +110,10 @@ The [FSR](http://en.wikipedia.org/wiki/Force-Sensing_Resistor) changes resistanc
 [[images/forceResistor_schem.png]]
   
 **a. What resistance values do you see from your force sensor?**
+
 **b. What kind of relationship does the resistance have as a function of the force applied? (e.g., linear?)**
-**c. Can you change the LED fading code values so that you get the full range of output voltages from using your FSR?
+
+**c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
 ## Part C. Writing to the LCD
 Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
