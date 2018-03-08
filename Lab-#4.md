@@ -5,7 +5,8 @@ For this assignment, you are going to
 A) [revisit Blink with your Arduino,](#part-a-revisiting-blink) 
 B) [explore cool input components,](#part-b-advanced-inputs) 
 C) [write to a text LCD panel,](#part-c-writing-to-the-lcd) and 
-D) [make your very own timer](#part-d-timer).
+D) [make your very own timer](#part-d-timer)
+BONUS) [make your timer sing!] (#part-e-tone).
  
 ## In The Report
 Include your responses to the bold questions. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as 'wiki' pages on your GitHub, and post a link to that wiki on Slack under your channel and #Lab4.
@@ -71,7 +72,7 @@ Use the Button program ([File->Examples->Digital->Button](https://www.arduino.cc
 **3. Fading LEDs on and off using Arduino**
 What about those "breathing" LEDs on (old) Macs? The fading from bright to dim and back is done using pulse-width modulation (PWM). In essence, the LED is toggled on and off very rapidly, say 1,000 times a second, faster than your eye can follow. The percentage of time the LED is on (the duty) controls the perceived brightness. To control an LED using PWM, you'll have to connect it to one of the pins that support PWM output —-- which are 4, 5, 6, 9, 10, 11, and 12 on the Arduino.
  
-Use the Fading program ([File->Examples->Analog->Fading](https://www.arduino.cc/en/Tutorial/Fading)) to make your LED fade in and out.
+Use the Fading program `[File->Examples->Analog->Fading](https://www.arduino.cc/en/Tutorial/Fading)` to make your LED fade in and out.
 
 **a) Which line(s) of code do you need to modify to correspond with your LED pin?**
 
@@ -115,7 +116,7 @@ The [FSR](http://en.wikipedia.org/wiki/Force-Sensing_Resistor) changes resistanc
 ## Part C. Writing to the LCD
 Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
  
-> File->Examples->LiquidCrystal
+` File->Examples->LiquidCrystal`
  
 Let's start with the "Display" program, which just flashes "Hello World!" These LCDs are a custom part, but there's a lot of information at [this](https://www.adafruit.com/product/181) page, the [pinout and dimensions](https://cdn-shop.adafruit.com/product-files/181/p181.pdf) page and the [LCD controller](https://www.adafruit.com/datasheets/HD44780.pdf) page.
  
@@ -162,9 +163,39 @@ Leave your LCD set up for Part D of the Lab, and leave it set up when you finish
 
 ## Part D. Timer
 
-Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once the time is up with one of the output devices we connected during this lab, or you have available. E.g. if you have an old speaker lying around you can hook it up and use it to play a [beep or ring](https://www.arduino.cc/en/Tutorial/toneMelody)! (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
+Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once the time is up with one of the output devices we connected during this lab, or you have available. (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
  
-Note that for some of you, the time may seem to be decremented by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor
+Note that for some of you, the time may seem to be decremented by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor.
+
+## Part E. Tone
+
+Let's make the Arduino make some noise! We are going to start with the Tone example program:
+ 
+`Examples->Digital->toneMelody`
+
+The official Arduino tutorial for this code is [here](https://www.arduino.cc/en/Tutorial/ToneMelody?from=Tutorial.Tone)
+Add a 75 Ohm resistor to limit the current to the speaker when you hook it up on your breadboard. If you would like it a little louder, you can use a lower value resistor, up to a minimum of 5 Ohms.
+
+Wire it to your circuit with the black to ground and the red to Arduino Micro pin 8. 
+
+a. How would you change the code to make the song play twice as fast?
+ 
+Now change the speed back, and replace the melody[] and noteDurations[] arrays with the following:
+```c++
+
+int melody[] = {
+  NOTE_D3,NOTE_D3,NOTE_D3,NOTE_G3,NOTE_D4,NOTE_C4,NOTE_B3,NOTE_A3,NOTE_G4,NOTE_D4, \
+  NOTE_C4,NOTE_B3,NOTE_A3,NOTE_G4,NOTE_D4,NOTE_C4,NOTE_B3,NOTE_C4,NOTE_A3,0};
+ 
+int noteDurations[] = {
+  10,10,10,2,2,10,10,10,2,4, \
+  10,10,10,2,4,10,10,10,2,4};
+ ```
+You'll also have to increase the for() loop index max from 8 to 20:
+ ```c++
+  for (int thisNote = 0; thisNote < 20; thisNote++) {
+ ```
+b. What song is playing?
  
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
