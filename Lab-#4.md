@@ -6,7 +6,7 @@ A) [revisit Blink with your Arduino,](#part-a-revisiting-blink)
 B) [explore cool input components,](#part-b-advanced-inputs) 
 C) [write to a text LCD panel,](#part-c-writing-to-the-lcd) and 
 D) [make your very own timer](#part-d-timer)
-BONUS) [make your timer sing!] (#part-e-tone).
+BONUS) [make your timer sing!](#part-e-tone).
  
 ## In The Report
 Include your responses to the bold questions. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as 'wiki' pages on your GitHub, and post a link to that wiki on Slack under your channel and #Lab4.
@@ -167,6 +167,7 @@ Make a timer that uses any of the input devices to set a time, and then automati
  
 Note that for some of you, the time may seem to be decremented by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor.
 
+## OPTIONAL:
 ## Part E. Tone
 
 Let's make the Arduino make some noise! We are going to start with the Tone example program:
