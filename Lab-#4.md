@@ -209,3 +209,5 @@ You'll also have to increase the for() loop index max from 8 to 20:
 
 ---
 How to upload code using your [RaspberryPi over command line](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Uploading-code-to-the-Arduino-via-Raspberry-Pi-SSH).
+
+How to upload the [code with x11](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Uploading-code-to-the-Arduino-via-Raspberry-Pi-XWindows).
