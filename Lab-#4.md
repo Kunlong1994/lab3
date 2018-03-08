@@ -201,5 +201,7 @@ b. What song is playing?
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
 **b. Post a link to the completed lab report to the class Slack.**
- ----
+
+
+---
 How to upload code using your [RaspberryPi over command line](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Uploading-code-to-the-Arduino-via-Raspberry-Pi-SSH).
