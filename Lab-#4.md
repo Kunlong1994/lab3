@@ -169,6 +169,10 @@ Make a timer that uses any of the input devices to set a time, and then automati
  
 Note that for some of you, the time may seem to be decremented by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor.
 
+**a. Make a short video showing how your timer works, and what happens when time is up!**
+
+**b. Post a link to the completed lab report to the class Slack.**
+
 ## OPTIONAL:
 ## Part E. Tone
 
@@ -181,7 +185,7 @@ Add a 75 Ohm resistor to limit the current to the speaker when you hook it up on
 
 Wire it to your circuit with the black to ground and the red to Arduino Micro pin 8. 
 
-a. How would you change the code to make the song play twice as fast?
+** a. How would you change the code to make the song play twice as fast? **
  
 Now change the speed back, and replace the melody[] and noteDurations[] arrays with the following:
 ```c++
@@ -198,11 +202,9 @@ You'll also have to increase the for() loop index max from 8 to 20:
  ```c++
   for (int thisNote = 0; thisNote < 20; thisNote++) {
  ```
-b. What song is playing?
+** b. What song is playing? **
  
-**a. Make a short video showing how your timer works, and what happens when time is up!**
 
-**b. Post a link to the completed lab report to the class Slack.**
 
 
 ---
