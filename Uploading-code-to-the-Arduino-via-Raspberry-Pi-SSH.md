@@ -106,11 +106,12 @@ ARDUINO_DIR = /usr/share/arduino
 include ../Arduino.mk
 ```
 
-7. One thing that this command line version.@David explain function prorotypes and why they are important here:
+7. One thing that this command line version of Arduino does not do is create `funtion prototypes`. `function protypes` just define at the top of the program what a function is called whith-out defining what it actually does. To compile and run our example code with the display example we need to add the following lines aobve the `void setup(){}` funtion.
+
 ```c++
 void testdrawline(void);
 void testdrawbitmap(const uint8_t *bitmap, uint8_t w, uint8_t h) ;
-void testdrawchar(void) ;
+void testdrawchar(void);
 void testdrawcircle(void);
 void testfillrect(void);
 void testdrawtriangle(void);
@@ -118,7 +119,20 @@ void testfilltriangle(void);
 void testdrawroundrect(void);
 void testfillroundrect(void);
 void testdrawrect(void) ;
+```
+
+Once You have defined the funtion prototypes you can go ahead and run `make`
+```shell
+make
+```
+
+and then
+```shell
+make upload
 ``` 
+to compile and then upload your code to the arduino.
+
+ 
 
 
 
