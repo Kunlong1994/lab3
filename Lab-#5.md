@@ -81,7 +81,14 @@ Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designi
 ## Part D. Logging values to the EEPROM and reading them back
  
 ### 1. Design your logger
-You've been thinking at a high level about a timer and what it is used for; now you need to adapt that to the specific implementation. 
+You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
+
+In addition to the sensors you've tried out, your kit has a photocell, which is a light-varying resistor. We also have limited number (15) of the following sensors:
+* Flex sensor
+* Time of Flight sensor
+* Long arm snap switch
+* Rocker switch
+as well as two sets of this sensor variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ)
  
 Your data logger will have two main modes: one where it logs data and another where it plays the data back. Think a little about what sensors you would like to log data from and how you would like to display your data. Create a state diagram sketch that indicates how you'd like to switch between one mode and the other, and also what you'd like the program to do in each state. This can help you decide what buttons or knobs might be useful for your design.
  
