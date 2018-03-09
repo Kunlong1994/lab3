@@ -76,20 +76,33 @@ However, to _actually_ hook up your encoder, just use the 3-pin side. Hook the m
  
 What is going on in this circuit? The Phase A and Phase B pins actually behave like switches, so the pins have pull-ups so that they will be high by default, until they are pulled low by the encoder (your Arduino actually uses its own internal pull-ups). The resistor and capacitor combo also forms a low-pass circuit to eliminate stray voltage spikes that might occur from the quick switching (this is called "debouncing"). You can use any capacitor that is up to an order of magnitude away from the 10nF value.
  
-Use the following rotary encoder code to see if you have hooked the encoder up correctly!
+Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Rotary-Encoder-test-Code) to see if you have hooked the encoder up correctly!
 
 ## Part D. Logging values to the EEPROM and reading them back
  
 ### 1. Design your logger
-Think about something that could be logged using the sensors you've learned to use! It's okay if the application is somewhat fictional; it's just nice to have a story in mind that drives your design.
+You've been thinking at a high level about a timer and what it is used for; now you need to adapt that to the specific implementation. 
  
 Your data logger will have two main modes: one where it logs data and another where it plays the data back. Think a little about what sensors you would like to log data from and how you would like to display your data. Create a state diagram sketch that indicates how you'd like to switch between one mode and the other, and also what you'd like the program to do in each state. This can help you decide what buttons or knobs might be useful for your design.
  
 You might make changes to your design before this lab is complete.
  
 **a. Turn in a copy of your final state diagram.**
+
+### 2. Reading and writing values to the Arduino EEPROM
+The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
+
+**a. How many byte-sized data samples can you store on the Atmega328?**
+**b. How would you get your analog data from the ADC to be byte-sized?**
+
+Use the code in the `File->Examples->EEPROM` as a template to write and read your own analog values to Arduino's EEPROM. (Ignore what they say about the EEPROM having only 512 bytes. You'll have to adjust your code to match the EEPROM size of the Arduino Micro. The [Atmega328 datasheet](https://www.microchip.com/wwwproducts/en/atmega328p) tells you how much EEPROM it has too).
  
-### 2. Create your data logger!
-Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time. You are welcome to play back to either the 16x2 LCD or the serial monitor. 
+[Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM)
+
+### 3. Reading and writing values to the Raspberry Pi
+**DAVID, THIS IS SOMETHING FOR YOU TO WRITE**
+
+### 4. Create your data logger!
+Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time. You are welcome to play back to either the 16x2 LCD or the Pi, as suits the application. 
  
 **a. Use the lab camera or your own camera/cell phone to record and upload a short demo video of your logger in action.**
