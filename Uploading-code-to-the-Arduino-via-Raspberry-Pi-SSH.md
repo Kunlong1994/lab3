@@ -156,12 +156,14 @@ void testdrawrect(void);
 
 
 8. Compiling 
+
 Once You have defined the funtion prototypes you can go ahead and run `make` to compile the program. Notice how it will create a `build-uno` folder.
 ```shell
 make
 ```
 
 9. Uploading
+
 The code is uploaded with the command `make upload`. This does not work if you have not compiled it before. 
 ```shell
 make upload
