@@ -23,7 +23,7 @@ Some more sophisticated sensors have ICs that measure physical phenomena and the
  
 ### 1. IR Distance Sensor
 
-[insert distance sensor photo]
+[[IR_Sensor.png]]
 
  
 Get an IR distance sensor and an IR distance sensor jumper cable. The circuit for the distance sensor is simple: just connect red to +5V, black to ground, and white to analog input 0.
