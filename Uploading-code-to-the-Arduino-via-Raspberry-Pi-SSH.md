@@ -55,17 +55,17 @@ cd libraries
 git clone https://github.com/adafruit/Adafruit-GFX-Library
 git clone https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library
 ```
-2. After downloading we need to rename the folder. We need to remove the "-Library" part at the end. We do this by `moving` the folder to its new name like so:
+2. After downloading we need to rename the folder. We need to remove the "-Library" and "-Nokia-5110-LCD-library"  part respectively. We do this by `moving` the folder to its new name like so:
 
 ```shell
 mv Adafruit-GFX-Library Adafruit-GFX
 mv Adafruit-PCD8544-Nokia-5110-LCD-library Adafruit-PCD8544
 ```
-
-Lets repeat this quickly for the other library
-
+Typically you can find the desired folder name in the installation instructions that come with the packages.
 
 
+
+You folder structure should look for this example something like the following (`tree -L 3`):
 ```shell
 pi@ixe[XX]:~/sketchbook $ tree -L 3
 .
@@ -127,7 +127,7 @@ pi@ixe[XX]:~/sketchbook $ tree -L 3
 ```
 Notice how the folder names have been changed to `Adafruit-GFX` and `Adafruit-PCD8544`.
 
-6. Now we need to edit the a make file inside your project to also include the libraries. We do this by specifing the libraries folder name behind the `Arduino_LIBS=` field. After adding the librariesthe makefile should look something like this:
+6. Now we need to edit the a makefile inside your project to also include the libraries. We do this by specifing the libraries folder name behind the `Arduino_LIBS=` field. After adding the libraries the makefile should look something like this:
 
 ```make
 BOARD_TAG = uno
@@ -136,8 +136,10 @@ ARDUINO_LIBS = SPI Adafruit-GFX Adafruit-PCD8544
 ARDUINO_DIR = /usr/share/arduino
 include ../Arduino.mk
 ```
+We added the standard `SPI` library, `Adafruit-GFX` and `Adafruit-PCD8544` separated by a space.
 
-7. One thing that this command line version of Arduino does not do is create `funtion prototypes`. `function protypes` just define at the top of the program what a function is called whith-out defining what it actually does. To compile and run our example code with the display example we need to add the following lines aobve the `void setup(){}` funtion.
+
+7. One thing that this command line version of Arduino does not do is automatically create for us are `funtion prototypes`. `function prototypes` define at the top of the program what a function is called without defining what it actually does. To compile and run our example code with the display example we need to add the following lines above the `void setup(){}` function. **If you are running a different example just go through and see where functions are defined. If you find one copy the first line of the function above void setup, remove the loos `{` and add a `;`.** 
 
 ```c++
 void testdrawline(void);
@@ -149,21 +151,30 @@ void testdrawtriangle(void);
 void testfilltriangle(void);
 void testdrawroundrect(void);
 void testfillroundrect(void);
-void testdrawrect(void) ;
+void testdrawrect(void);
 ```
 
-Once You have defined the funtion prototypes you can go ahead and run `make`
+
+8. Compiling 
+Once You have defined the funtion prototypes you can go ahead and run `make` to compile the program. Notice how it will create a `build-uno` folder.
 ```shell
 make
 ```
 
-and then
+9. Uploading
+The code is uploaded with the command `make upload`. This does not work if you have not compiled it before. 
 ```shell
 make upload
 ``` 
-to compile and then upload your code to the arduino.
 
- 
+10. Monitor the Arduino
+Arduino Make also has a build in function to connect as a SerialMonitor
+Just run:
+```shell
+make monitor
+```
+**Important**
+To close the monitor hit `CONTROL+a` and then type `k`for "kill" and then `y` for "yes". 
 
 
 
@@ -173,6 +184,5 @@ to compile and then upload your code to the arduino.
 
 
 These are the essential steps in setting up a new project that can compile and upload code to the Arduino. 
-
 
 
