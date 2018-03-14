@@ -61,7 +61,7 @@ git clone https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library
 mv Adafruit-GFX-Library Adafruit-GFX
 mv Adafruit-PCD8544-Nokia-5110-LCD-library Adafruit-PCD8544
 ```
-Typically you can find the desired folder name in the installation instructions that come with the packages.
+Typically you can find the desired folder name in the installation instructions that come with the packages you are trying to install.
 
 
 
