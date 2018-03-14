@@ -19,10 +19,10 @@ cp ~/sketchbook/blink/makefile makefile
 4. Create a new `.ino` arduino code file, or upload the file from somewhere else. In this example, we are trying to upload and install the example for the [old Nokia screens available from Adafruit](https://www.adafruit.com/product/338). The [GitHub page](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library) for this project includes instructions and an example.
 
 To copy the example file directly from Github:
-1. Navigate to the example folder [link](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/tree/master/examples/pcdtest)
-1. Open the example[link](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/blob/master/examples/pcdtest/pcdtest.ino)
-1. Click on `Raw` to get the direct link to the file [link](https://raw.githubusercontent.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/master/examples/pcdtest/pcdtest.ino)
-1. Use the `wget` command on the RPI to directly download the file in to the folder you created. For this example this looks like:
+1. Often examples for these boards can easily be found on Google or GitHub for the screen follow [this link](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/tree/master/examples/pcdtest)
+1. Navigate to the example page through the folder structure [link](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/blob/master/examples/pcdtest/pcdtest.ino)
+1. Click on `Raw` at the top right corner you can get the direct link to the example program. [like so](https://raw.githubusercontent.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/master/examples/pcdtest/pcdtest.ino)
+1.  With this link we can use the `wget` command on the RPI to directly download the file in to the folder you created. For this example this looks like:
 ```shell 
 wget https://raw.githubusercontent.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/master/examples/pcdtest/pcdtest.ino
 ```
