@@ -1,12 +1,12 @@
 #  Data logging with Rpi and Arduino
 
-For this lab, we will be experimenting with a variety of sensors, play it back on your LCD display and serial monitor, and logging data back to the Raspberry Pi, and making it possible to remotely view the data in real-time.
+For this lab, we will be experimenting with a variety of sensors, play it back on your LCD display or serial monitor, logging data back to the Raspberry Pi, and making it possible to remotely view the data in real-time.
 
 
 ## Part A.  Writing to the Serial Monitor
 Hook up the simple potentiometer voltage divider circuit from lab 4.
  
-[potentiometer voltage divider schematic]
+[[images/Pot_schem.png]]
  
 The LCD display from the last lab is a great and helpful tool for debug purposes; the serial monitor is another. Use the code from `File->Examples->Communication->Graph` as a template to print data from your potentiometer to the serial monitor. Don't disconnect the USB cable after uploading the code; instead, use the serial monitor button on the Arduino IDE (in the upper right corner, magnifying glass icon) to see the data coming from the Arduino. 
  
