@@ -6,7 +6,7 @@ For this lab, we will be experimenting with a variety of sensors, play it back o
 ## Part A.  Writing to the Serial Monitor
 Hook up the simple potentiometer voltage divider circuit from lab 4.
  
-[[images/LEDandPot_schem.png]]
+[[images/Pot_schem.png]]
  
 The LCD display from the last lab is a great and helpful tool for debug purposes; the serial monitor is another. Use the code from `File->Examples->Communication->Graph` as a template to print data from your potentiometer to the serial monitor. Don't disconnect the USB cable after uploading the code; instead, use the serial monitor button on the Arduino IDE (in the upper right corner, magnifying glass icon) to see the data coming from the Arduino. If the Arduino is connected to the RaspberryPi you can either use [xWindows](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Uploading-code-to-the-Arduino-via-Raspberry-Pi-XWindows) to open the serial monitor or use [ArduinoMake](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Uploading-code-to-the-Arduino-via-Raspberry-Pi-SSH) to Upload and monitor your Arduino.
  
