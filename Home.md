@@ -16,5 +16,8 @@ In this wiki, you will find different helpful tips and links to resources that w
 ---
 [Lab #4](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%234) Basic electronics with Arduino
 
+
+---
+[Lab #5](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%235)
 ---
 <!--1. The first assignments are all about the [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki) please follow the link to the wiki pages./-->
