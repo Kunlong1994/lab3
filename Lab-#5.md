@@ -141,7 +141,7 @@ Now you can go to your browser and connect to the Raspberry Pi just like before 
 4. The graph you'll see is rendered using [vega-light](https://vega.github.io/vega-lite/). For this assignment change the appearance so it fits your data. 
 
 The design of the graph is defined at the top of the `client.js` file inside the `webServer/public/` folder. The available elements can be found by going through the [example](https://vega.github.io/vega-lite/examples/) looking at the [vega-light documentation](https://vega.github.io/vega-lite/docs/) and by playing with the [vega-light  online editor](https://vega.github.io/editor). 
-The design define definition is all part of `vlSpec`:
+The design define definition is all part of `vlSpec` object:
 
 ```javascript
 var vlSpec ={
