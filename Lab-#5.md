@@ -87,7 +87,7 @@ In addition to the sensors you've tried out, your kit has a photocell, which is 
 * Long arm snap switch
 * Rocker switch
 
-as well as two sets of this sensor variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ)
+as well as two sets of this sensor variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/SensorDocumentation.zip)
 
 A lot of the art of data logging is being clever about how to use the sensor. Feel free to engage the teaching team for advice.
 
