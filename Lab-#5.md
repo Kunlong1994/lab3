@@ -108,13 +108,35 @@ Use the code in the `File->Examples->EEPROM` as a template to write and read you
 ### 3. Reading and writing values to the Raspberry Pi
 Alternatively, you can also store the data directly on the Raspberry Pi. This has certain advantages like disk space or the build in clock but also require the Pi to be constantly connected and on. The [simple-data-logger](https://github.com/FAR-Lab/simple-data-logger/tree/master) stores the data on the Raspberry Pi from the Arduino.
 
-In the folder `sensorCode` is a simple Arduino program that periodically sends sensor values over the serial port.You can use this or any of the earlier code to send the measure values to the RaspberryPi.
+There are three folders inside the project.
+* In the folder `sensorCode` is a simple Arduino program that periodically sends sensor values over the serial port.
+* The `dataStorage` folder contains an node program `dataStorage.js`. It opens the serial port and writes any(!) incoming messages into the `dataBase.csv`.  Don't forget to run 'npm install' to get all required packages.
+* `webServer` is a simple node web server `server.js` application, that streams the `dataBase.csv` file and additions to that file line by line to any connected web browser.Don't forget to run 'npm install' to get all required packages.
 
-The `dataStorage` folder contains an node program that opens the serial port and writes any(!) incoming message into the `dataBase.csv` file in the parent folder.
+1. Set up your Arduino so that it sends its data over the serial port. You can use the provided `sensorCode.ino` or code from any of the earlier examples.
 
+2. Start the `dataStorage.js` with `nohup` so it can keep logging data in the background, even if you log off. Like so:
+```shell
+nohup node dataStorage.js &
+```
+Before we go on lets verify that data is actually stored. Lets go one folder up with `cd ..` and look at the `tail` of the file with the `-F` flag so that it keeps refreshing any changes.
+```shell
+tail -F dataBase.csv
+```
+Every time the Arduino sends a new measurement it should appear here. It probably looks something like
+```csv
+date,value
+1500000003500,868
+1500000005501,867
+1500000007499,866
+```
+The left side of the comma is a time measurement in [unix time](https://en.wikipedia.org/wiki/Unix_time) with milliseconds, the right side the sensor value at that time.
 
+3. start the web server by going into the web server folder `cd webServer` and run `node server.js`.
+Now you can go to your browser and connect to the Raspberry Pi just like before with the Interaction Engine
+`ixe[00].local:8000`.
  
-**DAVID, THIS IS SOMETHING FOR YOU TO WRITE**
+4
 
 ### 4. Create your data logger!
 Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time. You are welcome to play back to either the 16x2 LCD or the Pi, as suits the application. 
