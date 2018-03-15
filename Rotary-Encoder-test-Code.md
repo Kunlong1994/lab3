@@ -1,3 +1,4 @@
+```c++
 /* Rotary encoder test code
  * Modified from http://www.circuitsathome.com/mcu/programming/reading-rotary-encoder-on-arduino by Oleg
  * Latest mod by Jessica Faruque 7/17/2013
@@ -48,3 +49,4 @@ int read_encoder()
  
  
 }
+```
