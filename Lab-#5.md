@@ -72,8 +72,6 @@ The circuit below is the "correct" way of hooking up a rotary encoder with your 
  
 However, to _actually_ hook up your encoder, just use the 3-pin side. Hook the middle to ground, and the "A" and "B" pins to digital pins 2 and 3 of your Arduino.
  
-
- 
 What is going on in this circuit? The Phase A and Phase B pins actually behave like switches, so the pins have pull-ups so that they will be high by default, until they are pulled low by the encoder (your Arduino actually uses its own internal pull-ups). The resistor and capacitor combo also forms a low-pass circuit to eliminate stray voltage spikes that might occur from the quick switching (this is called "debouncing"). You can use any capacitor that is up to an order of magnitude away from the 10nF value.
  
 Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Rotary-Encoder-test-Code) to see if you have hooked the encoder up correctly!
@@ -108,6 +106,14 @@ Use the code in the `File->Examples->EEPROM` as a template to write and read you
 [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM)
 
 ### 3. Reading and writing values to the Raspberry Pi
+Alternatively, you can also store the data directly on the Raspberry Pi. This has certain advantages like disk space or the build in clock but also require the Pi to be constantly connected and on. The [simple-data-logger](https://github.com/FAR-Lab/simple-data-logger/tree/master) stores the data on the Raspberry Pi from the Arduino.
+
+In the folder `sensorCode` is a simple Arduino program that periodically sends sensor values over the serial port.You can use this or any of the earlier code to send the measure values to the RaspberryPi.
+
+The `dataStorage` folder contains an node program that opens the serial port and writes any(!) incoming message into the `dataBase.csv` file in the parent folder.
+
+
+ 
 **DAVID, THIS IS SOMETHING FOR YOU TO WRITE**
 
 ### 4. Create your data logger!
