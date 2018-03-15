@@ -6,7 +6,7 @@ If you want to update your code remotely you can use the Raspberry Pi to compile
 cd ~/sketchbook/
 ```
 
-2. Create a folder for your project into the sketchbook folder and change directory to it.
+2. Create a folder for your project in the sketchbook folder and change directory to it.
 ```shell
 mkdir yourFolderName/
 cd yourFolderName/
