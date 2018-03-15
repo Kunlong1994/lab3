@@ -35,7 +35,7 @@ The other two libraries are not standard but are easily found on Google or GitHu
 
 Most common libraries for Arduino will be available over GitHub. So these installation instructions should apply independently of the library you are trying to install.
 
-1. Lets make a new libraries folder inside the sketchbook folder.
+1. Let's make a new libraries folder inside the sketchbook folder.
 ```shell
 cd ~/sketchbook/ 
 mkdir libraries
