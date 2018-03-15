@@ -16,15 +16,11 @@ cd yourFolderName/
 ```shell
 cp ~/sketchbook/blink/makefile makefile
 ```
-4. Create a new `.ino` arduino code file, or upload the file from somewhere else. In this example, we are trying to upload and install the example for the [old Nokia screens available from Adafruit](https://www.adafruit.com/product/338). The [GitHub page](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library) for this project includes instructions and an example.
-
-To copy the example file directly from Github, find the .ino file in the GitHub page, and use the `wget` command to download the raw file into the folder you created.
-
+4. Create a new `.ino` arduino code file, or upload the file from somewhere else. In this example, we are trying to upload and install the example for the [old Nokia screens available from Adafruit](https://www.adafruit.com/product/338). To copy the example file directly from Github, find the .ino file in the [GitHub page](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library), and use the `wget` command to download the raw file into the folder you created.
 ```shell 
 wget https://raw.githubusercontent.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library/master/examples/pcdtest/pcdtest.ino
 ```
-
-5.Now that the file has been downloaded we need to download and install all required libraries that are used by the Arduino board to communicate with the display. At the top of the Arduino-code file (pcdtest.ino) we can see that we require three additional libraries. This is notated in the Arduino with the `#include` command. The three libraries are:
+5. Now we need to download and install the required libraries that are used by the Arduino board to communicate with the display. At the top of the Arduino-code file (pcdtest.ino) we can see that we require three additional libraries. This is notated in the Arduino with the `#include` command. The three libraries are:
 ```arduino
 #include <SPI.h>
 #include <Adafruit_GFX.h>
@@ -33,11 +29,11 @@ wget https://raw.githubusercontent.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-
 
 * `SPI` is a library that is always included with the Arduino development environment(IDE) so we don't need to worry about it for now.
 
-The other two libraries are not standard but are easily found on google/github.
+The other two libraries are not standard but are easily found on Google or GitHub.
 * `Adafruit_GFX` library is available from [GitHub from Adafruit](https://github.com/adafruit/Adafruit-GFX-Library). It is a basic graphics library.
 * `Adafruit_PCD8544` Is the actual 'device driver' for the display. Again the[Code for that is on Github](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library)
 
-Most common libraries for Arduino will be available over GitHub. So these installation instructions should apply ion depend of the library you are trying to install.
+Most common libraries for Arduino will be available over GitHub. So these installation instructions should apply independently of the library you are trying to install.
 
 1. Lets make a new libraries folder inside the sketchbook folder.
 ```shell
