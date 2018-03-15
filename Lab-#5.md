@@ -139,7 +139,33 @@ Now you can go to your browser and connect to the Raspberry Pi just like before 
 4. The graph you'll see is rendered using [vega-light](https://vega.github.io/vega-lite/). For this assignment change the appearance so it fits your data. 
 
 The design of the graph is defined at the top of the `client.js` file inside the `webServer/public/` folder. The available elements can be found by going through the [example](https://vega.github.io/vega-lite/examples/) looking at the [vega-light documentation](https://vega.github.io/vega-lite/docs/) and by playing with the [vega-light  online editor](https://vega.github.io/editor). 
+The design define definition is all part of `vlSpec`:
 
+```javascript
+var vlSpec ={
+ "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+ "data": { "name": "table","format": {
+      "parse": {
+        "date": "utc:'%Q'"
+      }
+    }
+   },
+ "width": 1000,
+  "height":500,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "timeUnit":"utcyearmonthdatehoursminutessecondsmilliseconds",
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative"
+    }
+  }
+};
+```
 ### 4. Create your data logger!
 Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time. You are welcome to play back to either the 16x2 LCD or the Pi, as suits the application. 
  
