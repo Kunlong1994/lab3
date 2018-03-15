@@ -68,7 +68,7 @@ Like a potentiometer, a rotary encoder has 3 pins; unlike a potentiometer, an en
  
 The circuit below is the "correct" way of hooking up a rotary encoder with your Arduino; the resistors and capacitors help to filter out noise from the mechanical operation of the encoder - this circuit diagram is from the datasheet.
 
-!(https://ccrma.stanford.edu/wiki/images/c/c1/Encoder_filter.png)
+[[https://ccrma.stanford.edu/wiki/images/c/c1/Encoder_filter.png]]
  
 However, to _actually_ hook up your encoder, just use the 3-pin side. Hook the middle to ground, and the "A" and "B" pins to digital pins 2 and 3 of your Arduino.
  
