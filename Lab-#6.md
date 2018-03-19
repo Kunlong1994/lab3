@@ -32,6 +32,6 @@ d. Include a copy of the Arduino code, and a copy of your Server and client side
 ## Part C. Make it yours
 Add a feature. 
 
-For example, make it possible to save a drawing, or make it possible to recall a drawing after it has been cleared from the screen.
+For example, make it possible to save a drawing, or make it possible to recall a drawing after it has been cleared from the screen. Or make a multi-player Etch-a-sketch.
 
 a. Upload video of your Etch-a-Sketch in action, being used by someone else in the class!
