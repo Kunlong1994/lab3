@@ -3,13 +3,13 @@
 ## Overview
 Let's get some hands-on experience with a graphical LCD and SD Cards for large storage. We'll then make an electronic Etch-a-Sketch.
  
-## In The Report
+### In The Report
 Include your responses and uploads to the green questions. Include snippets of code that explain what you did. Embed a video demo of your data logger, and please follow the Lab Report Guidelines. Deliverables are due one week after your lab session. Post your lab reports as 'wiki' pages.
  
-## Parts
+### Parts
 Don't forget to collect the new parts for your kits by the printer!
  
-### Part A. Graphical LCD
+## Part A. Graphical LCD
 The datasheet for the controller on the LCD display is here. Graphical LCD needs to be powered at 3.3V, so we use a voltage shfiter (HEF 4050BP) attached with GLCD pakcage. You may find datasheet and pinout information for HEF 4050BP here.
  
 1. Install the Graphical LCD libraries using Arduino's Sketch > Import Library > Add Library menu. It's already installed on the lab computer(s). 
@@ -64,7 +64,7 @@ It is very likely that image is not showing right for the first uploading, press
  
 a. Upload a photo of your personal logo, shown on your LCD screen, to your Lab 5 page.
  
-### Part B. microSD Card
+## Part B. microSD Card
 The microSD card communicates with the Arduino Micro using SPI. We'll be using modified SD card adapters as microSD card readers.
  
 
@@ -119,7 +119,7 @@ a. Post your code.
  
 a. Tell us what you had to change to make this work.
  
-### Part D. Create an Etch-a-Sketch!
+## Part D. Create an Etch-a-Sketch!
 Use any combination of input sensors and switches with the Graphical LCD  to create your own unique Etch a Sketch. You are welcome to make as liberal an interpretation of the Etch a Sketch concept as you like, as long as you:
  
 - Allow a user to control the creation of a drawing
@@ -132,7 +132,7 @@ Optional: Make it possible to recall a drawing after it has been cleared from th
 Note: Your fellow students have found that you have to init your SD card before your LCD in the setup function.
  
 Hint: The Adafriut_PCD8544 library includes a variable, named nokia_5110_lcd, which is a buffer to store the LCD's entire screen. We've made this variable public, so you can use it. Just so you know what it looks like, here's its library definition:
- 
+``` c++
 #define LCDWIDTH  84
 #define LCDHEIGHT 48
  
@@ -140,16 +140,13 @@ class Adafruit_PCD8544 : public Adafruit_GFX {
 public:
 ...
 uint8_t pcd8544_buffer[LCDWIDTH * LCDHEIGHT / 8];
- 
+```
 By the way, the cryptic "uint8_t" data type is just a C/C++ way of defining (exactly) an unsigned 8 bit integer. You can copy the contents of the screen buffer to a file just by saving the pcd_8544_buffer variable, like this:
- 
+```c++
 myFile.write(display.pcd8544_buffer, 504);
- 
+```
 You can then read the data back from the file, and restore the screen buffer, like this:
- 
+```c++
 myFile.readBytes((char *)display.pcd8544_buffer, 504);
- 
-a. Upload video of your Etch-a-Sketch in action!
-b. Post a link to the Lab 5 Etch-a-Sketch Hall of Fame.
- 
-The best Etch-a-Sketch wins a $10 gift certificate at Sparkfun. This is the last chance for swag...
+```
+a. Upload video of your Etch-a-Sketch in action, being used by someone else in the class!
