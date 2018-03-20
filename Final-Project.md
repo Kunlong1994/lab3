@@ -26,8 +26,8 @@ Plan to host documentation of the projects on Github You should set up your own 
 ## Evaluation
 
 Evaluation of this project will be based in equal measure on assessment of:
-* Your design (Was it a good plan?),
-* Its execution (Did you do a good job building what you intended?),
-* Its fit to your point of view (Does it fulfill the intended purpose well?),
-* Your process (Did you allocate your time and resources well?) and
-* Your documentation (Can someone learn how to do what you did?) 
+* Your design (_Was it a good plan?_)
+* Its execution (_Did you do a good job building what you intended?_)
+* Its fit to your point of view (_Does it fulfill the intended purpose well?_)
+* Your process (_Did you allocate your time and resources well?_)
+* Your documentation (_Can someone learn how to do what you did?_) 
