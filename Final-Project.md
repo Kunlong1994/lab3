@@ -1,10 +1,10 @@
 # Design your own Interactive Device!
  
-### Functional Project check-off May 3rd
+Functional Project check-off May 3rd
 
-### Project Presentations May 8th
+Project Presentations May 8th
 
-### Documentation due May 8th
+Documentation due May 8th
  
 ## Objective
 
