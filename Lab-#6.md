@@ -25,14 +25,14 @@ Use any combination of input sensors and switches with the Graphical LCD  to cre
 - Give users real-time feedback of what the user is drawing
 - Make it possible to clear a drawing
 
-1. Describe which sensors you are using as inputs and why.
-1. What range of output X & Y values do you need? Is it better to map the values from the inputs to the outputs in the Arduino code or the Node code? Why?
-1. How often do you need to be sending data from the Arduino?
-1. Include a copy of the Arduino code, and a copy of your Server and client side code.
+1. **Describe which sensors you are using as inputs and why.**
+1. **What range of output X & Y values do you need? Is it better to map the values from the inputs to the outputs in the Arduino code or the Node code? Why?**
+1. **How often do you need to be sending data from the Arduino?**
+1. **Include a copy of the Arduino code, and a copy of your Server and client side code.**
 
 ## Part C. Make it yours
 Add a feature. 
 
 For example, make it possible to save a drawing, or make it possible to recall a drawing after it has been cleared from the screen. Or make a multi-player Etch-a-sketch.
 
-1. Upload video of your Etch-a-Sketch in action, being used by someone else in the class!
+1. **Upload video of your Etch-a-Sketch in action, being used by someone else in the class!**
