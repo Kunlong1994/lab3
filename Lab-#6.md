@@ -31,7 +31,7 @@ Don't forget to use `git add .`, `git commit -m 'message'` and `git push` to upd
 The Etch a Sketch example closely follows the hello world example from the first and second labs. Remember the flashing background and blinking lights.
 [[https://github.com/nikmart/interaction-engine/wiki/images/IxE_Explanation.gif]]
 
-Lets go quickly through it one more time. The Arduino is connected to the Raspberry Pi over a serial connection. This serial connection is handled by the node server(`node server.js`). The node server communicates with a remote web browser by making the `public` folder available and by opening a web socket channel. The `public` folder contains the `index.html` and `client.js` files. The `client.js` is loaded in from the web browser and handles all data going to and coming from the node server running on the Raspberry Pi. 
+Let's go quickly through it one more time. The Arduino is connected to the Raspberry Pi over a serial connection. This serial connection is handled by the node server(`node server.js`). The node server communicates with a remote web browser by making the `public` folder available and by opening a web socket channel. The `public` folder contains the `index.html` and `client.js` files. The `client.js` is loaded when the web browser interprets the `index.html` file, and handles all data going to and coming from the node server running on the Raspberry Pi. 
 
 1. **Where in this code does the drawing occur?**
 1. **What are the inputs to the drawing function?**
