@@ -26,7 +26,8 @@ Use any combination of input sensors and switches with the Node Canvas to create
 - Make it possible to clear a drawing
 
 1. **Describe which sensors you are using as inputs and why.**
-1. **In what format does the server expect the x and y values from the Arduino.**
+1. **In what format does the server expect the X & Y values from the Arduino?**
+1. **What else does the Arduino need to do? The sensorCode folder has an almost working example.**
 1. **What range of output X & Y values do you need? Is it better to map the values from the inputs to the outputs in the Arduino code, the Node code or Client code ? Why?**
 1. **How often do you need to be sending data from the Arduino?**
 1. **Include a copy of the Arduino code, and a copy of your Server and client side code.**
