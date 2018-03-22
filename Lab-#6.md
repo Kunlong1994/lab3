@@ -12,7 +12,21 @@ Include your responses to the **bold** questions, and include snippets of code t
 ## Part A. Node Canvas
 This week's lab is based on the following Node.js code that creates a canvas for drawing: http://wesbos.com/html5-canvas-websockets-nodejs/
  
-Set up the IxE to serve the client.js  client, and to run this server.js code. You can [fork and then clone](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) the [etch-a-sketch example](https://github.com/FAR-Lab/etch-a-sketch). This example is not completely finished.
+Set up the IxE to serve the client.js  client, and to run this server.js code.
+
+Fork [this example project](https://github.com/FAR-Lab/etch-a-sketch) to your own repository by clicking the fork button on the top right.
+
+[[images/fork.png]]
+
+GitHub will make a copy for you on which you can work.
+
+After logging in to your Ice over ssh. You can now go ahead and `clone` __your forked version__ of the Etch a Sketch example. Adapt the following example with your name
+
+```shell
+git clone https://github.com/**_YourGITRepoName_**/etch-a-sketch
+```
+This command will download a copy of your repository to your IxE. 
+Don't forget to use `git add .`, `git commit -m 'message'` and `git push` to update your code to the GitHub. If this is unclear have a look at the [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf).
 
 1. **Where in this code does the drawing occur?**
 1. **What are the inputs to the drawing function?**
