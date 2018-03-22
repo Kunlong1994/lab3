@@ -20,7 +20,7 @@ Fork [this example project](https://github.com/FAR-Lab/etch-a-sketch) to your ow
 
 GitHub will make a copy for you on which you can work.
 
-After logging in to your Ice over ssh. You can now go ahead and `clone` __your forked version__ of the Etch a Sketch example. Adapt the following example with your name
+After logging in to your IxE over ssh. You can now go ahead and `clone` __your forked version__ of the Etch a Sketch example. Adapt the following example with your name
 
 ```shell
 git clone https://github.com/**_YourGITRepoName_**/etch-a-sketch
