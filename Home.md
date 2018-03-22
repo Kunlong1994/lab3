@@ -14,11 +14,15 @@ In this wiki, you will find different helpful tips and links to resources that w
 
 
 ---
-[Lab #4](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%234) Basic electronics with Arduino
+[Lab #4](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%234) Basic electronics with Arduino.
 
 
 ---
-[Lab #5](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%235)
+[Lab #5](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%235) Data logger and visualizer.
+
+---
+[Lab #6](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%236) Etch-a-sketch 
+
 
 ---
 [Final Project](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Final-Project)
