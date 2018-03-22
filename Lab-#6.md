@@ -28,6 +28,11 @@ git clone https://github.com/**_YourGITRepoName_**/etch-a-sketch
 This command will download a copy of your repository to your IxE. 
 Don't forget to use `git add .`, `git commit -m 'message'` and `git push` to update your code to the GitHub. If this is unclear have a look at the [GitHub Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf).
 
+The Etch a Sketch example closely follows the hello world example from the first and second labs. Remember the flashing background and blinking lights.
+[[https://github.com/nikmart/interaction-engine/wiki/images/IxE_Explanation.gif]]
+
+Lets go quickly through it one more time. The Arduino is connected to the Raspberry Pi over a serial connection. This serial connection is handled by the node server(`node server.js`). The node server communicates with a remote web browser by making the `public` folder available and by opening a web socket channel. The `public` folder contains the `index.html` and `client.js` files. The `client.js` is loaded in from the web browser and handles all data going to and coming from the node server running on the Raspberry Pi. 
+
 1. **Where in this code does the drawing occur?**
 1. **What are the inputs to the drawing function?**
 1. **How can the screen be cleared?**
