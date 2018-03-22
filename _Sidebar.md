@@ -7,3 +7,4 @@
 1. [Lab #3](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab3-Laser-Cutting-and-3d-Printing)
 1. [Lab #4](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%234)
 1. [Lab #5](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%235)
+1. [Lab #6](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%236)
