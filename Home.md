@@ -23,8 +23,8 @@ In this wiki, you will find different helpful tips and links to resources that w
 
 ---
 [Lab #6](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%236) Etch-a-sketch 
--->
+
 
 ---
-[Final Project](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Final-Project)
+[Final Project](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Final-Project)-->
 <!--1. The first assignments are all about the [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki) please follow the link to the wiki pages./-->
