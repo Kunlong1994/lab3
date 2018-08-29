@@ -29,7 +29,7 @@ Wire the power rails of your breadboard so that the red rails are connected to t
 With the Arduino unplugged, build the circuit below. Use a 100 Ohm resistor. (Hint, this is not what is shown in the image below.)
 
 ![Button LED Resistor schematic]()
-If you need a diagram of what this looks like on your board, [here's a hint](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/docs/button_led_resistor_diagram.png)
+If you need a diagram of what this looks like on your board, [here's a hint](docs/button_led_resistor_diagram.png)
 
 **a. What color stripes are on a 100 Ohm resistor?**
 
