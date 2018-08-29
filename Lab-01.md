@@ -2,13 +2,19 @@
  
 ## Overview
 For this assignment, you are going to 
+
 A) [Set up a breadboard](#part-a-set-up-a-breadboard) 
+
 B) [Manually blink a LED](#part-b-manually-blink-a-led) 
+
 C) [Blink a LED using the Arduino](#part-c-blink-led-using-the-Arduino)
+
 D) [Manually fade a LED](#part-d-manually-face-a-led) and 
+
 E) [Fade a LED using Arduino](#part-e-timer)
+
 F) Frankenlight (#part-f-frankenlight)
-BONUS) [make your timer sing!](#part-e-tone).
+
  
 ## In The Report
 Include your responses to the bold questions on your own fork of the lab activities. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
@@ -29,7 +35,7 @@ Wire the power rails of your breadboard so that the red rails are connected to t
 With the Arduino unplugged, build the circuit below. Use a 100 Ohm resistor. (Hint, this is not what is shown in the image below.)
 
 ![Button LED Resistor schematic]()
-If you need a diagram of what this looks like on your board, [here's a hint](docs/button_led_resistor_diagram.png)
+If you need a diagram of what this looks like on your board, [here's a hint](../docs/button_led_resistor_diagram.png)
 
 **a. What color stripes are on a 100 Ohm resistor?**
 
