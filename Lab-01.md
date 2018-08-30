@@ -147,4 +147,4 @@ We have perfboards in the lab, which provide a handy way to connect your parts. 
 
 **Include any schematics or photos in your lab write-up.**
 
-The best Frankenlight will win a $10 gift certificate at Tinkersphere.
+The best Frankenlight will win a $10 gift certificate at [Tinkersphere](https://tinkersphere.com).
