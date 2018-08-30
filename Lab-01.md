@@ -27,7 +27,7 @@ You should have already have installed the [Arduino software](http://arduino.cc/
 
 Wire the power rails of your breadboard so that the red rails are connected to the +5V pin of the Metro Mini, and the blue or black rails are connected to the GND pin.  
 
-[insert photo of breadboard setup]
+![Button LED Resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/breadboard_setup.png)
 
 ## Part B. Manually Blink a LED
 
