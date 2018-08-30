@@ -104,6 +104,7 @@ The percentage of time that the LED is on (called the duty cycle) controls its a
 Update your circuit so the jumper wire connects to pin 11. (To control an LED using PWM, you have to connect it to one of the pins that supports PWM (not all do!).
 
 ![Arduino LED fade schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade_schematic.png)
+
 Here's a [hint diagram](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade.png) if you need it.
 
 On your computer, in the Arduino IDE, open the Fade sketch (File > Examples > 01.Basics > Fade ).
