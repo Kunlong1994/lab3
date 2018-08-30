@@ -1,0 +1,9 @@
+For the upcoming lab, we will be building digital timers.
+
+You will be soldering together your 16x2 LCD display (data sheet) so here is a quick set of videos from NASA showing how to solder: https://radiojove.gsfc.nasa.gov/telescope/soldering.htm
+
+Also this week you will be designing an interaction. Technology-wise, you will make a timer, and there is almost no way to fail at making that timer, because we will tell you exactly how to build a timer. However, the point of the lab is not to build the timer, but to figure out a cool interaction that you can make possible with the timer.  You could make a game where people have to try to press a button more times than their friend in a certain amount of time. You could make something that sings you to sleep, and gets quieter and quieter over 3 minutes. You could make something that you hit as you start to run down a hall, and then hit again, to see how fast you can run. 
+
+Please come up with 10 ideas of what you could do. These are things that are intended to be possible lab ideas. They do not need to be potential market block busters. They do need to be things you feel like doing next week, and also you will be asked to film one of your classmates trying it out, so something your classmate will be comfortable doing on film. Draw sketches with each of your ideas. 
+
+Here is some reading for this week. It is not necessary to figuring out how to do the lab, but is intended to help you understand what it means to design interactive devices, and also to understand the role that prototype interactions: Bill Moggridge, Designing Interactions, [Chapter 1](http://www.designinginteractions.com/downloads/DesigningInteractions_1.pdf) & [Chapter 10](http://www.designinginteractions.com/downloads/DesigningInteractions_10.pdf).
