@@ -7,11 +7,11 @@ A) [Set up a breadboard](#part-a-set-up-a-breadboard)
 
 B) [Manually blink a LED](#part-b-manually-blink-a-led) 
 
-C) [Blink a LED using the Arduino](#part-c-blink-led-using-the-Arduino)
+C) [Blink a LED using the Arduino](#part-c-blink-led-using-a-Arduino)
 
-D) [Manually fade a LED](#part-d-manually-face-a-led) and 
+D) [Manually fade a LED](#part-d-manually-fade-a-led) and 
 
-E) [Fade a LED using Arduino](#part-e-timer)
+E) [Fade a LED using Arduino](#part-e-fade-a-led-using-arduino)
 
 F) Frankenlight (#part-f-frankenlight)
 
@@ -100,7 +100,7 @@ The percentage of time that the LED is on (called the duty cycle) controls its a
 
 Update your circuit so the jumper wire connects to pin 11. (To control an LED using PWM, you have to connect it to one of the pins that supports PWM (not all do!).
 
-## Part E. Fade an LED using Arduino
+## Part E. Fade a LED using Arduino
 
 On the Metro Mini, these are pins 3, 5, 6, 9, 10 and 11.
 
@@ -136,4 +136,3 @@ We have perfboards in the lab, which provide a handy way to connect your parts. 
 **Include any schematics or photos in your lab write-up.**
 
 The best design will win a $10 gift certificate at Tinkersphere. Sweet!
-
