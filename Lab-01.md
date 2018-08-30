@@ -9,7 +9,7 @@ B) [Manually blink a LED](#part-b-manually-blink-a-led)
 
 C) [Blink a LED using the Arduino](#part-c-blink-led-using-a-Arduino)
 
-D) [Manually fade a LED](#part-d-manually-fade-a-led) and 
+D) [Manually fade a LED](#part-d-manually-fade-a-led) 
 
 E) [Fade a LED using Arduino](#part-e-fade-a-led-using-arduino)
 
@@ -99,10 +99,6 @@ The fading light is done using pulse width modulation, or PWM. The LED is toggle
 The percentage of time that the LED is on (called the duty cycle) controls its apparent brightness.
 
 Update your circuit so the jumper wire connects to pin 11. (To control an LED using PWM, you have to connect it to one of the pins that supports PWM (not all do!).
-
-## Part E. Fade a LED using Arduino
-
-On the Metro Mini, these are pins 3, 5, 6, 9, 10 and 11.
 
 ![Arduino LED fade schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade_schematic.png)
 Here's a [hint diagram](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade.png) if you need it.
