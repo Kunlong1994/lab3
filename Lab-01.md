@@ -77,6 +77,8 @@ To compile and upload your code, take the following steps (note that 1, 2 should
 4) To upload compiled code to the Arduino, click on "right arrow" besides the "checkmark."
 5) When the code is uploaded, the Arduino should automatically start running your new code.
 
+**d. Change the `delay` parameter to modify blink rate of your LED to make it blink faster. At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking? Discuss with your partner!)**
+
 ### 2. Blink your LED
 
 Now modify the circuit and program so that you can blink an external LED on pin 9.
@@ -84,6 +86,8 @@ Now modify the circuit and program so that you can blink an external LED on pin 
 ![Arduino LED resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_resistor_schematic.png)
 
 **Make a video of your LED blinking, and add it to your lab submission.**
+
+
 
 ## Part D. Manually fade an LED
 
