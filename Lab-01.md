@@ -35,10 +35,13 @@ Wire the power rails of your breadboard so that the red rails are connected to t
 With the Arduino unplugged, build the circuit below. You can use any color LED. Use a 100 Ohm resistor. 
 
 ![Button LED Resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor.png)
+
 If you need a diagram of what this looks like on your board, [here's a hint](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor_diagram.png)
 
 If your button doesn’t work, check that it’s oriented as shown below. You might need to rotate it by 90 degrees. 
+
 ![Button image](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_image.png)
+
 A typical pushbutton, when pressed, connects the 2 pins on one side to the 2 pins on the other side.
 **a. What color stripes are on a 100 Ohm resistor?**
 
@@ -135,4 +138,4 @@ We have perfboards in the lab, which provide a handy way to connect your parts. 
 
 **Include any schematics or photos in your lab write-up.**
 
-The best design will win a $10 gift certificate at Tinkersphere. Sweet!
+The best Frankenlight will win a $10 gift certificate at Tinkersphere.
