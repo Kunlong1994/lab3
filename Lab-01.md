@@ -86,7 +86,7 @@ Now modify the circuit and program so that you can blink an external LED on pin 
 
 Set up the following circuit, and try making the LED glow brighter and dimmer.
 
-![Arduino LED resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_resistor_schematic.png)
+![Arduino LED resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/led_pot_schematic.png)
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
