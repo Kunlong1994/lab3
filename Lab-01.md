@@ -75,7 +75,7 @@ To compile and upload your code, take the following steps (note that 1, 2 should
 4) To upload compiled code to the Arduino, click on "right arrow" besides the "checkmark."
 5) When the code is uploaded, the Arduino should automatically start running your new code.
 
-**d. Change the `delay` parameter to modify blink rate of your LED to make it blink faster. At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking? **
+**d. Change the `delay` parameter to modify blink rate of your LED to make it blink faster. At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking?**
 
 **e. Modify the code to make your LED blink *your way*. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
