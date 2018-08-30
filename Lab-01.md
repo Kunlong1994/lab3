@@ -13,7 +13,7 @@ D) [Manually fade a LED](#part-d-manually-fade-a-led) and
 
 E) [Fade a LED using Arduino](#part-e-fade-a-led-using-arduino)
 
-F) Frankenlight (#part-f-frankenlight)
+F) [Frankenlight](#part-f-frankenlight)
 
  
 ## In The Report
