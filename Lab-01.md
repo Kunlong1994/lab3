@@ -27,14 +27,14 @@ You should have already have installed the [Arduino software](http://arduino.cc/
 
 Wire the power rails of your breadboard so that the red rails are connected to the +5V pin of the Metro Mini, and the blue or black rails are connected to the GND pin.  
 
-![Button LED Resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/breadboard_setup.png)
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/breadboard_setup.png" width=400>
 
 ## Part B. Manually Blink a LED
 
 **a. What color stripes are on a 100 Ohm resistor?**
 With the Arduino unplugged, build the circuit below. You can use any color LED. Use a 100 Ohm resistor. 
 
-![Button LED Resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor.png)
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor.png" width=300>
 
 If you need a diagram of what this looks like on your board, [here's a hint](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor_diagram.png)
 
@@ -58,7 +58,7 @@ Arduino boards typically come preloaded with a version of the Blink program on i
 
 Launch the Arduino application on your computer. It will open to the template of a new empty sketch. Here is what it looks like:
 
-![Arduino Application window](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_window.png)
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_window.png" width=300>
 
 Check out the Blink example code: [File->Examples->Basics->Blink](https://www.arduino.cc/en/Tutorial/Blink). 
 
@@ -83,6 +83,8 @@ To compile and upload your code, take the following steps (note that 1, 2 should
 
 Now modify the circuit and program so that you can blink an external LED on pin 9.
 
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_resistor_schematic.png" width=300>
+
 ![Arduino LED resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_resistor_schematic.png)
 
 **Make a video of your LED blinking, and add it to your lab submission.**
@@ -93,7 +95,7 @@ Now modify the circuit and program so that you can blink an external LED on pin 
 
 Set up the following circuit, and try making the LED glow brighter and dimmer.
 
-![Arduino LED resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/led_pot_schematic.png)
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/led_pot_schematic.png" width=300>
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
@@ -107,7 +109,7 @@ The percentage of time that the LED is on (called the duty cycle) controls its a
 
 Update your circuit so the jumper wire connects to pin 11. (To control an LED using PWM, you have to connect it to one of the pins that supports PWM (not all do!).
 
-![Arduino LED fade schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade_schematic.png)
+<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade_schematic.png" width=300>
 
 Here's a [hint diagram](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_fade.png) if you need it.
 
