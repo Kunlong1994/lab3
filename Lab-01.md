@@ -67,8 +67,6 @@ Check out the Blink example code: [File->Examples->Basics->Blink](https://www.ar
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 
 **c. What circuit element would you want to add to protect the board and external LED?**
- 
-Modify the code to make your LED blink *your way*.
 
 To compile and upload your code, take the following steps (note that 1, 2 should only have to be done once):
 1) In the Arduino IDE, select the board we are using: Tools -> Board -> Arduino/Genuino UNO 
@@ -77,7 +75,9 @@ To compile and upload your code, take the following steps (note that 1, 2 should
 4) To upload compiled code to the Arduino, click on "right arrow" besides the "checkmark."
 5) When the code is uploaded, the Arduino should automatically start running your new code.
 
-**d. Change the `delay` parameter to modify blink rate of your LED to make it blink faster. At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking? Discuss with your partner!)**
+**d. Change the `delay` parameter to modify blink rate of your LED to make it blink faster. At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking? **
+
+**e. Modify the code to make your LED blink *your way*. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
 ### 2. Blink your LED
 
@@ -88,8 +88,6 @@ Now modify the circuit and program so that you can blink an external LED on pin 
 ![Arduino LED resistor schematic](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/arduino_led_resistor_schematic.png)
 
 **Make a video of your LED blinking, and add it to your lab submission.**
-
-
 
 ## Part D. Manually fade an LED
 
@@ -118,6 +116,7 @@ On your computer, in the Arduino IDE, open the Fade sketch (File > Examples > 01
 Look at the code.
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
+
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
 Now upload your sketch and check that the LED fades on and off. Try changing a few parameters to make your own funky lighting pattern.
