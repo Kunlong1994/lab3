@@ -136,6 +136,8 @@ For this part of lab, you get to hack apart an existing electronic device.
 
 We have perfboards in the lab, which provide a handy way to connect your parts. You may want to make your light using passive components (such as switches, resistors or potentiometers) rather than your microcontroller (also known as a μC), unless you think of a nice way to incorporate the μC into your design without soldering it inside of a light. (You'll need it back for future labs and projects!) If your design does require a μC, perhaps you can run a lead from your breadboard to the main light, although you'll lose portability that way. Clever use of components is encouraged!
 
+**Make a video showing off your Frankenlight.**
+
 **Include any schematics or photos in your lab write-up.**
 
 The best Frankenlight will win a $10 gift certificate at Tinkersphere.
