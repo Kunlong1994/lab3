@@ -20,28 +20,26 @@ Include your responses to the bold questions on your own fork of [this lab repor
 
 You'll need to attach the header pins that came with your LCD character panel to your actual panel. Easiest is to insert the short end of the header pins into the back of the LCD panel, so that the long pins stick out the back and you can insert your LCD panel into a breadboard for easy use.
 
-**If you have never soldered before, please come talk to one of us!**
+**If you have never soldered before, we're happy to show you how! PLEASE ASK!!**
 
 ## Part B. Writing to the LCD
 Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
  
-` File->Examples->LiquidCrystal`
+`File->Examples->LiquidCrystal`
  
 Let's start with the "Display" program, which just flashes "Hello World!" These LCDs are a custom part, but there's a lot of information at [this](https://www.adafruit.com/product/181) page, the [pinout and dimensions](https://cdn-shop.adafruit.com/product-files/181/p181.pdf) page and the [LCD controller](https://www.adafruit.com/datasheets/HD44780.pdf) page.
  
 **a. What voltage level do you need to power your display?**
+
 **b. What voltage level do you need to power the display backlight?**
  
-Solder a 16 pin breakaway header to the LCD so you can connect it to your breadboard. 
-
-**If you haven't soldered before, we're happy to show you how! PLEASE ASK.**
 ![](https://cdn-shop.adafruit.com/1200x900/181-03.jpg)
 
 Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up. 
 
 [[images/lcd_arduino_schematic.png]]
  
-**Be very careful not to connect Pin 1 and Pin 2 on the LCD**, as this can **destroy** your Arduino. Check the connections for a short between power and ground before you plug in power or the USB cable.
+**Be very careful not to connect Pin 1 to Pin 2 on the LCD**, as this can **destroy** your Arduino. Check the connections for a short between power and ground before you plug in power or the USB cable.
  
 See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more information. See [LCD Library](http://arduino.cc/en/Reference/LiquidCrystal) for the various functions you can use.
 
@@ -53,22 +51,21 @@ LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel
  
 Do try to set this up before peeking at this [diagram](images/lcd_arduino_diagram.png).
   
-**b. What was one mistake you made when wiring up the display? How did you fix it?**
+**c. What was one mistake you made when wiring up the display? How did you fix it?**
 
-**c. What line of code do you need to change to make it flash your name instead of "Hello World"?**
+**d. What line of code do you need to change to make it flash your name instead of "Hello World"?**
  
 Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
 
 Incorporate the LCD into your fading LED/potentiometer code so that you can read out the exact analog value that you are reading in on Analog Pin 0. It's your own lowly multimeter!
 
-**d. Include a copy of your Lowly Multimeter code in your lab write-up.**
+**e. Include a copy of your Lowly Multimeter code in your lab write-up.**
 
+<!-- Now build a circuit with two FSR sensors (one from your self and one borrowed from a fellow student) to enable a game of thumb wrestling. Use the LCD to indicate who is squeezing their FSR harder!
 
-Now build a circuit with two FSR sensors (one from your self and one borrowed from a fellow student) to enable a game of thumb wrestling. Use the LCD to indicate who is squeezing their FSR harder!
+**f. Include a copy of your FSR thumb wrestling code in your lab write-up.** -->
 
-**e. Include a copy of your FSR thumb wrestling code in your lab write-up.**
-
-Leave your LCD set up for Part D of the Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
+Leave your LCD set up for the rest of Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
 
 ## Part C. Make your own timer
 
