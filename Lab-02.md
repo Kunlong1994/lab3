@@ -20,7 +20,7 @@ Include your responses to the bold questions on your own fork of [this lab repor
 
 You'll need to attach the header pins that came with your LCD character panel to your actual panel. Easiest is to insert the short end of the header pins into the back of the LCD panel, so that the long pins stick out the back and you can insert your LCD panel into a breadboard for easy use.
 
-
+**If you have never soldered before, please come talk to one of us!**
 
 ## Part B. Writing to the LCD
 Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
