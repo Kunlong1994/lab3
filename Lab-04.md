@@ -47,7 +47,7 @@ Connect the servo to your breadboard, supplying power and ground to the appropri
 
 ### Part 2. Connect the Servo to your Arduino
 
-Now open the Sweep sketch in the Arduino IDE. 
+Now open the [Sweep](https://www.arduino.cc/en/Tutorial/Sweep) sketch in the Arduino IDE. 
 
 ```File > Examples > Servo > Sweep```
 
