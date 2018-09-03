@@ -1,0 +1,85 @@
+Data Logger (and Cool sensors!)
+
+For this lab, we will be experimenting with a variety of sensors, sending the data to the Arduino serial monitor, writing data to the EEPROM of the Arduino, and then playing the data back.
+
+## Part A.  Writing to the Serial Monitor
+Hook up the simple potentiometer voltage divider circuit from Lab 01.
+ 
+[[images/Pot_schem.png]]
+ 
+The LCD display from the Lab 02 is a great and helpful tool for debug purposes; the serial monitor is another. Use the code from `File->Examples->Communication->Graph` as a template to print data from your potentiometer to the serial monitor. Don't disconnect the USB cable after uploading the code; instead, use the serial monitor button on the Arduino IDE (in the upper right corner, magnifying glass icon) to see the data coming from the Arduino. 
+ 
+**a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
+ 
+**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you using with the range of values you're seeing?
+ 
+You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. You can see from the sample code included in the comments of the Graph program that you could use the serial communication functions to communicate data from your sensors to other programs, such as Processing, Flash, MaxMSP.
+ 
+For this lab, you can use the serial monitor and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
+ 
+## Part B. Voltage Varying Sensors 
+Some more sophisticated sensors have ICs that measure physical phenomena and then output an analog voltage level, varying voltage much as a voltage divider circuit would. We have one of these for each table.
+ 
+### 1. Lowly multimeter Soft Pot, Bend Sensor, Photo cell
+ [ update image]
+### 2. Accelerometer
+[ update image]
+ 
+The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is a 3.3V part, but the Adafruit board has an onboard voltage regulator so that the part can be powered on 5V power on the Vin pin.
+ 
+[Datasheet](https://cdn-shop.adafruit.com/datasheets/LIS3DH.pdf)
+[Product Page](https://www.adafruit.com/product/2809)
+ 
+Unlike the other parts we've used to date, this is a "smart sensor" which can communicate the sensor readings digitally (rather than through an analog voltage) using communication protocols I2C and SPI. We'll be using I2C.
+ 
+[This example code](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino) is meant to read values from a 3-axis accelerometer out to a computer over the serial monitor. Test it out!
+ 
+Adapt the code to indicate what your readings are on the X, Y and Z axes of the accelerometer on your 16x2 LCD panel.
+ 
+Get a feel for the data the accelerometer provides. Pick up the Arduino+accelerometer board and tilt it in various directions. Start by holding it so that the accelerometer board is parallel to the ground. Find in which direction the X reading increases and decreases; do the same for the Y reading.
+ 
+**a. Include your accelerometer read-out code in your write-up.**
+
+### 3. IR Proximity Sensor
+
+[update image]
+
+Solder together your IR proximity sensor.
+
+[Product page[(https://www.adafruit.com/product/466) 
+[IR Proximity sensor Datasheet](https://cdn-shop.adafruit.com/datasheets/vcnl4000.pdf)
+ 
+Use [these instructions and code from Adafruit](https://learn.adafruit.com/using-vcnl4010-proximity-sensor/arduino) to look at the data the sensor returns. What happens when the field of view is clear? Move your hand or a piece of paper over the sensor and see how the readings vary with distance.
+ 
+**a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
+
+## Part C. Logging values to the EEPROM and reading them back
+ 
+### 1. Design your logger
+You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
+
+In addition to the sensors in your kit, we have sensors from this variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/SensorDocumentation.zip).
+
+A lot of the art of data logging is being clever about how to use the sensor. Feel free to engage the teaching team for advice.
+
+Your data logger will have two main modes: one where it logs data and another where it plays the data back. Think a little about what sensors you would like to log data from and how you would like to display your data. Create a state diagram sketch that indicates how you'd like to switch between one mode and the other, and also what you'd like the program to do in each state. This can help you decide what buttons or knobs might be useful for your design.
+ 
+You might make changes to your design before this lab is complete.
+ 
+**a. Turn in a copy of your final state diagram.**
+
+### 2. Reading and writing values to the Arduino EEPROM
+The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
+
+**a. How many byte-sized data samples can you store on the Atmega328?**
+**b. How would you get your analog data from the ADC to be byte-sized?**
+
+Use the code in the `File->Examples->EEPROM` as a template to write and read your own analog values to Arduino's EEPROM. (Ignore what they say about the EEPROM having only 512 bytes. You'll have to adjust your code to match the EEPROM size of the Arduino Micro. The [Atmega328 datasheet](https://www.microchip.com/wwwproducts/en/atmega328p) tells you how much EEPROM it has too).
+ 
+[Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM)
+
+
+### 3. Create your data logger!
+Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on the 16x2 LCD display
+ 
+**a. Record and upload a short demo video of your logger in action.**
