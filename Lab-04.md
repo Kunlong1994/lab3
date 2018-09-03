@@ -49,7 +49,7 @@ Connect the servo to your breadboard, supplying power and ground to the appropri
 
 Now open the Sweep sketch in the Arduino IDE. 
 
-File > Examples > Servo > Sweep
+```File > Examples > Servo > Sweep```
 
 **a. Which Arduino pin should the signal line of the servo be attached to?**
 Upload the sketch to the Arduino. Your servo should start sweeping back and forth, by about 180 degrees.
