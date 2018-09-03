@@ -6,7 +6,7 @@ The physical housing and mechanisms of interactive devices are as important as t
 
 This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle.com) project. For now, we will be using the paper displays to make paper puppets controlled by the Arduino, but you are welcome to revisit the "voice control" part later in the quarter with the Raspberry Pi. 
 
-![https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/raw/docs/wave.gif]
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/raw/docs/wave.gif)
 ## In the Report
 
 Description of your design
