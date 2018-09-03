@@ -1,4 +1,4 @@
-Data Logger (and Cool sensors!)
+# Data Logger (and using cool sensors!)
 
 For this lab, we will be experimenting with a variety of sensors, sending the data to the Arduino serial monitor, writing data to the EEPROM of the Arduino, and then playing the data back.
 
