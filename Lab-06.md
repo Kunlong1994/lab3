@@ -1,52 +1,14 @@
 # Chatbot
 
+In this tutorial, we will use a Raspberry Pi to create a chatbot! The Pis we are giving you have a specific set and configuration of files known as Interaction Engine, created by Nikolas Martelaro. Those files were pre-copied onto the microSD card in your Raspberry Pi.
+
 ## Connect to your Interaction Engine
 
-Replace **[00]** with your interaction engine number on your SD card.
+The Pi is a single-board computer, but it doesn't have it's own keyboard or mouse, so we will be connecting remotely over wifi to it using your laptop. 
 
-### If your laptop is on eduroam or RedRover and your IxE is on DeviceFarm in **BLOOMBERG**
-For SSH use:
-```
-ssh pi@interactive-device-design-2.tech.cornell.edu -p 122[00]  
-```
+We will [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into the system so that we can control the computer via [Terminal on Mac](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) or [PuTTy on Windows](https://www.ssh.com/ssh/putty/download).
 
-Connect to the Website
-```
-interactive-device-design-2.tech.cornell.edu:280[00]
-```
-
-### If your laptop is on eduroam or RedRover and your IxE is on DeviceFarm in **TATA**
-For SSH use:
-```
-ssh pi@interactive-device-design-1.tech.cornell.edu -p 122[00]  
-```
-
-Connect to the Website
-```
-interactive-device-design-1.tech.cornell.edu:280[00]
-```
-
-### If your laptop is on DeviceFarm, The House, or your own WiFi network:
-
-For SSH use:
-```
-ssh pi@ixe[00].local  
-```
-
-Connect to the Website
-```
-ixe[00].local:8000
-```
-
-Instructions to get the pi running on your local network are here, please try them out and help us debug them: https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Other-ways-to-connect-IxE-to-your-computer.
-
---- 
-
-This is a copy of the [original resources](https://github.com/nikmart/interaction-engine/wiki/Log-on-to-your-Interaction-Engine).
-In this tutorial, we will ssh into the system so that we can control the computer via Terminal or PuTTy on Windows.
-
-**_In this example we often use `ixe[00].local`. This ONLY works if you are connected locally. if you are connected remotely or through the device arm WiFi, please replace the addresses with the ones explained in [If your laptop is on eduroam or RedRover and your IxE is on DeviceFarm](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-%231#if-your-laptop-is-on-eduroam-or-redrover-and-your-ixe-is-on-devicefarm)._**
-
+These instructions assume you are connected locally to your IxE. If you are connected remotely, follow these instructions instead.
 
 ### 1. Verify IxE is online
 TL,DR
@@ -107,9 +69,6 @@ Once you are signed in, your terminal will now be the terminal for the IxE. You 
 ```shell
 pi@ixe05 ~ $
 ```
-
-
-
 
 
 ## Setup and run the ChatBot Example
@@ -201,9 +160,7 @@ To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you 
 
 ## Record someone trying out your ChatBot
 
-Using a phone or other video device, record someone trying out your ChatBot. (This does not need to be an advertisement for your ChatBot; it is okay if the person is confused or asks questions or doesn't like it. We like the drama.) Post the video to your assignment on Slack!
+Using a phone or other video device, record someone trying out your ChatBot. (This does not need to be an advertisement for your ChatBot; it is okay if the person is confused or asks questions or doesn't like it. We like the drama.) Post the video to your README.md page!
 
 ## Submitting the Code
-Please submit your code by submitting a link to your forked GitHub project on your personal homework slack channel.
-
-Instructions on how to fork then clone a project **OR** rebase a cloned project can be found [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project).
+Please submit your code by linking your forked GitHub project on your personal class page.
