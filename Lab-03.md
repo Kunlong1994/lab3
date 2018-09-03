@@ -18,11 +18,32 @@ You can also read inputs from the serial monitor, or wait for the serial monitor
 For this lab, you can use the serial monitor and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
  
 ## Part B. Voltage Varying Sensors 
-Some more sophisticated sensors have ICs that measure physical phenomena and then output an analog voltage level, varying voltage much as a voltage divider circuit would. We have one of these for each table.
+One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
  
-### 1. Lowly multimeter Soft Pot, Bend Sensor, Photo cell
- [ update image]
+### 1. Soft Pot, Flex Sensor, Photo cell
+Now that you have a set up that lets you look at changes in the analog voltage from the potentiometer, let's swap in other analog sensors!
+
+The FSR changes resistance — in this case when pressure is applied to the FSR. [Here's the datasheet](https://cdn-shop.adafruit.com/datasheets/FSR400Series_PD.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code.
+
+[insert circuit drawing]
+
+a. What resistance values do you see from your force sensor?
+
+b. What kind of relationship does the resistance have as a function of the force applied? (e.g., linear?)
+
+c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?
+
+Now experiment with the [flex sensor](https://www.adafruit.com/product/1070) and [photo cell](https://www.adafruit.com/product/161).  
+
+a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?
+
+b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)
+
+
 ### 2. Accelerometer
+
+Some more sophisticated sensors have ICs that measure physical phenomena and then output an analog voltage level, varying voltage much as a voltage divider circuit would. 
+
 [ update image]
  
 The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is a 3.3V part, but the Adafruit board has an onboard voltage regulator so that the part can be powered on 5V power on the Vin pin.
@@ -78,8 +99,7 @@ Use the code in the `File->Examples->EEPROM` as a template to write and read you
  
 [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM)
 
-
 ### 3. Create your data logger!
-Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on the 16x2 LCD display
+Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on the 16x2 LCD display.
  
 **a. Record and upload a short demo video of your logger in action.**
