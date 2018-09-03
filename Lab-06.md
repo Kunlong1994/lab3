@@ -72,7 +72,7 @@ pi@ixe05 ~ $
 
 
 ## Setup and run the ChatBot Example
-Welcome to the simple-ChatBot wiki!
+
 ### Installation
 Clone(download) the repository from GitHub to the IxE. 
 1. Go to the home folder with ```cd ~```
