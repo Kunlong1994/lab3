@@ -1,6 +1,6 @@
 For the upcoming lab, we will be building digital timers.
 
-1. SOLDERING REIVEW: You will be soldering together your 16x2 LCD display ([wiki](http://wiki.sunfounder.cc/index.php?title=LCD1602_Module#Pins_Functions)) so here is a quick set of videos from NASA showing how to solder: https://radiojove.gsfc.nasa.gov/telescope/soldering.htm
+1. SOLDERING REVIEW: You will be soldering together your 16x2 LCD display ([wiki](http://wiki.sunfounder.cc/index.php?title=LCD1602_Module#Pins_Functions)) so here is a quick set of videos from NASA showing how to solder: https://radiojove.gsfc.nasa.gov/telescope/soldering.htm
 
 2. MakerLAB SAFETY TRAINING: Niti will be holding a MakerLAB safety training for our class Wednesday noon-1. Also, alternatively, you can sign up for the [3D printing intro course](https://docs.google.com/spreadsheets/d/1SCsjm5ChHe1xX7xxJP6MGZ61jjD-aRLfZWe7CevZvxY/edit?usp=sharing) or the [laser cutting and etching intro course](https://docs.google.com/spreadsheets/d/1b4NDgdCMYCE9pZwI7wYKx4peV_jiKzFOrR7NVwaaO54/edit?usp=sharing) during any time slot you find available.
 
