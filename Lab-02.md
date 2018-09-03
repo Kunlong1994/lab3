@@ -7,11 +7,11 @@ A) [Solder your LCD panel](#part-a-solder-your-lcd-panel)
 
 B) [Write text to an LCD Panel](#part-b-writing-to-the-lcd) 
 
-C) [Make your own timer](#part-c-make-your-own-timer) 
+c) [Using a time-based digital sensor!](#part-c-using-a-time-based-digital-sensor)
 
-D) [Make your timer sing!](#part-d-make-your-timer-sing)
+D) [Make your Arduino sing!](#part-d-make-your-arduino-sing)
 
-E) [Using a time-based sensor!](#part-e-the-rotary-encoder)
+E) [Make your own timer](#part-e-make-your-own-timer) 
  
 ## In The Report
 Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab2). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
@@ -89,7 +89,7 @@ What is going on in this circuit? The Phase A and Phase B pins actually behave l
  
 Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Rotary-Encoder-test-Code) to see if you have hooked the encoder up correctly!
 
-## Part D. Make the Arduino sing!
+## Part D. Make your Arduino sing!
 
 Let's make the Arduino make some noise! We are going to start with the Tone example program:
  
