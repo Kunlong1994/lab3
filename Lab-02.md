@@ -130,7 +130,3 @@ Note that for some of you, the time may seem to be decremented by 10 each second
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
 **b. Post a link to the completed lab report your GitHub repo.**
-
-
-
-_Super awesome circuit schematics by [David Sirkin](https://me.stanford.edu/people/david-sirkin). Thanks David!_
