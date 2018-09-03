@@ -10,14 +10,11 @@ We will [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into the system so tha
 
 These instructions assume you are connected locally to your IxE. If you are connected remotely, follow these instructions instead.
 
+Your IxE has a unique name, something like `ixe##` where the number corresponds to the number on the SD card (ex: ixe01, ixe04, ixe11)
+
 ### 1. Verify IxE is online
-TL,DR
-1. `ping` + `ixe[00].local` (change the last digits, and remove the brackets to match yours)
-2. Is it running? If yes, cool. `control + C` and move on to step 2.
 
-LONGER VERSION
-
-First, `ping` the system to make sure it is online. (If not, [troubleshoot](Getting-an-IxE-based-Pi-on-your-Wi-Fi#troubleshooting) to get it online). Remember your IxE will be named something like `ixe##` where the number corresponds to the number on the SD card (ex: ixe01, ixe04, ixe11). You can use `control + C` to exit the ping (this looks like `^C` in the terminal).
+First, in your terminal program, `ping` your IxE to make sure it is online. 
 
 ```shell
 nik@DN51sk9s:~$ ping ixe05.local
@@ -32,11 +29,14 @@ PING ixe05.local (192.168.2.2): 56 data bytes
 5 packets transmitted, 5 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 0.467/0.576/0.720/0.103 ms
 ```
+You can use `control + C` to exit the ping (this looks like `^C` in the terminal).
+
+If you do not see the response from the `ping command`, [troubleshoot](Getting-an-IxE-based-Pi-on-your-Wi-Fi#troubleshooting) to get your IxE online.  
 
 ### 2.  SSH into the IxE.
-Log in to your Pi using the command `ssh pi@ixe[00].local` with the password: `raspberry`
+From your terminal, log in to your Pi using the command `ssh pi@ixe[00].local` with the password: `raspberry`
 
-When you first log in it will ask you if you want to continue connecting. Say `yes`
+When you first log in it will ask you if you want to continue connecting. Say `yes`.
 
 ```shell
 ssh pi@ixe00.local
@@ -70,7 +70,6 @@ Once you are signed in, your terminal will now be the terminal for the IxE. You 
 pi@ixe05 ~ $
 ```
 
-
 ## Setup and run the ChatBot Example
 
 ### Installation
@@ -89,7 +88,7 @@ At this point, you will have downloaded the main program and all required packag
 ### Start-Up
 Now we need to start the server and connect to it with a browser.
 We start the server by typing ```node chatServer.js```
-In a browser go to ```ixe[00].local:8000``` (replace the [00] with the number associated with that interaction engine).
+In a browser, go to ```ixe[00].local:8000``` (replace the [00] with the number associated with that interaction engine).
 Once loaded, you should see a text field and the first greeting from the ChatBot.
 
 #### Debugging
