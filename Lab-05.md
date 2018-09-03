@@ -1,8 +1,8 @@
 # Useless box
 
-[Andrea, I'm including what we had before in the Laser cutting 3D printing lab as a starter...]
+[Andrea, I'm including what we had before in the Laser cutting 3D printing lab as a starter... Basically I suggest we make a box, but 3D print the finger]
 
-For this week’s lab, we want you to experiment with digital fabrication tools. The methods that will be used are 3D printing and laser cutting.  
+For this week’s lab, we will be building a useless box; this is a project inspired by [Make Magazine](https://makezine.com/projects/the-most-useless-machine/) and a [similar lab](https://web.stanford.edu/class/engr40m/labs/lab2a.pdf) at Stanford's [ENGR40m](https://web.stanford.edu/class/engr40m/). We will use this lab to help you to experiment with digital fabrication tools. The methods that will be used are 3D printing and laser cutting.  
 
 ## 3D printing
 1. Complete the first [Tinkercad](https://www.tinkercad.com/) tutorial. You’ll need to create an account.
