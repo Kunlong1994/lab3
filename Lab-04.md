@@ -41,7 +41,7 @@ The potentiometer tells the feedback circuit the servo’s current position, and
 
 Servo motors generally have 3 wires; power, ground and signal. [Here](https://www.adafruit.com/product/169) is the product page for the servos in your kit. 
 
-** a. Which color wires correspond to power, ground and signal? **
+**a. Which color wires correspond to power, ground and signal?**
 
 Connect the servo to your breadboard, supplying power and ground to the appropriate pins. 
 
@@ -51,12 +51,12 @@ Now open the Sweep sketch in the Arduino IDE.
 
 File > Examples > Servo > Sweep
 
-** a. Which Arduino pin should the signal line of the servo be attached to? **
+**a. Which Arduino pin should the signal line of the servo be attached to?**
 Upload the sketch to the Arduino. Your servo should start sweeping back and forth, by about 180 degrees.
 
 Change some parameters in the sketch to make the servo sweep slower, or over a smaller angle.
 
-** b. What aspects of the Servo code control angle or speed? **
+**b. What aspects of the Servo code control angle or speed?**
 
 ## Part C. Integrating input and output
 
@@ -64,7 +64,7 @@ Using what you've learned already, write code to control the servo motor circuit
 * adjusting the servo motor rotation to reflect the reading on a potentiometer voltage divider circuit, (Yes, it is fine to use any other analog voltage sensor!), or, 
 * reflecting pre-programmed actions you design. 
 
-** Include a photo/movie of your raw circuit in action. **
+**Include a photo/movie of your raw circuit in action.**
 
 ## Part D. Paper puppet
 
@@ -74,10 +74,10 @@ Using what you've learned already, write code to control the servo motor circuit
 
 Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. Here are instructions to [put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) with the Arduino and the microservo.
 
-** a. Make a video of your proto puppet. **
+**a. Make a video of your proto puppet.**
 
 ## Part E. Make it your own
 
 Now modify this set up to make this your own design. You can use a different paper template, you can set the design in a particular setting, you can enact a mini puppet show. If your design involves having someone controlling the puppet in real time, please film that happening. Otherwise, film the puppet performing it's moves. 
-** a. Make a video of your final design. **
+**a. Make a video of your final design.**
  
