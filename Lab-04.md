@@ -79,5 +79,6 @@ Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/fil
 ## Part E. Make it your own
 
 Now modify this set up to make this your own design. You can use a different paper template, you can set the design in a particular setting, you can enact a mini puppet show. If your design involves having someone controlling the puppet in real time, please film that happening. Otherwise, film the puppet performing it's moves. 
+
 **a. Make a video of your final design.**
  
