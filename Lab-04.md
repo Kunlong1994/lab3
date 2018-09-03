@@ -68,6 +68,8 @@ Using what you've learned already, write code to control the servo motor circuit
 
 [Andrea, do you think we should use the vinyl cutter to pre-make some of the templates for this? or develop instructions to teach people to use the vinyl cutter?]
 
+![https://papersignals.withgoogle.com/static/images/instructions/slides/stretch_00011.png]
+
 Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. Here are instructions to [put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) with the Arduino and the microservo.
 
 * a. Make a video of your proto puppet.*
