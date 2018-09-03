@@ -6,6 +6,7 @@ The physical housing and mechanisms of interactive devices are as important as t
 
 This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle.com) project. For now, we will be using the paper displays to make paper puppets controlled by the Arduino, but you are welcome to revisit the "voice control" part later in the quarter with the Raspberry Pi. 
 
+![https://papersignals.withgoogle.com/static/videos/grid/sports.mp4]
 ## In the Report
 
 Description of your design
@@ -65,6 +66,6 @@ Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/fil
 
 ## Part E. Make it your own
 
-Now modify this set up to make this your own design. If your design involves having someone controlling the puppet in real time, please film that happening. Otherwise, film the puppet performing it's moves. 
+Now modify this set up to make this your own design. You can use a different paper template, you can set the design in a particular setting, you can enact a mini puppet show. If your design involves having someone controlling the puppet in real time, please film that happening. Otherwise, film the puppet performing it's moves. 
 * a. Make a video of your final puppet.*
  
