@@ -1,6 +1,8 @@
 # Chatbot
 
-In this tutorial, we will use a Raspberry Pi to create a chatbot! The Pis we are giving you have a specific set and configuration of files known as [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki), created by [Nikolas Martelaro](http://nikmartelaro.com). Those files were pre-copied onto the microSD card in your Raspberry Pi.
+In this tutorial, we will use a Raspberry Pi to create a chatbot! Your Pi will be serving up it's own webpages with a interface that allows people to type in text entries and receive your Chatbot's replies.
+
+The Pis we are giving you have a specific set and configuration of files known as [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki), created by [Nikolas Martelaro](http://nikmartelaro.com). Those files were pre-copied onto the microSD card in your Raspberry Pi.
 
 ## Connect to your Interaction Engine
 
@@ -73,11 +75,11 @@ pi@ixe05 ~ $
 ## Setup and run the ChatBot Example
 
 ### Installation
-Clone(download) the repository from GitHub to the IxE. 
-1. Go to the home folder with ```cd ~```
-1. Frok the github project you are trying to download, by clicking the fork button on the top right side.
-1. Copy the link to your forked version of the project.(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). 
-1. Clone the git repository with
+Clone (download) the repository from GitHub to the IxE. 
+1. From the terminal window which is logged into the Pi, go to the home folder with ```cd ~```
+1. In a web browser on your laptop, fork the github project you are trying to download, by clicking the fork button on the top right side.
+1. Copy the link to your forked version of the project.<!--(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). -->
+1. From the terminal window which is logged into the Pi, clone the git repository with the copied information
 ```
 git clone https://github.com/**_YOURUSERNAME_**/simple-ChatBot simple-ChatBot
 ```
@@ -86,9 +88,11 @@ git clone https://github.com/**_YOURUSERNAME_**/simple-ChatBot simple-ChatBot
 At this point, you will have downloaded the main program and all required packages to run it. 
 
 ### Start-Up
-Now we need to start the server and connect to it with a browser.
-We start the server by typing ```node chatServer.js```
-In a browser, go to ```ixe[00].local:8000``` (replace the [00] with the number associated with that interaction engine).
+
+Now we need to start the server on the Pi. We then access the chatbot page served by the Pi with a browser on our laptop.
+
+We start the server by typing ```node chatServer.js``` into the terminal command line for the Pi.
+In a browser on your laptop, go to ```ixe[00].local:8000``` (replace the [00] with the number associated with that interaction engine).
 Once loaded, you should see a text field and the first greeting from the ChatBot.
 
 #### Debugging
