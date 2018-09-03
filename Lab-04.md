@@ -7,20 +7,20 @@ The physical housing and mechanisms of interactive devices are as important as t
 This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle.com) project. For now, we will be using the paper displays to make paper puppets controlled by the Arduino, but you are welcome to revisit the "voice control" part later in the quarter with the Raspberry Pi. 
 
 ## In the Report
-***
+
 Description of your design
 Video of paper display in operation
 Code
 
 ## Part B. Actuating DC motors
-***
+
 
 Your kit has a vibration motor. Vibration motors are actually DC motors that have an asymmetrical weight on the main rotor, which causes the device to shake when power is applied and the motor rotates. 
 
 Use the Fade circuit from Lab 01 (Examples > 01 Basics > Fade) and connect the vibration motor to the pin which normally would be supplying a LED with PWM'd voltage. SECURE THE MOTOR TO KEEP IT FROM SHAKING ITSELF OUT OF THE CIRCUIT!
 
 ## Part B. Actuating Servo motors
-***
+
 A servo is a DC motor, geartrain, potentiometer and feedback circuit, all in a single housing.
 
 By sending a PWM signal from your Arduino to the servo, you’re telling it what angular position you’d like it go to.
@@ -50,20 +50,21 @@ Change some parameters in the sketch to make the servo sweep slower, or over a s
 * a. What aspects of the Servo code control angle or speed?*
 
 ## Part C. Integrating input and output
-***
+
 Using what you've learned already, write code to control the servo motor circuit, either:
 * adjusting the servo motor rotation to reflect the reading on a potentiometer voltage divider circuit, (Yes, it is fine to use any other analog voltage sensor!), or, 
 * reflecting pre-programmed actions you design. 
 
 ## Part D. Paper puppet
-***
+
 [Andrea, do you think we should use the vinyl cutter to pre-make some of the templates for this? or develop instructions to teach people to use the vinyl cutter?]
 
 Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. Here are instructions to [put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) with the Arduino and the microservo.
 
+* a. Make a video of your proto puppet.*
 
 ## Part E. Make it your own
-***
-Now modify this set up to make this your own design. 
 
+Now modify this set up to make this your own design. If your design involves having someone controlling the puppet in real time, please film that happening. Otherwise, film the puppet performing it's moves. 
+* a. Make a video of your final puppet.*
  
