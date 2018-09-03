@@ -67,17 +67,29 @@ Incorporate the LCD into your fading LED/potentiometer code so that you can read
 
 Leave your LCD set up for the rest of Lab, and leave it set up when you finish Lab, as we'll use the display again next week.
 
-## Part C. Make your own timer
 
-Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once the time is up with one of the output devices we connected during this lab, or you have available. (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
+
+## Part C. Using a time-based digital sensor
+
+![Rotary Encoder](https://cdn-shop.adafruit.com/1200x900/377-02.jpg)
+We have a high-quality 24 pulse encoder with knob and nice, click-y rotation detents.
  
-Note that for some of you, the time may seem to be decremented by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor.
+[Product Page](https://www.adafruit.com/product/377)
+[Datasheet](https://cdn-shop.adafruit.com/datasheets/pec11.pdf)
+ 
+Like a potentiometer, a rotary encoder has 3 pins; unlike a potentiometer, an encoder can be spun round and round without stop. Rotary encoders use [quadrature](http://en.wikipedia.org/wiki/Rotary_encoder) to tell how fast and in which direction you are turning a knob. To connect the encoder to your breadboard, you can insert three pins directly into motherboard like picture below.
+ 
+The circuit below is the "correct" way of hooking up a rotary encoder with your Arduino; the resistors and capacitors help to filter out noise from the mechanical operation of the encoder - this circuit diagram is from the datasheet.
 
-**a. Make a short video showing how your timer works, and what happens when time is up!**
+[[https://ccrma.stanford.edu/wiki/images/c/c1/Encoder_filter.png]]
+ 
+However, to _actually_ hook up your encoder, just use the 3-pin side. Hook the middle to ground, and the "A" and "B" pins to digital pins 2 and 3 of your Arduino.
+ 
+What is going on in this circuit? The Phase A and Phase B pins actually behave like switches, so the pins have pull-ups so that they will be high by default, until they are pulled low by the encoder (your Arduino actually uses its own internal pull-ups). The resistor and capacitor combo also forms a low-pass circuit to eliminate stray voltage spikes that might occur from the quick switching (this is called "debouncing"). You can use any capacitor that is up to an order of magnitude away from the 10nF value.
+ 
+Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Rotary-Encoder-test-Code) to see if you have hooked the encoder up correctly!
 
-**b. Post a link to the completed lab report to the class Slack.**
-
-## Part D. Make your timer sing
+## Part D. Make the Arduino sing!
 
 Let's make the Arduino make some noise! We are going to start with the Tone example program:
  
@@ -107,24 +119,18 @@ You'll also have to increase the for() loop index max from 8 to 20:
  ```
 **b. What song is playing?**
  
-## Part E. Using a time-based sensor
+## Part E. Make your own timer
 
-![Rotary Encoder](https://cdn-shop.adafruit.com/1200x900/377-02.jpg)
-We have a high-quality 24 pulse encoder with knob and nice, click-y rotation detents.
- 
-[Product Page](https://www.adafruit.com/product/377)
-[Datasheet](https://cdn-shop.adafruit.com/datasheets/pec11.pdf)
- 
-Like a potentiometer, a rotary encoder has 3 pins; unlike a potentiometer, an encoder can be spun round and round without stop. Rotary encoders use [quadrature](http://en.wikipedia.org/wiki/Rotary_encoder) to tell how fast and in which direction you are turning a knob. To connect the encoder to your breadboard, you can insert three pins directly into motherboard like picture below.
- 
-The circuit below is the "correct" way of hooking up a rotary encoder with your Arduino; the resistors and capacitors help to filter out noise from the mechanical operation of the encoder - this circuit diagram is from the datasheet.
+Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once the time is up with one of the output devices we connected during this lab, or you have available. (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
 
-[[https://ccrma.stanford.edu/wiki/images/c/c1/Encoder_filter.png]]
+You should be able to draw upon awesome ideas you generated for the PreLab. 
  
-However, to _actually_ hook up your encoder, just use the 3-pin side. Hook the middle to ground, and the "A" and "B" pins to digital pins 2 and 3 of your Arduino.
- 
-What is going on in this circuit? The Phase A and Phase B pins actually behave like switches, so the pins have pull-ups so that they will be high by default, until they are pulled low by the encoder (your Arduino actually uses its own internal pull-ups). The resistor and capacitor combo also forms a low-pass circuit to eliminate stray voltage spikes that might occur from the quick switching (this is called "debouncing"). You can use any capacitor that is up to an order of magnitude away from the 10nF value.
- 
-Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Rotary-Encoder-test-Code) to see if you have hooked the encoder up correctly!
+Note that for some of you, the time may seem to be decremented by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor.
+
+**a. Make a short video showing how your timer works, and what happens when time is up!**
+
+**b. Post a link to the completed lab report your GitHub repo.**
+
+
 
 _Super awesome circuit schematics by [David Sirkin](https://me.stanford.edu/people/david-sirkin). Thanks David!_
