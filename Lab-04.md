@@ -8,9 +8,12 @@ This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle
 
 ![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/raw/docs/wave.gif)
 ## In the Report
+[JD, Andrea, please help make this section more complete]
 
 Description of your design
+
 Video of paper display in operation
+
 Code
 
 ## Part B. Actuating DC motors
@@ -18,9 +21,12 @@ Code
 
 Your kit has a vibration motor. Vibration motors are actually DC motors that have an asymmetrical weight on the main rotor, which causes the device to shake when power is applied and the motor rotates. 
 
-Use the Fade circuit from Lab 01 (Examples > 01 Basics > Fade) and connect the vibration motor to the pin which normally would be supplying a LED with PWM'd voltage. SECURE THE MOTOR TO KEEP IT FROM SHAKING ITSELF OUT OF THE CIRCUIT!
+![image of vibration motor](https://cdn-shop.adafruit.com/145x109/1201-01.jpg)
+
+Use the [Fade](https://www.arduino.cc/en/tutorial/fade) circuit from Lab 01 (Examples > 01 Basics > Fade) and connect the vibration motor to the pin which normally would be supplying a LED with PWM'd voltage. SECURE THE MOTOR TO KEEP IT FROM SHAKING ITSELF OUT OF THE CIRCUIT!
 
 ## Part B. Actuating Servo motors
+![Image of servo motor](https://cdn-shop.adafruit.com/145x109/169-06.jpg)
 
 A servo is a DC motor, geartrain, potentiometer and feedback circuit, all in a single housing.
 
@@ -56,6 +62,8 @@ Using what you've learned already, write code to control the servo motor circuit
 * adjusting the servo motor rotation to reflect the reading on a potentiometer voltage divider circuit, (Yes, it is fine to use any other analog voltage sensor!), or, 
 * reflecting pre-programmed actions you design. 
 
+** Include a photo/movie of your raw circuit in action. **
+
 ## Part D. Paper puppet
 
 [Andrea, do you think we should use the vinyl cutter to pre-make some of the templates for this? or develop instructions to teach people to use the vinyl cutter?]
@@ -67,5 +75,5 @@ Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/fil
 ## Part E. Make it your own
 
 Now modify this set up to make this your own design. You can use a different paper template, you can set the design in a particular setting, you can enact a mini puppet show. If your design involves having someone controlling the puppet in real time, please film that happening. Otherwise, film the puppet performing it's moves. 
-* a. Make a video of your final puppet.*
+* a. Make a video of your final design.*
  
