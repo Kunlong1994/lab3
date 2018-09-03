@@ -1,7 +1,8 @@
 # Paper Puppets
 
+```
 FYI: This is a new lab we developed this year because last year's students wanted more exposure to motors and actuators. Please let us know what you think! Also, help us fish out any bugs...
-
+```
 The physical housing and mechanisms of interactive devices are as important as the electronic components or the microcontroller code! They are the interface for the raw parts to users and the rest of the world. In this lab, we will learn to use some actuators, and then design Arduino-controlled puppets.
 
 This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle.com) project. For now, we will be using the paper displays to make paper puppets controlled by the Arduino, but you are welcome to revisit the "voice control" part later in the quarter with the Raspberry Pi. 
