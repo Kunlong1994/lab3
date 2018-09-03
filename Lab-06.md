@@ -1,6 +1,6 @@
 # Chatbot
 
-In this tutorial, we will use a Raspberry Pi to create a chatbot! The Pis we are giving you have a specific set and configuration of files known as Interaction Engine, created by Nikolas Martelaro. Those files were pre-copied onto the microSD card in your Raspberry Pi.
+In this tutorial, we will use a Raspberry Pi to create a chatbot! The Pis we are giving you have a specific set and configuration of files known as [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki), created by [Nikolas Martelaro](http://nikmartelaro.com). Those files were pre-copied onto the microSD card in your Raspberry Pi.
 
 ## Connect to your Interaction Engine
 
