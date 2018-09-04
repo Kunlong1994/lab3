@@ -16,9 +16,14 @@ The LCD display from the Lab 02 is a great and helpful tool for debug purposes; 
 You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. You can see from the sample code included in the comments of the Graph program that you could use the serial communication functions to communicate data from your sensors to other programs, such as Processing, Flash, MaxMSP.
  
 For this lab, you can use the serial monitor and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
+
 ## Part B. RGB LED
 
- 
+In your kit, you have a common anode RGB LED. This means that the three LEDs in the RGB package share a common power source, and turn on when the R, G, or B legs have a low enough voltage to cause current to flow.
+
+![RGB LED schematic](https://storage.googleapis.com/stateless-www-faranux-com/2017/02/5mm-RGB-LED-Anode.png)
+
+Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately. 
 
 ## Part C. Voltage Varying Sensors 
 One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
@@ -61,6 +66,8 @@ Unlike the other parts we've used to date, this is a "smart sensor" which can co
 [This example code](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino) is meant to read values from a 3-axis accelerometer out to a computer over the serial monitor. Test it out!
  
 Adapt the code to indicate what your readings are on the X, Y and Z axes of the accelerometer on your 16x2 LCD panel.
+
+Now set up the RGB LED so that each color is mapped to the X, Y and Z axes accelerations.
  
 Get a feel for the data the accelerometer provides. Pick up the Arduino+accelerometer board and tilt it in various directions. Start by holding it so that the accelerometer board is parallel to the ground. Find in which direction the X reading increases and decreases; do the same for the Y reading.
  
