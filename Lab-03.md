@@ -93,7 +93,7 @@ Use [these instructions and code from Adafruit](https://learn.adafruit.com/using
 
 Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. In your kit is a graphical LCD display with a level shifter, and instructions to hook it up and get it running are [here](https://www.adafruit.com/product/338).
 
-## Part C. Logging values to the EEPROM and reading them back
+## Part D. Logging values to the EEPROM and reading them back
  
 ### 1. Design your logger
 You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
