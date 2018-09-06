@@ -31,7 +31,7 @@ One of the useful aspects of the Arduino is the multitude of analog input pins. 
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
 Now that you have a set up that lets you look at changes in the analog voltage from the potentiometer, let's swap in other analog sensors!
 
-<img src=https://cdn-shop.adafruit.com/1200x900/166-00.jpg alt="FSR" width=250>
+<img src=https://cdn-shop.adafruit.com/1200x900/166-00.jpg alt="FSR" width=400>
 
 The FSR (force sensitive resistor) changes resistance — in this case when pressure is applied to the FSR. [Here's the datasheet](https://cdn-shop.adafruit.com/datasheets/FSR400Series_PD.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code.
 
@@ -44,7 +44,9 @@ b. What kind of relationship does the resistance have as a function of the force
 c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?
 
 Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [photo cell](https://www.adafruit.com/product/161) and [softpot](https://www.adafruit.com/product/178).
-
+<img src=https://cdn-shop.adafruit.com/1200x900/1070-01.jpg alt="flex sensor" width=250>
+<img src=https://cdn-shop.adafruit.com/1200x900/161-00.jpg alt="photocell" width=250>
+<img src=https://cdn-shop.adafruit.com/1200x900/178-00.jpg alt="softpot" width=250>
 a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?
 
 b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)
@@ -54,7 +56,7 @@ b. What kind of relationship does the resistance have as a function of stimulus?
 
 Some more sophisticated sensors have ICs that measure physical phenomena and then output an analog voltage level, varying voltage much as a voltage divider circuit would. 
 
-<img src=https://cdn-shop.adafruit.com/1200x900/2809-00.jpg alt="Accelerometer" width=250>
+<img src=https://cdn-shop.adafruit.com/1200x900/2809-00.jpg alt="Accelerometer" width=400>
  
 The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is a 3.3V part, but the Adafruit board has an onboard voltage regulator so that the part can be powered on 5V power on the Vin pin.
  
@@ -75,7 +77,7 @@ Get a feel for the data the accelerometer provides. Pick up the Arduino+accelero
 
 ### 3. IR Proximity Sensor
 
-<img src=https://cdn-shop.adafruit.com/1200x900/466-02.jpg alt="Proximity Sensor" width=250>
+<img src=https://cdn-shop.adafruit.com/1200x900/466-02.jpg alt="Proximity Sensor" width=400>
 
 Solder together your IR proximity sensor.
 
@@ -91,7 +93,7 @@ Use [these instructions and code from Adafruit](https://learn.adafruit.com/using
 
 ## Optional. Graphic Display
 
-<img src=https://cdn-shop.adafruit.com/1200x900/338-03.jpg alt="LCD display" width=250>
+<img src=https://cdn-shop.adafruit.com/1200x900/338-03.jpg alt="LCD display" width=400>
 
 Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. In your kit is a graphical LCD display with a level shifter, and instructions to hook it up and get it running are [here](https://www.adafruit.com/product/338).
 
