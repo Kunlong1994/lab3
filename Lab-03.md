@@ -55,7 +55,6 @@ b. What kind of relationship does the resistance have as a function of stimulus?
 Some more sophisticated sensors have ICs that measure physical phenomena and then output an analog voltage level, varying voltage much as a voltage divider circuit would. 
 
 <img src=https://cdn-shop.adafruit.com/1200x900/2809-00.jpg alt="Accelerometer" width=250>
-![Accelerometer](https://cdn-shop.adafruit.com/1200x900/2809-00.jpg)
  
 The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is a 3.3V part, but the Adafruit board has an onboard voltage regulator so that the part can be powered on 5V power on the Vin pin.
  
@@ -77,6 +76,7 @@ Get a feel for the data the accelerometer provides. Pick up the Arduino+accelero
 ### 3. IR Proximity Sensor
 
 <img src=https://cdn-shop.adafruit.com/1200x900/466-02.jpg alt="Proximity Sensor" width=250>
+
 Solder together your IR proximity sensor.
 
 [Product page](https://www.adafruit.com/product/466) 
