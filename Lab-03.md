@@ -44,9 +44,11 @@ b. What kind of relationship does the resistance have as a function of the force
 c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?
 
 Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [photo cell](https://www.adafruit.com/product/161) and [softpot](https://www.adafruit.com/product/178).
+
 <img src=https://cdn-shop.adafruit.com/1200x900/1070-01.jpg alt="flex sensor" width=250>
 <img src=https://cdn-shop.adafruit.com/1200x900/161-00.jpg alt="photocell" width=250>
 <img src=https://cdn-shop.adafruit.com/1200x900/178-00.jpg alt="softpot" width=250>
+
 a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?
 
 b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)
