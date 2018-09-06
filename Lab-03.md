@@ -31,7 +31,7 @@ One of the useful aspects of the Arduino is the multitude of analog input pins. 
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
 Now that you have a set up that lets you look at changes in the analog voltage from the potentiometer, let's swap in other analog sensors!
 
-![FSR](https://cdn-shop.adafruit.com/1200x900/166-00.jpg)
+<img src=https://cdn-shop.adafruit.com/1200x900/166-00.jpg alt="FSR" width=250>
 
 The FSR (force sensitive resistor) changes resistance — in this case when pressure is applied to the FSR. [Here's the datasheet](https://cdn-shop.adafruit.com/datasheets/FSR400Series_PD.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code.
 
@@ -54,6 +54,7 @@ b. What kind of relationship does the resistance have as a function of stimulus?
 
 Some more sophisticated sensors have ICs that measure physical phenomena and then output an analog voltage level, varying voltage much as a voltage divider circuit would. 
 
+<img src=https://cdn-shop.adafruit.com/1200x900/2809-00.jpg alt="Accelerometer" width=250>
 ![Accelerometer](https://cdn-shop.adafruit.com/1200x900/2809-00.jpg)
  
 The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is a 3.3V part, but the Adafruit board has an onboard voltage regulator so that the part can be powered on 5V power on the Vin pin.
@@ -75,8 +76,7 @@ Get a feel for the data the accelerometer provides. Pick up the Arduino+accelero
 
 ### 3. IR Proximity Sensor
 
-![Proximity Sensor](https://cdn-shop.adafruit.com/1200x900/466-02.jpg)
-
+<img src=https://cdn-shop.adafruit.com/1200x900/466-02.jpg alt="Proximity Sensor" width=250>
 Solder together your IR proximity sensor.
 
 [Product page](https://www.adafruit.com/product/466) 
@@ -90,6 +90,8 @@ Use [these instructions and code from Adafruit](https://learn.adafruit.com/using
 **a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
 
 ## Optional. Graphic Display
+
+<img src=https://cdn-shop.adafruit.com/1200x900/338-03.jpg alt="LCD display" width=250>
 
 Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. In your kit is a graphical LCD display with a level shifter, and instructions to hook it up and get it running are [here](https://www.adafruit.com/product/338).
 
