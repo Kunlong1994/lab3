@@ -87,7 +87,7 @@ However, to _actually_ hook up your encoder, just use the 3-pin side. Hook the m
  
 What is going on in this circuit? The Phase A and Phase B pins actually behave like switches, so the pins have pull-ups so that they will be high by default, until they are pulled low by the encoder (your Arduino actually uses its own internal pull-ups). The resistor and capacitor combo also forms a low-pass circuit to eliminate stray voltage spikes that might occur from the quick switching (this is called "debouncing"). You can use any capacitor that is up to an order of magnitude away from the 10nF value.
  
-Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Rotary-Encoder-test-Code) to see if you have hooked the encoder up correctly!
+Use [this rotary encoder code](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Rotary-Encoder-test-Code) to see if you have hooked the encoder up correctly! You should see data coming in on the serial monitor -- which you can open by clicking on the magnifying glass icon in the upper-right corner of the Arduino window (or by going to `Tools` > `Serial Monitor` in the menu).
 
 ## Part D. Make your Arduino sing!
 
