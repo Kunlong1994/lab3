@@ -21,7 +21,7 @@ For this lab, you can use the serial monitor and/or the LCD whenever you are tol
 
 In your kit, you have a common anode RGB LED. This means that the three LEDs in the RGB package share a common power source, and turn on when the R, G, or B legs have a low enough voltage to cause current to flow.
 
-![RGB LED schematic](https://storage.googleapis.com/stateless-www-faranux-com/2017/02/5mm-RGB-LED-Anode.png)
+![RGB LED schematic](images/rgbled.png)
 
 Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately. 
 
