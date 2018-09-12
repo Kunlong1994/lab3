@@ -33,15 +33,15 @@ Now that you have a set up that lets you look at changes in the analog voltage f
 
 <img src=https://cdn-shop.adafruit.com/1200x900/166-00.jpg alt="FSR" width=400>
 
-The FSR (force sensitive resistor) changes resistance — in this case when pressure is applied to the FSR. [Here's the datasheet](https://cdn-shop.adafruit.com/datasheets/FSR400Series_PD.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code.
+The FSR (force sensitive resistor) changes resistance — in this case when pressure is applied to the FSR. [Here's the datasheet](https://cdn-shop.adafruit.com/datasheets/FSR400Series_PD.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code. (Feel free to use a 10kOhm resistor instead, or anything in this range.)
 
 [[images/fsr_voltage_divider.png]]
 
 We need a voltage divider because the Arduino can't measure resistance directly, which is the thing that changes when you physically interact with the sensor. A voltage divider circuit converts a change in resistance to a change in voltage.
 
-a. What resistance values do you see from your force sensor?
+a. What voltage values do you see from your force sensor?
 
-b. What kind of relationship does the resistance have as a function of the force applied? (e.g., linear?)
+b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)
 
 c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?
 
