@@ -15,7 +15,7 @@ The LCD display from the Lab 02 is a great and helpful tool for debug purposes; 
  
 You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. 
 
-NEW!!! Also you can plot the data with the Arduino Serial Plotter! This can be found under Tools->Serial Plotter. Try it out.
+NEW!!! Also you can plot the data with the Arduino Serial Plotter! This can be found under `Tools->Serial Plotter`. Try it out.
  
 For this lab, you can use the serial monitor, plotter and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
 
