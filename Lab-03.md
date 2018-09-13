@@ -13,9 +13,11 @@ The LCD display from the Lab 02 is a great and helpful tool for debug purposes; 
  
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you using with the range of values you're seeing?
  
-You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. You can see from the sample code included in the comments of the Graph program that you could use the serial communication functions to communicate data from your sensors to other programs, such as Processing, Flash, MaxMSP.
+You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. 
+
+NEW!!! Also you can plot the data with the Arduino Serial Plotter! This can be found under Tools->Serial Plotter. Try it out.
  
-For this lab, you can use the serial monitor and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
+For this lab, you can use the serial monitor, plotter and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
 
 ## Part B. RGB LED
 
@@ -143,6 +145,6 @@ You might make changes to your design before this lab is complete.
 **a. Turn in a copy of your final state diagram.**
 
 ### 3. Create your data logger!
-Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on the 16x2 LCD display, a Graphical display, or some other mode of output.
+Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on your display of choice.
  
 **a. Record and upload a short demo video of your logger in action.**
