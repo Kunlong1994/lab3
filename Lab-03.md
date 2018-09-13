@@ -13,9 +13,11 @@ The LCD display from the Lab 02 is a great and helpful tool for debug purposes; 
  
 **b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have** (hint: where might you look to find this sort of thing)? How many are you using with the range of values you're seeing?
  
-You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. You can see from the sample code included in the comments of the Graph program that you could use the serial communication functions to communicate data from your sensors to other programs, such as Processing, Flash, MaxMSP.
+You can also read inputs from the serial monitor, or wait for the serial monitor to open before spewing data over the USB line! A nice tutorial on the basic serial transmit functions can be found at http://arduino.cc/en/Tutorial/AnalogReadSerial. 
+
+NEW!!! Also you can plot the data with the Arduino Serial Plotter! This can be found under `Tools->Serial Plotter`. Try it out.
  
-For this lab, you can use the serial monitor and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
+For this lab, you can use the serial monitor, plotter and/or the LCD whenever you are told to display something, depending on what you think is easier/prettier.
 
 ## Part B. RGB LED
 
@@ -23,7 +25,10 @@ In your kit, you have a common anode RGB LED. This means that the three LEDs in 
 
 ![RGB LED schematic](images/rgbled.png)
 
-Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately. 
+<!--Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately.-->
+[Here is sample code](https://playground.arduino.cc/Main/RGBLEDPWM) that controls the color of an RGB LED using 3 potentiometers as input.  
+
+**How might you use this with only the parts in your kit? Show us your solution.**
 
 ## Part C. Voltage Varying Sensors 
 One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
@@ -33,17 +38,17 @@ Now that you have a set up that lets you look at changes in the analog voltage f
 
 <img src=https://cdn-shop.adafruit.com/1200x900/166-00.jpg alt="FSR" width=400>
 
-The FSR (force sensitive resistor) changes resistance — in this case when pressure is applied to the FSR. [Here's the datasheet](https://cdn-shop.adafruit.com/datasheets/FSR400Series_PD.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code.
+The FSR (force sensitive resistor) changes resistance — in this case when pressure is applied to the FSR. [Here's the datasheet](https://cdn-shop.adafruit.com/datasheets/FSR400Series_PD.pdf). We'll use a voltage divider with a 27kOhm resistor, using the analog input with the previous potentiometer code. (Feel free to use a 10kOhm resistor instead, or anything in this range.)
 
 [[images/fsr_voltage_divider.png]]
 
 We need a voltage divider because the Arduino can't measure resistance directly, which is the thing that changes when you physically interact with the sensor. A voltage divider circuit converts a change in resistance to a change in voltage.
 
-a. What resistance values do you see from your force sensor?
+**a. What voltage values do you see from your force sensor?**
 
-b. What kind of relationship does the resistance have as a function of the force applied? (e.g., linear?)
+**b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
-c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?
+**c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
 Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [photo cell](https://www.adafruit.com/product/161) and [softpot](https://www.adafruit.com/product/178).
 
@@ -51,9 +56,9 @@ Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [p
 <img src=https://cdn-shop.adafruit.com/1200x900/161-00.jpg alt="photocell" width=250>
 <img src=https://cdn-shop.adafruit.com/1200x900/178-00.jpg alt="softpot" width=250>
 
-a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?
+**a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
-b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)
+**b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
 
 ### 2. Accelerometer
@@ -67,9 +72,9 @@ The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is 
 [Datasheet](https://cdn-shop.adafruit.com/datasheets/LIS3DH.pdf)
 [Product Page](https://www.adafruit.com/product/2809)
  
-Unlike the other parts we've used to date, this is a "smart sensor" which can communicate the sensor readings digitally (rather than through an analog voltage) using communication protocols I2C and SPI. We'll be using I2C.
+Unlike the other parts we've used to date, this is a "smart sensor" which can communicate the sensor readings digitally (rather than through an analog voltage) using communication protocols I2C and SPI. 
  
-[This example code](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino) is meant to read values from a 3-axis accelerometer out to a computer over the serial monitor. Test it out!
+[This example code](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino) is meant to read values from a 3-axis accelerometer out to a computer over the serial monitor. Test it out! Hint: make sure to read the I2C Wiring section carefully, because the picture uses a different kind of Arduino. 
  
 Adapt the code to indicate what your readings are on the X, Y and Z axes of the accelerometer on your 16x2 LCD panel.
 
@@ -109,7 +114,24 @@ Since you've learned to hook up sensors via I2C, we can also use this serial com
 
 ## Part D. Logging values to the EEPROM and reading them back
  
-### 1. Design your logger
+### 1. Reading and writing values to the Arduino EEPROM
+The sample code in `File->Examples->EEPROM` shows functions from the [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM) to write and read values to Arduino's EEPROM. This [modified version of the SwitchState code] employs these functions in three different states. Try it out.
+
+**a. Does it matter what actions are assigned to which state? Why?**
+
+**b. Why is the code here all in the setup() functions and not in the loop() functions?**
+
+Each character in the string is a byte. That is, it takes 8-bits to encode a character, so the number of characters in the string we are writing is the number of bytes we are occupying in EEPROM. The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
+
+**c. How many byte-sized data samples can you store on the Atmega328?**
+
+**d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
+
+**e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
+
+Modify the code to take in analog values from your sensors and print them back out to the Arduino Serial Monitor.
+
+### 2. Design your logger
 You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
 
 In addition to the sensors in your kit, we have sensors from this variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/SensorDocumentation.zip).
@@ -122,17 +144,7 @@ You might make changes to your design before this lab is complete.
  
 **a. Turn in a copy of your final state diagram.**
 
-### 2. Reading and writing values to the Arduino EEPROM
-The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
-
-**a. How many byte-sized data samples can you store on the Atmega328?**
-**b. How would you get your analog data from the ADC to be byte-sized?**
-
-Use the code in the `File->Examples->EEPROM` as a template to write and read your own analog values to Arduino's EEPROM. (Ignore what they say about the EEPROM having only 512 bytes. You'll have to adjust your code to match the EEPROM size of the Arduino Micro. The [Atmega328 datasheet](https://www.microchip.com/wwwproducts/en/atmega328p) tells you how much EEPROM it has too).
- 
-[Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM)
-
 ### 3. Create your data logger!
-Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on the 16x2 LCD display.
+Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on your display of choice.
  
 **a. Record and upload a short demo video of your logger in action.**
