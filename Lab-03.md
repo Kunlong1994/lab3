@@ -112,7 +112,24 @@ Since you've learned to hook up sensors via I2C, we can also use this serial com
 
 ## Part D. Logging values to the EEPROM and reading them back
  
-### 1. Design your logger
+### 1. Reading and writing values to the Arduino EEPROM
+The sample code in `File->Examples->EEPROM` shows functions from the [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM) to write and read values to Arduino's EEPROM. This [modified version of the SwitchState code] employs these functions in three different states. Try it out.
+
+**a. Does it matter what actions are assigned to which state? Why?**
+
+**b. Why is the code here all in the setup() functions and not in the loop() functions?**
+
+Each character in the string is a byte. That is, it takes 8-bits to encode a character, so the number of characters in the string we are writing is the number of bytes we are occupying in EEPROM. The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
+
+**c. How many byte-sized data samples can you store on the Atmega328?**
+
+**d. How would you get your analog data from the ADC to be byte-sized?**
+
+**e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
+
+Modify the code to take in analog values from your sensors and print them back out to the Arduino Serial Monitor.
+
+### 2. Design your logger
 You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
 
 In addition to the sensors in your kit, we have sensors from this variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/SensorDocumentation.zip).
@@ -124,23 +141,6 @@ Your data logger will have two main modes: one where it logs data and another wh
 You might make changes to your design before this lab is complete.
  
 **a. Turn in a copy of your final state diagram.**
-
-### 2. Reading and writing values to the Arduino EEPROM
-The sample code in `File->Examples->EEPROM` shows functions from the [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM) to write and read values to Arduino's EEPROM. This [modified version of the SwitchState code] employs these functions in three different states. Try it out.
-
-**a. Does it matter what actions are assigned to which state? Why?**
-
-**b. Why is the code here all in the setup functions and not in the loop functions?**
-
-Each character in the string is a byte. That is, it takes 8-bits to encode a character, so the number of characters in the string we are writing is the number of bytes we are occupying in EEPROM. The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
-
-**c. How many byte-sized data samples can you store on the Atmega328?**
-
-**d. How would you get your analog data from the ADC to be byte-sized?**
-
-**e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
-
-Modify the code to take in analog values from your sensors and print them back out to the Arduino Serial Monitor.
 
 ### 3. Create your data logger!
 Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on the 16x2 LCD display, a Graphical display, or some other mode of output.
