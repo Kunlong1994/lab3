@@ -29,9 +29,9 @@ In your kit, you have a common anode RGB LED. This means that the three LEDs in 
 ![RGB LED schematic](images/rgbled.png)
 
 <!--Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately.-->
-[Here is sample code](https://playground.arduino.cc/Main/RGBLEDPWM) that controls the color of an RGB LED using 3 potentiometers as input.  
+[Here is sample code](https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/arduino-sketch) that controls the color of an RGB LED using the Arduino.  
 
-**How might you use this with only the parts in your kit? Show us your solution.**
+<!--**How might you use this with only the parts in your kit? Show us your solution.**-->
 
 ## Part C. Voltage Varying Sensors 
 One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
