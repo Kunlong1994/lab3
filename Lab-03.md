@@ -126,23 +126,23 @@ You might make changes to your design before this lab is complete.
 **a. Turn in a copy of your final state diagram.**
 
 ### 2. Reading and writing values to the Arduino EEPROM
-The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
+The sample code in `File->Examples->EEPROM` shows functions from the [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM) to write and read values to Arduino's EEPROM. This [modified version of the SwitchState code] employs these functions in three different states. Try it out.
 
-**a. How many byte-sized data samples can you store on the Atmega328?**
-**b. How would you get your analog data from the ADC to be byte-sized?**
+**a. Does it matter what actions are assigned to which state? Why?**
 
-Use the code in the `File->Examples->EEPROM` as a template to write and read your own analog values to Arduino's EEPROM. (Ignore what they say about the EEPROM having only 512 bytes. You'll have to adjust your code to match the EEPROM size of the Arduino Micro. The [Atmega328 datasheet](https://www.microchip.com/wwwproducts/en/atmega328p) tells you how much EEPROM it has too).
+**b. Why is the code here all in the setup functions and not in the loop functions?**
 
-**c. How would we store the data if it were bigger than a byte? (hint: take a look at the eeprom_write Arduino example)**
+Each character in the string is a byte. That is, it takes 8-bits to encode a character, so the number of characters in the string we are writing is the number of bytes we are occupying in EEPROM. The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the heart of the Arduino has 1024 bytes of internal [EEPROM](http://en.wikipedia.org/wiki/EEPROM) Memory (which is separate from the 32KB of [Program memory](https://en.wikipedia.org/wiki/Read-only_memory) it has for the code it is running.)
 
-**e. Does it matter what actions are assigned to which state? Why?**
+**c. How many byte-sized data samples can you store on the Atmega328?**
 
-**f. Why is the code here all in the setup functions and not in the loop functions?**
+**d. How would you get your analog data from the ADC to be byte-sized?**
 
+**e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
-[Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM)
+Modify the code to take in analog values from your sensors and print them back out to the Arduino Serial Monitor.
 
 ### 3. Create your data logger!
-Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on the 16x2 LCD display.
+Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on the 16x2 LCD display, a Graphical display, or some other mode of output.
  
 **a. Record and upload a short demo video of your logger in action.**
