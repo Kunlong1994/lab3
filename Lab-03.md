@@ -51,7 +51,7 @@ We need a voltage divider because the Arduino can't measure resistance directly,
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
-**c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
+**c. In `Examples->Basic->Fading` the LED values range from 0-255. What do you have to do so that you get the full range of output voltages from the LED when using your FSR to change the LED color?**
 
 Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [photo cell](https://www.adafruit.com/product/161) and [softpot](https://www.adafruit.com/product/178).
 
