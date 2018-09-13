@@ -123,7 +123,7 @@ Each character in the string is a byte. That is, it takes 8-bits to encode a cha
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
-**d. How would you get your analog data from the ADC to be byte-sized?**
+**d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
 
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
