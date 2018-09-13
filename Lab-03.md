@@ -132,10 +132,13 @@ The [Atmega 328P](https://www.microchip.com/wwwproducts/en/atmega328p) at the he
 **b. How would you get your analog data from the ADC to be byte-sized?**
 
 Use the code in the `File->Examples->EEPROM` as a template to write and read your own analog values to Arduino's EEPROM. (Ignore what they say about the EEPROM having only 512 bytes. You'll have to adjust your code to match the EEPROM size of the Arduino Micro. The [Atmega328 datasheet](https://www.microchip.com/wwwproducts/en/atmega328p) tells you how much EEPROM it has too).
- 
-Does it matter what actions are assigned to which state? Why?
-Why is the code here all in the setup functions and not in the loop functions?
-How would we store the data if it were bigger than a byte?
+
+
+**a. Does it matter what actions are assigned to which state? Why?**
+
+**b. Why is the code here all in the setup functions and not in the loop functions?**
+
+**c. How would we store the data if it were bigger than a byte?**
 
 [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM)
 
