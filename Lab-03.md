@@ -23,7 +23,10 @@ In your kit, you have a common anode RGB LED. This means that the three LEDs in 
 
 ![RGB LED schematic](images/rgbled.png)
 
-Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately. 
+<!--Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately.-->
+[Here is sample code](https://playground.arduino.cc/Main/RGBLEDPWM) that controls the color of an RGB LED using 3 potentiometers as input.  
+
+**How might you use this with only the parts in your kit? Show us your solution.**
 
 ## Part C. Voltage Varying Sensors 
 One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
@@ -39,11 +42,11 @@ The FSR (force sensitive resistor) changes resistance — in this case when pres
 
 We need a voltage divider because the Arduino can't measure resistance directly, which is the thing that changes when you physically interact with the sensor. A voltage divider circuit converts a change in resistance to a change in voltage.
 
-a. What voltage values do you see from your force sensor?
+**a. What voltage values do you see from your force sensor?**
 
-b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)
+**b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
-c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?
+**c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
 Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [photo cell](https://www.adafruit.com/product/161) and [softpot](https://www.adafruit.com/product/178).
 
@@ -51,9 +54,9 @@ Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [p
 <img src=https://cdn-shop.adafruit.com/1200x900/161-00.jpg alt="photocell" width=250>
 <img src=https://cdn-shop.adafruit.com/1200x900/178-00.jpg alt="softpot" width=250>
 
-a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?
+**a. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
-b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)
+**b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
 
 ### 2. Accelerometer
