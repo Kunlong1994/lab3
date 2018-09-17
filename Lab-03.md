@@ -103,7 +103,7 @@ Without disconnecting your accelerometer from pins `A4` and `A5`, use [these ins
 
 What happens when the field of view is clear? Move your hand or a piece of paper over the sensor and see how the readings vary with distance.
  
-**a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
+**a. Describe how the readings change over the sensing range of the sensor. A sketch of readings vs. distance would work also. Does it match up with what you expect from the datasheet?**
 
 Now, the beauty of I2C: you can read data from **both** of these sensors in a single sketch. How do you do this? A simple way is to merge the two sketches together. This can be kind of tricky, but the general gist is this: pick one sketch to be the base sketch that you will modify. Then, from the other sketch: first, copy directly over any global variables or functions -- these don't go inside other functions, they are top level. Second, the other sketch's `setup` and `loop` functions' contents should be pasted into the base sketch's `setup` and `loop` functions, respectively. Make sure you're not duplicating anything that only needs to happen once, for example,  `Serial.begin(9600);`.
 
