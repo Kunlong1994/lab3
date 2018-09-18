@@ -2,7 +2,7 @@ For the upcoming lab, we will be building paper displays inspired by [Isaac Blan
 
 0. DISCORD: By now, there must be things that are confusing you---about lecture, the labs, future assignments... If you haven't used the class Discord yet to ask the teaching team a question, please try it. 
 
-1. CATCHING UP ON UNDERSTANDING: If you are confused on the following topics, you can read Scherz and Monk's excellent textbook which can give you more background.
+1. CATCHING UP ON UNDERSTANDING: If you are confused on the following topics, you can read [Scherz and Monk](http://www.engineeringbookspdf.com/practical-electronics-inventors-fourth-edition-paul-scherz-simon-monk/)'s excellent textbook which can give you more background.
 
 Basics CH 2
 *  Electric Current Ch 2.2
