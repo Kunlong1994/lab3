@@ -138,7 +138,7 @@ Modify the code to take in analog values from your sensors and print them back o
 ### 2. Design your logger
 You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
 
-In addition to the sensors in your kit, we have sensors from this variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/SensorDocumentation.zip).
+In addition to the sensors in your kit, we have sensors from this variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2018Spring/SensorDocumentation.zip).
 
 A lot of the art of data logging is being clever about how to use the sensor. Feel free to engage the teaching team for advice.
 
