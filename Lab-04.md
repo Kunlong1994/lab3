@@ -81,7 +81,7 @@ Using what you've learned already, write code to control the servo motor circuit
 
 ![](https://papersignals.withgoogle.com/static/images/instructions/slides/stretch_00011.png)
 
-Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. Here are instructions to [put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) with the Arduino and the microservo.
+Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. [Here are instructions to put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) (make sure to choose the instructions for the STRETCH signal you're building) with the Arduino and the microservo.
 
 **a. Make a video of your proto puppet.**
 
