@@ -54,7 +54,7 @@ In your kit, you have a common anode RGB LED. This means that the three LEDs in 
 ## Part C. Voltage Varying Sensors 
 One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
  
-### FSR, Flex Sensor, Photo cell, Softpot
+### FSR
 Now that you have a set up that lets you look at changes in the analog voltage from the potentiometer, let's swap in other analog sensors!
 
 <img src=https://cdn-shop.adafruit.com/1200x900/166-00.jpg alt="FSR" width=400>
@@ -71,6 +71,7 @@ We need a voltage divider because the Arduino can't measure resistance directly,
 
 **c. In `Examples->Basic->Fading` the LED values range from 0-255. What do you have to do so that you get the full range of output voltages from the LED when using your FSR to change the LED color?**
 
+## Flex Sensor, Photo cell, Softpot
 Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [photo cell](https://www.adafruit.com/product/161) and [softpot](https://www.adafruit.com/product/178).
 
 <img src=https://cdn-shop.adafruit.com/1200x900/1070-01.jpg alt="flex sensor" width=250>
