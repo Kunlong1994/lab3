@@ -5,10 +5,21 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 ## Overview
 
 What's in this lab?
+
 A. [Writing to the Serial Monitor](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-a--writing-to-the-serial-monitor)
+
 B. [RGB LED](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-b-rgb-led)
+
 C. [Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-voltage-varying-sensors)
-D. 
+
+D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors
+
+E. [Optional: Graphic Display]
+(https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#optional-part-e-graphic-display)
+
+F. [Logging Values to the EEPROM and Reading Them Back](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-f-logging-values-to-the-eeprom-and-reading-them-back)
+
+G. [Create your own Data logger!](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-g-create-your-own-data-logger)
 
 ## In The Report
 Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab3). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
