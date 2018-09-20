@@ -7,7 +7,7 @@ A) [Set up a breadboard](#part-a-set-up-a-breadboard)
 
 B) [Manually blink a LED](#part-b-manually-blink-a-led) 
 
-C) [Blink a LED using the Arduino](#part-c-blink-led-using-a-Arduino)
+C) [Blink a LED using the Arduino](#part-c-blink-a-led-using-arduino)
 
 D) [Manually fade a LED](#part-d-manually-fade-a-led) 
 
@@ -89,7 +89,7 @@ Now modify the circuit and program so that you can blink an external LED on pin 
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-## Part D. Manually fade an LED
+## Part D. Manually fade a LED
 
 Set up the following circuit, and try making the LED glow brighter and dimmer.
 
@@ -97,7 +97,7 @@ Set up the following circuit, and try making the LED glow brighter and dimmer.
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
-## Part E. Fade an LED using Arduino
+## Part E. Fade a LED using Arduino
 
 The Arduino cannot output an analog voltage, only 0 or 5Vs. So how can we fade an LED using the Arduino?
 
