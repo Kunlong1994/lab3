@@ -12,7 +12,7 @@ B. [RGB LED](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Dev
 
 C. [Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-voltage-varying-sensors)
 
-D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors
+D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors)
 
 E. [Optional: Graphic Display]
 (https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#optional-part-e-graphic-display)
