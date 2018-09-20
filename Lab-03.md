@@ -2,6 +2,14 @@
 
 For this lab, we will be experimenting with a variety of sensors, sending the data to the Arduino serial monitor, writing data to the EEPROM of the Arduino, and then playing the data back.
 
+## Overview
+
+What's in this lab?
+A. [Writing to the Serial Monitor](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-a--writing-to-the-serial-monitor)
+B. [RGB LED](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-b-rgb-led)
+C. [Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-voltage-varying-sensors)
+D. 
+
 ## In The Report
 Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab3). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
 
@@ -36,7 +44,7 @@ In your kit, you have a common anode RGB LED. This means that the three LEDs in 
 ## Part C. Voltage Varying Sensors 
 One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
  
-### 1. FSR, Flex Sensor, Photo cell, Softpot
+### FSR, Flex Sensor, Photo cell, Softpot
 Now that you have a set up that lets you look at changes in the analog voltage from the potentiometer, let's swap in other analog sensors!
 
 <img src=https://cdn-shop.adafruit.com/1200x900/166-00.jpg alt="FSR" width=400>
@@ -64,10 +72,10 @@ Now experiment with the [flex sensor](https://www.adafruit.com/product/1070), [p
 **b. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
 
-### 2. Accelerometer
+## Part D. I2C Sensors 
 
-Some more sophisticated sensors have ICs that measure physical phenomena and then output an analog voltage level, varying voltage much as a voltage divider circuit would. 
-
+Some more sophisticated sensors have ICs that measure physical phenomena and then output an digital signal indicating what the analog voltage reading is. 
+### Accelerometer
 <img src=https://cdn-shop.adafruit.com/1200x900/2809-00.jpg alt="Accelerometer" width=400>
  
 The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is a 3.3V part, but the Adafruit board has an onboard voltage regulator so that the part can be powered on 5V power on the Vin pin.
@@ -88,7 +96,7 @@ Get a feel for the data the accelerometer provides. Pick up the Arduino+accelero
  
 **a. Include your accelerometer read-out code in your write-up.**
 
-### 3. IR Proximity Sensor
+### IR Proximity Sensor
 
 <img src=https://cdn-shop.adafruit.com/1200x900/466-02.jpg alt="Proximity Sensor" width=400>
 
@@ -110,13 +118,13 @@ Now, the beauty of I2C: you can read data from **both** of these sensors in a si
 
 **b. Upload your merged code to your lab report repository and link to it here.**
 
-## Optional. Graphic Display
+## Optional Part E. Graphic Display
 
 <img src=https://cdn-shop.adafruit.com/1200x900/338-03.jpg alt="LCD display" width=400>
 
 Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. In your kit is a graphical LCD display with a level shifter, and instructions to hook it up and get it running are [here](https://www.adafruit.com/product/338).
 
-## Part D. Logging values to the EEPROM and reading them back
+## Part F. Logging values to the EEPROM and reading them back
  
 ### 1. Reading and writing values to the Arduino EEPROM
 The sample code in `File->Examples->EEPROM` shows functions from the [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM) to write and read values to Arduino's EEPROM. This [modified version of the SwitchState code](code/SwitchState2.zip) employs these functions in three different states. Try it out.
@@ -148,7 +156,7 @@ You might make changes to your design before this lab is complete.
  
 **a. Turn in a copy of your final state diagram.**
 
-### 3. Create your data logger!
+## Part G. Create your own data logger!
 Now it's up to you to integrate the software and hardware necessary to interface with your data logger! Your logger should be able to record a stream of analog data (at a sample rate of your desire) and then play it back at some later point in time on your display of choice.
  
 **a. Record and upload a short demo video of your logger in action.**
