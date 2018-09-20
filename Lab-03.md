@@ -14,8 +14,7 @@ C. [Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing
 
 D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors)
 
-E. [Optional: Graphic Display]
-(https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#optional-part-e-graphic-display)
+E. [Optional: Graphic Display](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#optional-part-e-graphic-display)
 
 F. [Logging Values to the EEPROM and Reading Them Back](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-f-logging-values-to-the-eeprom-and-reading-them-back)
 
