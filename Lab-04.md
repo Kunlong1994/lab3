@@ -12,15 +12,11 @@ This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle
 ![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/raw/docs/wave.gif)
 ## In the Report
 
-Answers to questions
+To submit your lab, clone [this repository](https://github.com/FAR-Lab/IDD-Fa18-Lab4). You'll need to describe your design, include a video of your paper display in operation, and upload any code you wrote to make it move.
 
-Description of your design
 
-Video of your initial and final display in operation
+## Part A. Actuating DC motors
 
-Code
-
-## Part B. Actuating DC motors
 
 Your kit has a vibration motor. Vibration motors are actually DC motors that have an asymmetrical weight on the main rotor, which causes the device to shake when power is applied and the motor rotates. 
 
@@ -68,11 +64,11 @@ Using what you've learned already, write code to control the servo motor circuit
 
 ## Part D. Paper puppet
 
+[Andrea, do you think we should use the vinyl cutter to pre-make some of the templates for this? or develop instructions to teach people to use the vinyl cutter?]
+
 ![](https://papersignals.withgoogle.com/static/images/instructions/slides/stretch_00011.png)
 
-We have pre-scored versions of the [Stretch paper template](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. Here are instructions to [put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) with the Arduino and the microservo.
-
-You can put the Arduino in the device, like in the template instructions above. Alternately, you can use something to weight the puppet and use female-to-male jumper wires to break out the wires you need.
+Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. Here are instructions to [put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) with the Arduino and the microservo.
 
 **a. Make a video of your proto puppet.**
 
