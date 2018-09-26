@@ -59,7 +59,7 @@ Post a link to your GitHub submission on your Slack channel with your photo, cro
 
 ---
 General resources:
-* [Reference sheets](reference_sheets/)
+* [Reference sheets](reference_sheets.zip)
 * [MakerLab Master document](https://docs.google.com/document/d/1ozET_Qy7wzQgwnNVcyp3mp056LdwB8jiCJiZLjYnwcU/edit)
 * [MakerLab spring schedule](https://docs.google.com/document/d/15j1kPK74rHL6tj_sHqOJCFg3vdi1BD75TXnQPZ1bJaI/edit)
 * For anyone who had trouble with the programming assignments from last weeks. You can use the following weeks to catch up with these [handy resources](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Programming-introduction-materials).
