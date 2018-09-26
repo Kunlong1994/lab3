@@ -59,7 +59,7 @@ Post a link to your GitHub submission on your Slack channel with your photo, cro
 
 ---
 General resources:
-* [Tinkercad webinar this Friday!](https://docs.google.com/spreadsheets/d/11nEd0ZaryBHB23yM57p-dVgZgF199Wyd0TkvRimOe1A/edit#gid=1461833821)
+* [Reference sheets](reference_sheets/)
 * [MakerLab Master document](https://docs.google.com/document/d/1ozET_Qy7wzQgwnNVcyp3mp056LdwB8jiCJiZLjYnwcU/edit)
 * [MakerLab spring schedule](https://docs.google.com/document/d/15j1kPK74rHL6tj_sHqOJCFg3vdi1BD75TXnQPZ1bJaI/edit)
 * For anyone who had trouble with the programming assignments from last weeks. You can use the following weeks to catch up with these [handy resources](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Programming-introduction-materials).
