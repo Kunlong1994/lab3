@@ -1,10 +1,11 @@
 # Useless box
 
-[Andrea, I'm including what we had before in the Laser cutting 3D printing lab as a starter... Basically I suggest we make a box, but 3D print the finger]
-
 For this week’s lab, we will be building a useless box; this is a project inspired by [Make Magazine](https://makezine.com/projects/the-most-useless-machine/) and a [similar lab](https://web.stanford.edu/class/engr40m/labs/lab2a.pdf) at Stanford's [ENGR40m](https://web.stanford.edu/class/engr40m/). We will use this lab to help you to experiment with digital fabrication tools. The methods that will be used are 3D printing and laser cutting.  
 
-## 3D printing
+## 3D printing -- Andrea will edit these instructions
+
+3D print this servo mount [include link]. Modify on OnShape to include your initials. 
+
 1. Complete the first [Tinkercad](https://www.tinkercad.com/) tutorial. You’ll need to create an account.
 1. Create a new project (outside the tutorial file) and make a cylinder 5mm tall and 6.9mm that you’ll use as your button.
 1. Personalize the button to make it your own.
@@ -17,7 +18,11 @@ For this week’s lab, we will be building a useless box; this is a project insp
 1. Once the Printer is connected hit "print".
 1. After the printer has started the USB cable can be disconnected from your laptop.
 
-## Laser cutting
+## Laser cutting -- Andrea will edit these instructions
+
+Laser cut this box in the Maker Lab[include link to ai file]--before printing, modify the file to have a hole for the switch, and draw parts that will work as the finger. 
+
+
 1. Make sure you have followed the safety instructions from Niti.
 2. Download a vector editing program like [Inkscape](https://inkscape.org/en/) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
 3. Download the laser cutter template file for the [CameraButtonStand](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/master/CameraButtonStand.svg).
@@ -40,8 +45,15 @@ For this week’s lab, we will be building a useless box; this is a project insp
     *   Print the job.
     *   Press 'go' on the laser cutter.
 
+## Electronics --
+Create this circuit. [Include diagram with switch, servo, 9V battery, and Arduino]. 
+Bonus: use a prototoboard instead of a breadboard.
+
+## Putting it all together --
+Assemble your useless box. So that it works like this: show video.
+
 # LAB SUBMISSION (Due before the lecture on Tue: 2/27/2018):
-Post your files to GitHub. Make sure to include at least one photo of your final object. Consider using the lightbox in the MakerLab to take high-quality product pictures.
+Post your files to GitHub. Make sure to include at least one video of your final object. Consider using the lightbox in the MakerLab to take high-quality product footage and images.
 [[images/lightBox.jpg|alt=Image of a light box used to make evenly lit pictures of products and designs.]]  
 Post a link to your GitHub submission on your Slack channel with your photo, cross post to the #lab3 channel, and tag the TAs with questions/requests for feedback.
 
@@ -52,11 +64,11 @@ General resources:
 * [MakerLab spring schedule](https://docs.google.com/document/d/15j1kPK74rHL6tj_sHqOJCFg3vdi1BD75TXnQPZ1bJaI/edit)
 * For anyone who had trouble with the programming assignments from last weeks. You can use the following weeks to catch up with these [handy resources](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Programming-introduction-materials).
 ---
-Power settings for 4mm cardboard
+Power settings for 5/32" thickness cardboard.
 
 Cutting (Standard Black Lines):
     Speed: 45%
-    Power: 65%
+    Power: 70%
     Frequency: 500Hz
 
 Scoring (Color code Blue Lines):
