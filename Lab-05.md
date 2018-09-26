@@ -27,7 +27,7 @@ Laser cut this box in the Maker Lab[include link to ai file]--before printing, m
 2. Download a vector editing program like [Inkscape](https://inkscape.org/en/) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
 3. Download the laser cutter template file for the [CameraButtonStand](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/master/CameraButtonStand.svg).
 4. Try to understand how these cuts lead to the 3D object.
-[[images/laser-cut-box.JPG|alt=Laser cut box with Andrea holding servo on 3D-printed mount on the moving side of the box. Where should the Arduino be mounted?]]
+[[images/lasercut-box.JPG|alt=Laser cut box with Andrea holding servo on 3D-printed mount on the moving side of the box. Where should the Arduino be mounted?]]
 5. Personalize the stand to make it your own by adding vectors to the template file.
 6. Save the file -> Move it to a USB drive. -> Connect the USB drive to the laser cutting computer.
 7.  Open the file in Adobe Illustrator on the lab’s computer.
