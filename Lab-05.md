@@ -4,7 +4,7 @@ For this week’s lab, we will be building a useless box; this is a project insp
 
 ## 3D printing -- Andrea will edit these instructions
 
-3D print this servo mount [include link]. Modify on OnShape to include your initials. 
+3D print this [servo mount](https://www.thingiverse.com/thing:1926568). Modify on OnShape to include your initials. 
 
 1. Complete the first [Tinkercad](https://www.tinkercad.com/) tutorial. You’ll need to create an account.
 1. Create a new project (outside the tutorial file) and make a cylinder 5mm tall and 6.9mm that you’ll use as your button.
@@ -20,7 +20,7 @@ For this week’s lab, we will be building a useless box; this is a project insp
 
 ## Laser cutting -- Andrea will edit these instructions
 
-Laser cut this box in the Maker Lab[include link to ai file]--before printing, modify the file to have a hole for the switch, and draw parts that will work as the finger. 
+Laser cut [this box](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/uselessbox.ai) in the Maker Lab--before printing, modify the file to have a hole for the switch, and draw parts that will work as the finger. 
 
 
 1. Make sure you have followed the safety instructions from Niti.
