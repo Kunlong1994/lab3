@@ -43,8 +43,7 @@ Laser cut cardboard to make your useless box in the Maker Lab.
     *   Turn the suction system, the big blue box, on.
     *   Print the job on the computer.
     *   Find the job you're printing on the laser cutter, and press 'go'.
-
-
+9.  Assemble the parts, once the configuration makes sense, hot glue them together. Tip: don't hot glue the part where you'll attach the servo until you've attached the servo!
 
 **An option for making the "finger":**
 Now that you know how to use the laser cutter, draw something on the vector software to use a the "finger" — there are a lot of cool scrap materials available on the scrap pile, like acrylics that will work well for this. Make sure to adjust the speed, power, and frequency settings for the material you decide to use.   
@@ -54,7 +53,7 @@ Create this circuit. [Include diagram with switch, servo, 9V battery, and Arduin
 Bonus: use a prototoboard instead of a breadboard.
 
 ## Putting it All Together
-Assemble your useless box. So that it works like this: show video.
+Insert the electronics, install the mechanical components, glue anything that has not been glued yet, and test your useless box!
 
 # Lab Submission
 Write-up a **How To Make a Useless Box** guide for yourself to use in the future. Include at least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality), and a video of your useless box in action.
