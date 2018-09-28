@@ -16,7 +16,7 @@ For this week’s lab, we will be building a useless box; this is a project insp
 1. After the printer has started the USB cable can be disconnected from your laptop.
 
 **An option for making the "finger":**
-1. Create an [OnShape](https://www.onshape.com/products/education) account using your student email (so that it's free).
+1. Create a free education [OnShape](https://www.onshape.com/products/education) account using your student email.
 1. Do the [sketching tutorial](https://learn.onshape.com/courses/fundamentals-sketching) and [part design tutorial](https://learn.onshape.com/courses/fundamentals-part-design-using-part-studios) to learn the basics of Computer Aided Design (CAD) on OnShape.
 1. Create a finger to 3D print.
 
