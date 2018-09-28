@@ -57,7 +57,8 @@ Bonus: use a prototoboard instead of a breadboard.
 Assemble your useless box. So that it works like this: show video.
 
 # Lab Submission
-Write-up a **How To Make a Useless Box** guide for yourself to use in the future. Include at least one photo of your useless box taken in the lightbox in the MakerLab (or somewhere else, but of similar quality), and a video of your useless box in action.
+Write-up a **How To Make a Useless Box** guide for yourself to use in the future. Include at least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality), and a video of your useless box in action.
+
 [[images/lightBox.jpg|alt=Image of a light box used to make evenly lit pictures of products and designs.]]  
 
 ---
