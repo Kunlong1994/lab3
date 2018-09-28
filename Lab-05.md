@@ -2,13 +2,10 @@
 
 For this week’s lab, we will be building a useless box; this is a project inspired by [Make Magazine](https://makezine.com/projects/the-most-useless-machine/) and a [similar lab](https://web.stanford.edu/class/engr40m/labs/lab2a.pdf) at Stanford's [ENGR40m](https://web.stanford.edu/class/engr40m/). We will use this lab to help you to experiment with digital fabrication tools. The methods that will be used are 3D printing and laser cutting.  
 
-## 3D printing -- Andrea will edit these instructions
+## 3D printing
 
-3D print this [servo mount](https://www.thingiverse.com/thing:1926568). Modify on OnShape to include your initials. 
+3D print this [servo mount](https://www.thingiverse.com/thing:1926568).
 
-1. Complete the first [Tinkercad](https://www.tinkercad.com/) tutorial. You’ll need to create an account.
-1. Create a new project (outside the tutorial file) and make a cylinder 5mm tall and 6.9mm that you’ll use as your button.
-1. Personalize the button to make it your own.
 1. Export the object as a `.stl` file.
 1. Download and install the [Makerbot Print](https://www.makerbot.com/print/)
 1. Create a MakerBot account.
@@ -18,10 +15,16 @@ For this week’s lab, we will be building a useless box; this is a project insp
 1. Once the Printer is connected hit "print".
 1. After the printer has started the USB cable can be disconnected from your laptop.
 
+BONUS:
+Modify the servo mount. 
+1. Create an account using your student email (so that it's free).
+1. Take a tutorial to learn how to use OnShape.
+1. Import the servo mount and modify it to make it your own. 
+
+
 ## Laser cutting -- Andrea will edit these instructions
 
 Laser cut [this box](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/uselessbox.ai) in the Maker Lab--before printing, modify the file to have a hole for the switch, and draw parts that will work as the finger. 
-
 
 1. Make sure you have followed the safety instructions from Niti.
 2. Download a vector editing program like [Inkscape](https://inkscape.org/en/) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
