@@ -34,15 +34,16 @@ Laser cut cardboard to make your useless box in the Maker Lab.
 9.  Follow the instructions to cut:
     * Load the machine with the 5/32" thick cardboard we provided. If the material is bent, tape the ends using duct tape to the sides of the printing bed to make it as flat as possible.
     * Disable X/Y.
-    *  Move the laser to its starting position(top left corner of the material.
-    *  Focus the laser. (Don't forget to put the focus tool up again!)
-    *  Set home(button).
+    *  Move the laser to its starting position(top left corner of the material).
+    *  Focus the laser using the focus tool and up and down arrows. Flip the focus tool up again after you're done.
+    *  Press the set home button.
     *  Close the lid.
     *   Open the printer preferences.
-    *   Make sure you set the different power levels for the cut values pertaining to the material you're using. For the cardboard we are providing, the settings should be the following: Speed 45%, Power 70%, and Frequency: 500Hz.
-    *   Turn on the air assist compressor on the floor and the suction system (big blue box).
-    *   Print the job.
-    *   Press 'go' on the laser cutter.
+    *   Make sure you set the different power levels for the cut values pertaining to the material you're using. For the cardboard we are providing, the values should be: Speed 45%, Power 70%, and Frequency: 500Hz.
+    *   Turn on the air assist compressor on the floor on.
+    *   Turn the suction system (big blue box) on.
+    *   Print the job on the computer.
+    *   Find the job you're printing on the laser cutter, and press 'go'.
 
 
 
