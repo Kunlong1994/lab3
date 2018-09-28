@@ -47,14 +47,14 @@ Laser cut cardboard to make your useless box in the Maker Lab.
 
 
 
-An option for making the "finger":
-6. Now that you know how to use the laser cutter, draw something on the vector software to use a the "finger" — there is a lot of cool scrap materials, like acrylics that will work well for this. Make sure to adjust the speed, power, and frequency settings for the material you decide to use.   
+**An option for making the "finger":**
+Now that you know how to use the laser cutter, draw something on the vector software to use a the "finger" — there is a lot of cool scrap materials, like acrylics that will work well for this. Make sure to adjust the speed, power, and frequency settings for the material you decide to use.   
 
 ## Electronics --
 Create this circuit. [Include diagram with switch, servo, 9V battery, and Arduino]. 
 Bonus: use a prototoboard instead of a breadboard.
 
-## Putting it all together --
+## Putting it All Together
 Assemble your useless box. So that it works like this: show video.
 
 # Lab Submission
