@@ -15,11 +15,10 @@ For this week’s lab, we will be building a useless box; this is a project insp
 1. Once the Printer is connected hit "print".
 1. After the printer has started the USB cable can be disconnected from your laptop.
 
-BONUS:
-Modify the servo mount. 
-1. Create an account using your student email (so that it's free).
-1. Take a tutorial to learn how to use OnShape.
-1. Import the servo mount and modify it to make it your own. 
+**An option for making the "finger":**
+1. Create an [OnShape](https://www.onshape.com/products/education) account using your student email (so that it's free).
+1. Do the [sketching tutorial](https://learn.onshape.com/courses/fundamentals-sketching) and [part design tutorial](https://learn.onshape.com/courses/fundamentals-part-design-using-part-studios) to learn the basics of Computer Aided Design (CAD) on OnShape.
+1. Create a finger to 3D print.
 
 
 ## Laser Cutting
