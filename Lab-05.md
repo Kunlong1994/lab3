@@ -59,7 +59,7 @@ You will need to write some software to implement the behaviors you want your us
 
 The [first example](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/uselessBox_loop_lab5.ino) simply polls the state of the switch in the main loop and triggers actions if it notices the switch state has changed.
 
-The [second example](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/uselessBox_loop_lab5.ino) sets an interrupt on the input pin the switch is attached to, letting the processor call a registered interrupt service function when it changes.  In this example the main loop is not required to do anything at all, though we can use it to output some state information to the serial console for fun. 
+The [second example](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/uselessBox_loop_lab5.ino) sets an interrupt on the input pin the switch is attached to, letting the processor call a registered interrupt service routine (function) when it changes.  In this example the main loop is not required to do anything at all, though we can use it to output some state information to the serial console for fun. 
 
 ## Putting it All Together
 Insert the electronics, install the mechanical components, glue anything that has not been glued yet, and test your useless box!
