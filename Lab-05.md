@@ -50,7 +50,7 @@ Now that you know how to use the laser cutter, draw something on the vector soft
 
 ## Electronics
 
-Create a circuit to connect your toggle switch and servo to the metro mini.  You can use this one or one you design on your own.   Bonus: use a protoboard instead of a breadboard.
+Create a circuit to connect your 9 volt power supply, toggle switch and servo to the metro mini.  You can use this one or one you design on your own.   Bonus: use a protoboard instead of a breadboard.
 
 [[https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/circuit_image_lab5.png|alt=diagram with switch, servo, 9V battery, and Arduino]]
 
