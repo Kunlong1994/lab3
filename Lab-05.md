@@ -49,10 +49,9 @@ Laser cut cardboard to make your useless box in the Maker Lab.
 Now that you know how to use the laser cutter, draw something on the vector software to use a the "finger" — there are a lot of cool scrap materials available on the scrap pile, like acrylics that will work well for this. Make sure to adjust the speed, power, and frequency settings for the material you decide to use.   
 
 ## Electronics --
-Create this circuit. [Include diagram with switch, servo, 9V battery, and Arduino]. 
-Bonus: use a prototoboard instead of a breadboard.
+Create this circuit. Bonus: use a prototoboard instead of a breadboard.
 
-[[https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/circuit_image_lab5.png]]
+[[https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/circuit_image_lab5.png|alt=diagram with switch, servo, 9V battery, and Arduino]]
 
 ## Putting it All Together
 Insert the electronics, install the mechanical components, glue anything that has not been glued yet, and test your useless box!
