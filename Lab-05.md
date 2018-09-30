@@ -54,16 +54,14 @@ Create a circuit to connect your 9 volt power supply, toggle switch and servo to
 
 [[https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/circuit_image_lab5.png|alt=diagram with switch, servo, 9V battery, and Arduino]]
 
-## Code
-
-You will need to write some software to implement the behaviors you want your useless box to have.  Here are two example implementations to try or get ideas from.
+Load either of the examples below to your Arduino, and see how they work. Try to modify the behavior in a way that will make it your own.  
 
 The [first example](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/uselessBox_loop_lab5.ino) simply polls the state of the switch in the main loop and triggers actions if it notices the switch state has changed.
 
 The [second example](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/uselessBox_interrupt_lab5.ino) sets an interrupt on the input pin the switch is attached to, letting the processor call a registered interrupt service routine (function) when it changes.  In this example the main loop is not required to do anything at all, though we can use it to output some state information to the serial console for fun. 
 
 ## Putting it All Together
-Insert the electronics, install the mechanical components, glue anything that has not been glued yet, and test your useless box!
+Think about where each component should go, and assemble your useless box so that it works like the one on the video you saw for the preLab. Insert the electronics, install the mechanical components, glue anything that has not been glued yet, and test your useless box!
 
 # Lab Submission
 Write-up a **How To Make a Useless Box** guide for yourself to use in the future. Include at least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality), and a video of your useless box in action.
