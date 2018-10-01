@@ -5,7 +5,7 @@ For this week’s lab, we will be building a useless box; this is a project insp
 ## 3D Printing
 [[https://cdn.thingiverse.com/renders/be/13/cd/2e/40/7de41f98d14c7b4a7ba203ff7bfe8ff2_preview_featured.jpg]]
 
-3D print [this servo mount](https://www.thingiverse.com/thing:1926568).
+**3D print [this servo mount](https://www.thingiverse.com/thing:1926568):**
 
 1. Export the object as a `.stl` file.
 1. Download and install [Makerbot Print](https://www.makerbot.com/print/).
