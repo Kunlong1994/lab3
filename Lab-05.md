@@ -16,10 +16,10 @@ For this week’s lab, we will be building a useless box; this is a project insp
 1. Once the Printer is connected hit "print".
 1. After the printer has started the USB cable can be disconnected from your laptop.
 
-**An option for making the "finger":**
+**An option for making the "bopper":**
 1. Create a free education [OnShape](https://www.onshape.com/products/education) account using your student email.
 1. Do the [sketching tutorial](https://learn.onshape.com/courses/fundamentals-sketching) and [part design tutorial](https://learn.onshape.com/courses/fundamentals-part-design-using-part-studios) to learn the basics of Computer Aided Design (CAD) on OnShape.
-1. Create a finger to 3D print.
+1. Create a bopper to 3D print.
 
 
 ## Laser Cutting
@@ -47,8 +47,8 @@ Laser cut cardboard to make your useless box in the Maker Lab.
 [[images/lasercut-box.JPG|alt=Laser cut box with Andrea holding servo on 3D-printed mount on the moving side of the box. Where should the Arduino be mounted?]]
 _What seems off in this image?_
 
-**An option for making the "finger":**
-Now that you know how to use the laser cutter, draw something on the vector software to use as the "finger" — there are a lot of cool scrap materials available on the scrap pile, like acrylics that will work well for this. Make sure to adjust the speed, power, and frequency settings for the material you decide to use.   
+**An option for making the "bopper":**
+Now that you know how to use the laser cutter, draw something on the vector software to use as the "bopper" — there are a lot of cool scrap materials available on the scrap pile, like acrylics that will work well for this. Make sure to adjust the speed, power, and frequency settings for the material you decide to use.   
 
 ## Electronics
 
@@ -66,7 +66,11 @@ The [second example](https://github.com/FAR-Lab/Developing-and-Designing-Interac
 Think about where each component should go, and assemble your useless box so that it works like the one on the video you saw for the preLab. Insert the electronics, install the mechanical components, glue anything that has not been glued yet, and test your useless box!
 
 # Lab Submission
-Write-up a **How To Make a Useless Box** guide for yourself to use in the future. Include at least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality), and a video of your useless box in action.
+For your write up, include:
+* your Arduino code
+* .stl (or whatever format) files for your "bopper"
+* at least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality) 
+* a video of your useless box in action.
 
 [[images/lightBox.jpg|alt=Image of a light box used to make evenly lit pictures of products and designs.]]  
 
