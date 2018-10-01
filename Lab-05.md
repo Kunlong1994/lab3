@@ -3,8 +3,9 @@
 For this week’s lab, we will be building a useless box; this is a project inspired by [Make Magazine](https://makezine.com/projects/the-most-useless-machine/), which you used as reference for the preLab, and a [similar lab](https://web.stanford.edu/class/engr40m/labs/lab2a.pdf) at Stanford's [ENGR40m](https://web.stanford.edu/class/engr40m/). We will use this lab to help you to experiment with digital fabrication tools. The methods that will be used are 3D printing and laser cutting.  
 
 ## 3D Printing
+[[https://cdn.thingiverse.com/renders/be/13/cd/2e/40/7de41f98d14c7b4a7ba203ff7bfe8ff2_preview_featured.jpg]]
 
-3D print this [servo mount](https://www.thingiverse.com/thing:1926568).
+3D print [this servo mount](https://www.thingiverse.com/thing:1926568).
 
 1. Export the object as a `.stl` file.
 1. Download and install [Makerbot Print](https://www.makerbot.com/print/).
