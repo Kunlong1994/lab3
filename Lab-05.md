@@ -7,11 +7,11 @@ For this week’s lab, we will be building a useless box; this is a project insp
 
 **3D print [this servo mount](https://www.thingiverse.com/thing:1926568):**
 
-1. On this [this page](https://www.thingiverse.com/thing:1926568), export the object as a `.stl` file.
 1. Download and install [Makerbot Print](https://www.makerbot.com/print/).
 1. Create a MakerBot account.
 1. Start the Makerbot Print Application and log in.
-1. Load the exported `.stl` button into the printer.
+1. On this [this page](https://www.thingiverse.com/thing:1926568), download all files.
+1. Import the `.stl` file from the files you downloaded into the printer.
 1. Connect your laptop to the printer over USB.
 1. Once the Printer is connected hit "print".
 1. After the printer has started the USB cable can be disconnected from your laptop.
