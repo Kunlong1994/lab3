@@ -36,7 +36,7 @@ Laser cut cardboard to make your useless box in the Maker Lab.
 1. Open the laser cutter template file for the [useless box](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/uselessbox.ai) in your vector editing program.
 1. Modify the vector drawing to have a personal touch, and holes for the servo mount, switch, and Arduino wires. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (black for cutting). Save your file. BONUS: include lines or images that you don't plan to cut all the way through to experiment with etching.
 1.  To laser cut, open your modified file in Adobe Illustrator on the lab’s computer. Look around the laser cutting room for instructions, reference sheets, and scrap materials. The step by step instructions are attached on the suction system to the left of the computer.
-1.  Keeping in mind Niti's safety instructions, follow the instructions to cut:
+1.  Keeping in mind Niti's safety instructions, follow the instructions to cut (these are summarized for our purposes):
     * Load the machine with the 5/32" thick cardboard we provided. If the material is bent, tape the ends using duct tape to the sides of the printing bed to make it as flat as possible.
     * Disable X/Y.
     *  Move the laser to its starting position on top left corner of the material.
@@ -44,7 +44,7 @@ Laser cut cardboard to make your useless box in the Maker Lab.
     *  Press the set home button.
     *  Close the lid.
     *   Open the printer preferences.
-    *   Make sure you set the different power levels for the cut values pertaining to the material you're using. For the cardboard we are providing, the values should be: Speed 45%, Power 70%, and Frequency: 500Hz. On the same window, adjust the printing bed size to 24" horizontal, and 18" vertical. 
+    *   Make sure you set the different power levels for the cut values pertaining to the material you're using. For the cardboard we are providing, the values should be: Speed 45%, Power 70%, and Frequency: 500Hz. On the same window, adjust the printing bed size to 24" horizontal, and 18" vertical. When you save the settings, make sure the image on the preview is well positioned (not too close to the edges and fitting well in the space). Press print. 
     *   Turn on the air assist compressor on the floor on.
     *   Turn the suction system, the big blue box, on.
     *   Print the job on the computer. 
