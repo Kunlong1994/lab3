@@ -28,7 +28,7 @@ Laser cut cardboard to make your useless box in the Maker Lab.
 
 1. Download a vector editing program like [Inkscape](https://inkscape.org/en/) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
 1. Open the laser cutter template file for the [useless box](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/uselessbox.ai) in your vector editing program.
-1. Modify the vector drawing as you please. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (black for cutting). Save your file. BONUS: experiment with etching.
+1. Modify the vector drawing as you please. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (black for cutting). Save your file. BONUS: include lines or images that you don't plan to cut all the way through to experiment with etching.
 1.  To laser cut, open your modified file in Adobe Illustrator on the lab’s computer.
 1.  Keeping in mind Niti's safety instructions, follow the instructions to cut:
     * Load the machine with the 5/32" thick cardboard we provided. If the material is bent, tape the ends using duct tape to the sides of the printing bed to make it as flat as possible.
