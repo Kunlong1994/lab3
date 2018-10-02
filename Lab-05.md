@@ -33,7 +33,7 @@ Laser cut cardboard to make your useless box in the Maker Lab.
 
 1. Download a vector editing program like [Inkscape](https://inkscape.org/en/) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
 1. Open the laser cutter template file for the [useless box](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/uselessbox.ai) in your vector editing program.
-1. Modify the vector drawing as you please. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (black for cutting). Save your file. BONUS: include lines or images that you don't plan to cut all the way through to experiment with etching.
+1. Modify the vector drawing to have a personal touch, and holes for the servo mount, switch, and Arduino wires. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (black for cutting). Save your file. BONUS: include lines or images that you don't plan to cut all the way through to experiment with etching.
 1.  To laser cut, open your modified file in Adobe Illustrator on the lab’s computer.
 1.  Keeping in mind Niti's safety instructions, follow the instructions to cut:
     * Load the machine with the 5/32" thick cardboard we provided. If the material is bent, tape the ends using duct tape to the sides of the printing bed to make it as flat as possible.
@@ -43,10 +43,10 @@ Laser cut cardboard to make your useless box in the Maker Lab.
     *  Press the set home button.
     *  Close the lid.
     *   Open the printer preferences.
-    *   Make sure you set the different power levels for the cut values pertaining to the material you're using. For the cardboard we are providing, the values should be: Speed 45%, Power 70%, and Frequency: 500Hz.
+    *   Make sure you set the different power levels for the cut values pertaining to the material you're using. For the cardboard we are providing, the values should be: Speed 45%, Power 70%, and Frequency: 500Hz. On the same window, adjust the printing bed size to 24" horizontal, and 18" vertical. 
     *   Turn on the air assist compressor on the floor on.
     *   Turn the suction system, the big blue box, on.
-    *   Print the job on the computer.
+    *   Print the job on the computer. 
     *   Find the job you're printing on the laser cutter, and press 'go'.
 9.  Assemble the parts, once the configuration makes sense, hot glue them together. Tip: don't hot glue the part where you'll attach the servo until you've attached the servo!
 [[images/lasercut-box.JPG|alt=Laser cut box with Andrea holding servo on 3D-printed mount on the moving side of the box. Where should the Arduino be mounted?]]
