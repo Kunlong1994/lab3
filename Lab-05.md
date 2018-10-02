@@ -68,10 +68,10 @@ Think about where each component should go, and assemble your useless box so tha
 
 # Lab Submission
 For your write up, include:
-* your Arduino code
-* .stl (or whatever format) files for your "bopper"
-* at least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality) 
-* a video of your useless box in action.
+1. Your Arduino code
+1. `.stl` or `.svg` files for your "bopper" — if you use some other technique, include the respective supporting material
+1. at least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality) 
+1. a video of your useless box in action
 
 [[images/lightBox.jpg|alt=Image of a light box used to make evenly lit pictures of products and designs.]]  
 
