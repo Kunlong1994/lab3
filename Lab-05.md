@@ -59,9 +59,6 @@ Now that you know how to use the laser cutter, draw something on the vector soft
 
 Create a circuit to connect your 9 volt power supply, toggle switch and servo to the metro mini.  You can use this one or one you design on your own.  
 
-
-Load either of the examples below to your Arduino, and see how they work. Try to modify the behavior in a way that will make it your own.  
-
 [[https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/circuit_image_lab5.png|alt=diagram with switch, servo, 9V battery, and Arduino]]
  
 
@@ -75,11 +72,13 @@ Pick up a toggle switch from the cart. You might notice that this part is not br
 
 On the back of the toggle switch, there are 2 sets of 3 tabs/blades with holes. You will need to solder on jumper wires to the tabs (only one side is necessary) to connect it to your circuit.
 
-### Optional perm-proto
+### Optional perma-proto
 
 *Once you have the circuit working,* you can move your circuit to a protoboard from your breadboard. (You'll want to make a socket with female connectors for the Metro Mini & servo.) This can make things smaller and more compact, and also make the connections more robust.
 
+### Program your device
 
+Load either of the examples below to your Arduino, and see how they work. Try to modify the behavior in a way that will make it your own.  
 
 The [first example](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/uselessBox_loop_lab5.ino) simply polls the state of the switch in the main loop and triggers actions if it notices the switch state has changed.
 
