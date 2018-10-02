@@ -12,6 +12,7 @@ For this week’s lab, we will be building a useless box; this is a project insp
 1. Start the Makerbot Print Application and log in.
 1. On this [this page](https://www.thingiverse.com/thing:1926568), download all files.
 1. Import the `.stl` file from the files you downloaded into the printer.
+1. Make sure the orientation of your part makes sense. What orientation makes the most sense for 3D printing?
 1. Connect your laptop to the printer over USB.
 1. Once the Printer is connected hit "print".
 1. After the printer has started the USB cable can be disconnected from your laptop.
