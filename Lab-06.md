@@ -24,22 +24,22 @@ hostname = "ixe00"
 
 In this tutorial, we will use a Raspberry Pi to create a chatbot! Your Pi will be serving up it's own webpages with an interface that allows people to type in text entries and receive your Chatbot's replies.
 
-The Pis we are giving you have a specific set and configuration of files known as [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki), created by [Nikolas Martelaro](http://nikmartelaro.com). Those files were pre-copied onto the microSD card in your Raspberry Pi that we handed our earlier.
+The Pis we are giving you have a specific set and configuration of files known as [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki), created by [Nikolas Martelaro](http://nikmartelaro.com). Those files were pre-copied onto the microSD card in your Raspberry Pi that you received from us.
 
 ## Connect to your Interaction Engine
 
-The Pi is a single-board computer, but it doesn't have it's own keyboard or mouse, so we will be connecting remotely over wifi to it using your laptop. 
+The Pi is a single-board computer, but it doesn't have it's own keyboard or mouse, so we will be connecting remotely using the terminal, over wifi, from your laptop. 
 
 We will [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into the system so that we can control the computer via [Terminal on Mac](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) or [PuTTy on Windows](https://www.ssh.com/ssh/putty/download).
 
-These instructions assume your laptop and Pi are both connected to RedRover or eduroam. If you have followed the preparatory instructions earlier your Pi should have booted up and has ended you an email with its wifi IP address. This IP address is available from the local network (i.e. RedRover) and we will use it to talk and control the Pi. 
+These instructions assume your laptop and Pi are both connected to RedRover. If you have followed the preparatory instructions earlier your Pi should have booted up and sent you an email with its wifi IP address. This IP address is available from the local network (i.e., RedRover) and we will use it to talk and control the Pi. 
 
-In the following section we will refer to your IP address with the name `$Address`. When ever you see this replace the text(`$Address`) with the IP address your received in your mail
+In the following section we will refer to your IP address with the name `$Address`. When ever you see this replace the text (`$Address`) with the IP address your received in your mail
 
 
 ### 1. Verify the Pi is online
 
-First, in your terminal program, `ping` your Pi to make sure it is online. The command is simple just open your terminal(or cmd on windows) and type 'ping $Address' where your replace $Address with the IP address you received in the email. 
+First, in your terminal program, `ping` your Pi to make sure it is online. Open your terminal (or `cmd` on Windows) and type `ping $Address` where your replace `$Address` with the IP address you received in the email. 
 
 ```shell
 nik@DN51sk9s:~$ ping 192.168.2.2
@@ -54,14 +54,15 @@ PING ixe05.local (192.168.2.2): 56 data bytes
 5 packets transmitted, 5 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 0.467/0.576/0.720/0.103 ms
 ```
-You can use `control + C` to interrupt and exit the ping (this looks like `^C` in the terminal).
 
-If you do not see the response from the `ping command`, [troubleshoot](Getting-an-IxE-based-Pi-on-your-Wi-Fi#troubleshooting) to get your Pi online.  
+You can use `control-C` to interrupt and exit the ping (press the `control` key, and while holding it down, also press the `C` key, then let go of both together--this looks like `^C` in the terminal).
+
+If you do not see the response from the `ping` command, [troubleshoot](Getting-an-IxE-based-Pi-on-your-Wi-Fi#troubleshooting) to get your Pi online.  
 
 ### 2.  SSH into the Pi.
 From your terminal, log in to your Pi using the command `ssh pi@$Address` with the password: `raspberry`
 
-When you first log in it will ask you if you want to continue connecting. Say `yes`.
+When you first log in it will show you a "fingerprint" and ask you whether you want to continue connecting. Say `yes`.
 
 ```shell
 ssh pi@ixe00.local
@@ -72,7 +73,7 @@ Are you sure you want to continue connecting (yes/no)? yes
 After you say yes, type the password `raspberry` and hit Enter. You should see this:
 
 ```shell
-i@ixe00.local's password:
+pi@ixe00.local's password:
 Linux ixe00 4.9.59-v7+ #1047 SMP Sun Oct 29 12:19:23 GMT 2017 armv7l
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -89,7 +90,7 @@ This is a security risk - please login as the 'pi' user and type 'passwd' to set
 pi@ixe00:~ $ 
 ```
 
-Once you are signed in, your terminal will now be the access port or 'terminal' to your Pi. You can tell this by looking at the user and hostname at the beginning of each line, which should now look like:
+Once you are signed in, your terminal will now connected directly to the 'terminal' on your Pi, via `ssh`. You can tell this by looking at the user and hostname at the beginning of each line, which should now look like:
 
 ```shell
 pi@ixe00 ~ $
@@ -99,16 +100,18 @@ pi@ixe00 ~ $
 
 ### Installation
 Clone (download) the repository from GitHub to the Pi. 
-1. From the terminal window which is logged into the Pi, go to the home folder with ```cd ~```
+
+1. From the terminal window which is logged into the Pi, go to the home folder with `cd ~`
 1. In a web browser on your laptop, fork the github project [IDD-Fa18-lab6](www.gitHub.com/far-lab/IDD-Fa18-Lab6) before cloning it to your Pi, by clicking the fork button on the top right side.
 1. Copy the link to your forked version of the project.<!--(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). -->
 1. From the terminal window which is logged into the Pi, clone the git repository with the copied information
 ```shell
 git clone https://github.com/**_YOURUSERNAME_**/IDD-Fa18-Lab6
 ```
-1. Change directory into the downloaded folder with ```cd simple-ChatBot```
-1. Let ```npm``` install the required node packages. Just run the command ```npm install```.
-At this point, you will have downloaded the main program and all required packages to run the simple chatbot. 
+1. Change directory into the downloaded folder with `cd IDD-Fa18-Lab6`
+1. Use `npm` to install the required node packages; run the command `npm install`.
+
+At this point, you have now downloaded the main program and all required packages to run the simple chatbot. 
 
 ### Start-Up
 
