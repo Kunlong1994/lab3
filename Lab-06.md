@@ -69,15 +69,15 @@ From your terminal, log in to your Pi using the command `ssh pi@$Address` with t
 When you first log in it will show you a "fingerprint" and ask you whether you want to continue connecting. Say `yes`.
 
 ```shell
-ssh pi@ixe00.local
-The authenticity of host 'ixe00.local (fe80::1216:6c33:ec58:34a5%en0)' can't be established.
+ssh pi@192.168.2.2
+The authenticity of host '192.168.2.2' can't be established.
 ECDSA key fingerprint is SHA256:Y9S4oMH2H70fz3K/L42Kw39k+zkpyfr0DmGdzBx7SKk.
 Are you sure you want to continue connecting (yes/no)? yes
 ```
 After you say yes, type the password `raspberry` and hit Enter. You should see this:
 
 ```shell
-pi@ixe00.local's password:
+pi@192.168.2.2's password:
 Linux ixe00 4.9.59-v7+ #1047 SMP Sun Oct 29 12:19:23 GMT 2017 armv7l
 
 The programs included with the Debian GNU/Linux system are free software;
