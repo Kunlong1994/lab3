@@ -32,7 +32,9 @@ The Pi is a single-board computer, but it doesn't have it's own keyboard or mous
 
 We will [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into the system so that we can control the computer via [Terminal on Mac](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) or [PuTTy on Windows](https://www.ssh.com/ssh/putty/download).
 
-These instructions assume your laptop and Pi are both connected to RedRover or eduroam. If you have followed the preparatory instructions earlier your Pi should have booted up and has ended you an email with its wifi IP address. This IP address is available from the local network (i.e. RedRover) and we will use it to talk and control the Pi.
+These instructions assume your laptop and Pi are both connected to RedRover or eduroam. If you have followed the preparatory instructions earlier your Pi should have booted up and has ended you an email with its wifi IP address. This IP address is available from the local network (i.e. RedRover) and we will use it to talk and control the Pi. 
+
+In the following section we will refer to your IP address with the name `$Address`. When ever you see this replace the text(`$Address`) with the IP address your received in your mail
 
 
 ### 1. Verify the Pi is online
@@ -52,12 +54,12 @@ PING ixe05.local (192.168.2.2): 56 data bytes
 5 packets transmitted, 5 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 0.467/0.576/0.720/0.103 ms
 ```
-You can use `control + C` to exit the ping (this looks like `^C` in the terminal).
+You can use `control + C` to interrupt and exit the ping (this looks like `^C` in the terminal).
 
-If you do not see the response from the `ping command`, [troubleshoot](Getting-an-IxE-based-Pi-on-your-Wi-Fi#troubleshooting) to get your IxE online.  
+If you do not see the response from the `ping command`, [troubleshoot](Getting-an-IxE-based-Pi-on-your-Wi-Fi#troubleshooting) to get your Pi online.  
 
-### 2.  SSH into the IxE.
-From your terminal, log in to your Pi using the command `ssh pi@ixe[00].local` with the password: `raspberry`
+### 2.  SSH into the Pi.
+From your terminal, log in to your Pi using the command `ssh pi@$Address` with the password: `raspberry`
 
 When you first log in it will ask you if you want to continue connecting. Say `yes`.
 
@@ -87,18 +89,18 @@ This is a security risk - please login as the 'pi' user and type 'passwd' to set
 pi@ixe00:~ $ 
 ```
 
-Once you are signed in, your terminal will now be the terminal for the IxE. You can tell this by looking at the user and hostname at the beginning of each line, which should now look like:
+Once you are signed in, your terminal will now be the access port or 'terminal' to your Pi. You can tell this by looking at the user and hostname at the beginning of each line, which should now look like:
 
 ```shell
-pi@ixe05 ~ $
+pi@ixe00 ~ $
 ```
 
 ## Setup and run the ChatBot Example
 
 ### Installation
-Clone (download) the repository from GitHub to the IxE. 
+Clone (download) the repository from GitHub to the Pi. 
 1. From the terminal window which is logged into the Pi, go to the home folder with ```cd ~```
-1. In a web browser on your laptop, fork the github project you are trying to download, by clicking the fork button on the top right side.
+1. In a web browser on your laptop, fork the github project before cloning it to your Pi, by clicking the fork button on the top right side.
 1. Copy the link to your forked version of the project.<!--(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). -->
 1. From the terminal window which is logged into the Pi, clone the git repository with the copied information
 ```
