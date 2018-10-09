@@ -2,6 +2,8 @@
 
 ## Preparing your Raspberry Pi
 
+The following steps set up your Raspberry Pi so that it emails you the IP address that the RPi gains from the local DHCP server on boot-up. It is specifically looking for the Cornell [RedRover](https://it.cornell.edu/topic/redrover-wi-fi) network.
+
 * Connect the microSD card to your laptop computer 
 * Open the boot volume and find the  ```email_ip_on_start.py``` script.
 * Open this script and find the section where the target email address is defined.
@@ -18,7 +20,9 @@ hostname = "ixe00"
 ```
 * Put in your email address there.
 * Save the file and eject the drive.
-* Then plug the microSD card into your RPI and plug the power in.
+* Then plug the microSD card into your RPi and plug the power in.
+
+(Instructions on modifying this to get online in other places are here.)
 
 # Chatbot
 
@@ -28,13 +32,13 @@ The Pis we are giving you have a specific set and configuration of files known a
 
 ## Connect to your Interaction Engine
 
-The Pi is a single-board computer, but it doesn't have it's own keyboard or mouse, so we will be connecting remotely using the terminal, over wifi, from your laptop. 
+The Pi is a single-board computer, but it doesn't have its own keyboard or mouse, so we will be connecting to the Pi remotely from your laptop over wifi. 
 
 We will [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into the system so that we can control the computer via [Terminal on Mac](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) or [PuTTy on Windows](https://www.ssh.com/ssh/putty/download).
 
-These instructions assume your laptop and Pi are both connected to RedRover. If you have followed the preparatory instructions earlier your Pi should have booted up and sent you an email with its wifi IP address. This IP address is available from the local network (i.e., RedRover) and we will use it to talk and control the Pi. 
+These instructions assume your laptop and Pi are both connected to the same network, [RedRover](https://it.cornell.edu/wifi). If you have followed the preparatory instructions earlier, your Pi should have booted up and sent you an email with its wifi IP address. This IP address is available from the local network (i.e., RedRover) and we will use it to talk and control the Pi. 
 
-In the following section we will refer to your IP address with the name `$Address`. When ever you see this replace the text (`$Address`) with the IP address your received in your mail
+In the following section, we will refer to your IP address with the name `$Address`. When ever you see this replace the text (`$Address`) with the IP address your received in your mail.
 
 
 ### 1. Verify the Pi is online
