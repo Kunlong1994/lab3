@@ -2,7 +2,9 @@
 
 ## Preparing your Raspberry Pi
 
-* Connect the SD-Card to your computer 
+The following steps set up your Raspberry Pi so that it emails you the IP address that the RPi gains from the local DHCP server on boot-up. It is specifically looking for the Cornell [RedRover](https://it.cornell.edu/topic/redrover-wi-fi) network.
+
+* Connect the microSD card to your laptop computer 
 * Open the boot volume and find the  ```email_ip_on_start.py``` script.
 * Open this script and find the section where the target email address is defined.
 
@@ -18,7 +20,9 @@ hostname = "ixe00"
 ```
 * Put in your email address there.
 * Save the file and eject the drive.
-* Then plug the card into your RPI and plug the power in.
+* Then plug the microSD card into your RPi and plug the power in.
+
+(Instructions on modifying this to get online in other places are here.)
 
 # Chatbot
 
@@ -28,13 +32,13 @@ The Pis we are giving you have a specific set and configuration of files known a
 
 ## Connect to your Interaction Engine
 
-The Pi is a single-board computer, but it doesn't have it's own keyboard or mouse, so we will be connecting remotely using the terminal, over wifi, from your laptop. 
+The Pi is a single-board computer, but it doesn't have its own keyboard or mouse, so we will be connecting to the Pi remotely from your laptop over wifi. 
 
 We will [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into the system so that we can control the computer via [Terminal on Mac](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) or [PuTTy on Windows](https://www.ssh.com/ssh/putty/download).
 
-These instructions assume your laptop and Pi are both connected to RedRover. If you have followed the preparatory instructions earlier your Pi should have booted up and sent you an email with its wifi IP address. This IP address is available from the local network (i.e., RedRover) and we will use it to talk and control the Pi. 
+These instructions assume your laptop and Pi are both connected to the same network, [RedRover](https://it.cornell.edu/wifi). If you have followed the preparatory instructions earlier, your Pi should have booted up and sent you an email with its wifi IP address. This IP address is available from the local network (i.e., RedRover) and we will use it to talk and control the Pi. 
 
-In the following section we will refer to your IP address with the name `$Address`. When ever you see this replace the text (`$Address`) with the IP address your received in your mail
+In the following section, we will refer to your IP address with the name `$Address`. Whenever you see this, replace the text (`$Address`) with the IP address your received in your mail.
 
 
 ### 1. Verify the Pi is online
@@ -42,15 +46,15 @@ In the following section we will refer to your IP address with the name `$Addres
 First, in your terminal program, `ping` your Pi to make sure it is online. Open your terminal (or `cmd` on Windows) and type `ping $Address` where your replace `$Address` with the IP address you received in the email. 
 
 ```shell
-nik@DN51sk9s:~$ ping 192.168.2.2
-PING ixe05.local (192.168.2.2): 56 data bytes
+you@your-machine:~$ ping 192.168.2.2
+PING 192.168.2.2: 56 data bytes
 64 bytes from 192.168.2.2: icmp_seq=0 ttl=64 time=0.467 ms
 64 bytes from 192.168.2.2: icmp_seq=1 ttl=64 time=0.471 ms
 64 bytes from 192.168.2.2: icmp_seq=2 ttl=64 time=0.550 ms
 64 bytes from 192.168.2.2: icmp_seq=3 ttl=64 time=0.670 ms
 64 bytes from 192.168.2.2: icmp_seq=4 ttl=64 time=0.720 ms
 ^C
---- ixe05.local ping statistics ---
+--- 192.168.2.2 ping statistics ---
 5 packets transmitted, 5 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 0.467/0.576/0.720/0.103 ms
 ```
@@ -65,15 +69,15 @@ From your terminal, log in to your Pi using the command `ssh pi@$Address` with t
 When you first log in it will show you a "fingerprint" and ask you whether you want to continue connecting. Say `yes`.
 
 ```shell
-ssh pi@ixe00.local
-The authenticity of host 'ixe00.local (fe80::1216:6c33:ec58:34a5%en0)' can't be established.
+ssh pi@192.168.2.2
+The authenticity of host '192.168.2.2' can't be established.
 ECDSA key fingerprint is SHA256:Y9S4oMH2H70fz3K/L42Kw39k+zkpyfr0DmGdzBx7SKk.
 Are you sure you want to continue connecting (yes/no)? yes
 ```
 After you say yes, type the password `raspberry` and hit Enter. You should see this:
 
 ```shell
-pi@ixe00.local's password:
+pi@192.168.2.2's password:
 Linux ixe00 4.9.59-v7+ #1047 SMP Sun Oct 29 12:19:23 GMT 2017 armv7l
 
 The programs included with the Debian GNU/Linux system are free software;
@@ -102,7 +106,7 @@ pi@ixe00 ~ $
 Clone (download) the repository from GitHub to the Pi. 
 
 1. From the terminal window which is logged into the Pi, go to the home folder with `cd ~`
-1. In a web browser on your laptop, fork the github project [IDD-Fa18-lab6](https://www.gitHub.com/far-lab/IDD-Fa18-Lab6) before cloning it to your Pi, by clicking the fork button on the top right side.
+1. In a web browser on your laptop, fork the github project [IDD-Fa18-lab6](https://www.gitHub.com/far-lab/IDD-Fa18-Lab6), by clicking the fork button on the top right side.
 1. Copy the link to your forked version of the project.<!--(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). -->
 1. From the terminal window which is logged into the Pi, clone the git repository with the copied information
 ```shell
@@ -115,17 +119,20 @@ At this point, you have now downloaded the main program and all required package
 
 ### Start-Up
 
-Now we need to start the server on the Pi. We then access the chatbot page served by the Pi with a browser on our laptop.
+Now start the server on the Pi, then access the chatbot page served by the Pi with a browser on your laptop.
 
-We start the server by typing `node chatServer.js` into the Pi's terminal.
-Then, in a browser on your laptop, go to `$Address.local:8000` (Don't forget to replace the `$Address` with the actual IP address of your Pi).
-Once loaded, you should see a text field and the first greeting from the ChatBot.
+On the Pi's terminal, start the server by typing `node chatServer.js`.
+
+Then, in a browser on your laptop, go to `$Address:8000` (Don't forget to replace the `$Address` with the actual IP address of your Pi).
+
+Once the webpage is loaded on your laptop browser, you should see a text field and the first greeting from the ChatBot on the webpage.
 
 #### Debugging
-If the previous steps did not work there are a few things you can easily check/debug:
+If the previous steps did not work, there are a few things you can easily check/debug:
+
 First, verify that the server is running. The command line window should say
 ```shell 
-pi@$Address:~/IDD-Fa18-Lab6 $node chatServer.js 
+pi@$Address:~/IDD-Fa18-Lab6 $ node chatServer.js 
 listening on *:8000
 a new user connected
 ```
@@ -136,7 +143,7 @@ chatServer.js  license.txt  node_modules  package.json  package-lock.json  publi
 ```
 If files are missing, or you are not in the correct folder, then change to the correct folder location and try to re-run the instructions from the tutorial.
   
-Second, make sure that you are connected to RedRover, the same network as the interaction engine. This type of server is typically only routed/addressable locally, i.e., when you are on the same network.
+Second, make sure that your laptop is connected to RedRover, the same network as the Pi. This type of server is typically only routed/addressable locally, i.e., when you are on the same network.
 
 ## Understanding the code
 
