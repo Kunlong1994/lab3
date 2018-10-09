@@ -119,14 +119,17 @@ At this point, you have now downloaded the main program and all required package
 
 ### Start-Up
 
-Now we need to start the server on the Pi. We then access the chatbot page served by the Pi with a browser on our laptop.
+Now start the server on the Pi, then access the chatbot page served by the Pi with a browser on your laptop.
 
-We start the server by typing `node chatServer.js` into the Pi's terminal.
+On the Pi's terminal, start the server by typing `node chatServer.js`.
+
 Then, in a browser on your laptop, go to `$Address:8000` (Don't forget to replace the `$Address` with the actual IP address of your Pi).
-Once loaded, you should see a text field and the first greeting from the ChatBot.
+
+Once the webpage is loaded on your laptop browser, you should see a text field and the first greeting from the ChatBot on the webpage.
 
 #### Debugging
-If the previous steps did not work there are a few things you can easily check/debug:
+If the previous steps did not work, there are a few things you can easily check/debug:
+
 First, verify that the server is running. The command line window should say
 ```shell 
 pi@$Address:~/IDD-Fa18-Lab6 $ node chatServer.js 
@@ -140,7 +143,7 @@ chatServer.js  license.txt  node_modules  package.json  package-lock.json  publi
 ```
 If files are missing, or you are not in the correct folder, then change to the correct folder location and try to re-run the instructions from the tutorial.
   
-Second, make sure that you are connected to RedRover, the same network as the interaction engine. This type of server is typically only routed/addressable locally, i.e., when you are on the same network.
+Second, make sure that your laptop is connected to RedRover, the same network as the Pi. This type of server is typically only routed/addressable locally, i.e., when you are on the same network.
 
 ## Understanding the code
 
