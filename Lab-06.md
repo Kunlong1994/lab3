@@ -126,6 +126,7 @@ On the Pi's terminal, start the server by typing `node chatServer.js`.
 Then, in a browser on your laptop, go to `$Address:8000` (Don't forget to replace the `$Address` with the actual IP address of your Pi).
 
 Once the webpage is loaded on your laptop browser, you should see a text field and the first greeting from the ChatBot on the webpage.
+[[images/chatBotConnected.png]]
 
 #### Debugging
 If the previous steps did not work, there are a few things you can easily check/debug:
