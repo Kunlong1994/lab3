@@ -46,15 +46,15 @@ In the following section, we will refer to your IP address with the name `$Addre
 First, in your terminal program, `ping` your Pi to make sure it is online. Open your terminal (or `cmd` on Windows) and type `ping $Address` where your replace `$Address` with the IP address you received in the email. 
 
 ```shell
-nik@DN51sk9s:~$ ping 192.168.2.2
-PING ixe05.local (192.168.2.2): 56 data bytes
+you@your-machine:~$ ping 192.168.2.2
+PING 192.168.2.2: 56 data bytes
 64 bytes from 192.168.2.2: icmp_seq=0 ttl=64 time=0.467 ms
 64 bytes from 192.168.2.2: icmp_seq=1 ttl=64 time=0.471 ms
 64 bytes from 192.168.2.2: icmp_seq=2 ttl=64 time=0.550 ms
 64 bytes from 192.168.2.2: icmp_seq=3 ttl=64 time=0.670 ms
 64 bytes from 192.168.2.2: icmp_seq=4 ttl=64 time=0.720 ms
 ^C
---- ixe05.local ping statistics ---
+--- 192.168.2.2 ping statistics ---
 5 packets transmitted, 5 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 0.467/0.576/0.720/0.103 ms
 ```
