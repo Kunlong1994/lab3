@@ -156,6 +156,8 @@ The chatServer.js code is written in javascript. It is run on the IxE using [nod
 
 #### Annotated code tours
 
+Please take a self-guided trip through the following code tours:
+
 * [chatServer.js](chatServer.js,-annotated)
 * [index.js](index.js,-annotated)
 
