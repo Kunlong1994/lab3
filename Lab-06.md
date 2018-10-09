@@ -107,39 +107,38 @@ Clone (download) the repository from GitHub to the Pi.
 git clone https://github.com/**_YOURUSERNAME_**/IDD-Fa18-Lab6
 ```
 1. Change directory into the downloaded folder with ```cd simple-ChatBot```
-1. Let ```npm``` install the required node packages with ```npm install```
-At this point, you will have downloaded the main program and all required packages to run it. 
+1. Let ```npm``` install the required node packages. Just run the command ```npm install```.
+At this point, you will have downloaded the main program and all required packages to run the simple chatbot. 
 
 ### Start-Up
 
 Now we need to start the server on the Pi. We then access the chatbot page served by the Pi with a browser on our laptop.
 
 We start the server by typing ```node chatServer.js``` into the terminal command line for the Pi.
-In a browser on your laptop, go to ```ixe[00].local:8000``` (replace the [00] with the number associated with that interaction engine).
+In a browser on your laptop, go to ```$Address.local:8000``` ( Again, replace the `$Address`).
 Once loaded, you should see a text field and the first greeting from the ChatBot.
 
 #### Debugging
 If the previous steps did not work there are a few things you can easily check/debug:
-First, verify that the server is running. The command line window from your ixe[00] should say
+First, verify that the server is running. The command line window should say
 ```shell 
-pi@ixe[00]:~/simple-ChatBot $node chatServer.js 
+pi@$Address:~/simple-ChatBot $node chatServer.js 
 listening on *:8000
 a new user connected
 ```
-If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` to see if you really are working in the correct directory. The answer that pops-up should be something like ```/home/pi/simple-ChatBot```. Verify that you have all files in the folder with ```ls ```. The item list should be 
+If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` (which stands for **P**rint**W**orking**D**irectory)to see if you really are working in the correct directory. The answer that pops-up should be something like ```/home/pi/IDD-Fa18-Lab6```. Verify that you have all files in the folder with ```ls ```. The item list should be 
 ```shell 
-pi@ixe[00]:~/test/simple-ChatBot $ ls
+pi@$Address:~/test/IDD-Fa18-Lab6 $ ls
 chatServer.js  license.txt  node_modules  package.json  package-lock.json  public  README.txt
 ```
 If files are missing or you are not in the correct folder change to the correct folder location and try to re-run the instructions from the tutorial.
   
-Second, make sure that you are connected to the same network as the interaction engine. This type of server is typically only routed/addressable locally i.e. when you are on the same network.
+Second, make sure that you are connected to the same network as the interaction engine. This type of server is typically only routed/addressable locally i.e. when you are on the same network(e.g. RedRover).
 
 ## Understanding the code
 
 ### chatServer.js (The RPi code)
 The chatServer.js code is written in javascript. It is run on the IxE using [node.js](https://en.wikipedia.org/wiki/Node.js). This code handles the different client interactions and manages the network connections. 
-
 
 ### index.html and index.js (The browser code)
 Index.html is written in HTML, but with javascript embedded. The index.js code acts as a library for the functions called in `index.html`, and is written in javascript. These files are served from the IxE when node.js is running `chatServer.js`. Both index.html and `index.js` run on the web browser.
@@ -156,7 +155,7 @@ Now, please modify the `chatServer.js` file to make your own chatbot. It might, 
 ### Editing the Code ###
 To change how your chatbot behaves, you will need to edit the code. To edit the code files, you can use `nano` a command line text editor.
 
-To edit your `chatServer.js` code, make sure you are in the `simple-Chatbot/` directory and then open the code file using the command:
+To edit your `chatServer.js` code, make sure you are in the `IDD-Fa18-Lab6/` directory and then open the code file using the command:
 
 ```shell
 nano chatServer.js
