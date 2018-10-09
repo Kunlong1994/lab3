@@ -22,7 +22,7 @@ hostname = "ixe00"
 
 # Chatbot
 
-In this tutorial, we will use a Raspberry Pi to create a chatbot! Your Pi will be serving up it's own webpages with a interface that allows people to type in text entries and receive your Chatbot's replies.
+In this tutorial, we will use a Raspberry Pi to create a chatbot! Your Pi will be serving up it's own webpages with an interface that allows people to type in text entries and receive your Chatbot's replies.
 
 The Pis we are giving you have a specific set and configuration of files known as [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki), created by [Nikolas Martelaro](http://nikmartelaro.com). Those files were pre-copied onto the microSD card in your Raspberry Pi that we handed our earlier.
 
@@ -32,16 +32,15 @@ The Pi is a single-board computer, but it doesn't have it's own keyboard or mous
 
 We will [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into the system so that we can control the computer via [Terminal on Mac](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) or [PuTTy on Windows](https://www.ssh.com/ssh/putty/download).
 
-These instructions assume you are connected locally to your IxE. If you are connected remotely, follow these instructions instead.
+These instructions assume your laptop and Pi are both connected to RedRover or eduroam. If you have followed the preparatory instructions earlier your Pi should have booted up and has ended you an email with its wifi IP address. This IP address is available from the local network (i.e. RedRover) and we will use it to talk and control the Pi.
 
-Your IxE has a unique name, something like `ixe##` where the number corresponds to the number on the SD card (ex: ixe01, ixe04, ixe11)
 
-### 1. Verify IxE is online
+### 1. Verify the Pi is online
 
-First, in your terminal program, `ping` your IxE to make sure it is online. 
+First, in your terminal program, `ping` your Pi to make sure it is online. The command is simple just open your terminal(or cmd on windows) and type 'ping $Address' where your replace $Address with the IP address you received in the email. 
 
 ```shell
-nik@DN51sk9s:~$ ping ixe05.local
+nik@DN51sk9s:~$ ping 192.168.2.2
 PING ixe05.local (192.168.2.2): 56 data bytes
 64 bytes from 192.168.2.2: icmp_seq=0 ttl=64 time=0.467 ms
 64 bytes from 192.168.2.2: icmp_seq=1 ttl=64 time=0.471 ms
