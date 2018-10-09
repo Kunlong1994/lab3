@@ -5,9 +5,7 @@
 * Connect the SD-Card to your computer 
 * Open the boot volume and find the  ```email_ip_on_start.py``` script.
 * Open this script and find the section where the target email address is defined.
-* Put in your email address there.
-* Save the file and eject the drive.
-* Then plug the card into your RPI and plug the power in.
+
 
 ```python
 ##############################################################################
@@ -18,6 +16,9 @@ to = 'youremail@here.maybe'
 hostname = "ixe00"
 ##############################################################################
 ```
+* Put in your email address there.
+* Save the file and eject the drive.
+* Then plug the card into your RPI and plug the power in.
 
 # Chatbot
 
