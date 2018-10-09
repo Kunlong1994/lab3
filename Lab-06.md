@@ -1,8 +1,29 @@
+# Introducing the **Raspberry Pi**
+
+## Preparing your Raspberry Pi
+
+* Connect the SD-Card to your computer 
+* Open the boot volume and find the  ```email_ip_on_start.py``` script.
+* Open this script and find the section where the target email address is defined.
+* Put in your email address there.
+* Save the file and eject the drive.
+* Then plug the card into your RPI and plug the power in.
+
+```python
+##############################################################################
+# PUT YOUR EMAIL HERE
+to = 'youremail@here.maybe'
+
+# PUT YOUR IXE HOSTNAME HERE (ex. "ixe00")
+hostname = "ixe00"
+##############################################################################
+```
+
 # Chatbot
 
 In this tutorial, we will use a Raspberry Pi to create a chatbot! Your Pi will be serving up it's own webpages with a interface that allows people to type in text entries and receive your Chatbot's replies.
 
-The Pis we are giving you have a specific set and configuration of files known as [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki), created by [Nikolas Martelaro](http://nikmartelaro.com). Those files were pre-copied onto the microSD card in your Raspberry Pi.
+The Pis we are giving you have a specific set and configuration of files known as [Interaction Engine](https://github.com/nikmart/interaction-engine/wiki), created by [Nikolas Martelaro](http://nikmartelaro.com). Those files were pre-copied onto the microSD card in your Raspberry Pi that we handed our earlier.
 
 ## Connect to your Interaction Engine
 
