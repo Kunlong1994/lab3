@@ -117,26 +117,26 @@ At this point, you have now downloaded the main program and all required package
 
 Now we need to start the server on the Pi. We then access the chatbot page served by the Pi with a browser on our laptop.
 
-We start the server by typing ```node chatServer.js``` into the terminal command line for the Pi.
-In a browser on your laptop, go to ```$Address.local:8000``` ( Again, replace the `$Address`).
+We start the server by typing `node chatServer.js` into the Pi's terminal.
+Then, in a browser on your laptop, go to `$Address.local:8000` (Don't forget to replace the `$Address` with the actual IP address of your Pi).
 Once loaded, you should see a text field and the first greeting from the ChatBot.
 
 #### Debugging
 If the previous steps did not work there are a few things you can easily check/debug:
 First, verify that the server is running. The command line window should say
 ```shell 
-pi@$Address:~/simple-ChatBot $node chatServer.js 
+pi@$Address:~/IDD-Fa18-Lab6 $node chatServer.js 
 listening on *:8000
 a new user connected
 ```
-If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` (which stands for **P**rint**W**orking**D**irectory)to see if you really are working in the correct directory. The answer that pops-up should be something like ```/home/pi/IDD-Fa18-Lab6```. Verify that you have all files in the folder with ```ls ```. The item list should be 
-```shell 
-pi@$Address:~/test/IDD-Fa18-Lab6 $ ls
+If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` (which stands for **P**rint **W**orking **D**irectory) to see if you really are working in the correct directory. The printed response in the terminal should be something like ```/home/pi/IDD-Fa18-Lab6```. Verify that you have all files in the folder with `ls`. The item list should be 
+`shell 
+pi@$Address:~/IDD-Fa18-Lab6 $ ls
 chatServer.js  license.txt  node_modules  package.json  package-lock.json  public  README.txt
-```
-If files are missing or you are not in the correct folder change to the correct folder location and try to re-run the instructions from the tutorial.
+`
+If files are missing, or you are not in the correct folder, then change to the correct folder location and try to re-run the instructions from the tutorial.
   
-Second, make sure that you are connected to the same network as the interaction engine. This type of server is typically only routed/addressable locally i.e. when you are on the same network(e.g. RedRover).
+Second, make sure that you are connected to RedRover, the same network as the interaction engine. This type of server is typically only routed/addressable locally, i.e., when you are on the same network.
 
 ## Understanding the code
 
