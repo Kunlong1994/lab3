@@ -188,4 +188,12 @@ To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you 
 Using a phone or other video device, record someone trying out your ChatBot. (This does not need to be an advertisement for your ChatBot; it is okay if the person is confused or asks questions or doesn't like it. We like the drama.) Post the video to your README.md page!
 
 ## Submitting the Code
+This project is going to be the submission of this week. You will need to upload the changes you made on the Pi to the GitHub page. To do that you need to follow three simple steps: Stage=>Commit=>Push! 
+1. Add the files you want to `push` to GitHub. By using the command `git add`. If you e.g. changed the `chatServer.js` type ```git add chatServer.js```. Now `chatServer.js` is staged.
+1. Now we create a new commit with that staged file. For that we use the `git commit` command like so:
+`git commit -m 'Added new intro message.'`. The -m option allows to add a short message between the `'` signs. It helps you and everyone else keep track of the changes to the file.
+1. The last step is pushing this commit to GitHub. Just type `git push` this will contact the GitHub and upload your changes.
+
+You might be required to login in the terminal to your GitHub account. For more details on how the Git commands work or what other commands are available checkout this [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf).  
+
 Please submit your code by linking your forked GitHub project on your personal class page.
