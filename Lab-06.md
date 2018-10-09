@@ -129,7 +129,7 @@ Once loaded, you should see a text field and the first greeting from the ChatBot
 If the previous steps did not work there are a few things you can easily check/debug:
 First, verify that the server is running. The command line window should say
 ```shell 
-pi@$Address:~/IDD-Fa18-Lab6 $node chatServer.js 
+pi@$Address:~/IDD-Fa18-Lab6 $ node chatServer.js 
 listening on *:8000
 a new user connected
 ```
