@@ -187,12 +187,16 @@ socket.emit('answer', "Hey, Hello I am \"___*-\" a simple chat bot example."); /
 Then move your cursor to the `\"___*-\"`, delete it using backspace, and type in the name you would like to call your chatbot.
 
 Once you change the name, you will want to save your file then exit.
+### Exit and Save
 
+To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you to the terminal console. 
+In `nano` if you just hit `^X` (without saving before hand with `^o`), it will ask you if you want to `Save modified buffer?  (Answering "No" will DISCARD changes.)`. You can then type `y`, `Y`, or `Yes` then hit `Enter` and it will save and exit.
+
+You should then be able to re-run your chatbot using `node chatServer.js` and you should see that your chatbot now has the name you gave it.
+
+#### Pro-tips and other commands
 Notice on the bottom of the terminal window that there is some text showing things like `^G Get Help` and `^O Write Out`. These are the commands that you can use in `nano`. The `^` character stands for `Ctrl`. So to `Write Out` (which means to save the file), you would type `Ctrl` and `O` (that's the letter `O`, not the number `0`). When you've typed these, you will see a bar appear at the bottom of the terminal that says `File Name to Write: chatServer.js`. This is the file name you are saving to. In this case, we want the same name, so we can just hit the `Enter` key. You will then see a message on the bottom that tells you how many lines were written, something like `[ Wrote 116 lines ]`.
 
-To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you to the terminal console. You should then be able to re-run your chatbot using `node chatServer.js` and you should see that your chatbot now has the name you gave it.
-
-*Pro-tip:* In `nano` if you just hit `^X` without saving, it should ask you if you want to `Save modified buffer?  (Answering "No" will DISCARD changes.)`. You can then type `y`, `Y`, or `Yes` then hit `Enter` and it will save and exit.
 
 `nano` is a general purpose text editor, so you can use it for any type of text file like the `.js`, `.html`, and `.css` files in this project.
 
