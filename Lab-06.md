@@ -38,7 +38,7 @@ We will [ssh](https://en.wikipedia.org/wiki/Secure_Shell) into the system so tha
 
 These instructions assume your laptop and Pi are both connected to the same network, [RedRover](https://it.cornell.edu/wifi). If you have followed the preparatory instructions earlier, your Pi should have booted up and sent you an email with its wifi IP address. This IP address is available from the local network (i.e., RedRover) and we will use it to talk and control the Pi. 
 
-In the following section, we will refer to your IP address with the name `$Address`. When ever you see this replace the text (`$Address`) with the IP address your received in your mail.
+In the following section, we will refer to your IP address with the name `$Address`. Whenever you see this, replace the text (`$Address`) with the IP address your received in your mail.
 
 
 ### 1. Verify the Pi is online
