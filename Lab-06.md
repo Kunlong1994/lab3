@@ -129,11 +129,11 @@ pi@$Address:~/IDD-Fa18-Lab6 $node chatServer.js
 listening on *:8000
 a new user connected
 ```
-If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` (which stands for **P**rint **W**orking **D**irectory) to see if you really are working in the correct directory. The printed response in the terminal should be something like ```/home/pi/IDD-Fa18-Lab6```. Verify that you have all files in the folder with `ls`. The item list should be 
-`shell 
+If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` (which stands for **P**rint **W**orking **D**irectory) to see if you really are working in the correct directory. The printed response in the terminal should be something like ```/home/pi/IDD-Fa18-Lab6```. Verify that you have all files in the folder with `ls`. The item list should be:
+```shell 
 pi@$Address:~/IDD-Fa18-Lab6 $ ls
 chatServer.js  license.txt  node_modules  package.json  package-lock.json  public  README.txt
-`
+```
 If files are missing, or you are not in the correct folder, then change to the correct folder location and try to re-run the instructions from the tutorial.
   
 Second, make sure that you are connected to RedRover, the same network as the interaction engine. This type of server is typically only routed/addressable locally, i.e., when you are on the same network.
@@ -144,7 +144,7 @@ Second, make sure that you are connected to RedRover, the same network as the in
 The chatServer.js code is written in javascript. It is run on the IxE using [node.js](https://en.wikipedia.org/wiki/Node.js). This code handles the different client interactions and manages the network connections. 
 
 ### index.html and index.js (The browser code)
-Index.html is written in HTML, but with javascript embedded. The index.js code acts as a library for the functions called in `index.html`, and is written in javascript. These files are served from the IxE when node.js is running `chatServer.js`. Both index.html and `index.js` run on the web browser.
+`index.html` is written in HTML, but includes a link to the `index.js` javascript file via the `<script src='js/index.js'></script>` tag. The `index.js` code links to the elements created in `index.html`, and is written in javascript. These files are served from the IxE when Node is running `chatServer.js`. Both index.html and `index.js` are transmitted as text from the Node server to the browser, and then run within the web browser.
 
 #### Annotated code tours
 
@@ -164,25 +164,25 @@ To edit your `chatServer.js` code, make sure you are in the `IDD-Fa18-Lab6/` dir
 nano chatServer.js
 ```
 
-The files should then open up on your screen. You can move around the file using your arrow keys. Note: `nano` is a very simple editor. There is no mouse-click support. You will need to move around the file using just up, down, left, and right.
+The files should then open up on your screen. You can move around the file using your arrow keys. Note: `nano` is a very simple editor. There is no mouse-click support. You will need to move around the file using just the arrow keys **up**, **down**, **left**, and **right**.
 
 Let's edit the name of your chatbot first.
 
 Move to the line of code that says:
 
 ```shell
-socket.emit('answer',"Hey, Hello I am \"___*-\" a simple chat bot example."); //We start with the introduction;
+socket.emit('answer', "Hey, Hello I am \"___*-\" a simple chat bot example."); // We start with the introduction;
 ```
 
 Then move your cursor to the `\"___*-\"`, delete it using backspace, and type in the name you would like to call your chatbot.
 
 Once you change the name, you will want to save your file then exit.
 
-Notice on the bottom of the terminal window that there is some text showing things like `^G Get Help` and `^O Write Out`. These are the commands that you can use in `nano`. The `^` character stands for `Ctrl`. So to `Write Out` (which means to save the file), you would type `Ctrl` and `O`. When you click this, you will see that a bar comes up and says `File Name to Write: chatServer.js`. This is the file name you are saving to. In this case, we want the same name, so we can just hit the `Enter` key. You will then see a message on the bottom that tells you how many lines were written, something like `[ Wrote 116 lines ]`.
+Notice on the bottom of the terminal window that there is some text showing things like `^G Get Help` and `^O Write Out`. These are the commands that you can use in `nano`. The `^` character stands for `Ctrl`. So to `Write Out` (which means to save the file), you would type `Ctrl` and `O` (that's the letter `O`, not the number `0`). When you've typed these, you will see a bar appear at the bottom of the terminal that says `File Name to Write: chatServer.js`. This is the file name you are saving to. In this case, we want the same name, so we can just hit the `Enter` key. You will then see a message on the bottom that tells you how many lines were written, something like `[ Wrote 116 lines ]`.
 
 To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you to the terminal console. You should then be able to re-run your chatbot using `node chatServer.js` and you should see that your chatbot now has the name you gave it.
 
-*Pro-tip:* In `nano` if you just hit `^X` without saving, it should ask you if you want to `Save modified buffer?  (Answering "No" will DISCARD changes.)`. You can then type `y` `Y` or `Yes` then hit `Enter` and it will save and exit.
+*Pro-tip:* In `nano` if you just hit `^X` without saving, it should ask you if you want to `Save modified buffer?  (Answering "No" will DISCARD changes.)`. You can then type `y`, `Y`, or `Yes` then hit `Enter` and it will save and exit.
 
 `nano` is a general purpose text editor, so you can use it for any type of text file like the `.js`, `.html`, and `.css` files in this project.
 
@@ -191,12 +191,12 @@ To exit the `nano` editor, type `^X` or `Ctrl` + `X`. This will then return you 
 Using a phone or other video device, record someone trying out your ChatBot. (This does not need to be an advertisement for your ChatBot; it is okay if the person is confused or asks questions or doesn't like it. We like the drama.) Post the video to your README.md page!
 
 ## Submitting the Code
-This project is going to be the submission of this week. You will need to upload the changes you made on the Pi to the GitHub page. To do that you need to follow three simple steps: Stage=>Commit=>Push! 
-1. Add the files you want to `push` to GitHub. By using the command `git add`. If you e.g. changed the `chatServer.js` type ```git add chatServer.js```. Now `chatServer.js` is staged.
+This project is going to be the submission of this week. You will need to upload the changes you made on the Pi to the GitHub page. To do that you need to follow three simple steps: Stage => Commit => Push! 
+1. Add the files you want to `push` to GitHub. By using the command `git add`. If you changed the `chatServer.js`, for example, type `git add chatServer.js`. Now `chatServer.js` is "staged". You can view the current status of changed and staged files by running the `git status` command.
 1. Now we create a new commit with that staged file. For that we use the `git commit` command like so:
-`git commit -m 'Added new intro message.'`. The -m option allows to add a short message between the `'` signs. It helps you and everyone else keep track of the changes to the file.
-1. The last step is pushing this commit to GitHub. Just type `git push` this will contact the GitHub and upload your changes.
+`git commit -m 'Added new intro message.'`. The -m option allows to add a short message between the `'` signs. It helps you and everyone else keep track of the changes to the file, and the `git commit` command requires it.
+1. The last step is pushing this commit to GitHub. Type `git push` to contact GitHub and upload your changes to your repository.
 
 You might be required to login in the terminal to your GitHub account. For more details on how the Git commands work or what other commands are available checkout this [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf).  
 
-Please submit your code by linking your forked GitHub project on your personal class page.
+As usual, please submit your code by linking to **your forked copy** of the lab's GitHub repository on your class Hub page.
