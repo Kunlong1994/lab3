@@ -100,11 +100,11 @@ pi@ixe00 ~ $
 ### Installation
 Clone (download) the repository from GitHub to the Pi. 
 1. From the terminal window which is logged into the Pi, go to the home folder with ```cd ~```
-1. In a web browser on your laptop, fork the github project before cloning it to your Pi, by clicking the fork button on the top right side.
+1. In a web browser on your laptop, fork the github project [IDD-Fa18-lab6](www.gitHub.com/far-lab/IDD-Fa18-Lab6) before cloning it to your Pi, by clicking the fork button on the top right side.
 1. Copy the link to your forked version of the project.<!--(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). -->
 1. From the terminal window which is logged into the Pi, clone the git repository with the copied information
-```
-git clone https://github.com/**_YOURUSERNAME_**/simple-ChatBot simple-ChatBot
+```shell
+git clone https://github.com/**_YOURUSERNAME_**/IDD-Fa18-Lab6
 ```
 1. Change directory into the downloaded folder with ```cd simple-ChatBot```
 1. Let ```npm``` install the required node packages with ```npm install```
