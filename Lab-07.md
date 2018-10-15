@@ -42,7 +42,7 @@ listening on *:8000
 
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Now, you can go to your web browser and type your `http://ixe[hostnumber]:8000` in the address bar.
+Now, you can go to your web browser and type your `http://<yourPiAddress>:8000` in the address bar.
 
 Look at the `server.js`, `public/client.js` and `public/index.html` code to understand what parts of the code do various things. 
 
@@ -74,6 +74,10 @@ This may take a minute or two to run. Please be patient.
 
 * We are using the helloYou Arduino circuit and code, so no adjustment is necessary on the Arduino side. Keep it plugged into the USB port of the Pi.
 * Plug in the web camera to another USB port of the Raspberry Pi.
+* Intstall the `fswebcam` software that your code will use to communicate with the webcam:
+
+```
+pi@ixeXX:~/distant-pictures $ sudo apt install fswebcam
 
 ### Try pictureServer with node.js
 ```
