@@ -53,14 +53,23 @@ This next section adds a web camera to the HelloYou example. We make use of the 
 ### Fork the 'distant-picture' example project
 On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
 
-`pi@ixeXX:~ $ git clone https://github.com/**_YourUserName_**/distant-pictures.git`
+```
+pi@ixeXX:~ $ cd
+pi@ixeXX:~ $ git clone https://github.com/**_YourUserName_**/distant-pictures.git
+```
 
 In the `distant-pictures` directory, install the basic components for the node server by executing `npm install` 
 ```
 pi@ixeXX:~ $ cd distant-pictures
 pi@ixeXX:~/distant-pictures $ npm install
-up to date in 7.778s
+...blah blah warnings etc. here...
+added 258 packages from 138 contributors and audited 721 packages in 112.798s
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
 ```
+
+This may take a minute or two to run. Please be patient.
+
 ### Connect the webcamera to your Pi
 
 * We are using the helloYou Arduino circuit and code, so no adjustment is necessary on the Arduino side. Keep it plugged into the USB port of the Pi.
