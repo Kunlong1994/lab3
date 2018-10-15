@@ -78,6 +78,7 @@ This may take a minute or two to run. Please be patient.
 
 ```
 pi@ixeXX:~/distant-pictures $ sudo apt install fswebcam
+```
 
 ### Try pictureServer with node.js
 ```
