@@ -12,7 +12,7 @@ On your breadboard, make this [basic button circuit](#basic-button-circuit) conn
 
 ### Upload the `HelloYou` code
 
-Copy the [HelloYou](https://github.com/FAR-Lab/interaction-engine/blob/master/helloYouSketch.ino) sketch into a new Arduino window and upload it to your board.
+Copy this [HelloYou.ino](https://github.com/FAR-Lab/interaction-engine/blob/master/helloYouSketch.ino) sketch into a new Arduino window and upload it to your board.
 
 The built-in LED marked `L` should be off.
 
