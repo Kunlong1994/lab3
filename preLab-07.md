@@ -2,13 +2,15 @@ In preparation for this week's lab, you'll build a small circuit with your Ardui
 
 ### Button Circuit
 
-On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to `pin 2` of the Arduino. (The LED is built in on the board and connected to `pin 13`.)
+On your breadboard, make this basic button circuit connected to `pin 2` of the Arduino. (The LED is built in on the board and connected to `pin 13`.)
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/button_circuit.png" width="200px">
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width="400px"> 
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/realCircuit.jpg" width="400px">
+
+Remember that the orientation of the button matters. Of the four pins, the pairs of pins closest to each other are the two that get connected when you push the button. (And in fact, each pin of the close pair is **always connected** to the corresponding pin of the other close pair.)
 
 ### Upload the `HelloYou` code
 
