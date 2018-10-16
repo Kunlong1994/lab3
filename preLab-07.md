@@ -1,4 +1,4 @@
-In preparation for this week's lab, you'll build a small circuit with your Arduino and test it with some code.
+In preparation for this week's lab, you'll build a small circuit with your Arduino and test it with some code. You don't need the Pi for this preLab.
 
 ### Button Circuit
 
