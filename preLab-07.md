@@ -10,7 +10,9 @@ On your breadboard, make this basic button circuit connected to `pin 2` of the A
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/realCircuit.jpg" width="400px">
 
-Remember that the orientation of the button matters. Of the four pins, the pairs of pins closest to each other are the two that get connected when you push the button. (And in fact, each pin of the close pair is **always connected** to the corresponding pin of the other close pair.)
+Remember that the orientation of the button matters. Of the four pins, the pairs of pins closest to each other are the two that get connected when you push the button. And in fact, each pin of the close pair is **always connected** to the corresponding pin of the other close pair. This diagram my help:
+
+<img src="../images/button-deal.png" width="400px" />
 
 ### Upload the `HelloYou` code
 
