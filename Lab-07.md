@@ -106,7 +106,7 @@ Find, install, and try out a node-based library and try to incorporate into your
 
 Document your successes and failures (totally okay!) for your report, and post them to the class Discord. This will help others in class figure out cool new tools and capabilities.
 
-Here is an example of how to try this. Following the directions on the `https://www.npmjs.com/package/nyan-cat` package, for example:
+Here is an example of how to try this. Following the directions on the `https://www.npmjs.com/package/nyancat` package, for example:
 ```
 pi@ixeXX:~/test $ sudo npm install -g nyancat
 ```
@@ -117,3 +117,15 @@ On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webc
 
 Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
 
+**Note**: You can also upload code directly from the Raspberry Pi to the Arduino. The code that comes pre-installed on your Pi is slightly older, and assumes your button is connected to pin 11. (You can use `nano` to change the file to use pin 2 instead of 11.)
+
+```
+pi@ixeXX:~ $ cd ~/sketchbook/helloYou
+pi@ixeXX:~ $ nano helloYouSketch.ino
+pi@ixeXX:~/sketchbook/helloYou $ make
+... compiling your code ...
+pi@ixeXX:~/sketchbook/helloYou $ make upload
+... uploading to your Arduino ...
+```
+
+Then re-run the server you need, and it should connect to your Arduino's new code!
