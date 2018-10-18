@@ -104,7 +104,7 @@ As in the previous lab, modify the template for the lab to make it your own. You
 
 Find, install, and try out a node-based library and try to incorporate into your lab. 
 
-Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities. A good source for possible library ideas is your assignment #2.
+Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities.
 
 Here is an example of how to try this. Following the directions on the `https://www.npmjs.com/package/nyan-cat` package, for example:
 ```
