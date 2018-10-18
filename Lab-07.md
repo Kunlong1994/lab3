@@ -10,11 +10,11 @@ This week, we will integrate the Arduino with the Raspberry Pi to complete the I
 
 ## Part A. HelloYou from the Raspberry Pi
 
-First, make sure you completed the steps in [the prelab](preLab-07). Next, connect your Arduino to a USB port on your Raspberry Pi.
+First, make sure you completed the steps in [the prelab](preLab-07). Next, connect your Arduino to a USB port on your Raspberry Pi and plug in your Pi to turn it on.
 
 ### Run the HelloYou webserver.
 
-Use `ssh` to connect to your Pi, like you did for Lab 6. Then run the following commands:
+Like for Lab 6, you should receive an email from your Pi with an IP address. Use `ssh` to connect to your Pi, as you also did for the previous lab. Then run the following commands:
 
 ```
 pi@ixeXX:~ $ cd helloYou/
@@ -90,7 +90,7 @@ pi@ixeXX ~/IDD-Fa18-Lab7 $
 
 Now, modify the `pictureServer.js` code to make a video doorbell. When a person presses the doorbell (here, the button on your Arduino), the application should snap a photo of the person in front of the doorbell, and post it to a remote webpage. 
 
-Please submit the code for the Video doorbell as part of your turn-in.
+Please submit the code for the Video doorbell as part of your lab report.
 
 ## Part C.  Make it your own
 
@@ -104,7 +104,7 @@ As in the previous lab, modify the template for the lab to make it your own. You
 
 Find, install, and try out a node-based library and try to incorporate into your lab. 
 
-Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities.
+Document your successes and failures (totally okay!) for your report, and post them to the class Discord. This will help others in class figure out cool new tools and capabilities.
 
 Here is an example of how to try this. Following the directions on the `https://www.npmjs.com/package/nyan-cat` package, for example:
 ```
@@ -116,5 +116,4 @@ Some ideas, in case you are stuck:
 On Linux, `node-webcam` uses `fswebcam`. https://www.npmjs.com/package/node-webcam shows other commands available using node-webcam, and typing `man fswebcam` describes a variety of image capture options. Try out some modifications, and show us the screen capture of the resulting webpage.
 
 Another package to try: `gm`. GM is GraphicsMagick and ImageMagick for node. https://www.npmjs.com/package/gm 
-
 
