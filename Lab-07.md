@@ -35,18 +35,19 @@ Look at the `server.js`, `public/client.js` and `public/index.html` code to unde
 
 This next section adds a web camera to the HelloYou example. We make use of the 'node-webcam' from [[https://www.npmjs.com/package/node-webcam]] to add the camera functionality.
 
-### Fork the 'distant-picture' example project
-On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [distant-picture](https://github.com/FAR-Lab/distant-pictures) example project.
+### Fork the 'IDD-Fa18-Lab7' repository
+
+On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [IDD-Fa18-Lab7](https://github.com/FAR-Lab/IDD-Fa18-Lab7) example project.
 
 ```
 pi@ixeXX:~ $ cd
-pi@ixeXX:~ $ git clone https://github.com/**_YourUserName_**/distant-pictures.git
+pi@ixeXX:~ $ git clone https://github.com/**_YourUserName_**/IDD-Fa18-Lab7.git
 ```
 
-In the `distant-pictures` directory, install the basic components for the node server by executing `npm install` 
+In the `IDD-Fa18-Lab7` directory, install the basic components for the node server by executing `npm install` 
 ```
-pi@ixeXX:~ $ cd distant-pictures
-pi@ixeXX:~/distant-pictures $ npm install
+pi@ixeXX:~ $ cd IDD-Fa18-Lab7
+pi@ixeXX:~/IDD-Fa18-Lab7 $ npm install
 ...blah blah warnings etc. here...
 added 258 packages from 138 contributors and audited 721 packages in 112.798s
 found 1 low severity vulnerability
@@ -59,15 +60,15 @@ This may take a minute or two to run. Please be patient.
 
 * We are using the helloYou Arduino circuit and code, so no adjustment is necessary on the Arduino side. Keep it plugged into the USB port of the Pi.
 * Plug in the web camera to another USB port of the Raspberry Pi.
-* Intstall the `fswebcam` software that your code will use to communicate with the webcam using this command:
+* Install the `fswebcam` software that your code will use to communicate with the webcam using this command:
 
 ```
-pi@ixeXX:~/distant-pictures $ sudo apt install fswebcam
+pi@ixeXX:~/IDD-Fa18-Lab7 $ sudo apt install fswebcam
 ```
 
 ### Try pictureServer with node.js
 ```
-pi@ixeXX:~/distant-pictures $ node pictureServer.js /dev/ttyUSB0
+pi@ixeXX:~/IDD-Fa18-Lab7 $ node pictureServer.js /dev/ttyUSB0
 listening on *:8000
 ```
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
@@ -81,9 +82,9 @@ To shut down the server, type `control + C` in the terminal.
 ledOFF
 ledON
 ^C
-pi@ixeXX ~/distant-pictures $
+pi@ixeXX ~/IDD-Fa18-Lab7 $
 ```
-*Compare `helloYou/server.js` and `distant-pictures/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)*
+*Compare `helloYou/server.js` and `IDD-Fa18-Lab7/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)*
 
 ### Video doorbell
 
@@ -103,7 +104,7 @@ As in the previous lab, modify the template for the lab to make it your own. You
 
 Find, install, and try out a node-based library and try to incorporate into your lab. 
 
-Document your successes and failures (totally okay!) for your Slack lab#2 turn-in. This will help the class community figure out cool new tools and capabilities. A good source for possible library ideas is your assignment #2.
+Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities. A good source for possible library ideas is your assignment #2.
 
 Here is an example of how to try this. Following the directions on the `https://www.npmjs.com/package/nyan-cat` package, for example:
 ```
