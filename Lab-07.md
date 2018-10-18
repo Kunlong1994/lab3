@@ -8,30 +8,15 @@ This week, we will integrate the Arduino with the Raspberry Pi to complete the I
 1. Include a link to your forked code for the camera lab
 1. Answer the questions in-line below on your README.md.
 
-## Part A. HelloYou test
+## Part A. HelloYou from the Raspberry Pi
 
-HelloYou demonstrates the IxE's ability to integrate local physical interactions with reactions in the cloud, and vice versa!
-
-We will have a physical button change the background color of a webpage. Then we can use a webpage button turn a local LED on the Arduino on and off.
-
-### Set up the Arduino button circuit 
-
-On your breadboard, make this [basic button circuit](#basic-button-circuit) connected to `pin 11` of the Arduino. (The LED is built in on the board and connected to `pin 13`.)
-
-<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/button_circuit.png" width="200px">
-<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/metroCircuit.png" width="400px"> 
-<img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/images/realCircuit.jpg" width="400px">
-
-### Flash the pre-compiled `HelloYou.ino` code onto the Arduino. 
-```
-pi@ixeXX:~ $ cd ~/sketchbook/helloYou/
-pi@ixeXX:~/sketchbook/helloYou $ make upload
-```
-Now that the Arduino code is uploaded, you should see the built-in LED marked `L` is off.
+First, make sure you completed the steps in [the prelab](preLab-07). Next, connect your Arduino to a USB port on your Raspberry Pi.
 
 ### Run the HelloYou webserver.
+
+Use `ssh` to connect to your Pi, like you did for Lab 6. Then run the following commands:
+
 ```
-pi@ixeXX:~/sketchbook/helloYou $ cd
 pi@ixeXX:~ $ cd helloYou/
 pi@ixeXX:~/helloYou $ ls
 helloYouSketch.ino  package.json  public  README.md  server.js
@@ -74,7 +59,7 @@ This may take a minute or two to run. Please be patient.
 
 * We are using the helloYou Arduino circuit and code, so no adjustment is necessary on the Arduino side. Keep it plugged into the USB port of the Pi.
 * Plug in the web camera to another USB port of the Raspberry Pi.
-* Intstall the `fswebcam` software that your code will use to communicate with the webcam:
+* Intstall the `fswebcam` software that your code will use to communicate with the webcam using this command:
 
 ```
 pi@ixeXX:~/distant-pictures $ sudo apt install fswebcam
