@@ -1,4 +1,6 @@
 # Design your own Interactive Device!
+
+Project paper prototype fair - November 1
  
 Project update presentation - November 8
 
