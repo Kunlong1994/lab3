@@ -1,6 +1,6 @@
 # Design your own Interactive Device!
 
-Project paper prototype fair - November 1
+[Project paper prototype fair](#paper-prototype) - November 1
  
 Project update presentation - November 8
 
@@ -16,6 +16,18 @@ The goal of this final project is for you to have a fully functioning and well-d
  
 ## Description
 Your project is to design and build an interactive device to suit a specific application of your choosing. To this end, you have been asked to articulate, through interaction diagrams, interface sketches, and written descriptions, exactly what it is you are proposing to build, and to enumerate what some of the design challenges that you foresee. You should plan on building multiple working iterations of your design to enable increasing levels of refinement towards your point of view. You should plan on housing/packaging/installing your device in ways that consider the context, use and user. Also, you are expected to do enough project planning hoping that all the different aspects of the design will miraculously come together just in time for the final presentations.
+
+## Paper Prototype
+
+For the paper prototype fair on November 1, you should bring a paper prototype of your project to class.
+
+In addition, we expect you to have figured out:
+
+- Project Idea
+- Team
+- Rough form: this is your paper prototype
+- Expected parts: is there a display, a motor, batters, interface, etc? Where does the Pi/Arduino/other controller go?
+- Interaction plan: how will people interact with your device?
 
 ## Presentation
 
