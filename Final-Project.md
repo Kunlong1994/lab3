@@ -1,6 +1,6 @@
 # Design your own Interactive Device!
 
-Project paper prototype fair - ([our expectations](#paper-prototype)) - November 1
+Project paper prototype fair - (read our [expectations below](#paper-prototype)) - November 1
  
 Project update presentation - November 8
 
@@ -21,11 +21,11 @@ Your project is to design and build an interactive device to suit a specific app
 
 For the paper prototype fair on November 1, you should bring a paper prototype of your project to class.
 
-In addition, we expect you to have figured out:
+In addition, we expect you to have a GitHub repository for your final project. In the README file, you should list:
 
 - Project Idea
 - Team
-- Rough form: this is your paper prototype
+- Rough form: this is your paper prototype (put photos on your GitHub, bring the actual thing to class)
 - Expected parts: is there a display, a motor, batters, interface, etc? Where does the Pi/Arduino/other controller go?
 - Interaction plan: how will people interact with your device?
 
