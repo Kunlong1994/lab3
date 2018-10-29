@@ -1,5 +1,7 @@
 # Design your own Interactive Device!
 
+[Here is a list of good final projects from previous classes.](Previous-Final-Projects)
+
 Project paper prototype fair - (read our [expectations below](#paper-prototype)) - November 1
  
 Project update presentation - November 8
@@ -21,7 +23,7 @@ Your project is to design and build an interactive device to suit a specific app
 
 For the paper prototype fair on November 1, you should bring a paper prototype of your project to class.
 
-In addition, we expect you to have a GitHub repository for your final project. In the README file, you should list:
+In addition, we expect you to have a GitHub repository for your final project. In the README.md file, you should list:
 
 - Project Idea
 - Team
