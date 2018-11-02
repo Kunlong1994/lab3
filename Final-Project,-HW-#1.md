@@ -15,3 +15,7 @@ As of now, your repository should include, at a minimum:
 ## Add a link to the student spreadsheet
 
 Once you've created your project repository, update [this student spreadsheet](https://docs.google.com/spreadsheets/d/1jj1k6TqVeYlY_HoPcCLTnNt2-maIJkDGyz53OstApOA/edit) with your project title, a link to the GitHub repository, and a list of your teammates' NetIDs.
+
+## Project Presentation
+
+Don't forget that you will be presenting on your project progress next Thursday, November 8! More information on the [Final Project] page.
