@@ -12,6 +12,8 @@ As of now, your repository should include, at a minimum:
 - Expected parts: is there a display, a motor, batters, interface, etc? Where does the Pi/Arduino/other controller go?
 - Interaction plan: how will people interact with your device?
 
+[Here's an example of a well-documented project from last year!](https://github.com/emtseng/smart-mirror/wiki)
+
 ## Add a link to the student spreadsheet
 
 Once you've created your project repository, update [this student spreadsheet](https://docs.google.com/spreadsheets/d/1jj1k6TqVeYlY_HoPcCLTnNt2-maIJkDGyz53OstApOA/edit) with your project title, a link to the GitHub repository, and a list of your teammates' NetIDs.
