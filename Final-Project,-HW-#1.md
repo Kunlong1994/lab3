@@ -18,4 +18,4 @@ Once you've created your project repository, update [this student spreadsheet](h
 
 ## Project Presentation
 
-Don't forget that you will be presenting on your project progress next Thursday, November 8! More information on the [Final Project] page.
+Don't forget that you will be presenting on your project progress next Thursday, November 8! More information on the [[Final Project]] page.
