@@ -53,6 +53,8 @@ Does your LED light? Why not? What do you have to do to light the LED?
 
 ## Part C. Blink a LED using Arduino
 
+(Do not deconstruct what you have set up on your breadboard until you find it necessary! For instance, don't undo the LED and button setup that you did in Part B when you start doing Part C.)
+
 ### 1. Blink the on-board LED
 Arduino boards typically come preloaded with a version of the Blink program on it. This code lets its L LED (connected on pin 13) blink as soon as the USB cable starts powering the board. Let us modify that program.
 
