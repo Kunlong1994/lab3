@@ -1,4 +1,4 @@
-# Blink!
+# Light It Up
  
 ## Overview
 For this assignment, you are going to 
