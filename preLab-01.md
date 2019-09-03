@@ -5,7 +5,8 @@
 5. Install the [Arduino IDE](https://www.arduino.cc/en/Main/Software) on your laptop. 
 
 Reading
-Reading (for people without EE background): Scherz, Ch 2.1-2.17, Ch. 3.1-3.5
+
+Circuits & Basic Electronics Review: Scherz, Ch 2.1-2.17, Ch. 3.1-3.5
 Arduino basics: https://www.arduino.cc/en/Tutorial/Foundations
 
 For class, remember to bring:
