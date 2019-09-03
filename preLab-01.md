@@ -4,7 +4,11 @@
 4. Locate electronics which you can hack for the Light It Up lab on Thursday. 
 5. Install the [Arduino IDE](https://www.arduino.cc/en/Main/Software) on your laptop. 
 
+Reading
+Reading (for people without EE background): Scherz, Ch 2.1-2.17, Ch. 3.1-3.5
+Arduino basics: https://www.arduino.cc/en/Tutorial/Foundations
+
 For class, remember to bring:
 1. Your laptop
 2. Your device-to-be-hacked
-3. Bring whatever dongle you need to hook up a USB device to your laptop
+3. Whatever dongle you need to hook up a USB device to your laptop
