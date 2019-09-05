@@ -31,7 +31,7 @@ Wire the power rails of your breadboard so that the red rails are connected to t
 
 ## Part B. Manually Blink a LED
 
-**a. What color stripes are on a 220 Ohm resistor?**
+**a. What color stripes are on a 100 Ohm resistor?**
 With the Arduino unplugged, build the circuit below. You can use any color LED. 
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor.png" width=300>
