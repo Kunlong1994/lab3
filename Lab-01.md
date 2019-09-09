@@ -146,7 +146,7 @@ We have perfboards in the lab, which provide a handy way to connect your parts. 
 
 **Make a video showing off your Frankenlight.**
 
-**Include any schematics or photos in your lab write-up.**
+**Include any diagrams or photos in your lab write-up.**
 
 The best Frankenlight will win course-wide fame and glory.
 
