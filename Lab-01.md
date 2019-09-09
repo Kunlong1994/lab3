@@ -127,7 +127,7 @@ Now upload your sketch and check that the LED fades on and off. Try changing a f
 
 For this part of lab, you get to hack apart an existing electronic device.
 
-### 1. Take apart your electronic device, and draw a schematic of what is inside. 
+### 1. Take apart your electronic device, and, as well as you can, draw a system diagram of what is inside. 
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
@@ -137,7 +137,7 @@ For this part of lab, you get to hack apart an existing electronic device.
 
 **d. Is information stored in your device? Where? How?**
 
-### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
+### 2. Using your diagram, figure out where a good point would be to hijack your device and implant an LED.
 (Alternately, you can hijack a light or other display on the device using an extra button.)
 
 ### 3. Build your light!
