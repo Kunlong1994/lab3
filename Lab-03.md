@@ -131,9 +131,9 @@ Now, the beauty of I2C: you can read data from **both** of these sensors in a si
 
 ## Optional Part E. Graphic Display
 
-<img src=https://cdn-shop.adafruit.com/1200x900/338-03.jpg alt="LCD display" width=400>
+<img src=https://images-na.ssl-images-amazon.com/images/I/61cvqA%2BY0OL._SL1200_.jpg alt="OLED display" width=400>
 
-Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. In your kit is a graphical LCD display with a level shifter, and instructions to hook it up and get it running are [here](https://www.adafruit.com/product/338).
+Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. In your kit is an OLED display, and instructions to hook it up and get it running are [here](https://learn.adafruit.com/monochrome-oled-breakouts/wiring-128x32-i2c-display).
 
 ## Part F. Logging values to the EEPROM and reading them back
  
