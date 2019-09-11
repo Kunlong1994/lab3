@@ -37,7 +37,7 @@ Let's start with the "Display" program, which just flashes "Hello World!" These 
 
 The below picture shows the pin numbers on the LCD panel, from a top-down view. You can use this for reference when you are wiring your breadboard.
 
-[[images/OrientationLCDpanel.jpeg|width=100]]
+[[images/OrientationLCDpanel.jpeg|height=100]]
 
 Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up. 
 
