@@ -35,7 +35,12 @@ Let's start with the "Display" program, which just flashes "Hello World!" These 
  
 ![](https://cdn-shop.adafruit.com/1200x900/181-03.jpg)
 
+The below picture shows the pin numbers on the LCD panel, from a top-down view. You can use this for reference when you are wiring your breadboard.
+
+[[images/OrientationLCDpanel.jpeg]]
+
 Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up. 
+
 
 [[images/lcd_arduino_schematic.png]]
  
