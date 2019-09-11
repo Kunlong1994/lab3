@@ -5,8 +5,8 @@
  */
  
  
-#define ENC_A 2 //these need to be digital input pins
-#define ENC_B 3
+#define ENC_A 6 //these need to be digital input pins
+#define ENC_B 7
  
 void setup()
 {
