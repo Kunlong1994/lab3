@@ -43,7 +43,9 @@ Wire up your LCD according to the schematic below. If you didn't have our diagra
 
 
 [[images/lcd_arduino_schematic.png]]
- 
+
+DON'T FORGET: the long breadboard needs to be connected vertically on both sides. This is not on the schematic.
+
 **Be very careful not to connect Pin 1 to Pin 2 on the LCD**, as this can **destroy** your Arduino. Check the connections for a short between power and ground before you plug in power or the USB cable.
  
 See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more information. See [LCD Library](http://arduino.cc/en/Reference/LiquidCrystal) for the various functions you can use.
@@ -62,7 +64,7 @@ Do try to set this up before peeking at this [diagram](images/lcd_arduino_diagra
  
 Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
 
-Incorporate the LCD into your fading LED/potentiometer code so that you can read out the exact analog value that you are reading in on Analog Pin 0. It's your own lowly multimeter!
+Incorporate the LCD into your fading LED/potentiometer code so that you can read out the exact analog value that you are reading in on Analog Pin 0. It's your own lowly multimeter! (definition of lowly: poor, low in status)
 
 **e. Include a copy of your Lowly Multimeter code in your lab write-up.**
 
