@@ -1,16 +1,17 @@
-#Jack in the Box
+# Jack in the Box
 
 ***
 
 For this week’s lab, we will be building a Jack in the box; this is a project inspired by the known toy. We will use this lab to help you to experiment with digital fabrication tools. The methods that will be used are 3D printing and laser cutting.
 [Video of similar box](https://www.youtube.com/watch?v=Z70TRaKqUbs)
 
-##In the report
+## In the report
 To submit your lab, clone this repository -- and include all files / images / code that is requested!
 
-Laser Cutting
+## Laser Cutting
 Laser cut cardboard to make your useless box in the Maker Lab.
-1.	Download a vector editing program like Inkscape (free) or Adobe Illustrator (free for 30 day trial).
+1.	Download a vector editing program like [Inkscape](https://inkscape.org) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
+4.	On [this page](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/tree/2019Fall/Lab5), download all files.
 2.	Open the laser cutter template file for the Box in your vector editing program.
 3.	Modify the vector drawing to have a personal touch, and holes for the servo mount, switch, and Arduino wires. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (black for cutting). Save your file. BONUS: include lines or images that you don't plan to cut all the way through to experiment with etching.
 4.	To laser cut, open your modified file in Adobe Illustrator on the lab’s computer. Look around the laser cutting room for instructions, reference sheets, and scrap materials. The step by step instructions are attached on the suction system to the left of the computer.
@@ -33,3 +34,59 @@ For the cardboard we are providing, the values should be: Speed 45%, Power 70%, 
 6.	Assemble the parts. Once the configuration makes sense, hot glue them together. Pay attention that part “D” is the top of the box and should not be hot glued- you can attach it with tape or or some other hinge.
 
 Notice that part B is not part of the Box itself. It will be used as the top lifter.
+
+## 3D Printing
+
+3D print [this servo mount](https://www.thingiverse.com/thing:1926568):
+1.	Download and install [Makerbot Print](https://www.makerbot.com/3d-printers/apps/makerbot-print/).
+2.	Create a MakerBot account.
+3.	Start the Makerbot Print Application and log in.
+5.	Import the .stl file from the files you downloaded into the printer software.
+6.	Make sure the orientation of your part makes sense. What orientation makes the most sense for 3D printing?
+7.	Turn off the raft. There is no need to print a raft for this part.
+8.	Connect your laptop to the printer over USB, or via WiFi. Ask any member of the teaching team for WiFi credentials.
+9.	Once the Printer is connected hit "print".
+10.	After the printer has started the USB cable can be disconnected from your laptop.
+
+
+## Electronics
+
+### Program your device
+
+Load the example software previously downloaded.
+
+You can also make your own program but make sure you put HIGH digital value to pin 5 if you connected the circuit as the one in the electronics part.
+
+Pay attention that you can change the position of close and open box in the following lines:
+
+#define closePos  10
+
+#define openPos   110
+
+
+## Putting it all together
+***
+Think about where each component should go, and assemble your box so it would work as the one in the video from the beginning.
+
+## Create Jack
+
+To make the character in the box a 3D printed part:
+1.	Create a free education [OnShape](https://www.onshape.com/products/education) account using your student email.
+2.	Do the [sketching tutorial](https://learn.onshape.com/courses/fundamentals-sketching) and [part design tutorial](https://learn.onshape.com/courses/fundamentals-part-design-using-part-studios) to learn the basics of Computer Aided Design (CAD) on OnShape.
+3.	Create a character to 3D print.
+
+To make the character in the box a laser cut part:
+1.	Create a free education [OnShape](https://www.onshape.com/products/education) account using your student email.
+2.	Do the [sketching tutorial](https://learn.onshape.com/courses/fundamentals-sketching) and [part design tutorial](https://learn.onshape.com/courses/fundamentals-part-design-using-part-studios) to learn the basics of Computer Aided Design (CAD) on OnShape.
+3.	Create a 3D character
+4. Use the Kiri:Moto app from the OnShape app store (it’s free to edu users) to slice the shape into laser cuttable parts.
+
+## Lab Submission
+***
+For your write up, include:
+1.	Your Arduino code.
+2.	.stl or .svg files for your Jack — if you use some other technique, include the respective supporting material.
+3.	At least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality).
+
+4.	A video of your box in action.
+
