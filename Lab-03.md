@@ -10,11 +10,11 @@ A. [Writing to the Serial Monitor](https://github.com/FAR-Lab/Developing-and-Des
 
 B. [RGB LED](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-b-rgb-led)
 
-C. [Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-voltage-varying-sensors)
+C. [Resistance & Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-resistance-varying-sensors)
 
 D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors)
 
-E. [Optional: Graphic Display](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#optional-part-e-graphic-display)
+E. [Graphic Display](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-e-graphic-display)
 
 F. [Logging Values to the EEPROM and Reading Them Back](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-f-logging-values-to-the-eeprom-and-reading-them-back)
 
@@ -51,7 +51,7 @@ In your kit, you have a common anode RGB LED. This means that the three LEDs in 
 
 <!--**How might you use this with only the parts in your kit? Show us your solution.**-->
 
-## Part C. Voltage Varying Sensors 
+## Part C. Resistance and Voltage Varying Sensors 
 One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
  
 ### FSR
@@ -129,7 +129,7 @@ Now, the beauty of I2C: you can read data from **both** of these sensors in a si
 
 **b. Upload your merged code to your lab report repository and link to it here.**
 
-## Optional Part E. Graphic Display
+## Part E. Graphic Display
 
 <img src=https://images-na.ssl-images-amazon.com/images/I/61cvqA%2BY0OL._SL1200_.jpg alt="OLED display" width=400>
 
