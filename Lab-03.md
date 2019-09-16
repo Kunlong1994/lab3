@@ -10,7 +10,7 @@ A. [Writing to the Serial Monitor](https://github.com/FAR-Lab/Developing-and-Des
 
 B. [RGB LED](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-b-rgb-led)
 
-C. [Resistance & Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-resistance-&-voltage-varying-sensors)
+C. [Resistance & Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-resistance--voltage-varying-sensors)
 
 D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors)
 
