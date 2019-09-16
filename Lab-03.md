@@ -51,7 +51,7 @@ In your kit, you have a common anode RGB LED. This means that the three LEDs in 
 
 <!--**How might you use this with only the parts in your kit? Show us your solution.**-->
 
-## Part C. Resistance and Voltage Varying Sensors 
+## Part C. Resistance & Voltage Varying Sensors 
 One of the useful aspects of the Arduino is the multitude of analog input pins. We'll explore this more now.
  
 ### FSR
