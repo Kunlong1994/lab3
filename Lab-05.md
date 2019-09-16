@@ -35,6 +35,8 @@ For the cardboard we are providing, the values should be: Speed 45%, Power 70%, 
 
 Notice that part B is not part of the Box itself. It will be used as the top lifter.
 
+![Picture1](https://user-images.githubusercontent.com/54110697/64988175-df084300-d898-11e9-88ea-711f207e0ef1.png)
+
 ## 3D Printing
 
 3D print [this servo mount](https://www.thingiverse.com/thing:1926568):
@@ -50,6 +52,9 @@ Notice that part B is not part of the Box itself. It will be used as the top lif
 
 
 ## Electronics
+
+![electronics circuit](https://user-images.githubusercontent.com/54110697/64988326-35758180-d899-11e9-9473-b1610101d91b.jpg)
+
 
 ### Program your device
 
