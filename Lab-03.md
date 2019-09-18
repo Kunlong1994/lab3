@@ -24,7 +24,6 @@ G. [Create your own Data logger!](https://github.com/FAR-Lab/Developing-and-Desi
 Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab3). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
 
 ## Part A.  Writing to the Serial Monitor
-Hook up the simple potentiometer voltage divider circuit from Lab 01.
  
 [[images/Pot_schem.png]]
  
