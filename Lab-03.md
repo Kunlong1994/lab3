@@ -41,7 +41,7 @@ For this lab, you can use the serial monitor, plotter and/or the LCD whenever yo
 
 ## Part B. RGB LED
 
-In your kit, you have a common anode RGB LED. This means that the three LEDs in the RGB package share a common power source, and turn on when the R, G, or B legs have a low enough voltage to cause current to flow.
+In your kit, you have a "common anode RGB LED." This means that the three LEDs in the RGB package share a common power source, and turn on when the R, G, or B legs have a low enough voltage to cause current to flow. The LONGEST leg is the "common anode" and should be connected to power (do you need a resistor?). The rest of the legs will be connected to pins based on the code you decide to use. 
 
 ![RGB LED schematic](images/rgbled.png)
 
