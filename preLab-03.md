@@ -1,9 +1,9 @@
 For the upcoming lab, we will be building data loggers.
 
-0. PRE-SOLDERING: To avoid the backup around the soldering irons this time in lab, solder connectors onto your LIS3DH accelerometer and your VCNL Proximity Sensor. (You don't need to solder the headers for A1, A2 or A3)
+0. PRE-SOLDERING: To avoid the backup around the soldering irons this time in lab, solder connectors onto your LIS3DH accelerometer. 
 
 <img src="https://cdn-shop.adafruit.com/1200x900/466-02.jpg"  width="200" >
-<img src="https://cdn-shop.adafruit.com/1200x900/2809-00.jpg"  width="200" >
+
 
 1. STATE DIAGRAMS: To sketch out how your interactive devices should act in different modes, we will be using state diagrams. Please review this tutorial on [Everything to Know about State Diagrams](https://www.smartdraw.com/state-diagram/)
 
