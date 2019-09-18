@@ -106,7 +106,7 @@ Get a feel for the data the accelerometer provides. Pick up the Arduino+accelero
  
 **a. Include your accelerometer read-out code in your write-up.**
 
-### IR Proximity Sensor
+% ### IR Proximity Sensor %
 
 <img src=https://cdn-shop.adafruit.com/1200x900/466-02.jpg alt="Proximity Sensor" width=400>
 
