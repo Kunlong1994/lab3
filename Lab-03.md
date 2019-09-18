@@ -95,7 +95,7 @@ Here's the [Datasheet](https://cdn-shop.adafruit.com/datasheets/LIS3DH.pdf) [Pro
 Unlike the other parts we've used to date, this is a "smart sensor" which can communicate the sensor readings digitally (rather than through an analog voltage) using communication protocols I2C and SPI. 
  
 [This example code](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino) is meant to read values from a 3-axis accelerometer out to a computer over the serial monitor. Test it out! Hint: make sure to read the I2C Wiring section carefully, because the picture uses a different kind of Arduino. Here's a Fritzing diagram of the correct wiring:
-
+{ % hi %}
 [[images/LIS3DH_breadboard.png]]
  
 Adapt the code to indicate what your readings are on the X, Y and Z axes of the accelerometer on your 16x2 LCD panel.
@@ -105,28 +105,6 @@ Now set up the RGB LED so that each color is mapped to the X, Y and Z axes accel
 Get a feel for the data the accelerometer provides. Pick up the Arduino+accelerometer board and tilt it in various directions. Start by holding it so that the accelerometer board is parallel to the ground. Find in which direction the X reading increases and decreases; do the same for the Y reading.
  
 **a. Include your accelerometer read-out code in your write-up.**
-
-% ### IR Proximity Sensor %
-
-<img src=https://cdn-shop.adafruit.com/1200x900/466-02.jpg alt="Proximity Sensor" width=400>
-
-Solder together your IR proximity sensor.
-
-[Product page](https://www.adafruit.com/product/466) 
-
-[IR Proximity sensor Datasheet](https://cdn-shop.adafruit.com/datasheets/vcnl4000.pdf)
-
-This sensor and the accelerometer both use I2C -- conveniently, I2C is actually a "bus" connection type: that means that you can connect lots of sensors to the same pair of Arduino pins (`A4` and `A5`) and the Arduino can communicate with all of them!
-
-Without disconnecting your accelerometer from pins `A4` and `A5`, use [these instructions and code from Adafruit](https://learn.adafruit.com/using-vcnl4010-proximity-sensor/arduino) to look at the data the sensor returns. (Both your accelerometer and IR sensor should be connected to pins `A4` and `A5` now.) 
-
-What happens when the field of view is clear? Move your hand or a piece of paper over the sensor and see how the readings vary with distance.
- 
-**a. Describe how the readings change over the sensing range of the sensor. A sketch of readings vs. distance would work also. Does it match up with what you expect from the datasheet?**
-
-Now, the beauty of I2C: you can read data from **both** of these sensors in a single sketch. How do you do this? A simple way is to merge the two sketches together. This can be kind of tricky, but the general gist is this: pick one sketch to be the base sketch that you will modify. Then, from the other sketch: first, copy directly over any global variables or functions -- these don't go inside other functions, they are top level. Second, the other sketch's `setup` and `loop` functions' contents should be pasted into the base sketch's `setup` and `loop` functions, respectively. Make sure you're not duplicating anything that only needs to happen once, for example,  `Serial.begin(9600);`.
-
-**b. Upload your merged code to your lab report repository and link to it here.**
 
 ## Part E. Graphic Display
 
