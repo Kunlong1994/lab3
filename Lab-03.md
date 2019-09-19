@@ -110,7 +110,7 @@ Get a feel for the data the accelerometer provides. Pick up the Arduino+accelero
 
 <img src=https://images-na.ssl-images-amazon.com/images/I/61cvqA%2BY0OL._SL1200_.jpg alt="OLED display" width=400>
 
-Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. We will distribute an OLED display, and instructions to hook it up is [here](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino). Before you run the code, you should install two new libraries. The first one can be found by going to Tools > Manage Libraries > Search Adafruit GFX Library. The second one can be found by Tools > Manage Libraries > Search Adafruit SSD 1306. Once you have installed them, you can run the sample code by going to File > Examples > Adafruit SSD 1306 > ssd1306_128x32_i2c. 
+Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. We will distribute an OLED display, and instructions to hook it up is [here](https://learn.adafruit.com/adafruit-lis3dh-triple-axis-accelerometer-breakout/arduino). Before you run the code, you should install two new libraries. The first one can be found by going to `Tools > Manage Libraries > Search Adafruit GFX Library`. The second one can be found by `Tools > Manage Libraries > Search Adafruit SSD 1306`. Once you have installed them, you can run the sample code by going to `File > Examples > Adafruit SSD 1306 > ssd1306_128x32_i2c`. 
 
 ## Part F. Logging values to the EEPROM and reading them back
  
