@@ -43,6 +43,8 @@ For this lab, you can use the serial monitor, plotter and/or the LCD whenever yo
 
 In your kit, you have a "common anode RGB LED." This means that the three LEDs in the RGB package share a common power source, and turn on when the R, G, or B legs have a low enough voltage to cause current to flow. The LONGEST leg is the "common anode" and should be connected to power (do you need a resistor?). The rest of the legs will be connected to pins based on the code you decide to use. 
 
+**You should add the LEDs in the schematic below.**
+
 ![RGB LED schematic](images/rgbled.png)
 
 <!--Modify the Fade code from Lab 1 so that you have the R, G and B leads of the LED on pins 9, 10 and 11, respectively. You will want to change the code so that you can fade each of the colors separately.-->
@@ -137,7 +139,7 @@ Modify the code to take in analog values from your sensors and print them back o
 ### 2. Design your logger
 You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
 
-In addition to the sensors in your kit, we have sensors from this variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2018Spring/SensorDocumentation.zip).
+In addition to the sensors in your kit, we have some sensors from this variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2018Spring/SensorDocumentation.zip).
 
 A lot of the art of data logging is being clever about how to use the sensor. Feel free to engage the teaching team for advice.
 
