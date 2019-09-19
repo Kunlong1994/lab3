@@ -8,7 +8,7 @@ What's in this lab?
 
 A. [Writing to the Serial Monitor](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-a--writing-to-the-serial-monitor)
 
-B. (optional)[RGB LED](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-b-rgb-led)
+B. [RGB LED](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-b-rgb-led)
 
 C. [Resistance & Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-resistance--voltage-varying-sensors)
 
