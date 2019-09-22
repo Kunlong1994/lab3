@@ -20,7 +20,7 @@ Here, for instance, I am exporting pages 2 and 3 from the [Umbrella template](ht
 
 6. If you would like to set other lines to score, change the color of the line, and then use the line drawing tool to trace the lines of the pattern you'd like to score.
 
-![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab4/artwork/images/traceBlue.png)
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab4/artwork/images/traceBlue2.png)
 
 7. Add registration marks to the printout before printing the pattern. View->Registration Marks->Style->Type 1(Cameo, Portrait, Curio) (This prints out your original imported image, but with registration marks so that the Silhouette Cameo can line up the cuts with the lines.)
 
