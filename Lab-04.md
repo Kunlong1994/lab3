@@ -1,10 +1,5 @@
 # Paper Puppets
 
-```
-FYI: This is a new lab we developed this year because 
-last year's students wanted more exposure to motors and actuators. 
-Please let us know what you think! Also, help us fish out any bugs...
-```
 ## Overview
 For this assignment, you are going to 
 
@@ -89,7 +84,7 @@ Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/fil
 
 Now modify this set up to make this your own design. 
 
-You can use a different paper template. Borrow or modify others from the Google project above, or make your own. Use Olfa knives or scissors to cut out your pattern, and glue or tape to put it together. If you'd like to use the paper cutter, here's how.
+You can use a different paper template. Borrow or modify others from the Google project above, or make your own. Use Olfa knives or scissors to cut out your pattern, and glue or tape to put it together. If you'd like to use the paper cutter, [here's how](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/How-to-use-the-Silhouette-Cameo-Cutter).
 
 You can set the design in a particular setting, you can enact a pre-programmed mini puppet show, you can visualize data (like from your last logger lab!) a new way.
 
