@@ -87,7 +87,13 @@ Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/fil
 
 ## Part E. Make it your own
 
-Now modify this set up to make this your own design. You can use a different paper template, you can set the design in a particular setting, you can enact a mini puppet show. If your design involves having someone controlling the puppet in real time, please film that happening. Otherwise, film the puppet performing it's moves. 
+Now modify this set up to make this your own design. 
+
+You can use a different paper template. Borrow or modify others from the Google project above, or make your own. Use Olfa knives or scissors to cut out your pattern, and glue or tape to put it together. If you'd like to use the paper cutter, here's how.
+
+You can set the design in a particular setting, you can enact a pre-programmed mini puppet show, you can visualize data (like from your last logger lab!) a new way.
+
+If your design involves having someone controlling the puppet in real time (e.g. using sensors), please film that happening. Otherwise, film the puppet performing it's moves. 
 
 **a. Make a video of your final design.**
  
