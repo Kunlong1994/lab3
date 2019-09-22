@@ -6,9 +6,9 @@ These are adapted from this [print-and-cut tutorial]for the Silhouette Studio. (
 
 Here, for instance, I am exporting pages 2 and 3 from the [Umbrella template](https://papersignals.withgoogle.com/static/files/umbrella.pdf) from the [Google Paper Signals project](https://papersignals.withgoogle.com/getstarted#print).
 
-3. Import the PNG file into Silhouette Studio using File->Open. Size the image so that it's 8.5'' in width
-
 ![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab4/artwork/images/exportPdftoPng.png)
+
+3. Import the PNG file into Silhouette Studio using File->Open. Size the image so that it's 8.5'' in width
 
 4. In Panel-> Page Setup, set the Cutting Mat to None. (We don't need a cutting mat if we're cutting with cardstock.)
 
@@ -33,5 +33,4 @@ Here, for instance, I am exporting pages 2 and 3 from the [Umbrella template](ht
 10. To cut to the printed pattern, you first need to Load the printed cardstock, which will cause the Silhouette to feed in the cardstock and look for registration marks.
 
 11. After the cardstock is loaded, you can send the job to the Silhouette to print.
-
 
