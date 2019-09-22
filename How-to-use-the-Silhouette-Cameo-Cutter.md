@@ -8,17 +8,27 @@ Here, for instance, I am exporting pages 2 and 3 from the [Umbrella template](ht
 
 3. Import the PNG file into Silhouette Studio using File->Open. Size the image so that it's 8.5'' in width
 
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab4/artwork/images/exportPdftoPng.png)
+
 4. In Panel-> Page Setup, set the Cutting Mat to None. (We don't need a cutting mat if we're cutting with cardstock.)
+
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab4/artwork/images/pageSetup.png)
 
 5. Under Panel->Trace, use Select Trace Area to the whole page, and then select Trace Outer Edge. This will highlight all the outer edges of the pieces in Red, which we will later set to cut. Repeat this, selecting smaller Trace Areas, for any interior cuts needed in any of the shapes.
 
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab4/artwork/images/trace.png)
+
 6. If you would like to set other lines to score, change the color of the line, and then use the line drawing tool to trace the lines of the pattern you'd like to score.
+
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab4/artwork/images/traceBlue.png)
 
 7. Add registration marks to the printout before printing the pattern. View->Registration Marks->Style->Type 1(Cameo, Portrait, Curio) (This prints out your original imported image, but with registration marks so that the Silhouette Cameo can line up the cuts with the lines.)
 
 8. Print the pattern to a printer, using the cardstock as paper.
 
 9. Under File->Send to Silhouette->Line, set Red lines to Cut and Blue lines to Score.
+
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab4/artwork/images/setSend.png)
 
 10. To cut to the printed pattern, you first need to Load the printed cardstock, which will cause the Silhouette to feed in the cardstock and look for registration marks.
 
