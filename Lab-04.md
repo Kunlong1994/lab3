@@ -19,7 +19,7 @@ The physical housing and mechanisms of interactive devices are as important as t
 
 This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle.com) project. For now, we will be using the paper displays to make paper puppets controlled by the Arduino, but you are welcome to revisit the "voice control" part later in the quarter with the Raspberry Pi. 
 
-![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/raw/docs/wave.gif)
+
 ## In the Report
 
 To submit your lab, clone [this repository](https://github.com/FAR-Lab/IDD-Fa18-Lab4). You'll need to describe your design, include a video of your paper display in operation, and upload any code you wrote to make it move.
@@ -73,7 +73,7 @@ Using what you've learned already, write code to control the servo motor circuit
 **Include a photo/movie of your raw circuit in action.**
 
 ## Part D. Paper puppet
-
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/raw/docs/wave.gif)
 ![](https://papersignals.withgoogle.com/static/images/instructions/slides/stretch_00011.png)
 
 Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. [Here are instructions to put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) (make sure to choose the instructions for the STRETCH signal you're building) with the Arduino and the microservo. We recommend that you just make a wireharness or jumper wires that go out to your Arduino mounted breadboard rather than try to stick your Arduino in the device. Use a stack of pennies if you need to weight the paper puppet down.
