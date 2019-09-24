@@ -9,7 +9,7 @@ For this week’s lab, we will be building a Jack in the box; this is a project 
 To submit your lab, clone this repository -- and include all files / images / code that is requested!
 
 ## Laser Cutting
-Laser cut cardboard to make your useless box in the Maker Lab.
+Laser cut cardboard to make your box in the Maker Lab.
 1.	Download a vector editing program like [Inkscape](https://inkscape.org) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
 4.	On [this page](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/tree/2019Fall/Lab5), download all files.
 2.	Open the laser cutter template file for the Box in your vector editing program.
@@ -91,7 +91,7 @@ To make the character in the box a laser cut part:
 For your write up, include:
 1.	Your Arduino code.
 2.	.stl or .svg files for your Jack — if you use some other technique, include the respective supporting material.
-3.	At least one photo of your useless box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality).
+3.	At least one photo of your box taken in the MakerLab's Portable Photo Studio (or somewhere else, but of similar quality).
 
 4.	A video of your box in action.
 
