@@ -32,7 +32,7 @@ Your kit has a vibration motor. Vibration motors are actually DC motors that hav
 
 ![image of vibration motor](https://cdn-shop.adafruit.com/145x109/1201-01.jpg)
 
-Use the [Fade](https://www.arduino.cc/en/tutorial/fade) circuit from Lab 01 (```Examples > 01 Basics > Fade```) and connect the vibration motor to the pin which normally would be supplying a LED with PWM'd voltage. (Remember PWM from Lab 1, Part E? [Pulse width modulation](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01#part-e-fade-a-led-using-arduino) )  SECURE THE MOTOR TO KEEP IT FROM SHAKING ITSELF OUT OF THE CIRCUIT!
+Use the [Fade](https://www.arduino.cc/en/tutorial/fade) circuit from Lab 01 (```Examples > 01 Basics > Fade```) and connect the vibration motor's red wire to the pin which normally would be supplying a LED with PWM'd voltage. (Remember PWM from Lab 1, Part E? [Pulse width modulation](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01#part-e-fade-a-led-using-arduino) )  The other blue wire from the vibration motor should be connected to ground, to complete the circuit. SECURE THE MOTOR TO KEEP IT FROM SHAKING ITSELF OUT OF THE CIRCUIT!
 
 ## Part B. Actuating Servo motors
 ![Image of servo motor](https://cdn-shop.adafruit.com/145x109/169-06.jpg)
