@@ -40,7 +40,7 @@ Notice that part B is not part of the Box itself. It will be used as the top lif
 ## 3D Printing
 
 3D print [this servo mount](https://www.thingiverse.com/thing:1926568):
-1.	Download and install [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura/).
+1.	Download and install [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura).
 2.	Import the .stl file from the files you downloaded into the printer software.
 3.	Make sure the orientation of your part makes sense. What orientation makes the most sense for 3D printing?
 4.	Turn off the raft. There is no need to print a raft for this part.
