@@ -25,7 +25,7 @@ Laser cut cardboard to make your box in the Maker Lab.
 * 	Open the printer preferences.
 * 	Make sure you set the different power levels for the cut values pertaining to the material you're using. 
 
-For the cardboard we are providing, the values should be: Speed 45%, Power 70%, and Frequency: 500Hz. On the same window, adjust the printing bed size to 24" horizontal, and 18" vertical. When you save the settings, make sure the image on the preview is well positioned (not too close to the edges and fitting well in the space). Press print.
+For the cardboard we are providing, the values should be: Speed 45%, Power 70%, and Frequency: 500Hz. On the same window, adjust the printing bed size to 24" horizontal, and 18" vertical. When you save the settings, make sure the image on the preview is well positioned (not too close to the edges and fitting well in the space). Under Page Sizing and Handling, click actual size. Press print.
 *	Turn on the air assist compressor on the floor on.
 *	Turn the suction system, the big blue box, on.
 *	Print the job on the computer.
