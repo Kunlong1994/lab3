@@ -40,15 +40,12 @@ Notice that part B is not part of the Box itself. It will be used as the top lif
 ## 3D Printing
 
 3D print [this servo mount](https://www.thingiverse.com/thing:1926568):
-1.	Download and install [Makerbot Print](https://www.makerbot.com/3d-printers/apps/makerbot-print/).
-2.	Create a MakerBot account.
-3.	Start the Makerbot Print Application and log in.
-5.	Import the .stl file from the files you downloaded into the printer software.
-6.	Make sure the orientation of your part makes sense. What orientation makes the most sense for 3D printing?
-7.	Turn off the raft. There is no need to print a raft for this part.
-8.	Connect your laptop to the printer over USB, or via WiFi. Ask any member of the teaching team for WiFi credentials.
-9.	Once the Printer is connected hit "print".
-10.	After the printer has started the USB cable can be disconnected from your laptop.
+1.	Download and install [Ultimaker Cura](https://ultimaker.com/software/ultimaker-cura/).
+2.	Import the .stl file from the files you downloaded into the printer software.
+3.	Make sure the orientation of your part makes sense. What orientation makes the most sense for 3D printing?
+4.	Turn off the raft. There is no need to print a raft for this part.
+5.	Connect your laptop to the printer over USB, or via WiFi. Ask any member of the teaching team for WiFi credentials.
+6.	Once the Printer is connected hit "print".
 
 
 ## Electronics
