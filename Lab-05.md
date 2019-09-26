@@ -52,6 +52,7 @@ Notice that part G is not part of the Box itself. It will be used as the top lif
 
 ![electronics circuit](https://user-images.githubusercontent.com/54110697/64988326-35758180-d899-11e9-9473-b1610101d91b.jpg)
 
+Tip: If you don't have the 9V connector, you just need to make sure that the micro controller is plugged into your computer, for power. 
 
 ### Program your device
 
