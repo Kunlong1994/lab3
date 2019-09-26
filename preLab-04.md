@@ -1,6 +1,4 @@
-For the upcoming lab, we will be building paper displays inspired by [Isaac Blankensmith](http://www.isaacblankensmith.com/) and [Smooth Technology's](https://smooth.technology) [Paper Signals](https://experiments.withgoogle.com/paper-signals) project. We will not be using the phone/voice part of this project, but we will be building cardstock mechanisms that are driven by the mini-servo in your kit, and controlled by your Metro Mini.
-
-0. DISCORD: By now, there must be things that are confusing you---about lecture, the labs, future assignments... If you haven't used the class Discord yet to ask the teaching team a question, please try it. 
+For the upcoming labs, we will be building paper displays inspired by [Isaac Blankensmith](http://www.isaacblankensmith.com/) and [Smooth Technology's](https://smooth.technology) [Paper Signals](https://experiments.withgoogle.com/paper-signals) project (Lab 4) or building a paper jack in a box (Lab 5). W
 
 1. CATCHING UP ON UNDERSTANDING: If you are confused on the following topics, you can read [Scherz and Monk](http://www.engineeringbookspdf.com/practical-electronics-inventors-fourth-edition-paul-scherz-simon-monk/)'s excellent textbook which can give you more background.
 
@@ -49,6 +47,4 @@ Microcontrollers Ch 13
 
 <img src="https://dysonthedesigner.weebly.com/uploads/2/6/3/9/26392736/427342_orig.jpg"  width="200" > Dyson Vacuum cardboard prototypes
 
-3. IDEA GENERATION: This week we're making paper displays to reflect a sensor reading. The paper displays that we have prepared are the "stretch" displays from [Paper Signals](https://experiments.withgoogle.com/paper-signals). Draw from some inspirations and explorations from looking at 2. and come up with 10 different ideas for how you would build mechanisms to indicate some sensed measurement or value.
-
-Draw sketches with each of your ideas.
+3. BRING CARDBOARD FOR LAB 5
