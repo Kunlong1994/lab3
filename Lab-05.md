@@ -82,7 +82,7 @@ To make the character in the box a laser cut part:
 1.	Create a free education [OnShape](https://www.onshape.com/products/education) account using your student email.
 2.	Do the [sketching tutorial](https://learn.onshape.com/courses/fundamentals-sketching) and [part design tutorial](https://learn.onshape.com/courses/fundamentals-part-design-using-part-studios) to learn the basics of Computer Aided Design (CAD) on OnShape.
 3.	Create a 3D character
-4. Use the Kiri:Moto app from the OnShape app store (it’s free to edu users) to slice the shape into laser cuttable parts.
+4. Use the KiriMoto app from the OnShape app store (it’s free to edu users) to slice the shape into laser cuttable parts.
 
 ## Lab Submission
 ***
