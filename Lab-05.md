@@ -55,7 +55,7 @@ Notice that part G is not part of the Box itself. It will be used as the top lif
 
 ### Program your device
 
-Load the example software previously downloaded.
+Load the [example](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/Lab5/JackInABox.ino) previously downloaded.
 
 You can also make your own program but make sure you put HIGH digital value to pin 5 if you connected the circuit as the one in the electronics part.
 
