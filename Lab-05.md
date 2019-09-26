@@ -13,7 +13,7 @@ Laser cut cardboard to make your box in the Maker Lab.
 1.	Download a vector editing program like [Inkscape](https://inkscape.org) (free) or [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (free for 30 day trial).
 4.	On [this page](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/tree/2019Fall/Lab5), download the PDF (boxTall.pdf) and the STL files.
 2.	Open the laser cutter template file (PDF) for the Box in your vector editing program (i.e. Ink scape).
-3.	Add holes for the servo mount, switch, and Arduino wires. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (black for cutting). Save your file. BONUS: include lines or images that you don't plan to cut all the way through to experiment with etching.
+3.	Add holes for the servo mount, and Arduino wires. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (black for cutting). Save your file. BONUS: include lines or images that you don't plan to cut all the way through to experiment with etching.
 4.	To laser cut, open your modified file in Adobe Illustrator on the lab’s computer. Look around the laser cutting room for instructions, reference sheets, and scrap materials. The step by step instructions are attached on the suction system to the left of the computer.
 5.	Keeping in mind Niti's safety instructions, follow the instructions to cut (these are summarized for our purposes):
 * 	Load the machine with the 5/32" thick cardboard we provided. If the material is bent, tape the ends using duct tape to the sides of the printing bed to make it as flat as possible.
@@ -31,7 +31,7 @@ For the cardboard we are providing, the values should be: Speed 45%, Power 70%, 
 *	Print the job on the computer.
 *	Find the job you're printing on the laser cutter, and press 'go'.
 
-6.	Assemble the parts. Make sure the holes for the servo mount, switch, and Arduino wires fit. Once the configuration makes sense, hot glue them together. Pay attention that part “D” is the top of the box and should not be hot glued- you can attach it with tape or or some other hinge.
+6.	Assemble the parts. Make sure the holes for the servo mount, and Arduino wires fit. Once the configuration makes sense, hot glue them together. Pay attention that part “D” is the top of the box and should not be hot glued- you can attach it with tape or or some other hinge.
 
 Notice that part G is not part of the Box itself. It will be used as the top lifter.
 
