@@ -33,7 +33,7 @@ For the cardboard we are providing, the values should be: Speed 45%, Power 70%, 
 
 6.	Assemble the parts. Make sure the holes for the servo mount, switch, and Arduino wires fit. Once the configuration makes sense, hot glue them together. Pay attention that part “D” is the top of the box and should not be hot glued- you can attach it with tape or or some other hinge.
 
-Notice that part B is not part of the Box itself. It will be used as the top lifter.
+Notice that part G is not part of the Box itself. It will be used as the top lifter.
 
 ![Picture1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2019Fall/BOX%20diagram.png)
 
