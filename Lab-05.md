@@ -16,7 +16,7 @@ Laser cut cardboard to make your box in the Maker Lab.
 3.	Add holes for the servo mount, and Arduino wires. This time, make sure you don't use images, but instead vectors. Make sure the all lines that you want the printer to recognize are 0.001pt thick and the proper color (red= 255, green= 0, blue =0) for cutting. Also make sure that the page size is the same size as your cardboard (or you will have to change the home on the laser cutter). Save your file as a PDF. BONUS: include lines or images that you don't plan to cut all the way through to experiment with etching.
 4.	To laser cut, open your modified file in Adobe Illustrator on the lab’s computer. Look around the laser cutting room for instructions, reference sheets, and scrap materials. The step by step instructions are attached on the suction system to the left of the computer.
 5.	Keeping in mind Niti's safety instructions, follow the instructions to cut (these are summarized for our purposes):
-* 	Load the machine with the 5/32" thick cardboard we provided. If the material is bent, tape the ends using duct tape to the sides of the printing bed to make it as flat as possible.
+* 	Load the machine with the 5/32" thick cardboard we provided. If the material is bent, tape the ends using duct tape to the sides of the printing bed to make it as flat as possible. If the cardboard is thicker than 5/32", then you can increase the power, and decrease the speed. 
 * 	Disable X/Y.
 * 	Move the laser to its starting position on top left corner of the material.
 * 	Focus the laser using the focus tool and up and down arrows. Flip the focus tool up again after you're done.
