@@ -64,9 +64,10 @@ You can use `control-C` to interrupt and exit the ping (press the `control` key,
 If you do not see the response from the `ping` command, [troubleshoot](Getting-an-IxE-based-Pi-on-your-Wi-Fi#troubleshooting) to get your Pi online.  
 
 ### 2.  SSH into the Pi.
-From your terminal, log in to your Pi using the command `ssh pi@$Address` with the password: `raspberry`
 
 When you first log in it will show you a "fingerprint" and ask you whether you want to continue connecting. Say `yes`.
+
+
 
 ```shell
 ssh pi@192.168.2.2
@@ -74,6 +75,8 @@ The authenticity of host '192.168.2.2' can't be established.
 ECDSA key fingerprint is SHA256:Y9S4oMH2H70fz3K/L42Kw39k+zkpyfr0DmGdzBx7SKk.
 Are you sure you want to continue connecting (yes/no)? yes
 ```
+From your terminal, log in to your Pi using the command `ssh pi@$Address` with the password: `raspberry` 
+
 After you say yes, type the password `raspberry` and hit Enter. You should see this:
 
 ```shell
