@@ -109,13 +109,13 @@ pi@ixe00 ~ $
 Clone (download) the repository from GitHub to the Pi. 
 
 1. From the terminal window which is logged into the Pi, go to the home folder with `cd ~`
-1. In a web browser on your laptop, fork the github project [IDD-Fa19-lab6](https://www.gitHub.com/far-lab/IDD-Fa18-Lab6), by clicking the fork button on the top right side.
+1. In a web browser on your laptop, fork the github project [IDD-Fa19-lab6](https://www.gitHub.com/far-lab/IDD-Fa19-Lab6), by clicking the fork button on the top right side.
 1. Copy the link to your forked version of the project.<!--(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). -->
 1. From the terminal window which is logged into the Pi, clone the git repository with the copied information
 ```shell
-git clone https://github.com/**_YOURUSERNAME_**/IDD-Fa18-Lab6
+git clone https://github.com/**_YOURUSERNAME_**/IDD-Fa19-Lab6
 ```
-1. Change directory into the downloaded folder with `cd IDD-Fa18-Lab6`
+1. Change directory into the downloaded folder with `cd IDD-Fa19-Lab6`
 1. Use `npm` to install the required node packages; run the command `npm install`.
 
 At this point, you have now downloaded the main program and all required packages to run the simple chatbot. 
@@ -136,13 +136,13 @@ If the previous steps did not work, there are a few things you can easily check/
 
 First, verify that the server is running. The command line window should say
 ```shell 
-pi@$Address:~/IDD-Fa18-Lab6 $ node chatServer.js 
+pi@$Address:~/IDD-Fa19-Lab6 $ node chatServer.js 
 listening on *:8000
 a new user connected
 ```
-If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` (which stands for **P**rint **W**orking **D**irectory) to see if you really are working in the correct directory. The printed response in the terminal should be something like ```/home/pi/IDD-Fa18-Lab6```. Verify that you have all files in the folder with `ls`. The item list should be:
+If that is not the case, verify that you are in the right folder and have done all the necessary steps to installing the additional packages. One way to verify that is by typing ```pwd``` (which stands for **P**rint **W**orking **D**irectory) to see if you really are working in the correct directory. The printed response in the terminal should be something like ```/home/pi/IDD-Fa19-Lab6```. Verify that you have all files in the folder with `ls`. The item list should be:
 ```shell 
-pi@$Address:~/IDD-Fa18-Lab6 $ ls
+pi@$Address:~/IDD-Fa19-Lab6 $ ls
 chatServer.js  license.txt  node_modules  package.json  package-lock.json  public  README.txt
 ```
 If files are missing, or you are not in the correct folder, then change to the correct folder location and try to re-run the instructions from the tutorial.
@@ -171,7 +171,7 @@ Now, please modify the `chatServer.js` file to make your own chatbot. It might, 
 ### Editing the Code ###
 To change how your chatbot behaves, you will need to edit the code. To edit the code files, you can use `nano` a command line text editor.
 
-To edit your `chatServer.js` code, make sure you are in the `IDD-Fa18-Lab6/` directory and then open the code file using the command:
+To edit your `chatServer.js` code, make sure you are in the `IDD-Fa19-Lab6/` directory and then open the code file using the command:
 
 ```shell
 nano chatServer.js
