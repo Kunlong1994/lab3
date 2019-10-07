@@ -23,8 +23,6 @@ hostname = "ixe00"
 * Then plug the microSD card into your RPi and plug the power in.
 * Wait 30 seconds, and you will get an email with your IP address.
 
-(Instructions on modifying this to get online in other places are here.)
-
 # Chatbot
 
 In this tutorial, we will use a Raspberry Pi to create a chatbot! Your Pi will be serving up it's own webpages with an interface that allows people to type in text entries and receive your Chatbot's replies.
