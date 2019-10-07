@@ -1,5 +1,5 @@
 ```javascript
-var express = require('express'); // web server application
+var express = require('express'); // web server application, the toolkit that allows node to talk to the internet
 var app = express(); // webapp
 var http = require('http').Server(app); // connects http library to server
 var io = require('socket.io')(http); // connect websocket library to server
