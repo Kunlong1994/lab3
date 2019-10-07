@@ -15,9 +15,9 @@ Note:
 ```javascript
 app.use(express.static('public')); // find pages in public directory
 
-// start the server and say what port it is on
-http.listen(serverPort, function() {
-  console.log('listening on *:%s', serverPort);
+// start the server and say what port it is on, in this case, 8000, as defined above. [More info on what ports do.](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Well-known_ports)
+http.listen(serverPort, function() { // listening for connections
+  console.log('listening on *:%s', serverPort); // writes a message to the console
 });
 ```
 **_Starting the ChatBot Server_**
