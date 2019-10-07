@@ -21,6 +21,7 @@ hostname = "ixe00"
 * Put in your email address there.
 * Save the file and eject the drive.
 * Then plug the microSD card into your RPi and plug the power in.
+* Wait 30 seconds, and you will get an email with your IP address.
 
 (Instructions on modifying this to get online in other places are here.)
 
