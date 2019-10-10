@@ -6,7 +6,7 @@ For this week’s lab, we will be building a Jack in the box; this is a project 
 [Video of similar box](https://www.youtube.com/watch?v=Z70TRaKqUbs)
 
 ## In the report
-See below for instructions.
+See the bottom of the report for instructions.
 
 ## Laser Cutting
 Laser cut cardboard to make your box in the Maker Lab.
