@@ -2,7 +2,7 @@
 
 ## Preparing your Raspberry Pi
 
-The following steps set up your Raspberry Pi so that it emails you the IP address that the RPi gains from the local DHCP server on boot-up. It is specifically looking for the Cornell [RedRover](https://it.cornell.edu/topic/redrover-wi-fi) network.
+The following steps set up your Raspberry Pi so that it emails you the IP address that the RPi gains from the local DHCP server on boot-up. It is specifically looking for the Cornell [RedRover](https://it.cornell.edu/topic/redrover-wi-fi) network. If you are somewhere else (not on campus), here is a [link](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Other-ways-to-connect-IxE-to-your-computer) to a page that explains how to connect to other networks. 
 
 * Connect the microSD card to your laptop computer 
 * Open the boot volume and find the  ```startup_mailer.py``` script.
