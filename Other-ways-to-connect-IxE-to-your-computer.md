@@ -69,22 +69,43 @@ When the Pi boots up, it will copy the `wpa_supplicant.conf` file into the WiFi 
 
 ## Connecting to The HOUSE Wifi
 
-1. Register the MAC address of your Raspberry Pi on The House network at https://myelauwit.com/ using Add a Device.
-1. Edit the `/etc/wpa_supplicant/wpa_supplicant.conf` file as explained in the section above
-
+1. Register the MAC address of your Raspberry Pi on The House network at https://myelauwit.com/ [This is outdated but should redirect you to the right page.] using Add a Device.
+1. Edit the `/etc/wpa_supplicant/wpa_supplicant.conf` file with `nano` OR on the `\boot` volume that you see when the SD card is plugged into your computer, is a file called:  `wpa_supplicant.conf.bak`. Duplicate the file and rename the duplicate to `wpa_supplicant.conf`. Now edit the duplicated file (`wpa_supplicant.conf`) and add the house wifi to the list of networks to connect to as shown below. Then safely eject the sd card, plug it back into the Pi and power it back up.
+1. The section you need to add is
 ```shell
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 network={
-    ssid="DeviceFarm"
-    psk="device@theFarm"
-    key_mgmt=WPA-PSK
+    ssid="The House"
+    key_mgmt=NONE
 }
+```
+
+
+Afterward your file should look something like the following.
+
+```shell
+update_config=1
+country=US
 
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 network={
     ssid="The House"
     key_mgmt=NONE
 }
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="RedRover"
+    key_mgmt=NONE
+}
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+network={
+    ssid="DeviceFarmSetup"
+    psk="device@theFarm"
+    key_mgmt=WPA-PSK
+}
+
 ```
 3. Try logging into your device using ssh from a terminal.
 4. If you need to see what device your IxE is on, use `iwconfig` or find it in this list [here](https://interactivedevice18.slack.com/files/U90LA9TLH/F92HXB020/ixe_ip_mac_hostname.xlsx):
