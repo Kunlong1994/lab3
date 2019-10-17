@@ -18,6 +18,7 @@ to = 'youremail@here.maybe'
 hostname = "ixe00"
 ##############################################################################
 ```
+* ixe = "Interaction Engine"
 * Put in your email address there.
 * Save the file and eject the drive.
 * Then plug the microSD card into your RPi and plug the power in.
