@@ -5,7 +5,7 @@
 The following steps set up your Raspberry Pi so that it emails you the IP address that the RPi gains from the local DHCP server on boot-up. It is specifically looking for the Cornell [RedRover](https://it.cornell.edu/topic/redrover-wi-fi) network.
 
 * Connect the microSD card to your laptop computer 
-* Open the boot volume and find the  ```email_ip_on_start.py``` script.
+* Open the boot volume and find the  ```startup_mailer.py``` script.
 * Open this script and find the section where the target email address is defined.
 
 
