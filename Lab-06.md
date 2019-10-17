@@ -92,7 +92,10 @@ permitted by applicable law.
 Last login: Wed Jan 17 10:42:03 2018
 
 SSH is enabled and the default password for the 'pi' user has not been changed.
-This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
+This is a security risk - please log
+
+
+in as the 'pi' user and type 'passwd' to set a new password.
 
 pi@ixe00:~ $ 
 ```
@@ -108,7 +111,7 @@ pi@ixe00 ~ $
 ### Installation
 Clone (download) the repository from GitHub to the Pi. 
 
-1. From the terminal window which is logged into the Pi, go to the home folder with `cd ~`
+1. From the terminal window which is logged into the Pi, go to the home (cd means change directory, and ~ means home) folder with `cd ~`
 1. In a web browser on your laptop, fork the github project [IDD-Fa19-lab6](https://www.gitHub.com/far-lab/IDD-Fa19-Lab6), by clicking the fork button on the top right side.
 1. Copy the link to your forked version of the project.<!--(for more information on forking look [here](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project)). -->
 1. From the terminal window which is logged into the Pi, clone the git repository with the copied information
