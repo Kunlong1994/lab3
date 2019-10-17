@@ -14,7 +14,7 @@ The first time you setup a remote editing session, you will need to specify your
 
 1. Click on ```new``` to enter a new server
 1. The name of the server should be : `ixe[00]` (where 00 are your numbers)
-1. The hostname or IP address of the server: `ixe[00]`
+1. The hostname or IP address of the server: [IP address you received via email]
 1. The Port should be: `22`
 1. use the normal username(i.e. `pi` ) and password(i.e. `raspberry`) for authentication.
 1. Check the box next to `Use sftp (ssh) connection.`
