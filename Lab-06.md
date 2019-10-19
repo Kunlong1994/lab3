@@ -172,7 +172,7 @@ Please take a self-guided trip through the following code tours:
 Now, please modify the `chatServer.js` file to make your own chatbot. It might, for example, act like [WoeBot](https://woebot.io) and find out what is bringing a person down. Or! Maybe it helps people fall asleep like [Insomnobot](http://insomnobot3000.com). You have a finite amount of time, so narrow the purpose of the chatbot so that it does not have to have [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) conversational ability.
 
 ### Editing the Code ###
-To change how your chatbot behaves, you will need to edit the code. To edit the code files, you can use `nano` a command line text editor. [Here is a cheat sheet](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Command-Line-Cheat-Sheet-(for-non-programmers)) and [this](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/) for editing on the command line.
+To change how your chatbot behaves, you will need to edit the code. To edit the code files, you can use `nano` a command line text editor. [Here is a cheat sheet](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Command-Line-Cheat-Sheet-(for-non-programmers)) and [another](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/) for editing on the command line.
 
 To edit your `chatServer.js` code, make sure you are in the `IDD-Fa19-Lab6/` directory and then open the code file using the command:
 
