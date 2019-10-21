@@ -41,7 +41,7 @@ On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interact
 
 ```
 pi@ixeXX:~ $ cd
-pi@ixeXX:~ $ git clone https://github.com/**_YourUserName_**/IDD-Fa18-Lab7.git
+pi@ixeXX:~ $ git clone https://github.com/YOURUSERNAME/IDD-Fa18-Lab7.git
 ```
 
 In the `IDD-Fa18-Lab7` directory, install the basic components for the node server by executing `npm install` 
