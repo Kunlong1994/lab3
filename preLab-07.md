@@ -1,3 +1,7 @@
+For this week's [Lab 7](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-07) we'll be making our own Video Doorbells, like a DIY [Ring](https://ring.com).
+
+Bring your whole kit, Pi and Arduino, to lab this Thursday.
+ 
 In preparation for this week's lab, you'll build a small circuit with your Arduino and test it with some code. You don't need the Pi for this preLab.
 
 ### Button Circuit
