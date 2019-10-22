@@ -37,17 +37,17 @@ This next section adds a web camera to the HelloYou example. We make use of the 
 
 ### Fork the 'IDD-Fa18-Lab7' repository
 
-On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [IDD-Fa18-Lab7](https://github.com/FAR-Lab/IDD-Fa18-Lab7) example project.
+On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [IDD-Fa19-Lab7](https://github.com/FAR-Lab/IDD-Fa19-Lab7) example project.
 
 ```
 pi@ixeXX:~ $ cd
-pi@ixeXX:~ $ git clone https://github.com/YOURUSERNAME/IDD-Fa18-Lab7.git
+pi@ixeXX:~ $ git clone https://github.com/YOURUSERNAME/IDD-Fa19-Lab7.git
 ```
 
 In the `IDD-Fa18-Lab7` directory, install the basic components for the node server by executing `npm install` 
 ```
-pi@ixeXX:~ $ cd IDD-Fa18-Lab7
-pi@ixeXX:~/IDD-Fa18-Lab7 $ npm install
+pi@ixeXX:~ $ cd IDD-Fa19-Lab7
+pi@ixeXX:~/IDD-Fa19-Lab7 $ npm install
 ...blah blah warnings etc. here...
 added 258 packages from 138 contributors and audited 721 packages in 112.798s
 found 1 low severity vulnerability
@@ -63,12 +63,12 @@ This may take a minute or two to run. Please be patient.
 * Install the `fswebcam` software that your code will use to communicate with the webcam using this command:
 
 ```
-pi@ixeXX:~/IDD-Fa18-Lab7 $ sudo apt install fswebcam
+pi@ixeXX:~/IDD-Fa19-Lab7 $ sudo apt install fswebcam
 ```
 
 ### Try pictureServer with node.js
 ```
-pi@ixeXX:~/IDD-Fa18-Lab7 $ node pictureServer.js /dev/ttyUSB0
+pi@ixeXX:~/IDD-Fa19-Lab7 $ node pictureServer.js /dev/ttyUSB0
 listening on *:8000
 ```
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
@@ -82,9 +82,9 @@ To shut down the server, type `control + C` in the terminal.
 ledOFF
 ledON
 ^C
-pi@ixeXX ~/IDD-Fa18-Lab7 $
+pi@ixeXX ~/IDD-Fa19-Lab7 $
 ```
-*Compare `helloYou/server.js` and `IDD-Fa18-Lab7/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)*
+*Compare `helloYou/server.js` and `IDD-Fa19-Lab7/pictureServer.js`. What elements had to be added or changed to enable the web camera? (Hint: It might be good to know that there is a UNIX command called `diff` that compares files.)*
 
 ### Video doorbell
 
