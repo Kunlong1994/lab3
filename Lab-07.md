@@ -35,7 +35,7 @@ Look at the `server.js`, `public/client.js` and `public/index.html` code to unde
 
 This next section adds a web camera to the HelloYou example. We make use of the 'node-webcam' from [[https://www.npmjs.com/package/node-webcam]] to add the camera functionality.
 
-### Fork the 'IDD-Fa18-Lab7' repository
+### Fork the 'IDD-Fa19-Lab7' repository
 
 On your IxE, [fork](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Forking-a-GitHub-project) and git clone the [IDD-Fa19-Lab7](https://github.com/FAR-Lab/IDD-Fa19-Lab7) example project.
 
@@ -44,7 +44,7 @@ pi@ixeXX:~ $ cd
 pi@ixeXX:~ $ git clone https://github.com/YOURUSERNAME/IDD-Fa19-Lab7.git
 ```
 
-In the `IDD-Fa18-Lab7` directory, install the basic components for the node server by executing `npm install` 
+In the `IDD-Fa19-Lab7` directory, install the basic components for the node server by executing `npm install` 
 ```
 pi@ixeXX:~ $ cd IDD-Fa19-Lab7
 pi@ixeXX:~/IDD-Fa19-Lab7 $ npm install
