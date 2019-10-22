@@ -5,7 +5,7 @@ This week, we will integrate the Arduino with the Raspberry Pi to complete the I
 ### In Your Report
 
 1. Upload a video of your version of the camera lab to your lab Github repository
-1. As usual, update your class Hub repository to add your [forked IDD-Fa18-Lab7](/FAR-Lab/IDD-Fa18-Lab7) repository.
+1. As usual, update your class Hub repository to add your [forked IDD-Fa19-Lab7](FAR-Lab/IDD-Fa19-Lab7) repository.
 1. Answer the questions in-line below on your README.md.
 
 ## Part A. HelloYou from the Raspberry Pi
