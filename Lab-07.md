@@ -27,9 +27,9 @@ listening on *:8000
 
 If everything is working, you should see a message in the terminal that the webserver is listening on port 8000.
 
-Now, you can go to your web browser and type your `http://<yourPiAddress>:8000` in the address bar.
-
 Look at the `server.js`, `public/client.js` and `public/index.html` code to understand what parts of the code do various things. 
+
+Now, you can go to your web browser and type your `http://<yourPiAddress>:8000` in the address bar.
 
 ## Part B. Web Camera
 
