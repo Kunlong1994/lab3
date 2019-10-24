@@ -1,4 +1,4 @@
-# Video Doorbell
+# Photo Doorbell
 
 This week, we will integrate the Arduino with the Raspberry Pi to complete the Interaction Engine system.
 
