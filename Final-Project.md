@@ -2,7 +2,7 @@
 
 [Here is a list of good final projects from previous classes.](Previous-Final-Projects)
 
-Project Madness - October 31
+[Project Madness](#Project_Madness) - October 31
  
 Project prototype fair - November 7
 
