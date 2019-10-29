@@ -2,28 +2,42 @@
 
 [Here is a list of good final projects from previous classes.](Previous-Final-Projects)
 
-Project paper prototype fair - (read our [expectations below](#paper-prototype)) - November 1
+Project Madness - October 31
  
-Project update presentation - November 8
+Project prototype fair - November 7
 
-Functional Project check-off - November 29
+Team project presentations - November 14
 
-Project Presentations - December 4
+Project check-in - November 21
 
-Documentation due - December 4 
+Project check-off - December 5
+
+Project Presentations - December 10
+
+Documentation due - December 13
  
 ## Objective
 
 The goal of this final project is for you to have a fully functioning and well-designed interactive device of your own design.
  
 ## Description
-Your project is to design and build an interactive device to suit a specific application of your choosing. To this end, you have been asked to articulate, through interaction diagrams, interface sketches, and written descriptions, exactly what it is you are proposing to build, and to enumerate what some of the design challenges that you foresee. You should plan on building multiple working iterations of your design to enable increasing levels of refinement towards your point of view. You should plan on housing/packaging/installing your device in ways that consider the context, use and user. Also, you are expected to do enough project planning hoping that all the different aspects of the design will miraculously come together just in time for the final presentations.
+Your project is to design and build an interactive device to suit a specific application of your choosing. 
+
+To this end, you will:
+
+1.  articulate, through interaction diagrams, interface sketches, and written descriptions, exactly what it is you are proposing to build, and to enumerate what some of the design challenges that you foresee. 
+
+2. You should plan on building multiple working iterations of your design to enable increasing levels of refinement towards your point of view. 
+
+3. You should plan on housing/packaging/installing your device in ways that consider the context, use and user. 
+
+4. Also, you are expected to do enough project planning hoping that all the different aspects of the design will miraculously come together just in time for the final presentations.
 
 ## Paper Prototype
 
-For the paper prototype fair on November 1, you should bring a paper prototype of your project to class.
+For the paper prototype fair on November 7, you should bring a paper prototype of your project to class.
 
-In addition, we expect you to have a GitHub repository for your final project. In the README.md file, you should list:
+In addition, we expect you to have a GitHub repository for your final project, and to have this listed and linked to the course Github Readme.md. In your project's README.md file, you should list:
 
 - Project Idea
 - Team
@@ -33,9 +47,11 @@ In addition, we expect you to have a GitHub repository for your final project. I
 
 ## Presentation
 
-We will be having in-class progress presentations on November 8th; please plan on presenting a functional prototype and a list of what remains to be done on that date.
+We will be having in-class progress presentations on November 14th; please plan on presenting a functional prototype and a list of what remains to be done on that date.
+
+Functional check off will be done December 5th.
  
-For final presentations on December 4th, do think ahead about what you might need (poster, power cords, speakers, a backdrop to set the scenario of use, etc.) to quickly convey the merits of your design to passersby!
+For final presentations on December 10th, do think ahead about what you might need (poster, power cords, speakers, a backdrop to set the scenario of use, etc.) to quickly convey the merits of your design to passersby!
  
 ## Documentation
 
@@ -47,5 +63,5 @@ Evaluation of this project will be based in equal measure on assessment of:
 * Your design (_Was it a good plan?_)
 * Its execution (_Did you do a good job building what you intended?_)
 * Its fit to your point of view (_Does it fulfill the intended purpose well?_)
-* Your process (_Did you allocate your time and resources well?_)
+* Your process (_Did you allocate your time and resources well? e.g. Did stuff happen on schedule?_)
 * Your documentation (_Can someone learn how to do what you did?_) 
