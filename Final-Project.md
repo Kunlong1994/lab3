@@ -2,9 +2,9 @@
 
 [Here is a list of good final projects from previous classes.](Previous-Final-Projects)
 
-[Project Madness](#Project_Madness) - October 31
+[Project Madness](#project-madness) - October 31
  
-Project prototype fair - November 7
+[Project prototype fair](#paper-prototype) - November 7
 
 Team project presentations - November 14
 
@@ -12,9 +12,9 @@ Project check-in - November 21
 
 Project check-off - December 5
 
-Project Presentations - December 10
+[Project Presentations](#presentation) - December 10
 
-Documentation due - December 13
+[Documentation due](#documentation) - December 13
  
 ## Objective
 
