@@ -33,6 +33,10 @@ To this end, you will:
 
 4. Also, you are expected to do enough project planning hoping that all the different aspects of the design will miraculously come together just in time for the final presentations.
 
+## Project Madness
+
+For October 31, you should prepare a short (we have 50-ish people in the class! so ~1 minute) pitch/sketch/skit of your provisional project idea. The teaching team will suspend judgement of all ideas and provide guidance for scoping the project afterwards, via Discord. The main point of this madness pitch is to recruit like-minded or interested collaborators, so the teaching team fully expects most of the ideas presented here to be abandoned or substantively changed.
+
 ## Paper Prototype
 
 For the paper prototype fair on November 7, you should bring a paper prototype of your project to class.
