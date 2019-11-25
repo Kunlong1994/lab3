@@ -12,7 +12,7 @@ Project check-in - November 21
 
 Project check-off - December 5
 
-[Project Presentations](#presentation) - December 10
+[Project Presentations](#presentation) - ~~December 10~~ December 9 6:30-7:45pm in Tata 141/151
 
 [Documentation due](#documentation) - December 13
  
