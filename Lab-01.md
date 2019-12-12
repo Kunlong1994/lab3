@@ -31,7 +31,7 @@ Wire the power rails of your breadboard so that the red rails are connected to t
 
 ## Part B. Manually Blink a LED
 
-**a. What color stripes are on a 100 Ohm resistor?**
+**a. What color stripes are on a 220 Ohm resistor?**
 With the Arduino unplugged, build the circuit below. You can use any color LED. 
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor.png" width=300>
@@ -43,7 +43,7 @@ If your button doesn’t work, check that it’s oriented as shown below. You mi
 ![Button image](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_image.png)
 
 A typical pushbutton, when pressed, connects the 2 pins on one side to the 2 pins on the other side.
-**a. What color stripes are on a 100 Ohm resistor?**
+**a. What color stripes are on a 220 Ohm resistor?**
 
 Connect the Metro Mini to your computer using the USB cable. The green LED on top of the Arduino should light.
 
