@@ -4,7 +4,8 @@
 4. Locate electronics which you can hack for the Light It Up lab on Thursday. 
 5. Install the [Arduino IDE](https://www.arduino.cc/en/Main/Software) on your laptop. 
 6. Read through Lab1.
-7. Solder header pins onto Adafruit Metro Mini (See PartA of lab1).
+7. Solder header pins onto Adafruit Metro Mini (See PartA of lab1, tutorial for soldering : https://www.youtube.com/watch?v=3230nCz3XQA)
+
 
 Reading
 * Circuits & Basic Electronics Review: Scherz, Ch 2.1-2.17, Ch. 3.1-3.5
