@@ -1,0 +1,1 @@
+This is an experimental lab where you will make your own Arduino. It is for advanced students. 
