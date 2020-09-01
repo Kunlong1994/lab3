@@ -14,11 +14,9 @@ C. [Resistance & Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-
 
 D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors)
 
-E. [Graphic Display](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-e-graphic-display)
+E. [Logging Values to the EEPROM and Reading Them Back](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-f-logging-values-to-the-eeprom-and-reading-them-back)
 
-F. [Logging Values to the EEPROM and Reading Them Back](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-f-logging-values-to-the-eeprom-and-reading-them-back)
-
-G. [Create your own Data logger!](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-g-create-your-own-data-logger)
+F. [Create your own Data logger!](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-g-create-your-own-data-logger)
 
 ## In The Report
 Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab3). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
@@ -108,23 +106,8 @@ Get a feel for the data the accelerometer provides. Pick up the Arduino+accelero
  
 **a. Include your accelerometer read-out code in your write-up.**
 
-## Part E. Graphic Display
 
-<img src=https://images-na.ssl-images-amazon.com/images/I/61cvqA%2BY0OL._SL1200_.jpg alt="OLED display" width=400>
-
-Since you've learned to hook up sensors via I2C, we can also use this serial communication protocol to add displays that use less pins than the 16x2 display we previously used. We will distribute an OLED display.
-Hook:
-* GND to ground
-* Vcc to +5V
-* SDA to A4
-* SCL to A5
-
-Before you run the code, you should install two new libraries. The first one can be found by going to `Tools > Manage Libraries > Search Adafruit GFX Library`. The second one can be found by `Tools > Manage Libraries > Search Adafruit SSD 1306`. Once you have installed them, you can run the sample code by going to `File > Examples > Adafruit SSD 1306 > ssd1306_128x32_i2c`. 
-
-a. Modify the example code so that you can print out the output of the A0 pin. Include your code in your lab report.
-
-
-## Part F. Logging values to the EEPROM and reading them back
+## Part E. Logging values to the EEPROM and reading them back
  
 ### 1. Reading and writing values to the Arduino EEPROM
 The sample code in `File->Examples->EEPROM` shows functions from the [Arduino EEPROM Library](https://www.arduino.cc/en/Reference/EEPROM) to write and read values to Arduino's EEPROM. This [modified version of the SwitchState code](code/SwitchState2.zip) employs these functions in three different states. Try it out.
