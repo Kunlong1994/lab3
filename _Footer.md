@@ -13,8 +13,6 @@ D) [Manually fade a LED](#part-d-manually-fade-a-led)
 
 E) [Fade a LED using Arduino](#part-e-fade-a-led-using-arduino)
 
-F) [Frankenlight](#part-f-frankenlight)
-
  
 ## In The Report
 Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab1). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
@@ -122,32 +120,5 @@ Look at the code.
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
 Now upload your sketch and check that the LED fades on and off. Try changing a few parameters to make your own funky lighting pattern.
-
-## Part F. FRANKENLIGHT!!!
-
-For this part of lab, you get to hack apart an existing electronic device.
-
-### 1. Take apart your electronic device, and, as well as you can, draw a system diagram of what is inside. 
-
-**a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
-
-**b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
-
-**c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
-
-**d. Is information stored in your device? Where? How?**
-
-### 2. Using your diagram, figure out where a good point would be to hijack your device and implant an LED.
-(Alternately, you can hijack a light or other display on the device using an extra button.)
-
-### 3. Build your light!
-
-We have perfboards in the lab, which provide a handy way to connect your parts. You may want to make your light using passive components (such as switches, resistors or potentiometers) rather than your microcontroller (also known as a μC), unless you think of a nice way to incorporate the μC into your design without soldering it inside of a light. (You'll need it back for future labs and projects!) If your design does require a μC, perhaps you can run a lead from your breadboard to the main light, although you'll lose portability that way. Clever use of components is encouraged!
-
-**Make a video showing off your Frankenlight.**
-
-**Include any diagrams or photos in your lab write-up.**
-
-The best Frankenlight will win course-wide fame and glory.
 
 _Super awesome circuit schematics by [David Sirkin](https://me.stanford.edu/people/david-sirkin). Thanks David!_
