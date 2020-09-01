@@ -1,3 +1,4 @@
+# Part I
 # Light It Up
  
 ## Overview
@@ -124,6 +125,7 @@ Now upload your sketch and check that the LED fades on and off. Try changing a f
 _Super awesome circuit schematics by [David Sirkin](https://me.stanford.edu/people/david-sirkin). Thanks David!_
 
 
+# Part II
 
 # Make a Digital Timer!
  
