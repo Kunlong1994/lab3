@@ -3,9 +3,20 @@
 ## Overview
 For this assignment, you are going to 
 
-A) [Solder your LCD panel](#part-a-solder-your-lcd-panel)
+A) [Solder your OLED display]
 
-B) [Write text to an LCD Panel](#part-b-writing-to-the-lcd) 
+<img src=https://images-na.ssl-images-amazon.com/images/I/61cvqA%2BY0OL._SL1200_.jpg alt="OLED display" width=400>
+
+We will use an I2C OLED display for this lab. We will discuss more about what I2C is, but for now:
+Hook up:
+* GND to ground
+* Vcc to +5V
+* SDA to A4
+* SCL to A5
+
+Before you run the code, you should install two new libraries to your Arduino IDE. The first one can be found by going to `Tools > Manage Libraries > Search Adafruit GFX Library`. The second one can be found by `Tools > Manage Libraries > Search Adafruit SSD 1306`. Once you have installed them, you can run the sample code by going to `File > Examples > Adafruit SSD 1306 > ssd1306_128x32_i2c`. 
+
+a. Modify the example code so that you can print out the output of the A0 pin. Include your code in your lab report.
 
 c) [Using a time-based digital sensor!](#part-c-using-a-time-based-digital-sensor)
 
