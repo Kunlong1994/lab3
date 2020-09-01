@@ -1,9 +1,8 @@
 1. Set up your Github class "Hub" repository by [following these instructions](https://github.com/jdz32/github-guide/blob/master/README.md).
 2. Set up the README.md for your Hub repository and [learn how](https://guides.github.com/features/mastering-markdown/) to post links to your submissions on your readme.md so we can find them easily.
-3. Set up your Discord account, and add yourself to the InteractiveDeviceDesign Discord with this [invite code](https://discord.gg/Je5Fdaf).
-4. Locate electronics which you can hack for the Light It Up lab on Thursday. 
-5. Install the [Arduino IDE](https://www.arduino.cc/en/Main/Software) on your laptop. 
-6. Read through Lab1.
+3. Locate electronics which you can hack for the Light It Up lab on Thursday. 
+4. Install the [Arduino IDE](https://www.arduino.cc/en/Main/Software) on your laptop. 
+5. Read through Lab 1.
 7. Solder header pins onto Adafruit Metro Mini (See PartA of lab1, tutorial for soldering : https://www.youtube.com/watch?v=3230nCz3XQA)
 
 
