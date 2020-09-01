@@ -32,7 +32,7 @@ Before you run the code, you should install two new libraries to your Arduino ID
 a. Modify the example code so that you can print out the output of the A0 pin. Include your code in your lab report.
 **If you have never soldered before, we're happy to show you how! PLEASE ASK!!**
 
-
+## Part B. Make a lowly Multimeter
 Incorporate the LCD into with this [AnalogInput code](https://www.arduino.cc/en/tutorial/AnalogInput) (this can found in the Examples code under 03.Analog->AnalogInput) so that you can read out the exact analog value that you are reading in on Analog Pin 0 and write it to your LCD. It's your own voltmeter! 
 
 **e. Include a copy of your Lowly Multimeter code in your lab write-up.**
