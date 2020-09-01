@@ -5,6 +5,19 @@ For this assignment, you are going to
 
 A) [Solder your OLED display]
 
+B) [Make a lowly Multimeter]
+
+c) [Using a time-based digital sensor!](#part-c-using-a-time-based-digital-sensor)
+
+D) [Make your Arduino sing!](#part-d-make-your-arduino-sing)
+
+E) [Make your own timer](#part-e-make-your-own-timer) 
+ 
+## In The Report
+Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa19-Lab2). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
+
+## Part A. Solder your OLED
+
 <img src=https://images-na.ssl-images-amazon.com/images/I/61cvqA%2BY0OL._SL1200_.jpg alt="OLED display" width=400>
 
 We will use an I2C OLED display for this lab. We will discuss more about what I2C is, but for now:
@@ -17,63 +30,8 @@ Hook up:
 Before you run the code, you should install two new libraries to your Arduino IDE. The first one can be found by going to `Tools > Manage Libraries > Search Adafruit GFX Library`. The second one can be found by `Tools > Manage Libraries > Search Adafruit SSD 1306`. Once you have installed them, you can run the sample code by going to `File > Examples > Adafruit SSD 1306 > ssd1306_128x32_i2c`. 
 
 a. Modify the example code so that you can print out the output of the A0 pin. Include your code in your lab report.
-
-c) [Using a time-based digital sensor!](#part-c-using-a-time-based-digital-sensor)
-
-D) [Make your Arduino sing!](#part-d-make-your-arduino-sing)
-
-E) [Make your own timer](#part-e-make-your-own-timer) 
- 
-## In The Report
-Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa19-Lab2). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
-
-## Part A. Solder your LCD panel
-
-You'll need to attach the header pins that came with your LCD character panel to your actual panel. Easiest is to insert the short end of the header pins into the back of the LCD panel, so that the long pins stick out the back and you can insert your LCD panel into a breadboard for easy use.
-
 **If you have never soldered before, we're happy to show you how! PLEASE ASK!!**
 
-## Part B. Writing to the LCD
-Let's use your LCD screen to display some interesting information! There is a good deal of example code for playing with your LCD in the Arduino Examples:
- 
-`File->Examples->LiquidCrystal`
- 
-Let's start with the "Display" program, which just flashes "Hello World!" These LCDs are a custom part, but there's a lot of information at [this](https://www.adafruit.com/product/181) page, the [pinout and dimensions](https://cdn-shop.adafruit.com/product-files/181/p181.pdf) page and the [LCD controller](https://www.adafruit.com/datasheets/HD44780.pdf) page.
- 
-**a. What voltage level do you need to power your display?**
-
-**b. What voltage level do you need to power the display backlight?**
- 
-![](https://cdn-shop.adafruit.com/1200x900/181-03.jpg)
-
-The below picture shows the pin numbers on the LCD panel, from a top-down view. You can use this for reference when you are wiring your breadboard.
-
-<img src="images/OrientationLCDpanel.jpeg" width="300">
-
-Wire up your LCD according to the schematic below. If you didn't have our diagram, you would use the data sheets for the LCD and follow the comments in the "Display" code to figure out how to wire it up. 
-
-
-[[images/lcd_arduino_schematic.png]]
-
-DON'T FORGET: the long breadboard needs to be connected vertically on both sides. This is not on the schematic.
-
-**Be very careful not to connect Pin 1 to Pin 2 on the LCD**, as this can **destroy** your Arduino. Check the connections for a short between power and ground before you plug in power or the USB cable.
- 
-See [Tutorial](http://www.arduino.cc/en/Tutorial/LiquidCrystal) for more information. See [LCD Library](http://arduino.cc/en/Reference/LiquidCrystal) for the various functions you can use.
-
-Try compiling and running the code. If it doesn't work the first time, check your pinouts...
- 
-The 10K pot connected to Vo on the LCD adjusts the contrast, so try adjusting that if your LCD won't turn on. The contrast might be so low that you're not able to see it, so make sure you've checked both extremes.
- 
-LCD pin 15 and 16 (LED+, LED-) are designed for background lighting. If you feel the whole screen too dark, you may try to connect pin15(LED+) to +3V or +3.3V and pin16(LED-) to ground. **Don't connect pin15(LED+) to +5V as it may burn background light!**
- 
-Do try to set this up before peeking at this [diagram](images/lcd_arduino_diagram.png).
-  
-**c. What was one mistake you made when wiring up the display? How did you fix it?**
-
-**d. What line of code do you need to change to make it flash your name instead of "Hello World"?**
- 
-Try a few of the other examples in the folder to get a feel for the capabilities of your LCD. There is a list of all the possible functions at the [Arduino LiquidCrystal Library](http://arduino.cc/en/Reference/LiquidCrystal?from=Tutorial.LCDLibrary).
 
 Incorporate the LCD into with this [AnalogInput code](https://www.arduino.cc/en/tutorial/AnalogInput) (this can found in the Examples code under 03.Analog->AnalogInput) so that you can read out the exact analog value that you are reading in on Analog Pin 0 and write it to your LCD. It's your own voltmeter! 
 
