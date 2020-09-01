@@ -1,0 +1,1 @@
+This lab is a merge of what is originally Lab 1 and Lab 2 of the curriculum. 
