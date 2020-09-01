@@ -130,7 +130,7 @@ _Super awesome circuit schematics by [David Sirkin](https://me.stanford.edu/peop
 ## Overview
 For this assignment, you are going to 
 
-A) [Solder your OLED display]
+A) [Solder your OLED display](#part-solder-your-oled)
 
 B) [Make a lowly Multimeter]
 
