@@ -1,5 +1,7 @@
 This lab is a merge of what is originally [Lab 1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01) and [Lab 2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-02) of the curriculum. This is meant for students who have had this curriculum before. If you have little experience with electronics, breadboarding, Arduino programming or the Arduino hardware, please work on [Lab 1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01)!
 
+The [alt-pre-Lab](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Alt-Pre---Lab-1) helps you to get set up in advance of in-class lab. 
+
 ## In The Report
 For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
 
