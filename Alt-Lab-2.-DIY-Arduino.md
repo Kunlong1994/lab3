@@ -28,10 +28,15 @@ The questions below should help scaffold important considerations when you are m
 Use [PCBShopper](https://pcbshopper.com) to look at the trade offs between different quick turn PCB fab shops in time, cost, number of boards, design constraints, etc. Depending on your design needs and risk tolerance, different companies might suit your needs better. 
 
 Please document the design of your Arduino+:
+
 **a) What is the + improvement of your Arduino+**
+
 **b) What Arduino form-factor/design are you basing your design off of?**
+
 **c) What features/parts need to be incorporated for your Arduino+? Include your research!**
+
 **d) What is the timeline for the overall development of your Arduino?**
+
 **e) Which fabrication company are you using, what do you plan to order, and what is the design rationale for the selection?**
 
 ## Part B. Order parts for your Arduino+
