@@ -1,5 +1,10 @@
 This lab is a merge of what is originally [Lab 1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01) and [Lab 2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-02) of the curriculum. This is meant for students who have had this curriculum before. If you have little experience with electronics, breadboarding, Arduino programming or the Arduino hardware, please work on [Lab 1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01)!
 
+## In The Report
+For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
+
+Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
+
 # Part I
 # Light It Up
  
@@ -16,11 +21,6 @@ D) [Manually fade a LED](#part-d-manually-fade-a-led)
 
 E) [Fade a LED using Arduino](#part-e-fade-a-led-using-arduino)
 
- 
-## In The Report
-For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
-
-Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
 ## Part A. Set Up a Breadboard
 
