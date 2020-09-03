@@ -18,7 +18,9 @@ E) [Fade a LED using Arduino](#part-e-fade-a-led-using-arduino)
 
  
 ## In The Report
-For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
+For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
+
+Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
 ## Part A. Set Up a Breadboard
 
@@ -34,7 +36,6 @@ Wire the power rails of your breadboard so that the red rails are connected to t
 
 ## Part B. Manually Blink a LED
 
-**a. What color stripes are on a 220 Ohm resistor?**
 With the Arduino unplugged, build the circuit below. You can use any color LED. 
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/button_led_resistor.png" width=300>
@@ -149,9 +150,7 @@ c) [Using a time-based digital sensor!](#part-c-using-a-time-based-digital-senso
 D) [Make your Arduino sing!](#part-d-make-your-arduino-sing)
 
 E) [Make your own timer](#part-e-make-your-own-timer) 
- 
-## In The Report
-Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa19-Lab2). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
+
 
 ## Part A. Solder your OLED
 
@@ -235,11 +234,9 @@ You'll also have to increase the for() loop index max from 8 to 20:
 ## Part E. Make your own timer
 
 Make a timer that uses any of the input devices to set a time, and then automatically (or manually, if you prefer) begin counting down, displaying the time left. Make your timer show an alert once the time is up with one of the output devices we connected during this lab, or you have available. (Hint: the sample code for [Examples->LiquidCrystal->HelloWorld](https://www.arduino.cc/en/Tutorial/HelloWorld) displays the time in seconds since the Arduino was reset...)
-
-You should be able to draw upon awesome ideas you generated for the PreLab. 
  
 Note that for some of you, the time may seem to be decremented by 10 each second (that is, from 670=>660). Why is this? Do you think it's a hardware or software issue? Think about how 100 vs. 99 is written to the screen, and ask an instructor.
 
 **a. Make a short video showing how your timer works, and what happens when time is up!**
 
-**b. Post a link to the completed lab report your GitHub repo.**
+**b. Post a link of the completed lab report to your GitHub repo.**
