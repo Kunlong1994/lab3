@@ -1,3 +1,4 @@
+# Part I
 # Light It Up
  
 ## Overview
@@ -15,9 +16,10 @@ E) [Fade a LED using Arduino](#part-e-fade-a-led-using-arduino)
 
 F) [Frankenlight](#part-f-frankenlight)
 
+
  
 ## In The Report
-Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab1). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
+For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
 
 ## Part A. Set Up a Breadboard
 
@@ -28,6 +30,8 @@ You should have already have installed the [Arduino software](http://arduino.cc/
 Wire the power rails of your breadboard so that the red rails are connected to the +5V pin of the Metro Mini, and the blue or black rails are connected to the GND pin.  
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/docs/breadboard_setup.png" width=400>
+
+**Include a picture of your own breadboard in the report. (We trust you to plug the Metro Mini and wires in properly. This is really practice for including images in your reports.)**
 
 ## Part B. Manually Blink a LED
 
@@ -77,9 +81,13 @@ To compile and upload your code, take the following steps (note that 1, 2 should
 4) To upload compiled code to the Arduino, click on "right arrow" besides the "checkmark."
 5) When the code is uploaded, the Arduino should automatically start running your new code.
 
-**d. Change the `delay` parameter to modify blink rate of your LED to make it blink faster. At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking?**
+Change the `delay` parameter to modify blink rate of your LED to make it blink faster.
 
-**e. Modify the code to make your LED blink *your way*. Save your new blink code to your lab 1 repository, with a link on the README.md.**
+**d.  At what delay can you no longer *perceive* the LED blinking? (And how can you prove to yourself that it is, in fact, still blinking?**
+
+Modify the code to make your LED blink *your way*. 
+
+**e. Save your new blink code to your lab 1 repository, with a link on the Lab report wiki page.**
 
 ### 2. Blink your LED
 
