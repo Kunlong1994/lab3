@@ -13,4 +13,4 @@ Labs:
 1. Lab #6
 1. Lab #7
 
-[Final Project](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Final-Project)
+Final Project
