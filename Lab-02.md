@@ -14,7 +14,9 @@ D) [Make your Arduino sing!](#part-d-make-your-arduino-sing)
 E) [Make your own timer](#part-e-make-your-own-timer) 
  
 ## In The Report
-Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa19-Lab2). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
+For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
+
+Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
 ## Part A. Solder your OLED
 
