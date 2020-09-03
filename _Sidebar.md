@@ -6,11 +6,11 @@
 
 Labs:
 1. [Lab #1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01) or [Alt Lab #1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Alt-Lab-1.-Arduino-Deep-Dive)
-1. [Lab #2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-02)
-1. [Lab #3](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03)
-1. [Lab #4](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-04)
-1. [Lab #5](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-05)
-1. [Lab #6](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-06)
-1. [Lab #7](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-07)
+1. Lab #2
+1. Lab #3
+1. Lab #4
+1. Lab #5
+1. Lab #6
+1. Lab #7
 
 [Final Project](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Final-Project)
