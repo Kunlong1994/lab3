@@ -38,14 +38,12 @@ Please document the design of your Arduino+:
 
 Develop a bill of materials for your Arduino +. This is a spreadsheet/table to help you keep tabs on what parts you need to order to populate your board:
 
----------------------------------------------------------------------------------------------------
 | Part name | Part ID | Part description | # of units | link to data sheet | link to source | Notes |
----------------------------------------------------------------------------------------------------
-| | |  |  | | |  |
-| | |  |  | | |  |
-| | |  |  | | |  |
-| | |  |  | | |  |
-
+| --- | --- | --- | --- | --- | --- | --- |
+|     |    |     |     |     |     |     |
+|     |    |     |     |     |     |     |
+|     |    |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- |
 
 ## Part C. Prototype your Arduino+
 
