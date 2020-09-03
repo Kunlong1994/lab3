@@ -1,3 +1,5 @@
+There is a prelab (https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/preLab-01) that needs to be in advance to prepare for this lab! Instructions on how to make your Github Repo, etc. are there.
+
 # Part I
 # Light It Up
  
