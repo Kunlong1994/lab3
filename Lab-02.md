@@ -5,7 +5,7 @@ For this assignment, you are going to
 
 A) [Solder your OLED display](#part-a-solder-your-oled)
 
-B) [Make a lowly Multimeter]()
+B) [Make a lowly Multimeter](#part-b-make-a-lowly-multimeter)
 
 c) [Using a time-based digital sensor!](#part-c-using-a-time-based-digital-sensor)
 
