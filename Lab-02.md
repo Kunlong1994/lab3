@@ -3,9 +3,9 @@
 ## Overview
 For this assignment, you are going to 
 
-A) [Solder your OLED display]
+A) [Solder your OLED display]()
 
-B) [Make a lowly Multimeter]
+B) [Make a lowly Multimeter]()
 
 c) [Using a time-based digital sensor!](#part-c-using-a-time-based-digital-sensor)
 
