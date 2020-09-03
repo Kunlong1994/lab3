@@ -16,10 +16,10 @@ E) [Fade a LED using Arduino](#part-e-fade-a-led-using-arduino)
 
 F) [Frankenlight](#part-f-frankenlight)
 
-
- 
 ## In The Report
-For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
+For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
+
+Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
 ## Part A. Set Up a Breadboard
 
