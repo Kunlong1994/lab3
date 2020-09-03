@@ -3,7 +3,7 @@
 ## Overview
 For this assignment, you are going to 
 
-A) [Solder your OLED display]()
+A) [Solder your OLED display](#part-a-solder-your-oled)
 
 B) [Make a lowly Multimeter]()
 
