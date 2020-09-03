@@ -7,6 +7,7 @@ Please use [this invite link](https://discord.gg/ggA9uU) to join the class Disco
 Links to Labs:
 
 1. [Lab #1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01) or [Alt Lab #1](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Alt-Lab-1.-Arduino-Deep-Dive)
+2. Preview [Lab #2]()  and [Alt-Lab #2](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Alt-Lab-2.-DIY-Arduino)
 
 Good sources for electronics (please add to the list!):
 
