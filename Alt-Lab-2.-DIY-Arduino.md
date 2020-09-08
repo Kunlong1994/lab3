@@ -1,7 +1,7 @@
 This is an experimental lab where you will make your own Arduino. It has never been tried before! Please help to build out the activity.
 
 ## Pre-Lab
-Email Ilan Mandel (im334@cornell.edu) a game plan including:
+Before coming to class email Ilan Mandel (im334@cornell.edu) a general game plan including:
 - The board you are hoping to modify
 - The additions you are hoping to add
 - The software (listed below) you intend on using
