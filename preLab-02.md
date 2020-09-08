@@ -1,6 +1,6 @@
 For the upcoming lab, we will be building digital timers.
 
-1. SOLDERING REVIEW: You will be soldering together your 16x2 LCD display ([wiki](http://wiki.sunfounder.cc/index.php?title=LCD1602_Module#Pins_Functions)) so here is a quick set of videos from NASA showing how to solder: https://radiojove.gsfc.nasa.gov/telescope/soldering.htm
+
 
 2. DESIGN READING: This is intended to help you understand what it means to design interactive devices, and to understand how to  "sketch interactions": Bill Moggridge, Designing Interactions, [Chapter 1](http://www.designinginteractions.com/downloads/DesigningInteractions_1.pdf) & Bill Verplank [Interaction Design Sketchbook](http://billverplank.com/CiiD/IDSketch.pdf) <== focus on section starting on page 10!
 
