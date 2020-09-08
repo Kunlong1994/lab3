@@ -1,4 +1,4 @@
-For the upcoming lab, we will be building digital timer. Read through the lab activity, and start thinking about questions that we can answer in advance, and what you might do with the basic timer code to make your own project.
+For the upcoming lab, we will be building digital timer. Read through the [lab activity](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-01), and start thinking about questions that we can answer in advance, and what you might do with the basic timer code to make your own project.
 
 
 1. DESIGN READING: This is intended to help you understand what it means to design interactive devices, and to understand how to  "sketch interactions": Bill Moggridge, Designing Interactions, [Chapter 1](http://www.designinginteractions.com/downloads/DesigningInteractions_1.pdf) & Bill Verplank [Interaction Design Sketchbook](http://billverplank.com/CiiD/IDSketch.pdf) <== focus on section starting on page 10!
