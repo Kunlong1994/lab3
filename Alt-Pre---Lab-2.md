@@ -1,4 +1,9 @@
+Before lab on Thursday, email Ilan Mandel (im334@cornell.edu) a general game plan including:
+- The board you are hoping to modify
+- The additions you are hoping to add
+- The software (listed below) you intend on using
 
+This should occur based on the following:
 
 1. DESIGN READING: This is intended to help you understand what it means to design interactive devices, and to understand how to  "sketch interactions": Bill Moggridge, Designing Interactions, [Chapter 1](http://www.designinginteractions.com/downloads/DesigningInteractions_1.pdf) & Bill Verplank [Interaction Design Sketchbook](http://billverplank.com/CiiD/IDSketch.pdf) <== focus on section starting on page 10!
 
