@@ -3,11 +3,11 @@
 1) We first have to fork/create a copy from the main repository to our local github account:-
   * Go to https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices
   * Click on **fork** , this will create a copy of the main repository on your github account.
+-- remove extra stuff ( which you don't need ).
 
 2) We then create a clone of the main repository on our local machine :- 
   * Open terminal on your local machine and navigate to the folder where you want to work.
   * Write **"git clone https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices"**
--- remove extra stuff ( which you don't need ).
 
 3) Work on your local machine by changing/adding files to the particular lab folder accordingly.
 
