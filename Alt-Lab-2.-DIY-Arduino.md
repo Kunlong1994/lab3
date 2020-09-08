@@ -102,6 +102,6 @@ With an Arduino that might look something like ![Arduino wiring](https://cdn-lea
 You can see the final design and compare the differences. 
 5. Before getting anything manufactured hit the ULP button, generate BOM. Find a link to every component you will need for your board. [Digikey](https://www.digikey.com/) is a good resource for this.
 
-## Send Ilan your schematic, board, BOM and who you think you might order from BEFORE ordering anything.
+## Get your schematic, board, BOM and who you think you might order reviewed from BEFORE ordering anything.
 
 
