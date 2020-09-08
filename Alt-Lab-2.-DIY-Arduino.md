@@ -1,7 +1,7 @@
 This is an experimental lab where you will make your own Arduino. It has never been tried before! Please help to build out the activity.
 
 ## Pre-Lab
-Make sure you do the [pre-lab](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Alt-Pre---Lab-2) in advance of this activity, and start your writeup with these plans
+Make sure you do the [pre-lab](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Alt-Pre---Lab-2) in advance of this activity, and start your writeup by documenting these plans.
 
 
 ## In The Report
