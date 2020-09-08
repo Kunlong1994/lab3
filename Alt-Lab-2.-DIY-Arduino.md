@@ -1,5 +1,12 @@
 This is an experimental lab where you will make your own Arduino. It has never been tried before! Please help to build out the activity.
 
+## Pre-Lab
+Email Ilan Mandel (im334@cornell.edu) a game plan including:
+- The board you are hoping to modify
+- The additions you are hoping to add
+- The software (listed below) you intend on using
+
+
 ## In The Report
 For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
 
@@ -75,3 +82,27 @@ When you have laid out your board, send it off to be fabricated. You might need 
 **Document what you sent, and to where, with enough specificity that anyone else could have the same thing made.**
 
 **In the report, please tell us any pain points you faced in this lab, and how we could make this process easier for future students.**
+
+## Example Project
+
+In this repo you will find the original files from Adafruit for the [Metro Mini](https://github.com/adafruit/Adafruit-METRO-328-PCB) you all have in your kit.
+I've decided I want to be able to control my Metro Mini with a remote control and have that be a part of the board itself. This requires adding an [IR Receiver](https://www.adafruit.com/product/157). For the first version I will use the same through hole product linked. In a future version I may want to use a surface mount component such as [TSOP752](https://www.vishay.com/docs/82494/tsop752.pdf).
+### Getting from the original Metro Mini to the Final Design
+
+1. How are components wired?  
+Looking at the [Data sheet](https://cdn-shop.adafruit.com/datasheets/tsop382.pdf) I can see I need to connect pins `1 = OUT, 2 = GND, 3 = VS`  
+With an Arduino that might look something like ![Arduino wiring](https://cdn-learn.adafruit.com/assets/assets/000/000/555/original/light_arduinopna4602.gif?1447976120)
+2. Open the metro mini schematic file in Eagle. The component we will need to add to our schematic is a 3 pin connector. You can find that in the [Sparkfun Connectors Library](https://www.autodesk.com/products/eagle/blog/library-basics-install-use-sparkfun-adafruit-libraries-autodesk-eagle/). The add part button ![Add part](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/assets/Screen%20Shot%202020-09-08%20at%202.15.36%20PM.png?raw=true) will let you put your part on the schematic. In our case the CONN_03 part in the Sparkfun Connectors library.
+3. Using the net tool we draw a trace from pin 2 to PD2 on our ATMEGA 328P. We add a ground connector by copying and pasting. We draw an unconnected net and name it VCCIO.  
+![connections](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/assets/Screen%20Shot%202020-09-08%20at%202.19.29%20PM.png?raw=true)
+4. Hit the BRD button ![brd button](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/assets/Screen%20Shot%202020-09-08%20at%202.24.11%20PM.png?raw=true) in the top left to see your board file. We need to make routes for all the unconnected airwires. See the final design do see which parts and traces were moved.
+  - the board was made longer by moving the outline in layer 20
+  - The ground planes on the top and bottom were also moved the meet the extended length
+  - Traces were shifted to the right and the reset button was moved
+  - Routes were added for the new component and a few via's to easily route wires.  
+You can see the final design and compare the differences. 
+5. Before getting anything manufactured hit the ULP button, generate BOM. Find a link to every component you will need for your board. [Digikey](https://www.digikey.com/) is a good resource for this.
+
+## Send Ilan your schematic, board, BOM and who you think you might order from BEFORE ordering anything.
+
+
