@@ -7,10 +7,11 @@
 2) We then create a clone of the main repository on our local machine :- 
   * Open terminal on your local machine and navigate to the folder where you want to work.
   * Write **"git clone https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices"**
+-- remove extra stuff ( which you don't need ).
 
 3) Work on your local machine by changing/adding files to the particular lab folder accordingly.
 
-4) To pull in new data/new lab (in your local machine repo) from the main repo, write **"git pull"** in the terminal.
+4) To pull in new data ( new lab folder )/new lab (in your local machine repo) from the main repo, write **"git pull"** in the terminal.
 
 5) To push your final lab data to your local repo ( on github ), follow these instructions:
   * write "git status" on terminal. This will give you a list of files changed and added by you on your local machine.
