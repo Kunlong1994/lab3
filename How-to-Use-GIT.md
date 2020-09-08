@@ -13,7 +13,7 @@
 
 4) To pull in new data ( new lab folder )/new lab (in your local machine repo) from the main repo, write **"git pull"** in the terminal.
 
-5) To push your final lab data to your local repo ( on github ), follow these instructions:
+5) To push your final lab data to your local repo ( on github ) from your local machine, follow these instructions:
   * write "git status" on terminal. This will give you a list of files changed and added by you on your local machine.
   * To add these files to your local repo, use **" git add < filename >"** or **"git add ."** ( to add all changes/files).
   * To commit these changes, use **"git commit -m < write a message >** . This message will describe what you are pushing/submitting.
