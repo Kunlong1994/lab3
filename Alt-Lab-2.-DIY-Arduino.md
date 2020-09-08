@@ -85,8 +85,10 @@ When you have laid out your board, send it off to be fabricated. You might need 
 
 ## Example Project
 
-In this repo you will find the original files from Adafruit for the [Metro Mini](https://github.com/adafruit/Adafruit-METRO-328-PCB) you all have in your kit.
-I've decided I want to be able to control my Metro Mini with a remote control and have that be a part of the board itself. This requires adding an [IR Receiver](https://www.adafruit.com/product/157). For the first version I will use the same through hole product linked. In a future version I may want to use a surface mount component such as [TSOP752](https://www.vishay.com/docs/82494/tsop752.pdf).
+[In this](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/tree/2020Fall/alt-Lab2) repo you will find the original files from Adafruit for the [Metro Mini](https://github.com/adafruit/Adafruit-METRO-328-PCB) you all have in your kit and a file I have edited.  You can compare the changes to the schematic and the board file to see which changes were made.
+
+
+I've decided I want to be able to control my Metro Mini with a standard television remote control and have that be a part of the board itself. This requires adding an [IR Receiver](https://www.adafruit.com/product/157). For the first version I will use the same through hole product linked. In a future version I may want to use a surface mount component such as [TSOP752](https://www.vishay.com/docs/82494/tsop752.pdf).
 ### Getting from the original Metro Mini to the Final Design
 
 1. How are components wired?  
