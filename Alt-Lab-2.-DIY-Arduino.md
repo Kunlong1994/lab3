@@ -1,10 +1,7 @@
 This is an experimental lab where you will make your own Arduino. It has never been tried before! Please help to build out the activity.
 
 ## Pre-Lab
-Before coming to class email Ilan Mandel (im334@cornell.edu) a general game plan including:
-- The board you are hoping to modify
-- The additions you are hoping to add
-- The software (listed below) you intend on using
+Make sure you do the [pre-lab](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Alt-Pre---Lab-2) in advance of this activity, and start your writeup with these plans
 
 
 ## In The Report
