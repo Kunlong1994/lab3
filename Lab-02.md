@@ -72,7 +72,8 @@ Let's make the Arduino make some noise! We are going to start with the Tone exam
  
 `Examples->Digital->toneMelody`
 
-The official Arduino tutorial for this code is [here](https://www.arduino.cc/en/Tutorial/ToneMelody?from=Tutorial.Tone)
+The official Arduino tutorial for this code is also online [here](https://www.arduino.cc/en/Tutorial/ToneMelody?from=Tutorial.Tone).
+
 Add a 75 Ohm resistor to limit the current to the speaker when you hook it up on your breadboard. If you would like it a little louder, you can use a lower value resistor, up to a minimum of 5 Ohms.
 
 Wire it to your circuit with the - to ground and the + to Arduino Micro pin 8. 
