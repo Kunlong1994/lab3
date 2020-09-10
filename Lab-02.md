@@ -31,7 +31,6 @@ Hook up:
 
 Before you run the code, you should install two new libraries to your Arduino IDE. The first one can be found by going to `Tools > Manage Libraries > Search Adafruit GFX Library`. The second one can be found by `Tools > Manage Libraries > Search Adafruit SSD 1306`. Once you have installed them, you can run the sample code by going to `File > Examples > Adafruit SSD 1306 > ssd1306_128x32_i2c`. 
 
-a. Modify the example code so that you can print out the sensor reading of the A0 pin. Include your code in your lab report.
 **If you have never soldered before, we're happy to show you how! PLEASE ASK!!**
 
 ## Part B. Make a lowly Multimeter
