@@ -6,26 +6,28 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 What's in this lab?
 
-A. [Writing to the Serial Monitor](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-a--writing-to-the-serial-monitor)
+A. [Writing to the Serial Monitor](#part-a--writing-to-the-serial-monitor)
 
-B. [RGB LED](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-b-rgb-led)
+B. [RGB LED](#part-b-rgb-led)
 
-C. [Resistance & Voltage Varying Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-c-resistance--voltage-varying-sensors)
+C. [Resistance & Voltage Varying Sensors](#part-c-resistance--voltage-varying-sensors)
 
 D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors)
 
-E. [Logging Values to the EEPROM and Reading Them Back](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-f-logging-values-to-the-eeprom-and-reading-them-back)
+E. [Logging Values to the EEPROM and Reading Them Back]#part-f-logging-values-to-the-eeprom-and-reading-them-back)
 
-F. [Create your own Data logger!](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-g-create-your-own-data-logger)
+F. [Create your own Data logger!](#part-g-create-your-own-data-logger)
 
 ## In The Report
-Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab3). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
+For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
+
+Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
 ## Part A.  Writing to the Serial Monitor
  
 [[images/Pot_schem.png]]
  
-The LCD display from the Lab 02 is a great and helpful tool for debug purposes; the serial monitor is another. Use the code from `File->Examples->Communication->Graph` as a template to print data from your potentiometer to the serial monitor. Don't disconnect the USB cable after uploading the code; instead, use the serial monitor button on the Arduino IDE (in the upper right corner, magnifying glass icon) to see the data coming from the Arduino. 
+The OLED display from the Lab 02 is a great and helpful tool for debug purposes; the serial monitor is another. Use the code from `File->Examples->Communication->Graph` as a template to print data from your potentiometer to the serial monitor. Don't disconnect the USB cable after uploading the code; instead, use the serial monitor button on the Arduino IDE (in the upper right corner, magnifying glass icon) to see the data coming from the Arduino. 
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?**
  
@@ -129,7 +131,6 @@ Modify the code to take in analog values from your sensors and print them back o
 ### 2. Design your logger
 You've been thinking at a high level about a data logger and what it is used for; now you need to adapt that to the specific implementation. 
 
-In addition to the sensors in your kit, we have some sensors from this variety kit: [VKmaker T30 Sensor Module](https://www.amazon.com/VKmaker-Sensors-Modules-Starter-Arduino/dp/B01CS6UMKQ) the separate sensor documentation is [available for download](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2018Spring/SensorDocumentation.zip).
 
 A lot of the art of data logging is being clever about how to use the sensor. Feel free to engage the teaching team for advice.
 
