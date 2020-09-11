@@ -14,7 +14,7 @@ C. [Resistance & Voltage Varying Sensors](#part-c-resistance--voltage-varying-se
 
 D. [I2C Sensors](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Lab-03#part-d-i2c-sensors)
 
-E. [Logging Values to the EEPROM and Reading Them Back]#part-f-logging-values-to-the-eeprom-and-reading-them-back)
+E. [Logging Values to the EEPROM and Reading Them Back](#part-f-logging-values-to-the-eeprom-and-reading-them-back)
 
 F. [Create your own Data logger!](#part-g-create-your-own-data-logger)
 
