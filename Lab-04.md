@@ -88,11 +88,10 @@ Now experiment with the [flex sensor (Optional)](https://www.adafruit.com/produc
 
 Some more sophisticated sensors have ICs that measure physical phenomena and then output an digital signal indicating what the analog voltage reading is. 
 ### Accelerometer
-<img src=https://cdn-shop.adafruit.com/1200x900/2809-00.jpg alt="Accelerometer" width=400>
  
 The accelerometer is a 3-axis, accelerometer based on the LIS3DH. The LIS3DH is a 3.3V part, but the Adafruit board has an onboard voltage regulator so that the part can be powered on 5V power on the Vin pin.
  
-Here's the [Datasheet](https://cdn-shop.adafruit.com/datasheets/LIS3DH.pdf) [Product Page](https://www.adafruit.com/product/2809).
+Here's the [Datasheet](https://cdn-shop.adafruit.com/datasheets/LIS3DH.pdf) [
  
 Unlike the other parts we've used to date, this is a "smart sensor" which can communicate the sensor readings digitally (rather than through an analog voltage) using communication protocols I2C and SPI. 
  
