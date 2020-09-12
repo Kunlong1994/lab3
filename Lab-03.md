@@ -83,11 +83,17 @@ Use the 9V battery and pigtail to power the Arduino using the Vin and Ground lin
 
 ## Part E. Paper display
 
-Here is a prototype for a paper display:
+Here is a design for a paper display:
 
 ![]()
 
-It holds a breadboard and 9v battery, and provides a front stage on which to put writing, graphics, LEDs, buttons or displays.
+It holds a breadboard and 9v battery, and provides a front stage on which to put writing, graphics, LEDs, buttons or displays. Because it is open on the sides and unfolds, it is easy to access the USB port or battery.
+
+You will need to use jumper wires or flat ribbon cable to route power and signal to where it needs to be on the face of the display.
+
+Here is another design, which is just a faceplate for the breadboard:
+
+![]()
 
 Make a paper display that uses the servo to show how many times a button on the front has been pressed (or any other thing you can sense or count). 
 
