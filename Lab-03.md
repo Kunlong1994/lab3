@@ -17,8 +17,9 @@ F) [Make it your own](#part-f-make-it-your-own)
 
 
 
-The physical housing and mechanisms of interactive devices are as important as the electronic components or the microcontroller code! They are the interface between the raw parts to users and the rest of the world. In this lab, we will learn to use some actuators, and then design Arduino-controlled displays.
- 
+The physical housing and mechanisms of interactive devices are as important as the electronic components or the microcontroller code! They are the interface for the raw parts to users and the rest of the world. In this lab, we will learn to use some actuators, and then design Arduino-controlled puppets.
+
+This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle.com) project. For now, we will be using the paper displays to make paper puppets controlled by the Arduino, but you are welcome to revisit the "voice control" part later in the quarter with the Raspberry Pi. 
 
 
 ## In the Report
@@ -83,19 +84,26 @@ Use the 9V battery and pigtail to power the Arduino using the Vin and Ground lin
 
 ## Part E. Paper display
 
-Here is a design for a paper display:
+Here is an Arduino breadboard with a paper faceplate on it to turn it into a display:
 
 ![]()
 
-It holds a breadboard and 9v battery, and provides a front stage on which to put writing, graphics, LEDs, buttons or displays. Because it is open on the sides and unfolds, it is easy to access the USB port or battery.
+This is fine, but it can be a bit difficult to lay out a great and user friendly display within the constraints of the breadboard. Also, it really only works for applications where people can come and stand over the breadboard, or where you can mount the board to the wall.
 
-You will need to use jumper wires or flat ribbon cable to route power and signal to where it needs to be on the face of the display.
-
-Here is another design, which is just a faceplate for the breadboard:
+Here is another prototype for a paper display:
 
 ![]()
 
-Make a paper display that uses the servo to show how many times a button on the front has been pressed (or any other thing you can sense or count). 
+It holds a breadboard and 9v battery, and provides a front stage on which to put writing, graphics, LEDs, buttons or displays.
+
+This design can be made from a long strip of corrugated cardboard of width X, and adapted easily:
+
+| Y height of box | Z  depth of box| Y height of box  | Z  depth of box | H height of faceplate |
+| --- | --- | --- | --- | --- | 
+
+This will make a H x X interface, with a box of Z x X footprint (which you can adapt to the things you want to put in the box) and a height Y in the back. 
+
+Make a paper display that uses the servo to show how many times a button on the front has been pressed (or any other thing you can sense or count). Ideally you should design it so that you can slide the breadboard out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
 
 
 **a. Make a video of your paper display in action.**
