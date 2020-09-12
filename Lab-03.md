@@ -1,4 +1,4 @@
-# Paper Puppets
+# Paper Prototyping
 
 ## Overview
 For this assignment, you are going to 
