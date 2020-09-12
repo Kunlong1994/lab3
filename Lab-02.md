@@ -14,7 +14,7 @@ D) [Make your Arduino sing!](#part-d-make-your-arduino-sing)
 E) [Make your own timer](#part-e-make-your-own-timer) 
  
 ## In The Report
-For the report, make a copy of this wiki page for your own repository, and then delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include snippets of code that explain what you did.
+For the report, use a copy of this page of the README.md in the directory for this lab in your own repository. You can delete everything but the headers and the sections between the stars. Write the answers to the questions under the starred sentences. Include code that you wrote.
 
 Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
