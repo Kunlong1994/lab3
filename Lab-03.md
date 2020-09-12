@@ -18,6 +18,7 @@
 <img src="https://dysonthedesigner.weebly.com/uploads/2/6/3/9/26392736/427342_orig.jpg"  width="200" > Dyson Vacuum cardboard prototypes
 
 4. Check out some of the things in your kit that we'll be using this week:
+
 | Part                          | What it's for                            | How to use it                                                                                                                                                                                     |
 |-------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 9V battery                    | Power the Arduino without USB            | Attach it to the 9V battery connector                                                                                                                                                             |
