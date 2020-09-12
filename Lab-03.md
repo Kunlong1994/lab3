@@ -9,7 +9,7 @@ B) [Actuating Servo Motors](#part-b-actuating-servo-motors)
 
 C) [Integrating Input and Output](#part-c-integrating-input-and-output)
 
-D) [Autonomy!]
+D) [Autonomy!](#part-d-autonomy)
 
 E) [Paper Display](#part-e-paper-display) 
 
