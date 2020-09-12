@@ -1,4 +1,4 @@
-# Paper Prototyping
+# Motors, Power, Paper Prototyping
 
 ## Overview
 For this assignment, you are going to 
@@ -9,9 +9,11 @@ B) [Actuating Servo Motors](#part-b-actuating-servo-motors)
 
 C) [Integrating Input and Output](#part-c-integrating-input-and-output)
 
-D) [Paper Puppet](#part-d-paper-puppet) 
+D) [Autonomy!]
 
-E) [Make it your own](#part-e-make-it-your-own)
+E) [Paper Display](#part-e-paper-display) 
+
+F) [Make it your own](#part-f-make-it-your-own)
 
 
 
@@ -70,27 +72,36 @@ Using what you've learned already, write code to control the servo motor circuit
 * adjusting the servo motor rotation to reflect the reading on a potentiometer voltage divider circuit, (Yes, it is fine to use any other analog voltage sensor!), or, 
 * reflecting pre-programmed actions you design. 
 
-**Include a photo/movie of your raw circuit in action.**
+## Part D. Autonomy!
 
-## Part D. Paper puppet
-![](https://papersignals.withgoogle.com/static/images/instructions/slides/stretch_00011.png)
+Remove the USB cable
 
-Use the [Stretch paper templates](https://papersignals.withgoogle.com/static/files/stretch.pdf) from the Google Paper Signals project. [Here are instructions to put these together](https://papersignals.withgoogle.com/getstarted#put-it-all-together) (make sure to choose the instructions for the STRETCH signal you're building) with the Arduino and the microservo. We recommend that you just make a wireharness or jumper wires that go out to your Arduino mounted breadboard rather than try to stick your Arduino in the device. Use a stack of pennies if you need to weight the paper puppet down.
+Use the 9V battery and pigtail to power the Arduino using the Vin and Ground line.
 
-![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/raw/docs/wave.gif)
+**Include a photo/movie of your autonomous device in action.**
+
+## Part E. Paper display
+
+Here is a prototype for a paper display:
+
+![]()
+
+It holds a breadboard and 9v battery, and provides a front stage on which to put writing, graphics, LEDs, buttons or displays.
+
+Make a paper display that uses the servo to show how many times a button on the front has been pressed (or any other thing you can sense or count). 
 
 
-**a. Make a video of your proto puppet.**
+**a. Make a video of your paper display in action.**
 
-## Part E. Make it your own
+## Part F. Make it your own
 
 Now modify this set up to make this your own design. 
 
-You can use a different paper template. Borrow or modify others from the Google project above, or make your own. Use Olfa knives or scissors to cut out your pattern, and glue or tape to put it together. If you'd like to use the paper cutter, [here's how](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/How-to-use-the-Silhouette-Cameo-Cutter).
+Use paper to build a paper template. Use an Olfa knifes to cut out your pattern, and glue or tape to put it together. <!--If you'd like to use the paper cutter, [here's how](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/How-to-use-the-Silhouette-Cameo-Cutter).-->
 
-You can set the design in a particular setting, you can enact a pre-programmed mini puppet show, you can visualize data (like from your last logger lab!) a new way.
+You can create a game, you can enact a pre-programmed mini puppet show, or you can visualize data in a new way.
 
-If your design involves having someone controlling the puppet in real time (e.g. using sensors), please film that happening. Otherwise, film the puppet performing it's moves. 
+<!--If your design involves having someone controlling the puppet in real time (e.g. using sensors), please film that happening. Otherwise, film the puppet performing it's moves. -->
 
-**a. Make a video of your final design.**
+**a. Make a video of your final design in action.**
  
