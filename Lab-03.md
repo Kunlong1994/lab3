@@ -7,6 +7,7 @@
 2. Reading about Motors and Batteries
 
 Scherz, Ch 15.1-15.4
+
 [How to pick the right battery for your project](https://learn.adafruit.com/all-about-batteries/how-to-pick-the-right-battery-for-your-project) from Adafruit
 
 3. Reading about Paper Prototyping: [Paper prototyping](https://www.uxpin.com/studio/blog/paper-prototyping-the-practical-beginners-guide/) is used by UX designers to quickly develop interface ideas and run them by people before any programming occurs. [Cardboard prototypes](https://www.youtube.com/watch?v=k_9Q-KDSb9o) help interactive product designers to work through additional issues, like how big something should be, how it could be carried, where it would sit. [Surprisingly complicated forms](https://www.pinterest.com/pin/50032245843343100/) can be built with paper, cardstock or cardboard. The most advanced and challenging prototypes to prototype with paper are [cardboard mechanisms](https://www.pinterest.com/helgangchin/paper-mechanisms/) which move and change. 
