@@ -24,7 +24,9 @@ This lab is inspired by Google's [Paper Signals](https://papersignals.withgoogle
 
 ## In the Report
 
-To submit your lab, clone [this repository](https://github.com/FAR-Lab/IDD-Fa18-Lab4). You'll need to describe your design, include a video of your paper display in operation, and upload any code you wrote to make it move.
+For the report, use a copy of this page of the README.md in the directory for this lab in your own repository. You can delete everything but the headers and the sections between the stars. Write the answers to the questions under the starred sentences. Include code that you wrote.
+
+Deliverables are due next Tuesday. Post a link to the wiki page on your main class hub page.
 
 
 ## Part A. Actuating DC motors
