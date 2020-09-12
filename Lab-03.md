@@ -6,13 +6,30 @@
 
 2. Reading about Motors and Batteries
 
-Scherz, Ch 15.1-15.4
+* Scherz, Ch 15.1-15.4
 
-[How to pick the right battery for your project](https://learn.adafruit.com/all-about-batteries/how-to-pick-the-right-battery-for-your-project) from Adafruit
+* [How to pick the right battery for your project](https://learn.adafruit.com/all-about-batteries/how-to-pick-the-right-battery-for-your-project) from Adafruit
 
-3. Reading about Paper Prototyping: [Paper prototyping](https://www.uxpin.com/studio/blog/paper-prototyping-the-practical-beginners-guide/) is used by UX designers to quickly develop interface ideas and run them by people before any programming occurs. [Cardboard prototypes](https://www.youtube.com/watch?v=k_9Q-KDSb9o) help interactive product designers to work through additional issues, like how big something should be, how it could be carried, where it would sit. [Surprisingly complicated forms](https://www.pinterest.com/pin/50032245843343100/) can be built with paper, cardstock or cardboard. The most advanced and challenging prototypes to prototype with paper are [cardboard mechanisms](https://www.pinterest.com/helgangchin/paper-mechanisms/) which move and change. 
+3. Reading about Paper Prototyping: 
+* [Paper prototyping](https://www.uxpin.com/studio/blog/paper-prototyping-the-practical-beginners-guide/) is used by UX designers to quickly develop interface ideas and run them by people before any programming occurs. 
+* [Cardboard prototypes](https://www.youtube.com/watch?v=k_9Q-KDSb9o) help interactive product designers to work through additional issues, like how big something should be, how it could be carried, where it would sit. 
+* [Surprisingly complicated forms](https://www.pinterest.com/pin/50032245843343100/) can be built with paper, cardstock or cardboard. The most advanced and challenging prototypes to prototype with paper are [cardboard mechanisms](https://www.pinterest.com/helgangchin/paper-mechanisms/) which move and change. 
 
 <img src="https://dysonthedesigner.weebly.com/uploads/2/6/3/9/26392736/427342_orig.jpg"  width="200" > Dyson Vacuum cardboard prototypes
+
+4. Check out some of the things in your kit that we'll be using this week:
+| Part                          | What it's for                            | How to use it                                                                                                                                                                                     |
+|-------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 9V battery                    | Power the Arduino without USB            | Attach it to the 9V battery connector                                                                                                                                                             |
+| 9v battery connector          | " "                                      | Put the red wire in Vin, and the black line in GND                                                                                                                                                |
+| IDC connectors & ribbon cable | Breaking components off the circuitboard | insert ribbon cable into the maw of the IDC connector, and then use heavy weight or vise to clamp IDC, taking care not to bend pins.                                                              |
+| Vibration motor               | Erratic motion                           | red wire to PWM pin of Arduino, black/blue wire to GND                                                                                                                                            |
+| Microservo                    | fixed rotation                           | Good for sweeping arms for displays, actuating parts                                                                                                                                              |
+| Gaffer's tape                 | Adhesion                                 | Gaffer's tape has adhesive that is designed to hold cables to walls or floors, and to be removed afterwards. It is expensive, but it is strong and removable, a killer combination.               |
+| Hot glue                      | Adhesion                                 | Hot glue makes a solid bond, solidifies quickly, and is removable from porous surfaces.                                                                                                           |
+| Heatshrink                    | Electrical insulation                    | Heatshrink covers bare wires to prevent accidental conduction to reduce the risk of short circuits.  Shrink the heat shrink with a hair dryer, lighter, match or proximity to the soldering iron. |
+
+
 
 4. Find cardboard for lab
 
