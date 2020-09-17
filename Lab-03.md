@@ -124,13 +124,13 @@ Use the 9V battery and pigtail to power the Arduino using the Vin and Ground lin
 
 Here is an Arduino breadboard with a paper faceplate on it to turn it into a display:
 
-![]()
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/upload/2020Fall/images/paper_if.png)
 
 This is fine, but it can be a bit difficult to lay out a great and user friendly display within the constraints of the breadboard. Also, it really only works for applications where people can come and stand over the breadboard, or where you can mount the board to the wall.
 
 Here is another prototype for a paper display:
 
-![]()
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/upload/2020Fall/images/b_box.png)
 
 It holds a breadboard and 9v battery, and provides a front stage on which to put writing, graphics, LEDs, buttons or displays.
 
@@ -140,6 +140,11 @@ This design can be made by scoring a long strip of corrugated cardboard of width
 | --- | --- | --- | --- | --- | 
 
 Fold the first flap of the strip so that it sits flush against the back of the face plate, and tape, velcro or hot glue it in place. This will make a H x X interface, with a box of Z x X footprint (which you can adapt to the things you want to put in the box) and a height Y in the back. 
+
+Here is an example:
+
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/upload/2020Fall/images/horoscope.png)
+
 
 Make a paper display that uses the servo to show how many times a button on the front has been pressed (or any other thing you can sense or count). Ideally you should design it so that you can slide the breadboard out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
 
