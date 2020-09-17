@@ -124,13 +124,13 @@ Use the 9V battery and pigtail to power the Arduino using the Vin and Ground lin
 
 Here is an Arduino breadboard with a paper faceplate on it to turn it into a display:
 
-![https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/upload/2020Fall/images/paper_if.png?raw=true]()
+![https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/paper_if.png?raw=true]()
 
 This is fine, but it can be a bit difficult to lay out a great and user friendly display within the constraints of the breadboard. Also, it really only works for applications where people can come and stand over the breadboard, or where you can mount the board to the wall.
 
 Here is another prototype for a paper display:
 
-![https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/upload/2020Fall/images/b_box.png?raw=true]()
+![https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/b_box.png?raw=true]()
 
 It holds a breadboard and 9v battery, and provides a front stage on which to put writing, graphics, LEDs, buttons or displays.
 
