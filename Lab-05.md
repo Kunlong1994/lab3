@@ -76,6 +76,9 @@ Check to make sure your breadboard and battery fit in. To make programming easie
 
 Use shipping tape to make slick patches on the sides of the box, and use removable blue tape (with the ends folded under to make grab tabs) to make a reclosable service panel for your box.
 
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/Lab5/images/IMG_0559.jpeg?raw=true)
+![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/Lab5/images/IMG_0560.jpeg?raw=true)![](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/Lab5/images/IMG_0561.jpeg?raw=true)
+
 ** include a photo of your box closed  **
 
 
