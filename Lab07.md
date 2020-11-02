@@ -56,5 +56,7 @@ ledON or ledOFF
 
 
 ## Video doorbell
- 
-
+The webcam function is achieved by motion, where I could access to the camera on my phone or desktop
+https://github.com/Kunlong1994/Interactive-Lab-Hub/blob/master/lab7/videodoorbell%20(1).MP4
+https://github.com/Kunlong1994/Interactive-Lab-Hub/blob/master/lab7/videodoorbell%20(2).MP4
+https://github.com/Kunlong1994/Interactive-Lab-Hub/blob/master/lab7/videodoorbell%20(3).MP4
